@@ -89,17 +89,20 @@ Partial Class FrmPengeluaranBarang
         Me.ToolStripLabel5.Name = "ToolStripLabel5"
         Me.ToolStripLabel5.Size = New System.Drawing.Size(45, 28)
         Me.ToolStripLabel5.Text = "Mesin :"
+        Me.ToolStripLabel5.Visible = False
         '
         'cboMesin
         '
         Me.cboMesin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboMesin.Name = "cboMesin"
         Me.cboMesin.Size = New System.Drawing.Size(150, 31)
+        Me.cboMesin.Visible = False
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 31)
+        Me.ToolStripSeparator3.Visible = False
         '
         'ToolStripLabel7
         '
@@ -127,7 +130,7 @@ Partial Class FrmPengeluaranBarang
         'cboLaporan
         '
         Me.cboLaporan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboLaporan.Items.AddRange(New Object() {"110101"})
+        Me.cboLaporan.Items.AddRange(New Object() {"110111", "110112", "110113", "110114"})
         Me.cboLaporan.Name = "cboLaporan"
         Me.cboLaporan.Size = New System.Drawing.Size(150, 31)
         '
