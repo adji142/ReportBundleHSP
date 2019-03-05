@@ -1,0 +1,13 @@
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.exe.config
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.exe
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.pdb
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.xml
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.vbprojResolveAssemblyReference.cache
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\Interop.BarTender.dll
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.vbproj.ResolveComReference.cache
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.Resources.resources
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.vbproj.GenerateResource.Cache
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.exe
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.xml
+E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.pdb
