@@ -1,0 +1,25 @@
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\bin\Debug\HSPBOTMKT.pdb
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\bin\Debug\HSPBOTMKT.xml
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.Resources.resources
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.vbproj.GenerateResource.Cache
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.xml
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.pdb
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.Test.resources
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\bin\Debug\HSPBOTMKT.dll
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.dll
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.xml
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.pdb
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.vbprojResolveAssemblyReference.cache
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.Resources.resources
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.Test.resources
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.vbproj.GenerateResource.Cache
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\bin\Debug\HSPBOTMKT.exe
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\bin\Debug\HSPBOTMKT.pdb
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\bin\Debug\HSPBOTMKT.xml
+D:\Project\PT. Hardo Soloplast\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.exe
+D:\JOB\HSPBOT\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.exe
+D:\JOB\HSPBOT\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.xml
+D:\JOB\HSPBOT\HSPBOTMarketing\HSPBOTMKT\obj\Debug\HSPBOTMKT.pdb
+D:\JOB\HSPBOT\HSPBOTHRD\HSPBOTMKT\obj\Debug\HSPBOTMKT.exe
+D:\JOB\HSPBOT\HSPBOTHRD\HSPBOTMKT\obj\Debug\HSPBOTMKT.xml
+D:\JOB\HSPBOT\HSPBOTHRD\HSPBOTMKT\obj\Debug\HSPBOTMKT.pdb
