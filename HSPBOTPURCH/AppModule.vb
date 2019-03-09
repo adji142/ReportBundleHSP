@@ -12,26 +12,23 @@
 
         '-----------------------------------------------------------------------------------
         oApp = oDT.Rows.Add()
-        oApp(0) = "HRD01"
-        oApp(1) = "HRD01 - Sisa Cuti"
+        oApp(0) = "PRC01"
+        oApp(1) = "PRC01 - Pembelian 3 Bulan Terakhir"
         '-----------------------------------------------------------------------------------
 
         '-----------------------------------------------------------------------------------
         oApp = oDT.Rows.Add()
-        oApp(0) = "HRD02"
-        oApp(1) = "HRD02 - Data Karyawan"
+        oApp(0) = "PRC02"
+        oApp(1) = "PRC02 - Kedatangan Barang"
         '-----------------------------------------------------------------------------------
 
         '-----------------------------------------------------------------------------------
         oApp = oDT.Rows.Add()
-        oApp(0) = "HRD03"
-        oApp(1) = "HRD03 - Ketidakhadiran"
+        oApp(0) = "PRC03"
+        oApp(1) = "PRC03 - Saldo Stock Gudang Induk"
         '-----------------------------------------------------------------------------------
 
         '-----------------------------------------------------------------------------------
-        oApp = oDT.Rows.Add()
-        oApp(0) = "HRD04"
-        oApp(1) = "HRD04 - Keterlambatan"
         '-----------------------------------------------------------------------------------
 
         oDS.AcceptChanges()
@@ -46,16 +43,13 @@
         '-------------------------------------------------------------------------
         Select Case ID
             Case "HRD01"
-                Modul = New Plugin_CutiAll(Server)
+                Modul = New Plugin_Pembelian3Month(Server)
                 Modul.Execute()
             Case "HRD02"
-                Modul = New Plugin_DataKaryawan(Server)
+                Modul = New Plugin_KedatanganBarang(Server)
                 Modul.Execute()
             Case "HRD03"
-                Modul = New Plugin_Ketidakhadiran(Server)
-                Modul.Execute()
-            Case "HRD04"
-                Modul = New Plugin_Keterlambatan(Server)
+                Modul = New Plugin_SaldoStock(Server)
                 Modul.Execute()
         End Select
         '-------------------------------------------------------------------------
