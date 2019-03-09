@@ -6,4 +6,9 @@ Public Class Form1
         Dim X As New Plugin_Pembelian3Month(Nothing)
         X._Create()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim X As New Plugin_KedatanganBarang(Nothing)
+        X._Create()
+    End Sub
 End Class
