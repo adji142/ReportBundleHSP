@@ -1,11 +1,10 @@
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\bin\Debug\HSPBOTPURCH.exe.config
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\bin\Debug\HSPBOTPURCH.exe
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\bin\Debug\HSPBOTPURCH.pdb
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\bin\Debug\HSPBOTPURCH.xml
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.Form1.resources
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.Resources.resources
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.vbproj.GenerateResource.Cache
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.exe
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.xml
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.pdb
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.vbprojResolveAssemblyReference.cache
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\bin\Debug\HSPBOTPURCH.dll.config
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\bin\Debug\HSPBOTPURCH.dll
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.dll

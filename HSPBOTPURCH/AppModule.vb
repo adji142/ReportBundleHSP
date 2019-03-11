@@ -42,13 +42,13 @@
 
         '-------------------------------------------------------------------------
         Select Case ID
-            Case "HRD01"
+            Case "PRC01"
                 Modul = New Plugin_Pembelian3Month(Server)
                 Modul.Execute()
-            Case "HRD02"
+            Case "PRC02"
                 Modul = New Plugin_KedatanganBarang(Server)
                 Modul.Execute()
-            Case "HRD03"
+            Case "PRC03"
                 Modul = New Plugin_SaldoStock(Server)
                 Modul.Execute()
         End Select
