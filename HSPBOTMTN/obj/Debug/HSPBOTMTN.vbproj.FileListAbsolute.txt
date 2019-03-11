@@ -1,0 +1,11 @@
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTMTN.exe.config
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTMTN.exe
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTMTN.pdb
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTMTN.xml
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTMTN.vbprojResolveAssemblyReference.cache
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTMTN.Form1.resources
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTMTN.Resources.resources
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTMTN.vbproj.GenerateResource.Cache
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTMTN.exe
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTMTN.xml
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTMTN.pdb
