@@ -11,4 +11,9 @@ Public Class Form1
         Dim X As New Plugin_KedatanganBarang(Nothing)
         X._Create()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim X As New Plugin_SaldoStock(Nothing)
+        X._Create()
+    End Sub
 End Class

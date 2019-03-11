@@ -8,3 +8,4 @@ E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.vbpr
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.exe
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.xml
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.pdb
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTPURCH\obj\Debug\HSPBOTPURCH.vbprojResolveAssemblyReference.cache
