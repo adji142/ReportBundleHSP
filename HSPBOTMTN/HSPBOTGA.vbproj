@@ -8,8 +8,8 @@
     <OutputType>Library</OutputType>
     <StartupObject>
     </StartupObject>
-    <RootNamespace>HSPBOTMTN</RootNamespace>
-    <AssemblyName>HSPBOTMTN</AssemblyName>
+    <RootNamespace>HSPBOTGA</RootNamespace>
+    <AssemblyName>HSPBOTGA</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -21,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>HSPBOTMTN.xml</DocumentationFile>
+    <DocumentationFile>HSPBOTGA.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -31,7 +31,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>HSPBOTMTN.xml</DocumentationFile>
+    <DocumentationFile>HSPBOTGA.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -112,7 +112,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Plugin_PemakaianATK.vb" />
+    <Compile Include="Plugin_PemakaianATK_Rekap.vb" />
     <Compile Include="Plugin_PemakaianObat.vb" />
+    <Compile Include="Plugin_PemakaianObat_Rekap.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

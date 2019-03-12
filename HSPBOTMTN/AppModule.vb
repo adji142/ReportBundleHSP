@@ -12,16 +12,23 @@
 
         '-----------------------------------------------------------------------------------
         oApp = oDT.Rows.Add()
-        oApp(0) = "MTN01"
-        oApp(1) = "MTN01 - Pemakaian Obat"
+        oApp(0) = "GA01"
+        oApp(1) = "GA01 - Pemakaian Obat"
         '-----------------------------------------------------------------------------------
 
         '-----------------------------------------------------------------------------------
         oApp = oDT.Rows.Add()
-        oApp(0) = "MTN02"
-        oApp(1) = "MTN02 - Pemakaian ATK"
+        oApp(0) = "GA02"
+        oApp(1) = "GA02 - Pemakaian ATK"
         '-----------------------------------------------------------------------------------
-
+        oApp = oDT.Rows.Add()
+        oApp(0) = "GA03"
+        oApp(1) = "GA03 - Rekap Pemakaian ATK"
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "GA04"
+        oApp(1) = "GA04 - Rekap Pemakaian Obat"
+        '-----------------------------------------------------------------------------------
         oDS.AcceptChanges()
         GetAppModule = oDT
 
@@ -33,11 +40,17 @@
 
         '-------------------------------------------------------------------------
         Select Case ID
-            Case "MTN01"
+            Case "GA01"
                 Modul = New Plugin_PemakaianObat(Server)
                 Modul.Execute()
-            Case "MTN02"
+            Case "GA02"
                 Modul = New Plugin_PemakaianATK(Server)
+                Modul.Execute()
+            Case "GA03"
+                Modul = New Plugin_PemakaianATK_Rekap(Server)
+                Modul.Execute()
+            Case "GA04"
+                Modul = New Plugin_PemakaianObat_Rekap(Server)
                 Modul.Execute()
         End Select
         '-------------------------------------------------------------------------

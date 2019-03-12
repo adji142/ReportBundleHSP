@@ -1,6 +1,6 @@
 ﻿Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
-Public Class Plugin_PemakaianObat
+Public Class Plugin_PemakaianATK_Rekap
     Dim _Server As Object = Nothing
     Dim _Date As Date = Now.Date
     Dim _FirstDate As Date = New Date(_Date.Year, _Date.Month, 1)
@@ -10,7 +10,7 @@ Public Class Plugin_PemakaianObat
     End Sub
     Public Sub Execute()
         Dim FileName As String = _Create()
-        Dim Title = "Laporan Pemakaian Obat " + vbCrLf + "Per " + _Date.ToString("dd/MM/yyyy hh:mm")
+        Dim Title = "Laporan Rekap Pemakaian ATK " + vbCrLf + "Per " + _Date.ToString("dd/MM/yyyy hh:mm")
         If FileName <> "ERROR" Then
             _Server.Response(Title, 1, FileName)
         Else
@@ -21,7 +21,7 @@ Public Class Plugin_PemakaianObat
     Public Function _Create()
         Try
             Dim Server As New CrystalDecisions.Shared.ConnectionInfo
-            Dim FileName As String = "GA01" & Now.Ticks.ToString & ".PDF"
+            Dim FileName As String = "GA03" & Now.Ticks.ToString & ".PDF"
             Dim Periode As String = GetPeriod(_Date)
 
             'Setting Koneksi Database
@@ -34,7 +34,7 @@ Public Class Plugin_PemakaianObat
             '-----------------------------------------------------------------------------------------
 
             Dim RPTObject As New ReportDocument
-            RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Rpt_PluginPemakaianObat.rpt")
+            RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Rpt_PluginPemakaianAtk_Rekap.rpt")
 
             Dim DataTable As Table
             For Each DataTable In RPTObject.Database.Tables

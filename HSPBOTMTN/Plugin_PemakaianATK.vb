@@ -21,7 +21,7 @@ Public Class Plugin_PemakaianATK
     Public Function _Create()
         Try
             Dim Server As New CrystalDecisions.Shared.ConnectionInfo
-            Dim FileName As String = "MTN02" & Now.Ticks.ToString & ".PDF"
+            Dim FileName As String = "GA02" & Now.Ticks.ToString & ".PDF"
             Dim Periode As String = GetPeriod(_Date)
 
             'Setting Koneksi Database
