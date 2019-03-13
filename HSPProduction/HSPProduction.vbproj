@@ -1,0 +1,2068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F451101B-94E1-42B1-B2F7-E8AB46F6D2F4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HSPProduction.My.MyApplication</StartupObject>
+    <RootNamespace>HSPProduction</RootNamespace>
+    <AssemblyName>HSPProduction</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HSPProduction.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HSPProduction.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>..\..\HSPExtruder\HSPExtruder\bin\Debug\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EPSBasicControls">
+      <HintPath>..\..\HSPExtruder\HSPExtruder\bin\Debug\EPSBasicControls.dll</HintPath>
+    </Reference>
+    <Reference Include="EPSGridControls">
+      <HintPath>..\..\HSPExtruder\HSPExtruder\bin\Debug\EPSGridControls.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\HSP-IT\Documents\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Sap.Data.Hana.v4.5, Version=1.0.120.0, Culture=neutral, PublicKeyToken=0326b8ea63db4bc4, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SOLStaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SOLStaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10 - Data Context\DBConnection.vb" />
+    <Compile Include="10 - Data Context\IDataLookup.vb" />
+    <Compile Include="11 - Data Models\AreaProduksi.vb" />
+    <Compile Include="11 - Data Models\CetakBarcode.vb" />
+    <Compile Include="11 - Data Models\GrupProduksi.vb" />
+    <Compile Include="11 - Data Models\Item.vb" />
+    <Compile Include="11 - Data Models\ItemBenang.vb" />
+    <Compile Include="11 - Data Models\ItemRoll.vb" />
+    <Compile Include="11 - Data Models\Karyawan.vb" />
+    <Compile Include="11 - Data Models\KelompokItem.vb" />
+    <Compile Include="11 - Data Models\KelompokProduksi.vb" />
+    <Compile Include="11 - Data Models\KeteranganToleransi.vb" />
+    <Compile Include="11 - Data Models\KeteranganStatus.vb" />
+    <Compile Include="11 - Data Models\KoreksiStockBMF.vb" />
+    <Compile Include="11 - Data Models\KoreksiStockBenang.vb" />
+    <Compile Include="11 - Data Models\KoreksiStockRoll.vb" />
+    <Compile Include="11 - Data Models\LokasiProduksi.vb" />
+    <Compile Include="11 - Data Models\MediaTimbang.vb" />
+    <Compile Include="11 - Data Models\MesinProduksi.vb" />
+    <Compile Include="11 - Data Models\MutasiAreaBenang.vb" />
+    <Compile Include="11 - Data Models\ParameterRollLaminasi.vb" />
+    <Compile Include="11 - Data Models\ParameterSistem.vb" />
+    <Compile Include="11 - Data Models\PembatalanProduksi.vb" />
+    <Compile Include="11 - Data Models\PengakuanRoll.vb" />
+    <Compile Include="11 - Data Models\PenjelasanProduksi.vb" />
+    <Compile Include="11 - Data Models\PenyerahanHasilProduksi.vb" />
+    <Compile Include="11 - Data Models\Produksi.vb" />
+    <Compile Include="11 - Data Models\ProduksiCBHP.vb" />
+    <Compile Include="11 - Data Models\ProduksiCBSP.vb" />
+    <Compile Include="11 - Data Models\ProduksiCBPR.vb" />
+    <Compile Include="11 - Data Models\ProduksiInner.vb" />
+    <Compile Include="11 - Data Models\ProduksiLoom.vb" />
+    <Compile Include="11 - Data Models\ProduksiMakloonRoll.vb" />
+    <Compile Include="11 - Data Models\ProduksiRecycle.vb" />
+    <Compile Include="11 - Data Models\ProduksiRewind.vb" />
+    <Compile Include="11 - Data Models\ProduksiSlitting.vb" />
+    <Compile Include="11 - Data Models\QCDisposisi.vb" />
+    <Compile Include="11 - Data Models\QCStatus.vb" />
+    <Compile Include="11 - Data Models\QCUpdateStatusBall.vb" />
+    <Compile Include="11 - Data Models\QCUpdateStatusRoll.vb" />
+    <Compile Include="11 - Data Models\ReturHasilProduksi.vb" />
+    <Compile Include="11 - Data Models\RptPlanWO.vb" />
+    <Compile Include="11 - Data Models\TempMutasiBenang.vb" />
+    <Compile Include="11 - Data Models\TempPengeluaranBenang.vb" />
+    <Compile Include="11 - Data Models\PolaMediaTimbang.vb" />
+    <Compile Include="11 - Data Models\ProduksiPackingPcs.vb" />
+    <Compile Include="11 - Data Models\StockBenangTemp.vb" />
+    <Compile Include="11 - Data Models\StockBenangMultifilament.vb" />
+    <Compile Include="11 - Data Models\ProduksiJahit.vb" />
+    <Compile Include="11 - Data Models\ProduksiPrintingPcs.vb" />
+    <Compile Include="11 - Data Models\Satuan.vb" />
+    <Compile Include="11 - Data Models\ShiftProduksi.vb" />
+    <Compile Include="11 - Data Models\StockPacking.vb" />
+    <Compile Include="11 - Data Models\TempStockBatch.vb" />
+    <Compile Include="11 - Data Models\TempStockSAP.vb" />
+    <Compile Include="11 - Data Models\TransferBDP.vb" />
+    <Compile Include="11 - Data Models\UnitProduksiPeruntukan.vb" />
+    <Compile Include="11 - Data Models\UnitProduksi.vb" />
+    <Compile Include="11 - Data Models\PemakaianBahan.vb" />
+    <Compile Include="11 - Data Models\KoreksiMutasiExtruder.vb" />
+    <Compile Include="11 - Data Models\MutasiBenang.vb" />
+    <Compile Include="11 - Data Models\PengeluaranBenang.vb" />
+    <Compile Include="11 - Data Models\StockBenang.vb" />
+    <Compile Include="11 - Data Models\MutasiRoll.vb" />
+    <Compile Include="11 - Data Models\PermintaanBenang.vb" />
+    <Compile Include="11 - Data Models\StockRoll.vb" />
+    <Compile Include="11 - Data Models\ProduksiCutting.vb" />
+    <Compile Include="11 - Data Models\ProduksiLaminasi.vb" />
+    <Compile Include="11 - Data Models\ProduksiPrintingRoll.vb" />
+    <Compile Include="11 - Data Models\ProduksiAfval.vb" />
+    <Compile Include="11 - Data Models\X_PemakaianBahan.vb" />
+    <Compile Include="20 - Master Data\frmDaftarKeteranganToleransi.designer.vb">
+      <DependentUpon>frmDaftarKeteranganToleransi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarKeteranganToleransi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmKaryawan.designer.vb">
+      <DependentUpon>frmKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarKaryawan.designer.vb">
+      <DependentUpon>frmDaftarKaryawan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarKaryawan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmParameterRollLaminasi.Designer.vb">
+      <DependentUpon>frmParameterRollLaminasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmParameterRollLaminasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmKeteranganToleransi.designer.vb">
+      <DependentUpon>frmKeteranganToleransi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmKeteranganToleransi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmUpdateBeratStandarPackingKarung.designer.vb">
+      <DependentUpon>frmUpdateBeratStandarPackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmUpdateBeratStandarPackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarQCDisposisi.designer.vb">
+      <DependentUpon>frmDaftarQCDisposisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarQCDisposisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarQCStatus.designer.vb">
+      <DependentUpon>frmDaftarQCStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarQCStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmQCDisposisi.designer.vb">
+      <DependentUpon>frmQCDisposisi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmQCDisposisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmQCStatus.designer.vb">
+      <DependentUpon>frmQCStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmQCStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmCetakBarcodeRoll.designer.vb">
+      <DependentUpon>frmCetakBarcodeRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmCetakBarcodeRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarParameterRollLaminasi.designer.vb">
+      <DependentUpon>frmDaftarParameterRollLaminasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarParameterRollLaminasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarItem.designer.vb">
+      <DependentUpon>frmDaftarItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarBMF.designer.vb">
+      <DependentUpon>frmDaftarBMF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarBMF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPembatalanPackingCementBag.designer.vb">
+      <DependentUpon>frmDaftarPembatalanPackingCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPembatalanPackingCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPembatalanCutting.designer.vb">
+      <DependentUpon>frmDaftarPembatalanCutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPembatalanCutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPembatalanPackingKarung.designer.vb">
+      <DependentUpon>frmDaftarPembatalanPackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPembatalanPackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPenjelasanProduksi.designer.vb">
+      <DependentUpon>frmDaftarPenjelasanProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPenjelasanProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarQCUpdateStatusBall.designer.vb">
+      <DependentUpon>frmDaftarQCUpdateStatusBall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarQCUpdateStatusBall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarQCUpdateStatusRoll.designer.vb">
+      <DependentUpon>frmDaftarQCUpdateStatusRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarQCUpdateStatusRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteRecycle.Designer.vb">
+      <DependentUpon>frmExecuteRecycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteRecycle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteFGReceipt.Designer.vb">
+      <DependentUpon>frmExecuteFGReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteFGReceipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteInventoryTransfer.Designer.vb">
+      <DependentUpon>frmExecuteInventoryTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteInventoryTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteRMIssue.Designer.vb">
+      <DependentUpon>frmExecuteRMIssue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmExecuteRMIssue.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPenjelasanProduksi.Designer.vb">
+      <DependentUpon>frmPenjelasanProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPenjelasanProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiAfvalManual.Designer.vb">
+      <DependentUpon>frmProduksiAfvalManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiAfvalManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiRewind.designer.vb">
+      <DependentUpon>frmProduksiRewind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiRewind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmRPT210_140_StockRoll.designer.vb">
+      <DependentUpon>frmRPT210_140_StockRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmRPT210_140_StockRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmRPT329_140_StockPacking.designer.vb">
+      <DependentUpon>frmRPT329_140_StockPacking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmRPT329_140_StockPacking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarStockBMF.designer.vb">
+      <DependentUpon>frmDaftarStockBMF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarStockBMF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarStockRoll.designer.vb">
+      <DependentUpon>frmDaftarStockRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarStockRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmKoreksiStockBMF.Designer.vb">
+      <DependentUpon>frmKoreksiStockBMF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmKoreksiStockBMF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT323_110_StockHasilPrintingPcs.designer.vb">
+      <DependentUpon>frmRPT323_110_StockHasilPrintingPcs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT323_110_StockHasilPrintingPcs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT900_110_StockBatch.designer.vb">
+      <DependentUpon>frmRPT900_110_StockBatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT900_110_StockBatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_180_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_180_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_180_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_170_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_170_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_170_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_160_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_160_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_160_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_150_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_150_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_150_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_190_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_190_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_190_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_200_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_200_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_200_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_160b_CircularLoom.designer.vb">
+      <DependentUpon>frmRPT200_160b_CircularLoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_160b_CircularLoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_160_Loom.designer.vb">
+      <DependentUpon>frmRPT200_160_Loom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_160_Loom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT400_110_AnalisaBeratHasilProduksi.designer.vb">
+      <DependentUpon>frmRPT400_110_AnalisaBeratHasilProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT400_110_AnalisaBeratHasilProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT400_120_AnalisaBerat.designer.vb">
+      <DependentUpon>frmRPT400_120_AnalisaBerat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT400_120_AnalisaBerat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT_FR_Persediaan.designer.vb">
+      <DependentUpon>frmRPT_FR_Persediaan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT_FR_Persediaan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT910_110_StockRollRewind.designer.vb">
+      <DependentUpon>frmRPT910_110_StockRollRewind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT910_110_StockRollRewind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT910_100_Rewind.designer.vb">
+      <DependentUpon>frmRPT910_100_Rewind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT910_100_Rewind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_150_Slitting.designer.vb">
+      <DependentUpon>frmRPT311_150_Slitting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_150_Slitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_140_SisaRollCementBag.designer.vb">
+      <DependentUpon>frmRPT312_140_SisaRollCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_140_SisaRollCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT319_150_PackingCementBag.designer.vb">
+      <DependentUpon>frmRPT319_150_PackingCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT319_150_PackingCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_150_CementBag.designer.vb">
+      <DependentUpon>frmRPT312_150_CementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_150_CementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT800_110_CostAccounting.designer.vb">
+      <DependentUpon>frmRPT800_110_CostAccounting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT800_110_CostAccounting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT800_100_CostAccounting.designer.vb">
+      <DependentUpon>frmRPT800_100_CostAccounting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT800_100_CostAccounting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT800_120_CostAcoounting.designer.vb">
+      <DependentUpon>frmRPT800_120_CostAcoounting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT800_120_CostAcoounting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmDaftarPemakaianBahanEx.designer.vb">
+      <DependentUpon>frmDaftarPemakaianBahanEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmDaftarPemakaianBahanEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmPemakaianBahanEx.Designer.vb">
+      <DependentUpon>frmPemakaianBahanEx.vb</DependentUpon>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmPemakaianBahanEx.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPembatalanPackingCementBag.designer.vb">
+      <DependentUpon>frmPembatalanPackingCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPembatalanPackingCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPembatalanPackingKarung.designer.vb">
+      <DependentUpon>frmPembatalanPackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPembatalanPackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCBSP.designer.vb">
+      <DependentUpon>frmProduksiCBSP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCBSP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiMakloonRoll.Designer.vb">
+      <DependentUpon>frmProduksiMakloonRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiMakloonRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmKoreksiStockRoll.Designer.vb">
+      <DependentUpon>frmKoreksiStockRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmKoreksiStockRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPengakuanStockRoll.Designer.vb">
+      <DependentUpon>frmPengakuanStockRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPengakuanStockRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPenyerahanHasilProduksi.Designer.vb">
+      <DependentUpon>frmPenyerahanHasilProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPenyerahanHasilProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiInner.designer.vb">
+      <DependentUpon>frmProduksiInner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiInner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPackingCementBag.designer.vb">
+      <DependentUpon>frmProduksiPackingCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPackingCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPackingKarung.designer.vb">
+      <DependentUpon>frmProduksiPackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiLaminating.designer.vb">
+      <DependentUpon>frmProduksiLaminating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiLaminating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarStockBenang.designer.vb">
+      <DependentUpon>frmDaftarStockBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarStockBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmKoreksiStockBenang.Designer.vb">
+      <DependentUpon>frmKoreksiStockBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmKoreksiStockBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPengeluaranBarang.Designer.vb">
+      <DependentUpon>frmPengeluaranBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPengeluaranBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeRoll.Designer.vb">
+      <DependentUpon>frmReprintBarcodeRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeBmf.Designer.vb">
+      <DependentUpon>frmReprintBarcodeBmf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeBmf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReturHasilProduksi.Designer.vb">
+      <DependentUpon>frmReturHasilProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReturHasilProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCBHP.designer.vb">
+      <DependentUpon>frmProduksiCBHP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCBHP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCBPR.designer.vb">
+      <DependentUpon>frmProduksiCBPR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCBPR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCutting.designer.vb">
+      <DependentUpon>frmProduksiCutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiCutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiBenangMultifilament.Designer.vb">
+      <DependentUpon>frmProduksiBenangMultifilament.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiBenangMultifilament.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiJahit.designer.vb">
+      <DependentUpon>frmProduksiJahit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiJahit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPrintingPcs.designer.vb">
+      <DependentUpon>frmProduksiPrintingPcs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPrintingPcs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPrintingRoll.designer.vb">
+      <DependentUpon>frmProduksiPrintingRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiPrintingRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiRecycle.Designer.vb">
+      <DependentUpon>frmProduksiRecycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiRecycle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiSlitting.designer.vb">
+      <DependentUpon>frmProduksiSlitting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiSlitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProsesTimbang.Designer.vb">
+      <DependentUpon>frmProsesTimbang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProsesTimbang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCDisposisiBall.Designer.vb">
+      <DependentUpon>frmQCDisposisiBall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCDisposisiBall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCDisposisiRoll.Designer.vb">
+      <DependentUpon>frmQCDisposisiRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCDisposisiRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCInspeksiBall.designer.vb">
+      <DependentUpon>frmQCInspeksiBall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCInspeksiBall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCInspeksiRoll.Designer.vb">
+      <DependentUpon>frmQCInspeksiRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmQCInspeksiRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeBall.Designer.vb">
+      <DependentUpon>frmReprintBarcodeBall.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeBall.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodePrinting.Designer.vb">
+      <DependentUpon>frmReprintBarcodePrinting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodePrinting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeLaminasi.Designer.vb">
+      <DependentUpon>frmReprintBarcodeLaminasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmReprintBarcodeLaminasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmTempPengeluaranBenang.Designer.vb">
+      <DependentUpon>frmTempPengeluaranBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmTempPengeluaranBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmTempDaftarPengeluaranBenang.designer.vb">
+      <DependentUpon>frmTempDaftarPengeluaranBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmTempDaftarPengeluaranBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarPengeluaranBenang.designer.vb">
+      <DependentUpon>frmDaftarPengeluaranBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarPengeluaranBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPemakaianBahan.designer.vb">
+      <DependentUpon>frmDaftarPemakaianBahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmDaftarPemakaianBahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPemakaianBahan.Designer.vb">
+      <DependentUpon>frmPemakaianBahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmPemakaianBahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiExtruder.Designer.vb">
+      <DependentUpon>frmProduksiExtruder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiExtruder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmMutasiAreaBenang.designer.vb">
+      <DependentUpon>frmMutasiAreaBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmMutasiAreaBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPengeluaranBenang.Designer.vb">
+      <DependentUpon>frmPengeluaranBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPengeluaranBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarMutasiRoll.designer.vb">
+      <DependentUpon>frmDaftarMutasiRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarMutasiRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarPermintaanBenang.designer.vb">
+      <DependentUpon>frmDaftarPermintaanBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmDaftarPermintaanBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmMutasiRoll.Designer.vb">
+      <DependentUpon>frmMutasiRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmMutasiRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPermintaanBenang.designer.vb">
+      <DependentUpon>frmPermintaanBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmPermintaanBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmArea.designer.vb">
+      <DependentUpon>frmArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarAreaProduksi.designer.vb">
+      <DependentUpon>frmDaftarAreaProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarAreaProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarGrupProduksi.designer.vb">
+      <DependentUpon>frmDaftarGrupProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarGrupProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarLokasiProduksi.designer.vb">
+      <DependentUpon>frmDaftarLokasiProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarLokasiProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarMediaTimbang.designer.vb">
+      <DependentUpon>frmDaftarMediaTimbang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarMediaTimbang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarMesinProduksi.designer.vb">
+      <DependentUpon>frmDaftarMesinProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarMesinProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarPolaMediaTimbang.designer.vb">
+      <DependentUpon>frmDaftarPolaMediaTimbang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarPolaMediaTimbang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarSatuan.designer.vb">
+      <DependentUpon>frmDaftarSatuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarSatuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarShiftProduksi.designer.vb">
+      <DependentUpon>frmDaftarShiftProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarShiftProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarUnitProduksi.designer.vb">
+      <DependentUpon>frmDaftarUnitProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarUnitProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmGrupProduksi.designer.vb">
+      <DependentUpon>frmGrupProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmGrupProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmLokasi.designer.vb">
+      <DependentUpon>frmLokasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmLokasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmMediaTimbang.designer.vb">
+      <DependentUpon>frmMediaTimbang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmMediaTimbang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmMesin.designer.vb">
+      <DependentUpon>frmMesin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmMesin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmPolaMediaTimbang.designer.vb">
+      <DependentUpon>frmPolaMediaTimbang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmPolaMediaTimbang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmSatuan.designer.vb">
+      <DependentUpon>frmSatuan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmSatuan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmSetting.Designer.vb">
+      <DependentUpon>frmSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmShiftProduksi.designer.vb">
+      <DependentUpon>frmShiftProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmShiftProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmUnitProduksi.designer.vb">
+      <DependentUpon>frmUnitProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmUnitProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Inventory\frmStockOpnameBenang.Designer.vb">
+      <DependentUpon>frmStockOpnameBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Inventory\frmStockOpnameBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmReport.designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_100_StockBahanExtruder.designer.vb">
+      <DependentUpon>frmRPT100_100_StockBahanExtruder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_100_StockBahanExtruder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_110_InventoryTransferExtruder.designer.vb">
+      <DependentUpon>frmRPT100_110_InventoryTransferExtruder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_110_InventoryTransferExtruder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_190_GudangRoll.designer.vb">
+      <DependentUpon>frmRPT210_190_GudangRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_190_GudangRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT324_110_StockHasilInner.designer.vb">
+      <DependentUpon>frmRPT324_110_StockHasilInner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT324_110_StockHasilInner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT324_100_Inner.designer.vb">
+      <DependentUpon>frmRPT324_100_Inner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT324_100_Inner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_150_PackingKarung.designer.vb">
+      <DependentUpon>frmRPT329_150_PackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_150_PackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT322_150_Jahit.designer.vb">
+      <DependentUpon>frmRPT322_150_Jahit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT322_150_Jahit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_150_Cutting.designer.vb">
+      <DependentUpon>frmRPT321_150_Cutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_150_Cutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_150_PrintingRoll.designer.vb">
+      <DependentUpon>frmRPT320_150_PrintingRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_150_PrintingRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_150_Laminasi.designer.vb">
+      <DependentUpon>frmRPT310_150_Laminasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_150_Laminasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_150_Loom.designer.vb">
+      <DependentUpon>frmRPT200_150_Loom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_150_Loom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_150_Extruder.designer.vb">
+      <DependentUpon>frmRPT100_150_Extruder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_150_Extruder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT900_100_Produksi.designer.vb">
+      <DependentUpon>frmRPT900_100_Produksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT900_100_Produksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_140_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_140_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_140_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT323_100_PrintingPcs.designer.vb">
+      <DependentUpon>frmRPT323_100_PrintingPcs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT323_100_PrintingPcs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_140_AnalisaBmf.designer.vb">
+      <DependentUpon>frmRPT500_140_AnalisaBmf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_140_AnalisaBmf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_140_Extruder.designer.vb">
+      <DependentUpon>frmRPT100_140_Extruder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_140_Extruder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_130_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_130_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_130_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_130_CircularLoom.designer.vb">
+      <DependentUpon>frmRPT200_130_CircularLoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_130_CircularLoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_140_AnalisaProduksiLoomByMesin.designer.vb">
+      <DependentUpon>frmRPT200_140_AnalisaProduksiLoomByMesin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT200_140_AnalisaProduksiLoomByMesin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_130_GudangRoll.designer.vb">
+      <DependentUpon>frmRPT210_130_GudangRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_130_GudangRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_120_Slitting_AnalisaRollKeRoll.designer.vb">
+      <DependentUpon>frmRPT311_120_Slitting_AnalisaRollKeRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_120_Slitting_AnalisaRollKeRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_130_Laminating_AnalisaRollKeRoll.designer.vb">
+      <DependentUpon>frmRPT310_130_Laminating_AnalisaRollKeRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_130_Laminating_AnalisaRollKeRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_120_BahanRollCementBag.designer.vb">
+      <DependentUpon>frmRPT312_120_BahanRollCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_120_BahanRollCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT319_100_PackingCementBag.designer.vb">
+      <DependentUpon>frmRPT319_100_PackingCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT319_100_PackingCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT319_110_StockBallCementBag.designer.vb">
+      <DependentUpon>frmRPT319_110_StockBallCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT319_110_StockBallCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.designer.vb">
+      <DependentUpon>frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_130_StockHasilBenangMultifilament.designer.vb">
+      <DependentUpon>frmRPT500_130_StockHasilBenangMultifilament.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_130_StockHasilBenangMultifilament.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_120_Cutting_AnalisaRollKePcs.designer.vb">
+      <DependentUpon>frmRPT321_120_Cutting_AnalisaRollKePcs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_120_Cutting_AnalisaRollKePcs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_120_DaftarItem.designer.vb">
+      <DependentUpon>frmRPT329_120_DaftarItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_120_DaftarItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_110_PemakaianBahanBmf.designer.vb">
+      <DependentUpon>frmRPT500_110_PemakaianBahanBmf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_110_PemakaianBahanBmf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_100_GudangRoll.designer.vb">
+      <DependentUpon>frmRPT210_100_GudangRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_100_GudangRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_110_StockRollGudangRoll.designer.vb">
+      <DependentUpon>frmRPT210_110_StockRollGudangRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_110_StockRollGudangRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_120_TransferGudangRoll.designer.vb">
+      <DependentUpon>frmRPT210_120_TransferGudangRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT210_120_TransferGudangRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_100_Laminating.designer.vb">
+      <DependentUpon>frmRPT310_100_Laminating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_100_Laminating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_110_StockRollLaminating.designer.vb">
+      <DependentUpon>frmRPT310_110_StockRollLaminating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_110_StockRollLaminating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_120_PemakaianBPLaminating.designer.vb">
+      <DependentUpon>frmRPT310_120_PemakaianBPLaminating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT310_120_PemakaianBPLaminating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_100_Slitting.designer.vb">
+      <DependentUpon>frmRPT311_100_Slitting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_100_Slitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_110_StockRollSlitting.designer.vb">
+      <DependentUpon>frmRPT311_110_StockRollSlitting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT311_110_StockRollSlitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_100_HasilCementBag.designer.vb">
+      <DependentUpon>frmRPT312_100_HasilCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_100_HasilCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_110_StockCementBag.designer.vb">
+      <DependentUpon>frmRPT312_110_StockCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT312_110_StockCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT322_110_StockHasilJahit.designer.vb">
+      <DependentUpon>frmRPT322_110_StockHasilJahit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT322_110_StockHasilJahit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_110_StockHasilCutting_1.designer.vb">
+      <DependentUpon>frmRPT321_110_StockHasilCutting_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_110_StockHasilCutting_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT600_100_GudangAfval.designer.vb">
+      <DependentUpon>frmRPT600_100_GudangAfval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT600_100_GudangAfval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_100_BenangMultifilament.designer.vb">
+      <DependentUpon>frmRPT500_100_BenangMultifilament.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT500_100_BenangMultifilament.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_120_PemakaianBahanExtruder.designer.vb">
+      <DependentUpon>frmRPT100_120_PemakaianBahanExtruder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT100_120_PemakaianBahanExtruder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_100_PrintingRoll.designer.vb">
+      <DependentUpon>frmRPT320_100_PrintingRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_100_PrintingRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_110_StockRollPrinting.designer.vb">
+      <DependentUpon>frmRPT320_110_StockRollPrinting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_110_StockRollPrinting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_120_PemakaianBPPrintingRoll.designer.vb">
+      <DependentUpon>frmRPT320_120_PemakaianBPPrintingRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT320_120_PemakaianBPPrintingRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT322_100_Jahit.designer.vb">
+      <DependentUpon>frmRPT322_100_Jahit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT322_100_Jahit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_100_Cutting.designer.vb">
+      <DependentUpon>frmRPT321_100_Cutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT321_100_Cutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_100_PackingKarung.designer.vb">
+      <DependentUpon>frmRPT329_100_PackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_100_PackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT410_100_ReturHasilProduksi.designer.vb">
+      <DependentUpon>frmRPT410_100_ReturHasilProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT410_100_ReturHasilProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT400_100_PenyerahanHasilProduksi.designer.vb">
+      <DependentUpon>frmRPT400_100_PenyerahanHasilProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT400_100_PenyerahanHasilProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_110_StockBallKarung.designer.vb">
+      <DependentUpon>frmRPT329_110_StockBallKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT329_110_StockBallKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_120_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_120_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_120_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT600_110_GudangAfval.designer.vb">
+      <DependentUpon>frmRPT600_110_GudangAfval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT600_110_GudangAfval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT610100_Recycle.designer.vb">
+      <DependentUpon>frmRPT610100_Recycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT610100_Recycle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPTSaldoBahan.designer.vb">
+      <DependentUpon>frmRPTSaldoBahan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPTSaldoBahan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_100_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_100_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_100_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_110_GudangBenang.designer.vb">
+      <DependentUpon>frmRPT110_110_GudangBenang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPT110_110_GudangBenang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiLoom.designer.vb">
+      <DependentUpon>frmProduksiLoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiLoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarItemAfvalProduksi.designer.vb">
+      <DependentUpon>frmDaftarItemAfvalProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarItemAfvalProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmItemAfvalProduksi.designer.vb">
+      <DependentUpon>frmItemAfvalProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmItemAfvalProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiAfval.Designer.vb">
+      <DependentUpon>frmProduksiAfval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Produksi\frmProduksiAfval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPTStock.Designer.vb">
+      <DependentUpon>frmRPTStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - Laporan\frmRPTStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmDaftarTransferBDP.designer.vb">
+      <DependentUpon>frmDaftarTransferBDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmDaftarTransferBDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmRPT770_100_TransferBDP.designer.vb">
+      <DependentUpon>frmRPT770_100_TransferBDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmRPT770_100_TransferBDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmTransferBDP.designer.vb">
+      <DependentUpon>frmTransferBDP.vb</DependentUpon>
+    </Compile>
+    <Compile Include="77 -Kontrol BDP\frmTransferBDP.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="80 - General\frmLookup.designer.vb">
+      <DependentUpon>frmLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="80 - General\frmLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="80 - General\mdGeneral.vb" />
+    <Compile Include="80 - General\mdlSetting.vb" />
+    <Compile Include="80 - General\PrinterSet.vb" />
+    <Compile Include="90 - Session\AppModule.vb" />
+    <Compile Include="90 - Session\SessionApp.vb" />
+    <Compile Include="aMenuTester.designer.vb">
+      <DependentUpon>aMenuTester.vb</DependentUpon>
+    </Compile>
+    <Compile Include="aMenuTester.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SAP Class Interfaces\SAPDBConnection.vb" />
+    <Compile Include="SAP Class Interfaces\SAPInventory.vb" />
+    <Compile Include="SAP Class Interfaces\SAPStaging.vb" />
+    <Compile Include="SAP Class Interfaces\SAPWorkOrder.vb" />
+    <Compile Include="Tools\frmInsertStockPacking.Designer.vb">
+      <DependentUpon>frmInsertStockPacking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\frmInsertStockPacking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\frmInsertStockRoll.Designer.vb">
+      <DependentUpon>frmInsertStockRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\frmInsertStockRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\frmLINQ.Designer.vb">
+      <DependentUpon>frmLINQ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\frmLINQ.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\frmStagingFGExtruder.Designer.vb">
+      <DependentUpon>frmStagingFGExtruder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\frmStagingFGExtruder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\frmStagingCLoom.Designer.vb">
+      <DependentUpon>frmStagingCLoom.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\frmStagingCLoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\TestKartuStock.Designer.vb">
+      <DependentUpon>TestKartuStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\TestKartuStock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarKeteranganToleransi.resx">
+      <DependentUpon>frmDaftarKeteranganToleransi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmKaryawan.resx">
+      <DependentUpon>frmKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarKaryawan.resx">
+      <DependentUpon>frmDaftarKaryawan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmParameterRollLaminasi.resx">
+      <DependentUpon>frmParameterRollLaminasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmKeteranganToleransi.resx">
+      <DependentUpon>frmKeteranganToleransi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmUpdateBeratStandarPackingKarung.resx">
+      <DependentUpon>frmUpdateBeratStandarPackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarQCDisposisi.resx">
+      <DependentUpon>frmDaftarQCDisposisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarQCStatus.resx">
+      <DependentUpon>frmDaftarQCStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmQCDisposisi.resx">
+      <DependentUpon>frmQCDisposisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmQCStatus.resx">
+      <DependentUpon>frmQCStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmCetakBarcodeRoll.resx">
+      <DependentUpon>frmCetakBarcodeRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarParameterRollLaminasi.resx">
+      <DependentUpon>frmDaftarParameterRollLaminasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarItem.resx">
+      <DependentUpon>frmDaftarItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarBMF.resx">
+      <DependentUpon>frmDaftarBMF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarPembatalanPackingCementBag.resx">
+      <DependentUpon>frmDaftarPembatalanPackingCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarPembatalanCutting.resx">
+      <DependentUpon>frmDaftarPembatalanCutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarPembatalanPackingKarung.resx">
+      <DependentUpon>frmDaftarPembatalanPackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarPenjelasanProduksi.resx">
+      <DependentUpon>frmDaftarPenjelasanProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarQCUpdateStatusBall.resx">
+      <DependentUpon>frmDaftarQCUpdateStatusBall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarQCUpdateStatusRoll.resx">
+      <DependentUpon>frmDaftarQCUpdateStatusRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmExecuteRecycle.resx">
+      <DependentUpon>frmExecuteRecycle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmExecuteFGReceipt.resx">
+      <DependentUpon>frmExecuteFGReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmExecuteInventoryTransfer.resx">
+      <DependentUpon>frmExecuteInventoryTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmExecuteRMIssue.resx">
+      <DependentUpon>frmExecuteRMIssue.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmPenjelasanProduksi.resx">
+      <DependentUpon>frmPenjelasanProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiAfvalManual.resx">
+      <DependentUpon>frmProduksiAfvalManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiRewind.resx">
+      <DependentUpon>frmProduksiRewind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmRPT210_140_StockRoll.resx">
+      <DependentUpon>frmRPT210_140_StockRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmRPT329_140_StockPacking.resx">
+      <DependentUpon>frmRPT329_140_StockPacking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmDaftarStockBMF.resx">
+      <DependentUpon>frmDaftarStockBMF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmDaftarStockRoll.resx">
+      <DependentUpon>frmDaftarStockRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmKoreksiStockBMF.resx">
+      <DependentUpon>frmKoreksiStockBMF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT323_110_StockHasilPrintingPcs.resx">
+      <DependentUpon>frmRPT323_110_StockHasilPrintingPcs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT900_110_StockBatch.resx">
+      <DependentUpon>frmRPT900_110_StockBatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_180_GudangBenang.resx">
+      <DependentUpon>frmRPT110_180_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_170_GudangBenang.resx">
+      <DependentUpon>frmRPT110_170_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_160_GudangBenang.resx">
+      <DependentUpon>frmRPT110_160_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_150_GudangBenang.resx">
+      <DependentUpon>frmRPT110_150_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_190_GudangBenang.resx">
+      <DependentUpon>frmRPT110_190_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_200_GudangBenang.resx">
+      <DependentUpon>frmRPT110_200_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT200_160b_CircularLoom.resx">
+      <DependentUpon>frmRPT200_160b_CircularLoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT200_160_Loom.resx">
+      <DependentUpon>frmRPT200_160_Loom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT400_110_AnalisaBeratHasilProduksi.resx">
+      <DependentUpon>frmRPT400_110_AnalisaBeratHasilProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT400_120_AnalisaBerat.resx">
+      <DependentUpon>frmRPT400_120_AnalisaBerat.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT_FR_Persediaan.resx">
+      <DependentUpon>frmRPT_FR_Persediaan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT910_110_StockRollRewind.resx">
+      <DependentUpon>frmRPT910_110_StockRollRewind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT910_100_Rewind.resx">
+      <DependentUpon>frmRPT910_100_Rewind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT311_150_Slitting.resx">
+      <DependentUpon>frmRPT311_150_Slitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT312_140_SisaRollCementBag.resx">
+      <DependentUpon>frmRPT312_140_SisaRollCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT319_150_PackingCementBag.resx">
+      <DependentUpon>frmRPT319_150_PackingCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT312_150_CementBag.resx">
+      <DependentUpon>frmRPT312_150_CementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT800_110_CostAccounting.resx">
+      <DependentUpon>frmRPT800_110_CostAccounting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT800_100_CostAccounting.resx">
+      <DependentUpon>frmRPT800_100_CostAccounting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT800_120_CostAcoounting.resx">
+      <DependentUpon>frmRPT800_120_CostAcoounting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="77 -Kontrol BDP\frmDaftarPemakaianBahanEx.resx">
+      <DependentUpon>frmDaftarPemakaianBahanEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="77 -Kontrol BDP\frmPemakaianBahanEx.resx">
+      <DependentUpon>frmPemakaianBahanEx.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmPembatalanPackingCementBag.resx">
+      <DependentUpon>frmPembatalanPackingCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmPembatalanPackingKarung.resx">
+      <DependentUpon>frmPembatalanPackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiCBSP.resx">
+      <DependentUpon>frmProduksiCBSP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiMakloonRoll.resx">
+      <DependentUpon>frmProduksiMakloonRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmKoreksiStockRoll.resx">
+      <DependentUpon>frmKoreksiStockRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmPengakuanStockRoll.resx">
+      <DependentUpon>frmPengakuanStockRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmPenyerahanHasilProduksi.resx">
+      <DependentUpon>frmPenyerahanHasilProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiInner.resx">
+      <DependentUpon>frmProduksiInner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiPackingCementBag.resx">
+      <DependentUpon>frmProduksiPackingCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiPackingKarung.resx">
+      <DependentUpon>frmProduksiPackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiLaminating.resx">
+      <DependentUpon>frmProduksiLaminating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmDaftarStockBenang.resx">
+      <DependentUpon>frmDaftarStockBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmKoreksiStockBenang.resx">
+      <DependentUpon>frmKoreksiStockBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmPengeluaranBarang.resx">
+      <DependentUpon>frmPengeluaranBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmReprintBarcodeRoll.resx">
+      <DependentUpon>frmReprintBarcodeRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmReprintBarcodeBmf.resx">
+      <DependentUpon>frmReprintBarcodeBmf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmReturHasilProduksi.resx">
+      <DependentUpon>frmReturHasilProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiCBHP.resx">
+      <DependentUpon>frmProduksiCBHP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiCBPR.resx">
+      <DependentUpon>frmProduksiCBPR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiCutting.resx">
+      <DependentUpon>frmProduksiCutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiBenangMultifilament.resx">
+      <DependentUpon>frmProduksiBenangMultifilament.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiJahit.resx">
+      <DependentUpon>frmProduksiJahit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiPrintingPcs.resx">
+      <DependentUpon>frmProduksiPrintingPcs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiPrintingRoll.resx">
+      <DependentUpon>frmProduksiPrintingRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiRecycle.resx">
+      <DependentUpon>frmProduksiRecycle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiSlitting.resx">
+      <DependentUpon>frmProduksiSlitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProsesTimbang.resx">
+      <DependentUpon>frmProsesTimbang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmQCDisposisiBall.resx">
+      <DependentUpon>frmQCDisposisiBall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmQCDisposisiRoll.resx">
+      <DependentUpon>frmQCDisposisiRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmQCInspeksiBall.resx">
+      <DependentUpon>frmQCInspeksiBall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmQCInspeksiRoll.resx">
+      <DependentUpon>frmQCInspeksiRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmReprintBarcodeBall.resx">
+      <DependentUpon>frmReprintBarcodeBall.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmReprintBarcodePrinting.resx">
+      <DependentUpon>frmReprintBarcodePrinting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmReprintBarcodeLaminasi.resx">
+      <DependentUpon>frmReprintBarcodeLaminasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmTempPengeluaranBenang.resx">
+      <DependentUpon>frmTempPengeluaranBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmTempDaftarPengeluaranBenang.resx">
+      <DependentUpon>frmTempDaftarPengeluaranBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmDaftarPengeluaranBenang.resx">
+      <DependentUpon>frmDaftarPengeluaranBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmDaftarPemakaianBahan.resx">
+      <DependentUpon>frmDaftarPemakaianBahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmPemakaianBahan.resx">
+      <DependentUpon>frmPemakaianBahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiExtruder.resx">
+      <DependentUpon>frmProduksiExtruder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmMutasiAreaBenang.resx">
+      <DependentUpon>frmMutasiAreaBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmPengeluaranBenang.resx">
+      <DependentUpon>frmPengeluaranBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmDaftarMutasiRoll.resx">
+      <DependentUpon>frmDaftarMutasiRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmDaftarPermintaanBenang.resx">
+      <DependentUpon>frmDaftarPermintaanBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmMutasiRoll.resx">
+      <DependentUpon>frmMutasiRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmPermintaanBenang.resx">
+      <DependentUpon>frmPermintaanBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmArea.resx">
+      <DependentUpon>frmArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarAreaProduksi.resx">
+      <DependentUpon>frmDaftarAreaProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarGrupProduksi.resx">
+      <DependentUpon>frmDaftarGrupProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarLokasiProduksi.resx">
+      <DependentUpon>frmDaftarLokasiProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarMediaTimbang.resx">
+      <DependentUpon>frmDaftarMediaTimbang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarMesinProduksi.resx">
+      <DependentUpon>frmDaftarMesinProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarPolaMediaTimbang.resx">
+      <DependentUpon>frmDaftarPolaMediaTimbang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarSatuan.resx">
+      <DependentUpon>frmDaftarSatuan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarShiftProduksi.resx">
+      <DependentUpon>frmDaftarShiftProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarUnitProduksi.resx">
+      <DependentUpon>frmDaftarUnitProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmGrupProduksi.resx">
+      <DependentUpon>frmGrupProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmLokasi.resx">
+      <DependentUpon>frmLokasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmMediaTimbang.resx">
+      <DependentUpon>frmMediaTimbang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmMesin.resx">
+      <DependentUpon>frmMesin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmPolaMediaTimbang.resx">
+      <DependentUpon>frmPolaMediaTimbang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmSatuan.resx">
+      <DependentUpon>frmSatuan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmSetting.resx">
+      <DependentUpon>frmSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmShiftProduksi.resx">
+      <DependentUpon>frmShiftProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmUnitProduksi.resx">
+      <DependentUpon>frmUnitProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Inventory\frmStockOpnameBenang.resx">
+      <DependentUpon>frmStockOpnameBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT100_100_StockBahanExtruder.resx">
+      <DependentUpon>frmRPT100_100_StockBahanExtruder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT100_110_InventoryTransferExtruder.resx">
+      <DependentUpon>frmRPT100_110_InventoryTransferExtruder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT210_190_GudangRoll.resx">
+      <DependentUpon>frmRPT210_190_GudangRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT324_110_StockHasilInner.resx">
+      <DependentUpon>frmRPT324_110_StockHasilInner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT324_100_Inner.resx">
+      <DependentUpon>frmRPT324_100_Inner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT329_150_PackingKarung.resx">
+      <DependentUpon>frmRPT329_150_PackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT322_150_Jahit.resx">
+      <DependentUpon>frmRPT322_150_Jahit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT321_150_Cutting.resx">
+      <DependentUpon>frmRPT321_150_Cutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT320_150_PrintingRoll.resx">
+      <DependentUpon>frmRPT320_150_PrintingRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT310_150_Laminasi.resx">
+      <DependentUpon>frmRPT310_150_Laminasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT200_150_Loom.resx">
+      <DependentUpon>frmRPT200_150_Loom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT100_150_Extruder.resx">
+      <DependentUpon>frmRPT100_150_Extruder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT900_100_Produksi.resx">
+      <DependentUpon>frmRPT900_100_Produksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_140_GudangBenang.resx">
+      <DependentUpon>frmRPT110_140_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT323_100_PrintingPcs.resx">
+      <DependentUpon>frmRPT323_100_PrintingPcs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT500_140_AnalisaBmf.resx">
+      <DependentUpon>frmRPT500_140_AnalisaBmf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT100_140_Extruder.resx">
+      <DependentUpon>frmRPT100_140_Extruder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_130_GudangBenang.resx">
+      <DependentUpon>frmRPT110_130_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT200_130_CircularLoom.resx">
+      <DependentUpon>frmRPT200_130_CircularLoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT200_140_AnalisaProduksiLoomByMesin.resx">
+      <DependentUpon>frmRPT200_140_AnalisaProduksiLoomByMesin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT210_130_GudangRoll.resx">
+      <DependentUpon>frmRPT210_130_GudangRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT311_120_Slitting_AnalisaRollKeRoll.resx">
+      <DependentUpon>frmRPT311_120_Slitting_AnalisaRollKeRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT310_130_Laminating_AnalisaRollKeRoll.resx">
+      <DependentUpon>frmRPT310_130_Laminating_AnalisaRollKeRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT312_120_BahanRollCementBag.resx">
+      <DependentUpon>frmRPT312_120_BahanRollCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT319_100_PackingCementBag.resx">
+      <DependentUpon>frmRPT319_100_PackingCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT319_110_StockBallCementBag.resx">
+      <DependentUpon>frmRPT319_110_StockBallCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resx">
+      <DependentUpon>frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT500_130_StockHasilBenangMultifilament.resx">
+      <DependentUpon>frmRPT500_130_StockHasilBenangMultifilament.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT321_120_Cutting_AnalisaRollKePcs.resx">
+      <DependentUpon>frmRPT321_120_Cutting_AnalisaRollKePcs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT329_120_DaftarItem.resx">
+      <DependentUpon>frmRPT329_120_DaftarItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT500_110_PemakaianBahanBmf.resx">
+      <DependentUpon>frmRPT500_110_PemakaianBahanBmf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT210_100_GudangRoll.resx">
+      <DependentUpon>frmRPT210_100_GudangRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT210_110_StockRollGudangRoll.resx">
+      <DependentUpon>frmRPT210_110_StockRollGudangRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT210_120_TransferGudangRoll.resx">
+      <DependentUpon>frmRPT210_120_TransferGudangRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT310_100_Laminating.resx">
+      <DependentUpon>frmRPT310_100_Laminating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT310_110_StockRollLaminating.resx">
+      <DependentUpon>frmRPT310_110_StockRollLaminating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT310_120_PemakaianBPLaminating.resx">
+      <DependentUpon>frmRPT310_120_PemakaianBPLaminating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT311_100_Slitting.resx">
+      <DependentUpon>frmRPT311_100_Slitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT311_110_StockRollSlitting.resx">
+      <DependentUpon>frmRPT311_110_StockRollSlitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT312_100_HasilCementBag.resx">
+      <DependentUpon>frmRPT312_100_HasilCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT312_110_StockCementBag.resx">
+      <DependentUpon>frmRPT312_110_StockCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT322_110_StockHasilJahit.resx">
+      <DependentUpon>frmRPT322_110_StockHasilJahit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT321_110_StockHasilCutting_1.resx">
+      <DependentUpon>frmRPT321_110_StockHasilCutting_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT600_100_GudangAfval.resx">
+      <DependentUpon>frmRPT600_100_GudangAfval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT500_100_BenangMultifilament.resx">
+      <DependentUpon>frmRPT500_100_BenangMultifilament.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT100_120_PemakaianBahanExtruder.resx">
+      <DependentUpon>frmRPT100_120_PemakaianBahanExtruder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT320_100_PrintingRoll.resx">
+      <DependentUpon>frmRPT320_100_PrintingRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT320_110_StockRollPrinting.resx">
+      <DependentUpon>frmRPT320_110_StockRollPrinting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT320_120_PemakaianBPPrintingRoll.resx">
+      <DependentUpon>frmRPT320_120_PemakaianBPPrintingRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT322_100_Jahit.resx">
+      <DependentUpon>frmRPT322_100_Jahit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT321_100_Cutting.resx">
+      <DependentUpon>frmRPT321_100_Cutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT329_100_PackingKarung.resx">
+      <DependentUpon>frmRPT329_100_PackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT410_100_ReturHasilProduksi.resx">
+      <DependentUpon>frmRPT410_100_ReturHasilProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT400_100_PenyerahanHasilProduksi.resx">
+      <DependentUpon>frmRPT400_100_PenyerahanHasilProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT329_110_StockBallKarung.resx">
+      <DependentUpon>frmRPT329_110_StockBallKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_120_GudangBenang.resx">
+      <DependentUpon>frmRPT110_120_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT600_110_GudangAfval.resx">
+      <DependentUpon>frmRPT600_110_GudangAfval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT610100_Recycle.resx">
+      <DependentUpon>frmRPT610100_Recycle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPTSaldoBahan.resx">
+      <DependentUpon>frmRPTSaldoBahan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_100_GudangBenang.resx">
+      <DependentUpon>frmRPT110_100_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPT110_110_GudangBenang.resx">
+      <DependentUpon>frmRPT110_110_GudangBenang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiLoom.resx">
+      <DependentUpon>frmProduksiLoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarItemAfvalProduksi.resx">
+      <DependentUpon>frmDaftarItemAfvalProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmItemAfvalProduksi.resx">
+      <DependentUpon>frmItemAfvalProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Produksi\frmProduksiAfval.resx">
+      <DependentUpon>frmProduksiAfval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - Laporan\frmRPTStock.resx">
+      <DependentUpon>frmRPTStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="77 -Kontrol BDP\frmDaftarTransferBDP.resx">
+      <DependentUpon>frmDaftarTransferBDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="77 -Kontrol BDP\frmRPT770_100_TransferBDP.resx">
+      <DependentUpon>frmRPT770_100_TransferBDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="77 -Kontrol BDP\frmTransferBDP.resx">
+      <DependentUpon>frmTransferBDP.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="80 - General\frmLookup.resx">
+      <DependentUpon>frmLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aMenuTester.resx">
+      <DependentUpon>aMenuTester.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\frmInsertStockPacking.resx">
+      <DependentUpon>frmInsertStockPacking.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\frmInsertStockRoll.resx">
+      <DependentUpon>frmInsertStockRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\frmLINQ.resx">
+      <DependentUpon>frmLINQ.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\frmStagingFGExtruder.resx">
+      <DependentUpon>frmStagingFGExtruder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\frmStagingCLoom.resx">
+      <DependentUpon>frmStagingCLoom.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\TestKartuStock.resx">
+      <DependentUpon>TestKartuStock.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="80 - General\NetInfo.vb" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings1.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dbx%281%29%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="BarTender">
+      <Guid>{D58562C1-E51B-11CF-8941-00A024A9083F}</Guid>
+      <VersionMajor>10</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcode_reader_128x128_32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

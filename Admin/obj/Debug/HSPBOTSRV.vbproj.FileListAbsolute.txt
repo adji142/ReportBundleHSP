@@ -1,0 +1,26 @@
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\HSPBOTSRV.exe
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\Dapper.dll
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\MySql.Data.dll
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\HSPBOTSRV.exe.config
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\EPSBasicControls.dll
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\EPSGridControls.dll
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\XAModule.dll
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\frmKeyword.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\frmPlugin.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\frmKeywordList.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\frmUser.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\frmPluginList.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\frmUserList.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\frmBOTServer.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\Resources.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\HSPBOTSRV.vbproj.GenerateResource.Cache
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\HSPBOTSRV.exe
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\HSPBOTSRV.xml
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\HSPBOTSRV.pdb
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\HSPBOTSRV.pdb
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\HSPBOTSRV.xml
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\HSPBOTSRV.vbprojResolveAssemblyReference.cache
+\\192.168.1.114\it support\BOT Plugin\Admin\bin\Debug\HSPBOTSRV.exe.config
+\\192.168.1.114\it support\BOT Plugin\Admin\obj\Debug\HSPBOTSRV.exe
+\\192.168.1.114\it support\BOT Plugin\Admin\obj\Debug\HSPBOTSRV.xml
+\\192.168.1.114\it support\BOT Plugin\Admin\obj\Debug\HSPBOTSRV.pdb

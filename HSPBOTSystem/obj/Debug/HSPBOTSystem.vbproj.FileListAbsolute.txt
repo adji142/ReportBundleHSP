@@ -1,0 +1,17 @@
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.Resources.resources
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.vbproj.GenerateResource.Cache
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\bin\Debug\HSPBOTSystem.dll
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\bin\Debug\HSPBOTSystem.pdb
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\bin\Debug\HSPBOTSystem.xml
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.dll
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.xml
+D:\Workspace\Projects .NET\HSP BOT Server\Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.pdb
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\bin\Debug\HSPBOTSystem.dll
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\bin\Debug\HSPBOTSystem.pdb
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\bin\Debug\HSPBOTSystem.xml
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.vbprojResolveAssemblyReference.cache
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.Resources.resources
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.vbproj.GenerateResource.Cache
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.dll
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.xml
+\\192.168.1.114\it support\BOT Plugin\HSPBOTSystem\HSPBOTSystem\obj\Debug\HSPBOTSystem.pdb

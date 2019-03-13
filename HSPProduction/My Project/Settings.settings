@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Server" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.1.112</Value>
+    </Setting>
+    <Setting Name="Port" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">3306</Value>
+    </Setting>
+    <Setting Name="DatabaseName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">hspproduction</Value>
+    </Setting>
+    <Setting Name="UserID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">dbxroothsp123</Value>
+    </Setting>
+    <Setting Name="HanaServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">192.168.1.222:30015</Value>
+    </Setting>
+    <Setting Name="HanaUserName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">SYSTEM</Value>
+    </Setting>
+    <Setting Name="HanaPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sys825050SYS</Value>
+    </Setting>
+    <Setting Name="HanaSAPDatabaseName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">HARDO_LIVE</Value>
+    </Setting>
+    <Setting Name="HanaSTGDatabaseName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">STAGINGDB_LIVE</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

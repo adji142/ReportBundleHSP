@@ -1,0 +1,39 @@
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.exe.config
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.exe
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.pdb
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.xml
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\Newtonsoft.Json.dll
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\Newtonsoft.Json.pdb
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\Newtonsoft.Json.xml
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.vbprojResolveAssemblyReference.cache
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.Form1.resources
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.Resources.resources
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.vbproj.GenerateResource.Cache
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.exe
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.xml
+E:\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.pdb
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.exe.config
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.exe
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.xml
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.pdb
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.exe
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.pdb
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\TestBOT.xml
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\Newtonsoft.Json.dll
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\Newtonsoft.Json.pdb
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\Newtonsoft.Json.xml
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.vbprojResolveAssemblyReference.cache
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.Form1.resources
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.Resources.resources
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.vbproj.GenerateResource.Cache
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.frmBOTServer.resources
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\Dapper.dll
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\MySql.Data.dll
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\EPSBasicControls.dll
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\bin\Debug\EPSGridControls.dll
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.frmUser.resources
+D:\Dev\_Test\Telegram\VB.NET\TestBOT\TestBOT\obj\Debug\TestBOT.frmUserList.resources
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\bin\Debug\TestBOT.exe.config
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\TestBOT.exe
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\TestBOT.xml
+D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\TestBOT.pdb

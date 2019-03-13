@@ -1,0 +1,1085 @@
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\Dapper.dll
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\EPSBasicControls.dll
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\EPSGridControls.dll
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\MySql.Data.dll
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKelompokItem.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSpesifikasi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItem.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKelompokItem.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSpesifikasi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTJurnal.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPenerimaanBenang.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPengeluaranBenang.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenerimaanRoll.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSettingPortConnection.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKelompokSpesifikasi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\MSGridControls.dll
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKelompokSpesifikasi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\MSBasicControls.dll
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranRoll.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStatusQC.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStatusQC.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarDisposisi.resources
+D:\APLIKASI VS 2013\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPenerimaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\bin\Debug\MySql.Data.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPenerimaanProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTStockBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\Projects\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\Projects\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\Projects\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\Projects\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\bin\Debug\HSPProduction.dll.config
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\bin\Debug\HSPProduction.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\HSPProduction\HSPProduction\obj\Debug\HSPProduction.dll
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\bin\Debug\MySql.Data.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
+D:\Project\PT. Hardo Soloplast\Application\Production\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\bin\Debug\MySql.Data.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT610100_Recycle.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_110_GudangAfval.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\bin\Debug\MySql.Data.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_110_GudangAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT610100_Recycle.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_121_Cutting_AnalisaRollKePcs.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_120_DaftarItem.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resources
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.dll.config
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\bin\Debug\HSPProduction.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.dll
+D:\Project\PT. Hardo Soloplast\Application\Production\Aplikasi New\NEW\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiInner.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiInner.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_121_Cutting_AnalisaRollKePcs.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_120_DaftarItem.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_130_Laminating_AnalisaRollKeRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_120_Slitting_AnalisaRollKeRoll.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120_BahanRollCementBag.resources
+D:\Projects\HSPProduction\HSPProduction\bin\Debug\HSPProduction.dll.config
+D:\Projects\HSPProduction\HSPProduction\bin\Debug\HSPProduction.dll
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.dll
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBarang.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_140_Extruder.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_130_CircularLoom.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_140_AnalisaProduksiLoomByMesin.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_100_PackingCementBag.resources
+D:\Projects\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_110_StockBallCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiInner.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBarang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_140_Extruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_130_CircularLoom.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_140_AnalisaProduksiLoomByMesin.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_120_Slitting_AnalisaRollKeRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_130_Laminating_AnalisaRollKeRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120_BahanRollCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_100_PackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_110_StockBallCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_121_Cutting_AnalisaRollKePcs.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_120_DaftarItem.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_110_GudangAfval.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT610100_Recycle.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_130_GudangRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBSP.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBmf.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiMakloonRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTStock.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_130_StockHasilBenangMultifilament.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmParameterRollLaminasi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterRollLaminasi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_140_AnalisaBmf.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingFGExtruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingCLoom.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_100_PrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_140_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_150_Extruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_100_Produksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_150_Loom.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_150_Laminasi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_150_PrintingRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_150_Cutting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_150_Jahit.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_150_PackingKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteInventoryTransfer.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGReceipt.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_110_StockHasilInner.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_100_Inner.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_190_GudangRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMIssue.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransferBDP.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBDP.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT770_100_TransferBDP.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanEx.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanEx.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting_1.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_100_CostAccounting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_110_CostAccounting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_120_CostAccounting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKaryawan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKaryawan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_150_PackingCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_150_Slitting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_150_CementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160_Loom.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_140_SisaRollCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLINQ.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_150_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160b_CircularLoom.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.TestKartuStock.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRewind.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_160_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_110_StockRollRewind.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_100_Rewind.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBMF.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBMF.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT_FR_Persediaan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Form1.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRecycle.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_170_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_110_AnalisaBeratHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_120_AnalisaBerat.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_180_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_190_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_200_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_StockRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_140_StockPacking.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKeteranganToleransi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKeteranganToleransi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalManual.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenjelasanProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPenjelasanProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_110_StockBatch.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockPacking.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_110_StockHasilPrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKeteranganToleransi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKaryawan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKaryawan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmParameterRollLaminasi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKeteranganToleransi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterRollLaminasi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPenjelasanProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRecycle.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGReceipt.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteInventoryTransfer.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMIssue.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenjelasanProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalManual.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRewind.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_StockRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_140_StockPacking.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBMF.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBMF.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_110_StockHasilPrintingPcs.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_110_StockBatch.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_180_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_170_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_160_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_150_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_190_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_200_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160b_CircularLoom.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160_Loom.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_110_AnalisaBeratHasilProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_120_AnalisaBerat.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT_FR_Persediaan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_110_StockRollRewind.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_100_Rewind.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_150_Slitting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_140_SisaRollCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_150_PackingCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_150_CementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_110_CostAccounting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_100_CostAccounting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_120_CostAccounting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanEx.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanEx.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBSP.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiMakloonRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiInner.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBarang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBmf.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_190_GudangRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_110_StockHasilInner.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_100_Inner.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_150_PackingKarung.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_150_Jahit.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_150_Cutting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_150_PrintingRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_150_Laminasi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_150_Loom.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_150_Extruder.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_100_Produksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_140_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_100_PrintingPcs.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_140_AnalisaBmf.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_140_Extruder.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_130_CircularLoom.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_140_AnalisaProduksiLoomByMesin.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_130_GudangRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_120_Slitting_AnalisaRollKeRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_130_Laminating_AnalisaRollKeRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120_BahanRollCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_100_PackingCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_110_StockBallCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_130_StockHasilBenangMultifilament.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_121_Cutting_AnalisaRollKePcs.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_120_DaftarItem.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting_1.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_110_GudangAfval.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT610100_Recycle.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTStock.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransferBDP.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT770_100_TransferBDP.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBDP.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Form1.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockPacking.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockRoll.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLINQ.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingFGExtruder.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingCLoom.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.TestKartuStock.resources
+E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
