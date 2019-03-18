@@ -1868,7 +1868,7 @@ conn.Open();</code>
   </returns>
         </member>
         <member name="P:Sap.Data.Hana.HanaConnection.DbProviderFactory">
-            <!-- Badly formed XML file "d:\x\workspace\hana-externals.hana-clients-OD-ntamd64-ntamd64-optimized\gen\out\build-3ffada03\sys\wrk\csharpmake\adonet\v45\Edm.xml" cannot be included -->
+            <!-- Badly formed XML file "d:\x\workspace\hana-externals.hana-clients-OD-ntintel-ntintel\gen\out\build-7135794d\sys\wrk\csharpmake\adonet\v45\Edm.xml" cannot be included -->
         </member>
         <member name="T:Sap.Data.Hana.HanaCredential">
             <summary>
@@ -3507,7 +3507,7 @@ DbConnection conn = factory.CreateConnection();</code>
         </returns><seealso cref="T:Sap.Data.Hana.HanaConnectionStringBuilder"/>
         </member>
         <member name="M:Sap.Data.Hana.HanaFactory.System#IServiceProvider#GetService(System.Type)">
-            <!-- Badly formed XML file "d:\x\workspace\hana-externals.hana-clients-OD-ntamd64-ntamd64-optimized\gen\out\build-3ffada03\sys\wrk\csharpmake\adonet\v45\Edm.xml" cannot be included -->
+            <!-- Badly formed XML file "d:\x\workspace\hana-externals.hana-clients-OD-ntintel-ntintel\gen\out\build-7135794d\sys\wrk\csharpmake\adonet\v45\Edm.xml" cannot be included -->
         </member>
         <member name="P:Sap.Data.Hana.HanaFactory.CanCreateDataSourceEnumerator">
             <summary>

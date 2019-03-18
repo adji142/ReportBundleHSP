@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E7E6A83A-A034-443A-B660-642BD8AD7272}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HSPKPI.My.MyApplication</StartupObject>
+    <RootNamespace>HSPKPI</RootNamespace>
+    <AssemblyName>HSPKPI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HSPKPI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HSPKPI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.CrystalReports.Engine\13.0.2000.0__692fbea5521e1304\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.ReportSource\13.0.2000.0__692fbea5521e1304\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Shared\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Windows\assembly\GAC_MSIL\CrystalDecisions.Windows.Forms\13.0.2000.0__692fbea5521e1304\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper">
+      <HintPath>..\..\..\Project\HSPProPerformance\HSPProPerformance\bin\Debug\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="EPSBasicControls">
+      <HintPath>..\..\..\Project\HSPProPerformance\HSPProPerformance\bin\Debug\EPSBasicControls.dll</HintPath>
+    </Reference>
+    <Reference Include="EPSGridControls">
+      <HintPath>..\..\..\Project\HSPProPerformance\HSPProPerformance\bin\Debug\EPSGridControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.5.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.15\Assemblies\v4.5.2\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="HSPProduction">
+      <HintPath>..\..\..\Project\HSPProPerformance\HSPProPerformance\bin\Debug\HSPProduction.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SOLStaging, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Project\HSPProPerformance\HSPProPerformance\bin\Debug\SOLStaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="10 - Data Context\DBConnection.vb" />
+    <Compile Include="11 - Data Models\DataOtomatis.vb" />
+    <Compile Include="11 - Data Models\AmbilData.vb" />
+    <Compile Include="11 - Data Models\Aspek.vb" />
+    <Compile Include="11 - Data Models\MasterHR.vb" />
+    <Compile Include="11 - Data Models\OJT.vb" />
+    <Compile Include="11 - Data Models\KPI.vb" />
+    <Compile Include="12 - HRClass\HRDept.vb" />
+    <Compile Include="12 - HRClass\HRKaryawan.vb" />
+    <Compile Include="12 - HRClass\HROtomatis.vb" />
+    <Compile Include="12 - HRClass\HRPosisi.vb" />
+    <Compile Include="12 - HRClass\HRBagian.vb" />
+    <Compile Include="12 - HRClass\HRDBConnection.vb" />
+    <Compile Include="11 - Data Models\Kelompok.vb" />
+    <Compile Include="20 - Master Data\frmCopyAspek.Designer.vb">
+      <DependentUpon>frmCopyAspek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmCopyAspek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarAspek.designer.vb">
+      <DependentUpon>frmDaftarAspek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarAspek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarKelompok.designer.vb">
+      <DependentUpon>frmDaftarKelompok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmDaftarKelompok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmAspek.designer.vb">
+      <DependentUpon>frmAspek.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmAspek.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="20 - Master Data\frmKelompok.designer.vb">
+      <DependentUpon>frmKelompok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="20 - Master Data\frmKelompok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmDaftarOJT.designer.vb">
+      <DependentUpon>frmDaftarOJT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmDaftarOJT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmDaftarKPI.designer.vb">
+      <DependentUpon>frmDaftarKPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmDaftarKPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmOJT.designer.vb">
+      <DependentUpon>frmOJT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmOJT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmKPI.designer.vb">
+      <DependentUpon>frmKPI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="30 - Transaksi\frmKPI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepIPKOver.designer.vb">
+      <DependentUpon>frmRepIPKOver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepIPKOver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepKPIBulanan.designer.vb">
+      <DependentUpon>frmRepKPIBulanan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepKPIBulanan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepKPITahunan.designer.vb">
+      <DependentUpon>frmRepKPITahunan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepKPITahunan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepProgressInput.designer.vb">
+      <DependentUpon>frmRepProgressInput.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepProgressInput.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepIPKUnder.designer.vb">
+      <DependentUpon>frmRepIPKUnder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepIPKUnder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepProgressLengkap.designer.vb">
+      <DependentUpon>frmRepProgressLengkap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Laporan\frmRepProgressLengkap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="40 - Laporan\frmReport.designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="40 - Laporan\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - General\frmLookup.designer.vb">
+      <DependentUpon>frmLookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - General\frmLookup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - General\frmLookupExtended.designer.vb">
+      <DependentUpon>frmLookupExtended.vb</DependentUpon>
+    </Compile>
+    <Compile Include="50 - General\frmLookupExtended.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="50 - General\mdGeneral.vb" />
+    <Compile Include="50 - General\mdlSetting.vb" />
+    <Compile Include="50 - General\NetInfo.vb" />
+    <Compile Include="60 - Session\AppModule.vb" />
+    <Compile Include="60 - Session\SessionApp.vb" />
+    <Compile Include="eMenuTester.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eMenuTester.Designer.vb">
+      <DependentUpon>eMenuTester.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10 - Data Context\IDataLookup.vb" />
+    <Compile Include="My Project\Application1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="20 - Master Data\frmCopyAspek.resx">
+      <DependentUpon>frmCopyAspek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarAspek.resx">
+      <DependentUpon>frmDaftarAspek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmDaftarKelompok.resx">
+      <DependentUpon>frmDaftarKelompok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmAspek.resx">
+      <DependentUpon>frmAspek.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="20 - Master Data\frmKelompok.resx">
+      <DependentUpon>frmKelompok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Transaksi\frmDaftarOJT.resx">
+      <DependentUpon>frmDaftarOJT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Transaksi\frmDaftarKPI.resx">
+      <DependentUpon>frmDaftarKPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Transaksi\frmOJT.resx">
+      <DependentUpon>frmOJT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="30 - Transaksi\frmKPI.resx">
+      <DependentUpon>frmKPI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Laporan\frmRepIPKOver.resx">
+      <DependentUpon>frmRepIPKOver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Laporan\frmRepKPIBulanan.resx">
+      <DependentUpon>frmRepKPIBulanan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Laporan\frmRepKPITahunan.resx">
+      <DependentUpon>frmRepKPITahunan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Laporan\frmRepProgressInput.resx">
+      <DependentUpon>frmRepProgressInput.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Laporan\frmRepIPKUnder.resx">
+      <DependentUpon>frmRepIPKUnder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Laporan\frmRepProgressLengkap.resx">
+      <DependentUpon>frmRepProgressLengkap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="40 - Laporan\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - General\frmLookup.resx">
+      <DependentUpon>frmLookup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="50 - General\frmLookupExtended.resx">
+      <DependentUpon>frmLookupExtended.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eMenuTester.resx">
+      <DependentUpon>eMenuTester.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

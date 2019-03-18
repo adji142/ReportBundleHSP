@@ -1,3 +1,9 @@
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.exe
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.xml
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.pdb
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\bin\Debug\HSPBOTHRD.exe
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\bin\Debug\HSPBOTHRD.pdb
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\bin\Debug\HSPBOTHRD.xml
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.Resources.resources
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.Test.resources
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.vbproj.GenerateResource.Cache

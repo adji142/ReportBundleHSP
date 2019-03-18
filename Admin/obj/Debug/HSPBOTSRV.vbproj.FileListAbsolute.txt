@@ -24,3 +24,7 @@ D:\Workspace\Projects .NET\HSP BOT Server\TestBOT\obj\Debug\HSPBOTSRV.vbprojReso
 \\192.168.1.114\it support\BOT Plugin\Admin\obj\Debug\HSPBOTSRV.exe
 \\192.168.1.114\it support\BOT Plugin\Admin\obj\Debug\HSPBOTSRV.xml
 \\192.168.1.114\it support\BOT Plugin\Admin\obj\Debug\HSPBOTSRV.pdb
+E:\Kantor\HSP\Source Code\ReportBundleHSP\Admin\bin\Debug\HSPBOTSRV.exe.config
+E:\Kantor\HSP\Source Code\ReportBundleHSP\Admin\obj\Debug\HSPBOTSRV.exe
+E:\Kantor\HSP\Source Code\ReportBundleHSP\Admin\obj\Debug\HSPBOTSRV.xml
+E:\Kantor\HSP\Source Code\ReportBundleHSP\Admin\obj\Debug\HSPBOTSRV.pdb
