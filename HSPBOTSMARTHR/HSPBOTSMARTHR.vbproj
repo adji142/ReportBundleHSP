@@ -115,6 +115,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Plugin_CutiPerUser.vb" />
+    <Compile Include="Plugin_SendAnualLeaveDetail.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

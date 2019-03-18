@@ -24,14 +24,12 @@
     'Execute Plugin
     Public Sub Execute(ByVal ID As String, Server As Object)
         Dim Modul As Object = Nothing
-
         '-------------------------------------------------------------------------
         Select Case ID
             Case "CUTI"
                 Modul = New Plugin_CutiPerUser(Server)
                 'Modul.Execute_FirstStep()
                 Modul.Execute()
-
         End Select
         '-------------------------------------------------------------------------
 
