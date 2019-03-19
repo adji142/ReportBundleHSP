@@ -121,16 +121,21 @@ Public Class FrmUserSettingBrowse
                 If View.RowCount > 0 Then
                     Execute("btEdit")
                 End If
+            Case Keys.F8
+                Execute("btDelete")
         End Select
     End Sub
 
     Private Sub View_KeyDown(sender As Object, e As KeyEventArgs) Handles View.KeyDown
         Select Case e.KeyCode
-            Case Keys.Enter
+            Case Keys.F5
+                Execute("btRefresh")
+            Case Keys.F7
                 If View.RowCount > 0 Then
-                    e.Handled = True
                     Execute("btEdit")
                 End If
+            Case Keys.F8
+                Execute("btDelete")
         End Select
     End Sub
     Private Sub Execute(ByVal ID As String)
@@ -163,7 +168,11 @@ Public Class FrmUserSettingBrowse
                 If View.RowCount > 0 Then
                     View.Focus()
                 End If
-
+            Case "btDelete", "btRefreshCTXM"
+                Dim DataKey As String = If(View.Rows.Count = 0, "", View(0, View.CurrentCell.RowIndex).Value.ToString())
+                Dim DarftarUserkry As New UserKaryawan(ActiveSession)
+                DarftarUserkry.Delete(DataKey)
+                ShowData()
         End Select
     End Sub
 
