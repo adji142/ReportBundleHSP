@@ -16,6 +16,10 @@
         oApp(0) = "6001"
         oApp(1) = "Informasi Personal Bot"
 
+        oApp = oDT.Rows.Add()
+        oApp(0) = "6002"
+        oApp(1) = "Kirim Broadcast Telegram"
+
         oDS.AcceptChanges()
         GetAppModule = oDT
     End Function
@@ -28,6 +32,8 @@
         Select Case AppID
             Case "6001"
                 AppForm = New FrmUserSettingBrowse
+            Case "6001"
+                AppForm = New FrmHRBroadcastBrowse
         End Select
 
         Form = AppForm

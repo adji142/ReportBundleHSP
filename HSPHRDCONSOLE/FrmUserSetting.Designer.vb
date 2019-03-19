@@ -147,7 +147,7 @@ Partial Class FrmUserSetting
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
         Me.Name = "FrmUserSetting"
-        Me.Text = "FrmUserSetting"
+        Me.Text = "Personal Bot"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)

@@ -7,6 +7,7 @@ Public Class Plugin_SendAnualLeaveDetail
     Dim _Date As Date = Now.Date
     Public _NIK As String
     Public _Userid As String
+    Public _FileName As String = ""
     Private _DBConnection As New DBConnection
     Public Sub New(Server As Object)
         _Server = Server
@@ -17,6 +18,7 @@ Public Class Plugin_SendAnualLeaveDetail
         Dim Title = "Generating.."
         If FileName <> "ERROR" Then
             _Server.Response(Title, 1, FileName)
+            _FileName = FileName
         Else
             _Server.Response("Permintaan " + Title + ", Gagal diproses oleh Sistem!. Hubungi Administrator...", 1, FileName)
         End If

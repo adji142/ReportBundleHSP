@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FrmUserSettingBrowse
+Partial Class FrmHRBroadcastBrowse
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,17 +22,13 @@ Partial Class FrmUserSettingBrowse
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmUserSettingBrowse))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmHRBroadcastBrowse))
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Toolbar = New System.Windows.Forms.ToolStrip()
         Me.btAdd = New System.Windows.Forms.ToolStripButton()
-        Me.btEdit = New System.Windows.Forms.ToolStripButton()
-        Me.btDelete = New System.Windows.Forms.ToolStripButton()
         Me.btRefresh = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
-        Me.txtCariData = New System.Windows.Forms.ToolStripTextBox()
+        Me.btnresend = New System.Windows.Forms.ToolStripButton()
         Me.View = New Enerzie.EPSGridControls.EPSDataGridView()
         Me.StatusBar = New System.Windows.Forms.StatusStrip()
         Me.Status = New System.Windows.Forms.ToolStripStatusLabel()
@@ -45,41 +41,22 @@ Partial Class FrmUserSettingBrowse
         '
         Me.Toolbar.BackColor = System.Drawing.SystemColors.Control
         Me.Toolbar.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.Toolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btAdd, Me.btEdit, Me.btDelete, Me.btRefresh, Me.ToolStripSeparator2, Me.ToolStripLabel2, Me.txtCariData})
+        Me.Toolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btAdd, Me.btRefresh, Me.btnresend})
         Me.Toolbar.Location = New System.Drawing.Point(0, 0)
         Me.Toolbar.Name = "Toolbar"
         Me.Toolbar.Size = New System.Drawing.Size(775, 31)
-        Me.Toolbar.TabIndex = 1
+        Me.Toolbar.TabIndex = 2
         Me.Toolbar.TabStop = True
         Me.Toolbar.Text = "ToolStrip1"
         '
         'btAdd
         '
         Me.btAdd.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btAdd.Enabled = False
         Me.btAdd.Image = CType(resources.GetObject("btAdd.Image"), System.Drawing.Image)
         Me.btAdd.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.btAdd.Name = "btAdd"
         Me.btAdd.Size = New System.Drawing.Size(28, 28)
         Me.btAdd.Text = " [F6]-Tambah Data "
-        '
-        'btEdit
-        '
-        Me.btEdit.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btEdit.Image = CType(resources.GetObject("btEdit.Image"), System.Drawing.Image)
-        Me.btEdit.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btEdit.Name = "btEdit"
-        Me.btEdit.Size = New System.Drawing.Size(28, 28)
-        Me.btEdit.Text = " [F7]-Ubah Data "
-        '
-        'btDelete
-        '
-        Me.btDelete.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btDelete.Image = CType(resources.GetObject("btDelete.Image"), System.Drawing.Image)
-        Me.btDelete.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btDelete.Name = "btDelete"
-        Me.btDelete.Size = New System.Drawing.Size(28, 28)
-        Me.btDelete.Text = " [F8]-Hapus Data "
         '
         'btRefresh
         '
@@ -91,24 +68,15 @@ Partial Class FrmUserSettingBrowse
         Me.btRefresh.Text = "Perbaharui Data "
         Me.btRefresh.ToolTipText = " [F5]-Perbaharui Data "
         '
-        'ToolStripSeparator2
+        'btnresend
         '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(6, 31)
-        '
-        'ToolStripLabel2
-        '
-        Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(64, 28)
-        Me.ToolStripLabel2.Text = "&Cari Data : "
-        '
-        'txtCariData
-        '
-        Me.txtCariData.AutoSize = False
-        Me.txtCariData.BackColor = System.Drawing.Color.White
-        Me.txtCariData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCariData.Name = "txtCariData"
-        Me.txtCariData.Size = New System.Drawing.Size(150, 23)
+        Me.btnresend.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btnresend.Image = Global.HSPHRDCONSOLE.My.Resources.Resources.resend
+        Me.btnresend.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btnresend.Name = "btnresend"
+        Me.btnresend.Size = New System.Drawing.Size(28, 28)
+        Me.btnresend.Text = "Resend"
+        Me.btnresend.ToolTipText = "[F4] Resend"
         '
         'View
         '
@@ -146,7 +114,7 @@ Partial Class FrmUserSettingBrowse
         Me.View.ShowEditingIcon = False
         Me.View.Size = New System.Drawing.Size(775, 227)
         Me.View.StandardTab = True
-        Me.View.TabIndex = 2
+        Me.View.TabIndex = 3
         '
         'StatusBar
         '
@@ -154,7 +122,7 @@ Partial Class FrmUserSettingBrowse
         Me.StatusBar.Location = New System.Drawing.Point(0, 239)
         Me.StatusBar.Name = "StatusBar"
         Me.StatusBar.Size = New System.Drawing.Size(775, 22)
-        Me.StatusBar.TabIndex = 3
+        Me.StatusBar.TabIndex = 4
         Me.StatusBar.Text = "StatusStrip1"
         '
         'Status
@@ -163,7 +131,7 @@ Partial Class FrmUserSettingBrowse
         Me.Status.Size = New System.Drawing.Size(31, 17)
         Me.Status.Text = "Data"
         '
-        'FrmUserSettingBrowse
+        'FrmHRBroadcastBrowse
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -171,8 +139,8 @@ Partial Class FrmUserSettingBrowse
         Me.Controls.Add(Me.StatusBar)
         Me.Controls.Add(Me.View)
         Me.Controls.Add(Me.Toolbar)
-        Me.Name = "FrmUserSettingBrowse"
-        Me.Text = "Daftar Personal Bot"
+        Me.Name = "FrmHRBroadcastBrowse"
+        Me.Text = "Daftar Riwayat Broadcast"
         Me.Toolbar.ResumeLayout(False)
         Me.Toolbar.PerformLayout()
         CType(Me.View, System.ComponentModel.ISupportInitialize).EndInit()
@@ -184,13 +152,9 @@ Partial Class FrmUserSettingBrowse
     End Sub
     Friend WithEvents Toolbar As System.Windows.Forms.ToolStrip
     Friend WithEvents btAdd As System.Windows.Forms.ToolStripButton
-    Friend WithEvents btEdit As System.Windows.Forms.ToolStripButton
     Friend WithEvents btRefresh As System.Windows.Forms.ToolStripButton
-    Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
-    Friend WithEvents ToolStripLabel2 As System.Windows.Forms.ToolStripLabel
-    Friend WithEvents txtCariData As System.Windows.Forms.ToolStripTextBox
     Private WithEvents View As Enerzie.EPSGridControls.EPSDataGridView
     Friend WithEvents StatusBar As System.Windows.Forms.StatusStrip
     Friend WithEvents Status As System.Windows.Forms.ToolStripStatusLabel
-    Friend WithEvents btDelete As System.Windows.Forms.ToolStripButton
+    Friend WithEvents btnresend As System.Windows.Forms.ToolStripButton
 End Class

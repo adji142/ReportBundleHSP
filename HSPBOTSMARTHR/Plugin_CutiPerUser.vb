@@ -8,6 +8,7 @@ Public Class Plugin_CutiPerUser
     Public _NIK As String = ""
     Public _Userid As String
     Public _Rs As String = ""
+    Public _file As String = ""
     Dim _UpdateID As String
     Private _DBConnection As New DBConnection
     Public Sub New(Server As Object)
@@ -64,6 +65,8 @@ Public Class Plugin_CutiPerUser
 
                         Modul = New Plugin_SendAnualLeaveDetail(_Server)
                         Modul.Execute(_NIK)
+                        _file = Modul._FileName
+                        '_Server.Response(_file, 0)
                         'MessageBox.Show(Title)
                     Else
                         _Server.Response("Permintaan " + Title + ", Gagal diproses oleh Sistem!. Hubungi Administrator...", 0, FileName)
@@ -91,9 +94,11 @@ Public Class Plugin_CutiPerUser
             Catch ex As Exception
             _Server.Response(ex.Message, 0, "")
         End Try
-        SQL = "Update outbox set status = 0" +
-                " where chatid = '" + _Userid + "'" +
-                " and updateid = '" + _UpdateID + "' and Chattext = 'Generating..'"
+        'SQL = "Update outbox set status = 0" +
+        '       " where chatid = '" + _Userid + "'" +
+        '      " and updateid = '" + _UpdateID + "' and Chattext = 'Generating..'"
+
+        SQL = "update outbox set status = 0 where Filename = '" + _file + "' and Chattext = 'Generating..'"
         Try
             Using DBX As IDbConnection = _DBConnection.Connection
                 DBX.Execute(SQL)

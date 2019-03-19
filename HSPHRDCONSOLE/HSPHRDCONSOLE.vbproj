@@ -120,6 +120,7 @@
     <Compile Include="02 - General\PrinterSet.vb" />
     <Compile Include="03 - HRClass\HRDBConnection.vb" />
     <Compile Include="03 - HRClass\HRKaryawan_HRIS.vb" />
+    <Compile Include="04 - DataModels\BroadcastCore.vb" />
     <Compile Include="04 - DataModels\UserKaryawan.vb" />
     <Compile Include="AppModule.vb" />
     <Compile Include="Form1.vb">
@@ -127,6 +128,18 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBroadcastAdd.Designer.vb">
+      <DependentUpon>FrmBroadcastAdd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBroadcastAdd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHRBroadcastBrowse.Designer.vb">
+      <DependentUpon>FrmHRBroadcastBrowse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHRBroadcastBrowse.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmUserSetting.Designer.vb">
@@ -165,6 +178,12 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmBroadcastAdd.resx">
+      <DependentUpon>FrmBroadcastAdd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHRBroadcastBrowse.resx">
+      <DependentUpon>FrmHRBroadcastBrowse.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmUserSetting.resx">
       <DependentUpon>FrmUserSetting.vb</DependentUpon>
     </EmbeddedResource>
@@ -190,6 +209,9 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\resend.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

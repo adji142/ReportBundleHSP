@@ -70,6 +70,16 @@ Namespace HSP.Data
                 CheckValidation = DS
             End Using
         End Function
+        Public Function Delete(ByVal ID As String) As Integer
+            Dim SQL As String
+
+            SQL = "DELETE FROM userkaryawan " +
+                  "WHERE UserID = @userid "
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Delete = DBX.Execute(SQL, New With {.userid = ID})
+            End Using
+        End Function
 
         Public Function GetLookup(TextSearch As String, Parameter As Object) As DataSet Implements IDataLookup.GetLookup
             Dim SQL As String
