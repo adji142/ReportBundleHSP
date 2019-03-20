@@ -1,7 +1,10 @@
 ﻿Imports Dapper
 
 Namespace HSP.Data
-
+    Public Class Karyawan
+        Public Property NIK As String
+        Public Property NamaKaryawan As String
+    End Class
     Public Class DaftarHRKaryawan_HRD : Implements IDataLookup
         Private _HRDBConnection As HRDBConnection
 
@@ -43,6 +46,26 @@ Namespace HSP.Data
         End Function
         Public Function Locked(ByVal ID As String) As Boolean
             Locked = False
+        End Function
+        Public Function Find(ByVal ID As String)
+            Dim SQL As String
+
+            SQL = "SELECT EmpNo,FullName FROM VW_HrKaryawan A " +
+                          " WHERE A.EmpNo = @Kriteria"
+
+            Using DBX As IDbConnection = _HRDBConnection.Connection
+                'Find = DBX.Query(Of Karyawan)(SQL, New With {.Kriteria = ID}).FirstOrDefault
+                Dim CMD As New SqlClient.SqlCommand(SQL, DBX)
+                Dim DA As New SqlClient.SqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@Kriteria", ID)
+
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "Lookup")
+
+                Find = DS
+            End Using
         End Function
     End Class
 End Namespace

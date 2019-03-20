@@ -31,8 +31,8 @@
         '*************************************************************************
         Select Case AppID
             Case "6001"
-                AppForm = New FrmUserSettingBrowse
-            Case "6001"
+                AppForm = New DaftarUserSettingBrowse
+            Case "6002"
                 AppForm = New FrmHRBroadcastBrowse
         End Select
 

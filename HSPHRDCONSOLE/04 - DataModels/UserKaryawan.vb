@@ -3,6 +3,13 @@ Namespace HSP.Data
     Public Class KryUpdate
         Public Property userid As String
         Public Property karyawanid As Integer
+        Public Property NamaKaryawan As String
+    End Class
+    Public Class User
+        Public Property UserID As String
+        Public Property UserName As String
+        Public Property NIK As String
+        Public Property NamaKaryawan As String
     End Class
     Public Class UserKaryawan : Implements IDataLookup
         Private _DBConnection As DBConnection
@@ -15,8 +22,8 @@ Namespace HSP.Data
         End Sub
         Public Function AddUser(ByVal Data As KryUpdate) As Integer
             Dim SQL As String
-            SQL = "insert into userkaryawan(userid,karyawanid) values" +
-                "(@userid,@karyawanid)"
+            SQL = "insert into userkaryawan(userid,karyawanid,namakaryawan) values" +
+                "(@userid,@karyawanid,@NamaKaryawan)"
             Using DBX As IDbConnection = _DBConnection.Connection
                 AddUser = DBX.Execute(SQL, Data)
             End Using
@@ -28,7 +35,8 @@ Namespace HSP.Data
                  "A.UserID                               , " +
                  "A.UserName     					     , " +
                  "Case when A.Active = 1 then 'Y' else 'N' end AS 'Status', " +
-                 "B.karyawanid 					         AS 'IDKaryawan' " +
+                 "B.karyawanid 					         AS 'IDKaryawan', " +
+                 "B.NamaKaryawan 					         AS 'NamaKaryawan' " +
                  "FROM user A " +
                  "LEFT JOIN userkaryawan B ON A.UserID=b.userid  " +
                  "WHERE A.UserName LIKE @TextSearch"
@@ -80,7 +88,17 @@ Namespace HSP.Data
                 Delete = DBX.Execute(SQL, New With {.userid = ID})
             End Using
         End Function
+        Public Function Find(ByVal ID As String) As User
+            Dim SQL As String
 
+            SQL = "SELECT a.UserID,a.Username,b.karyawanid as nik,b.namakaryawan FROM user a " +
+                " left join userkaryawan b on a.UserID = b.userid" +
+                  " WHERE a.userid = @userid"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Find = DBX.Query(Of User)(SQL, New With {.userid = ID}).FirstOrDefault
+            End Using
+        End Function
         Public Function GetLookup(TextSearch As String, Parameter As Object) As DataSet Implements IDataLookup.GetLookup
             Dim SQL As String
             Dim Lookup As String = Parameter(0)
@@ -114,6 +132,21 @@ Namespace HSP.Data
                 'DA.Fill(DS, "Lookup")
 
                 GetLookup = DS
+            End Using
+        End Function
+        Public Function Locked(ByVal ID As String) As Boolean
+            Locked = False
+        End Function
+        Public Function Edit(ByVal Data As KryUpdate) As Integer
+            Dim SQL As String
+
+            SQL = "UPDATE userkaryawan SET " +
+                  "karyawanid = @karyawanid, " +
+                  "NamaKaryawan = @NamaKaryawan " +
+                  "WHERE userid = @userid"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Edit = DBX.Execute(SQL, Data)
             End Using
         End Function
     End Class

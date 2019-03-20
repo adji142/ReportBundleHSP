@@ -1,5 +1,5 @@
 ﻿Imports HSPHRDCONSOLE.HSP.Data
-Public Class FrmUserSettingBrowse
+Public Class DaftarUserSettingBrowse
     Private Sub FrmUserSettingBrowse_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Toolbar.Items(0).Enabled = False
         'Toolbar.Items(1).Enabled = False
@@ -92,7 +92,7 @@ Public Class FrmUserSettingBrowse
 
         Me.Cursor = Cursors.Default
         View.ResumeLayout()
-
+        SendKeys.Send("{TAB}")
     End Sub
 
     Private Sub txtCariData_Enter(sender As Object, e As EventArgs) Handles txtCariData.Enter
@@ -136,6 +136,10 @@ Public Class FrmUserSettingBrowse
                 End If
             Case Keys.F8
                 Execute("btDelete")
+            Case Keys.Enter
+                If View.RowCount > 0 Then
+                    Execute("btEdit")
+                End If
         End Select
     End Sub
     Private Sub Execute(ByVal ID As String)
@@ -145,16 +149,16 @@ Public Class FrmUserSettingBrowse
         Select Case ID
             Case "btEdit", "btEditCTXM"
                 Dim DataKey As String = If(View.Rows.Count = 0, "", View(0, View.CurrentCell.RowIndex).Value.ToString())
-                Dim UserName As String = If(View.Rows.Count = 0, "", View(1, View.CurrentCell.RowIndex).Value.ToString())
-                Dim Karyawanid As String = If(View.Rows.Count = 0, "", View(3, View.CurrentCell.RowIndex).Value.ToString())
-                Dim FormEdit As New FrmUserSetting(DataKey, UserName, Karyawanid)
+                'Dim UserName As String = If(View.Rows.Count = 0, "", View(1, View.CurrentCell.RowIndex).Value.ToString())
+                'Dim Karyawanid As String = If(View.Rows.Count = 0, "", View(3, View.CurrentCell.RowIndex).Value.ToString())
+                Dim FormEdit As New FrmUserSetting(DataKey)
 
                 FormEdit.ShowDialog()
                 If FormEdit.IDData <> "" Then
                     ShowData(FormEdit.IDData)
                 End If
             Case "btAdd", "btAddCTXM"
-                Dim FormAdd As New FrmUserSetting("", "", "")
+                Dim FormAdd As New FrmUserSetting("")
                 FormAdd.ShowDialog()
 
                 If FormAdd.IDData <> "" Then
@@ -198,7 +202,6 @@ Public Class FrmUserSettingBrowse
     End Sub
 
     Private Sub FrmUserSettingBrowse_KeyPress(sender As Object, e As KeyPressEventArgs) Handles MyBase.KeyPress
-        MessageBox.Show("B")
         Select Case e.KeyChar
             Case Microsoft.VisualBasic.ChrW(Keys.F5)
                 Execute("btRefresh")

@@ -718,7 +718,7 @@ Public Class aMenuTester
     End Sub
 
     Private Sub KeteranganToleransiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeteranganToleransiToolStripMenuItem.Click
-        Dim frm As New frmDaftarKeteranganToleransi
+        Dim frm As New frmDaftarAreaProduksi 'frmDaftarKeteranganToleransi
         frm.ShowDialog()
     End Sub
 

@@ -22,146 +22,170 @@ Partial Class FrmUserSetting
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtUserID = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.txtUserName = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.txtNik = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.btLookupNik = New System.Windows.Forms.Button()
+        Me.txtNamaKaryawan = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btClose = New System.Windows.Forms.Button()
         Me.btSave = New System.Windows.Forms.Button()
-        Me.btKeluar = New System.Windows.Forms.Button()
-        Me.lblidkry = New System.Windows.Forms.Label()
-        Me.cmdSearch = New System.Windows.Forms.Button()
-        Me.txtNamaKry = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtusername = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtuserid = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel1.SuspendLayout()
+        Me.panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'Label4
         '
-        Me.Panel1.Controls.Add(Me.btSave)
-        Me.Panel1.Controls.Add(Me.btKeluar)
-        Me.Panel1.Controls.Add(Me.lblidkry)
-        Me.Panel1.Controls.Add(Me.cmdSearch)
-        Me.Panel1.Controls.Add(Me.txtNamaKry)
-        Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.txtusername)
-        Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.txtuserid)
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(12, 12)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(354, 156)
-        Me.Panel1.TabIndex = 0
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(12, 77)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(54, 13)
+        Me.Label4.TabIndex = 7
+        Me.Label4.Text = "Karyawan"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(12, 51)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(57, 13)
+        Me.Label5.TabIndex = 6
+        Me.Label5.Text = "UserName"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(11, 25)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(40, 13)
+        Me.Label6.TabIndex = 5
+        Me.Label6.Text = "UserID"
+        '
+        'txtUserID
+        '
+        Me.txtUserID.AllowEnterToMoveNext = True
+        Me.txtUserID.Location = New System.Drawing.Point(77, 22)
+        Me.txtUserID.Name = "txtUserID"
+        Me.txtUserID.Size = New System.Drawing.Size(100, 20)
+        Me.txtUserID.TabIndex = 8
+        '
+        'txtUserName
+        '
+        Me.txtUserName.AllowEnterToMoveNext = True
+        Me.txtUserName.Location = New System.Drawing.Point(77, 48)
+        Me.txtUserName.Name = "txtUserName"
+        Me.txtUserName.Size = New System.Drawing.Size(447, 20)
+        Me.txtUserName.TabIndex = 9
+        '
+        'txtNik
+        '
+        Me.txtNik.AllowEnterToMoveNext = True
+        Me.txtNik.Location = New System.Drawing.Point(77, 74)
+        Me.txtNik.Name = "txtNik"
+        Me.txtNik.Size = New System.Drawing.Size(100, 20)
+        Me.txtNik.TabIndex = 10
+        '
+        'btLookupNik
+        '
+        Me.btLookupNik.Location = New System.Drawing.Point(183, 72)
+        Me.btLookupNik.Name = "btLookupNik"
+        Me.btLookupNik.Size = New System.Drawing.Size(25, 23)
+        Me.btLookupNik.TabIndex = 11
+        Me.btLookupNik.Text = "..."
+        Me.btLookupNik.UseVisualStyleBackColor = True
+        '
+        'txtNamaKaryawan
+        '
+        Me.txtNamaKaryawan.AllowEnterToMoveNext = True
+        Me.txtNamaKaryawan.BackColor = System.Drawing.Color.White
+        Me.txtNamaKaryawan.Location = New System.Drawing.Point(214, 74)
+        Me.txtNamaKaryawan.Name = "txtNamaKaryawan"
+        Me.txtNamaKaryawan.ReadOnly = True
+        Me.txtNamaKaryawan.Size = New System.Drawing.Size(310, 20)
+        Me.txtNamaKaryawan.TabIndex = 12
+        '
+        'panel2
+        '
+        Me.panel2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.panel2.Controls.Add(Me.PictureBox2)
+        Me.panel2.Controls.Add(Me.btClose)
+        Me.panel2.Controls.Add(Me.btSave)
+        Me.panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.panel2.Location = New System.Drawing.Point(0, 113)
+        Me.panel2.Name = "panel2"
+        Me.panel2.Size = New System.Drawing.Size(536, 54)
+        Me.panel2.TabIndex = 13
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(536, 4)
+        Me.PictureBox2.TabIndex = 7
+        Me.PictureBox2.TabStop = False
+        '
+        'btClose
+        '
+        Me.btClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btClose.Location = New System.Drawing.Point(441, 10)
+        Me.btClose.Name = "btClose"
+        Me.btClose.Size = New System.Drawing.Size(83, 23)
+        Me.btClose.TabIndex = 1
+        Me.btClose.Text = "K&eluar"
+        Me.btClose.UseVisualStyleBackColor = True
         '
         'btSave
         '
-        Me.btSave.Location = New System.Drawing.Point(192, 130)
+        Me.btSave.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btSave.Location = New System.Drawing.Point(352, 10)
         Me.btSave.Name = "btSave"
-        Me.btSave.Size = New System.Drawing.Size(75, 23)
-        Me.btSave.TabIndex = 10
+        Me.btSave.Size = New System.Drawing.Size(83, 23)
+        Me.btSave.TabIndex = 0
         Me.btSave.Text = "[F6] &Simpan"
         Me.btSave.UseVisualStyleBackColor = True
-        '
-        'btKeluar
-        '
-        Me.btKeluar.Location = New System.Drawing.Point(273, 130)
-        Me.btKeluar.Name = "btKeluar"
-        Me.btKeluar.Size = New System.Drawing.Size(75, 23)
-        Me.btKeluar.TabIndex = 8
-        Me.btKeluar.Text = "K&eluar"
-        Me.btKeluar.UseVisualStyleBackColor = True
-        '
-        'lblidkry
-        '
-        Me.lblidkry.AutoSize = True
-        Me.lblidkry.Location = New System.Drawing.Point(85, 93)
-        Me.lblidkry.Name = "lblidkry"
-        Me.lblidkry.Size = New System.Drawing.Size(43, 13)
-        Me.lblidkry.TabIndex = 7
-        Me.lblidkry.Text = "[CODE]"
-        '
-        'cmdSearch
-        '
-        Me.cmdSearch.Location = New System.Drawing.Point(309, 68)
-        Me.cmdSearch.Name = "cmdSearch"
-        Me.cmdSearch.Size = New System.Drawing.Size(26, 23)
-        Me.cmdSearch.TabIndex = 6
-        Me.cmdSearch.Text = "..."
-        Me.cmdSearch.UseVisualStyleBackColor = True
-        '
-        'txtNamaKry
-        '
-        Me.txtNamaKry.Location = New System.Drawing.Point(88, 70)
-        Me.txtNamaKry.Name = "txtNamaKry"
-        Me.txtNamaKry.Size = New System.Drawing.Size(215, 20)
-        Me.txtNamaKry.TabIndex = 5
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(13, 73)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(54, 13)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Karyawan"
-        '
-        'txtusername
-        '
-        Me.txtusername.Location = New System.Drawing.Point(88, 38)
-        Me.txtusername.Name = "txtusername"
-        Me.txtusername.ReadOnly = True
-        Me.txtusername.Size = New System.Drawing.Size(157, 20)
-        Me.txtusername.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(13, 41)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(57, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "UserName"
-        '
-        'txtuserid
-        '
-        Me.txtuserid.Location = New System.Drawing.Point(88, 8)
-        Me.txtuserid.Name = "txtuserid"
-        Me.txtuserid.ReadOnly = True
-        Me.txtuserid.Size = New System.Drawing.Size(100, 20)
-        Me.txtuserid.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 11)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(40, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "UserID"
         '
         'FrmUserSetting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(372, 172)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(536, 167)
+        Me.Controls.Add(Me.panel2)
+        Me.Controls.Add(Me.txtNamaKaryawan)
+        Me.Controls.Add(Me.btLookupNik)
+        Me.Controls.Add(Me.txtNik)
+        Me.Controls.Add(Me.txtUserName)
+        Me.Controls.Add(Me.txtUserID)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label6)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmUserSetting"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Personal Bot"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
+        Me.panel2.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtuserid As System.Windows.Forms.TextBox
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents txtusername As System.Windows.Forms.TextBox
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtNamaKry As System.Windows.Forms.TextBox
-    Friend WithEvents cmdSearch As System.Windows.Forms.Button
-    Friend WithEvents lblidkry As System.Windows.Forms.Label
-    Friend WithEvents btKeluar As System.Windows.Forms.Button
-    Friend WithEvents btSave As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
+    Friend WithEvents txtUserID As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents txtUserName As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents txtNik As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents btLookupNik As System.Windows.Forms.Button
+    Friend WithEvents txtNamaKaryawan As Enerzie.EPSBasicControls.EPSTextBox
+    Private WithEvents panel2 As System.Windows.Forms.Panel
+    Private WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Private WithEvents btClose As System.Windows.Forms.Button
+    Private WithEvents btSave As System.Windows.Forms.Button
 End Class

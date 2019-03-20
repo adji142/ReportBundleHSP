@@ -1295,6 +1295,6 @@ E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.xml
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.pdb
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.dll.config
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.dll
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.dll
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe.config
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe
+E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.exe
