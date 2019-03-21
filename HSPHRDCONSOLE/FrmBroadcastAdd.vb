@@ -15,7 +15,7 @@ Public Class FrmBroadcastAdd
         If result = Windows.Forms.DialogResult.OK Then
             ' Do something.
             Filename = Path.GetFileName(dlg.FileName)
-            txtpath.Text = dlg.FileName
+            txtPath.Text = dlg.FileName
             _ext = Path.GetExtension(Filename)
         End If
     End Sub
@@ -45,11 +45,11 @@ Public Class FrmBroadcastAdd
         End Try
     End Sub
 
-    Private Sub btnsend_Click(sender As Object, e As EventArgs) Handles btnsend.Click
+    Private Sub btnsend_Click(sender As Object, e As EventArgs)
         Dim Core As New BroadcastCore(ActiveSession)
         Try
             Copy()
-            Core.Broadcast_Start(txtsubject.Text, Filename, txtbody.Text, _ext)
+            Core.Broadcast_Start(txtSubject.Text, Filename, txtbody.Text, _ext)
             txtsubject.Text = ""
             txtbody.Text = ""
             txtpath.Text = ""
@@ -59,7 +59,7 @@ Public Class FrmBroadcastAdd
         End Try
     End Sub
 
-    Private Sub btncancel_Click(sender As Object, e As EventArgs) Handles btncancel.Click
+    Private Sub btncancel_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 End Class

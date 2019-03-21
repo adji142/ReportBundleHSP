@@ -139,6 +139,7 @@ Partial Class FrmHRBroadcastBrowse
         Me.Controls.Add(Me.StatusBar)
         Me.Controls.Add(Me.View)
         Me.Controls.Add(Me.Toolbar)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "FrmHRBroadcastBrowse"
         Me.Text = "Daftar Riwayat Broadcast"
         Me.Toolbar.ResumeLayout(False)

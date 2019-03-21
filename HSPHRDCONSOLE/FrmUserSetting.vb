@@ -175,6 +175,7 @@ Public Class FrmUserSetting
                 txtUserID.Enabled = True
                 txtUserName.Enabled = False
             End If
+            txtNik.Focus()
         End If
     End Sub
 

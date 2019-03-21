@@ -72,7 +72,7 @@ Namespace HSP.Data
                   "A.NMKARYAWAN                             AS 'Nama Karyawan' " +
                   "FROM KPI_KARYAWAN A " +
                   "WHERE A.KDPOSISI =@KodePosisi AND " +
-                  "IIF(YEAR(A.ResignDate)='1900' or A.ResignDate IS NULL,'9999/12/31',A.ResignDate)> @Periode AND A.JoinDate<= @Periode " +
+                  "IIF(YEAR(A.ResignDate)='1900' or A.ResignDate IS NULL,'9999/12/31',A.ResignDate)>= @Periode AND A.JoinDate<= @Periode " +
                   "ORDER BY A.NMKARYAWAN"
 
             '            "IIF(YEAR(A.ResignDate)='1900' or A.ResignDate IS NULL,'999999',FORMAT(A.ResignDate,'yyyyMM'))> '" + Periode + "' AND FORMAT(A.JoinDate,'yyyyMM')<='" + Periode + "' AND " +

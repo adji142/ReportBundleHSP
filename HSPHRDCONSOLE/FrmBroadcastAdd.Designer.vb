@@ -23,16 +23,20 @@ Partial Class FrmBroadcastAdd
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtsubject = New System.Windows.Forms.TextBox()
         Me.txtbody = New System.Windows.Forms.RichTextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.btnsend = New System.Windows.Forms.Button()
-        Me.btncancel = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtpath = New System.Windows.Forms.TextBox()
         Me.btnbrowse = New System.Windows.Forms.Button()
+        Me.txtSubject = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.txtPath = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btClose = New System.Windows.Forms.Button()
+        Me.btSave = New System.Windows.Forms.Button()
+        Me.panel2.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -43,13 +47,6 @@ Partial Class FrmBroadcastAdd
         Me.Label1.Size = New System.Drawing.Size(43, 13)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Subject"
-        '
-        'txtsubject
-        '
-        Me.txtsubject.Location = New System.Drawing.Point(105, 9)
-        Me.txtsubject.Name = "txtsubject"
-        Me.txtsubject.Size = New System.Drawing.Size(390, 20)
-        Me.txtsubject.TabIndex = 1
         '
         'txtbody
         '
@@ -81,24 +78,6 @@ Partial Class FrmBroadcastAdd
         Me.CheckBox1.Text = "Send All"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'btnsend
-        '
-        Me.btnsend.Location = New System.Drawing.Point(15, 271)
-        Me.btnsend.Name = "btnsend"
-        Me.btnsend.Size = New System.Drawing.Size(75, 23)
-        Me.btnsend.TabIndex = 5
-        Me.btnsend.Text = "&Send"
-        Me.btnsend.UseVisualStyleBackColor = True
-        '
-        'btncancel
-        '
-        Me.btncancel.Location = New System.Drawing.Point(420, 271)
-        Me.btncancel.Name = "btncancel"
-        Me.btncancel.Size = New System.Drawing.Size(75, 23)
-        Me.btncancel.TabIndex = 6
-        Me.btncancel.Text = "&Cancel"
-        Me.btncancel.UseVisualStyleBackColor = True
-        '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
@@ -112,14 +91,6 @@ Partial Class FrmBroadcastAdd
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Attachment"
         '
-        'txtpath
-        '
-        Me.txtpath.Location = New System.Drawing.Point(105, 222)
-        Me.txtpath.Name = "txtpath"
-        Me.txtpath.ReadOnly = True
-        Me.txtpath.Size = New System.Drawing.Size(309, 20)
-        Me.txtpath.TabIndex = 8
-        '
         'btnbrowse
         '
         Me.btnbrowse.Location = New System.Drawing.Point(420, 220)
@@ -129,36 +100,98 @@ Partial Class FrmBroadcastAdd
         Me.btnbrowse.Text = "&Browse"
         Me.btnbrowse.UseVisualStyleBackColor = True
         '
+        'txtSubject
+        '
+        Me.txtSubject.AllowEnterToMoveNext = True
+        Me.txtSubject.Location = New System.Drawing.Point(105, 9)
+        Me.txtSubject.Name = "txtSubject"
+        Me.txtSubject.Size = New System.Drawing.Size(390, 20)
+        Me.txtSubject.TabIndex = 10
+        '
+        'txtPath
+        '
+        Me.txtPath.AllowEnterToMoveNext = True
+        Me.txtPath.Location = New System.Drawing.Point(105, 222)
+        Me.txtPath.Name = "txtPath"
+        Me.txtPath.ReadOnly = True
+        Me.txtPath.Size = New System.Drawing.Size(309, 20)
+        Me.txtPath.TabIndex = 11
+        '
+        'panel2
+        '
+        Me.panel2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.panel2.Controls.Add(Me.PictureBox2)
+        Me.panel2.Controls.Add(Me.btClose)
+        Me.panel2.Controls.Add(Me.btSave)
+        Me.panel2.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.panel2.Location = New System.Drawing.Point(0, 290)
+        Me.panel2.Name = "panel2"
+        Me.panel2.Size = New System.Drawing.Size(509, 54)
+        Me.panel2.TabIndex = 14
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(509, 4)
+        Me.PictureBox2.TabIndex = 7
+        Me.PictureBox2.TabStop = False
+        '
+        'btClose
+        '
+        Me.btClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btClose.Location = New System.Drawing.Point(414, 10)
+        Me.btClose.Name = "btClose"
+        Me.btClose.Size = New System.Drawing.Size(83, 23)
+        Me.btClose.TabIndex = 1
+        Me.btClose.Text = "K&eluar"
+        Me.btClose.UseVisualStyleBackColor = True
+        '
+        'btSave
+        '
+        Me.btSave.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btSave.Location = New System.Drawing.Point(325, 10)
+        Me.btSave.Name = "btSave"
+        Me.btSave.Size = New System.Drawing.Size(83, 23)
+        Me.btSave.TabIndex = 0
+        Me.btSave.Text = "[F1] &Kirim"
+        Me.btSave.UseVisualStyleBackColor = True
+        '
         'FrmBroadcastAdd
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(509, 306)
+        Me.ClientSize = New System.Drawing.Size(509, 344)
+        Me.Controls.Add(Me.panel2)
+        Me.Controls.Add(Me.txtPath)
+        Me.Controls.Add(Me.txtSubject)
         Me.Controls.Add(Me.btnbrowse)
-        Me.Controls.Add(Me.txtpath)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.btncancel)
-        Me.Controls.Add(Me.btnsend)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtbody)
-        Me.Controls.Add(Me.txtsubject)
         Me.Controls.Add(Me.Label1)
         Me.Name = "FrmBroadcastAdd"
         Me.Text = "Kirim Broadcast"
+        Me.panel2.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents txtsubject As System.Windows.Forms.TextBox
     Friend WithEvents txtbody As System.Windows.Forms.RichTextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
-    Friend WithEvents btnsend As System.Windows.Forms.Button
-    Friend WithEvents btncancel As System.Windows.Forms.Button
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents txtpath As System.Windows.Forms.TextBox
     Friend WithEvents btnbrowse As System.Windows.Forms.Button
+    Friend WithEvents txtSubject As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents txtPath As Enerzie.EPSBasicControls.EPSTextBox
+    Private WithEvents panel2 As System.Windows.Forms.Panel
+    Private WithEvents PictureBox2 As System.Windows.Forms.PictureBox
+    Private WithEvents btClose As System.Windows.Forms.Button
+    Private WithEvents btSave As System.Windows.Forms.Button
 End Class
