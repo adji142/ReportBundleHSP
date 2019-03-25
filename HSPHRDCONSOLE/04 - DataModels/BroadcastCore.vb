@@ -5,7 +5,6 @@ Namespace HSP.Data
         Sub New(ByVal Session As Object)
             _DBConnection = New DBConnection(Session)
         End Sub
-
         Public Function Broadcast_Start(ByVal subject As String, ByVal Filename As String, ByVal Body As String, ByVal _ext As String) As Integer
             Dim SQL As String
             Dim Title As String = "=========================" + vbCrLf +

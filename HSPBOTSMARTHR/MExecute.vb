@@ -25,6 +25,22 @@ Namespace HSP.Data
                 GetData = DS
             End Using
         End Function
+        Public Function GetData_Late(ByVal IdKry As String) As DataSet
+            Dim SQL As String
+
+            SQL = "exec Rsp_botKeterlambatanPerKry '" + IdKry + "'"
+
+            Using DBX As IDbConnection = _HRISDbConnection.Connection
+
+                Dim CMD As New SqlClient.SqlCommand(SQL, DBX)
+                Dim DA As New SqlClient.SqlDataAdapter
+                Dim DS As New DataSet
+                DA.SelectCommand = CMD
+                DA.Fill(DS)
+
+                GetData_Late = DS
+            End Using
+        End Function
 
     End Class
 

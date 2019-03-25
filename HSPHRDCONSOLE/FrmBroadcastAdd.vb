@@ -44,7 +44,21 @@ Public Class FrmBroadcastAdd
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+    Private Sub SetEnableCommand()
+        btSave.Enabled = If(txtSubject.Text.Trim() = "", False, True)
+        Me.Text = Me.Tag + " | ** Data Baru **"
+    End Sub
 
+    Private Sub txtSubject_KeyDown(sender As Object, e As KeyEventArgs) Handles txtSubject.KeyDown
+        Select Case e.KeyCode
+            Case Keys.Escape
+                Me.Close()
+        End Select
+    End Sub
+    Private Sub Data_Changed(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles _
+                            txtSubject.TextChanged
+        SetEnableCommand()
+    End Sub
     Private Sub btnsend_Click(sender As Object, e As EventArgs)
         Dim Core As New BroadcastCore(ActiveSession)
         Try
@@ -58,8 +72,43 @@ Public Class FrmBroadcastAdd
             MessageBox.Show(ex.Message)
         End Try
     End Sub
+    Private Sub Button_Click(sender As Object, e As EventArgs) Handles btClose.Click, btSave.Click
+        sender.Focus()
+        DirectCast(sender, Button).Enabled = False
+        Select Case DirectCast(sender, Button).Name
+            Case "btSave"
+                Dim Core As New BroadcastCore(ActiveSession)
+                Try
+                    Copy()
+                    Core.Broadcast_Start(txtSubject.Text, Filename, txtbody.Text, _ext)
+                    txtSubject.Text = ""
+                    txtbody.Text = ""
+                    txtPath.Text = ""
+                    txtSubject.Focus()
+                    iData = "Success"
+                Catch ex As Exception
+                    MessageBox.Show(ex.Message)
+                End Try
+            Case "btClose"
+                Me.Close()
+        End Select
+    End Sub
 
-    Private Sub btncancel_Click(sender As Object, e As EventArgs)
-        Me.Close()
+    Private Sub FrmBroadcastAdd_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+        Select Case e.KeyCode
+            Case Keys.Escape
+                Me.Close()
+        End Select
+    End Sub
+
+    Private Sub FrmBroadcastAdd_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        SetEnableCommand()
+    End Sub
+
+    Private Sub txtbody_KeyDown(sender As Object, e As KeyEventArgs) Handles txtbody.KeyDown
+        Select Case e.KeyCode
+            Case Keys.Escape
+                Me.Close()
+        End Select
     End Sub
 End Class

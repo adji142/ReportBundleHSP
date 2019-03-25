@@ -13,7 +13,12 @@
         '-----------------------------------------------------------------------------------
         oApp = oDT.Rows.Add()
         oApp(0) = "CUTI"
-        oApp(1) = "CUTI - Sisa Cuti"
+        oApp(1) = "CUTI - Sisa Cuti Anda"
+        '-----------------------------------------------------------------------------------
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "LATE"
+        oApp(1) = "LATE - Keterlambatan Anda"
         '-----------------------------------------------------------------------------------
 
         oDS.AcceptChanges()
@@ -29,6 +34,9 @@
             Case "CUTI"
                 Modul = New Plugin_CutiPerUser(Server)
                 'Modul.Execute_FirstStep()
+                Modul.Execute()
+            Case "LATE"
+                Modul = New PluginKeterlambatan(Server)
                 Modul.Execute()
         End Select
         '-------------------------------------------------------------------------

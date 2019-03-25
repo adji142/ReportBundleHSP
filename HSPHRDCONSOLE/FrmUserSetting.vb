@@ -60,7 +60,6 @@ Public Class FrmUserSetting
         Else
             Me.Text = Me.Tag + " | ** Edit Data **"
         End If
-
     End Sub
 
     Private Sub txtNik_KeyDown(sender As Object, e As KeyEventArgs) Handles txtNik.KeyDown

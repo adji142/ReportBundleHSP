@@ -62,7 +62,7 @@ Partial Class FrmBroadcastAdd
         Me.Label2.Location = New System.Drawing.Point(12, 99)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(31, 13)
-        Me.Label2.TabIndex = 3
+        Me.Label2.TabIndex = 99
         Me.Label2.Text = "Body"
         '
         'CheckBox1
@@ -106,7 +106,7 @@ Partial Class FrmBroadcastAdd
         Me.txtSubject.Location = New System.Drawing.Point(105, 9)
         Me.txtSubject.Name = "txtSubject"
         Me.txtSubject.Size = New System.Drawing.Size(390, 20)
-        Me.txtSubject.TabIndex = 10
+        Me.txtSubject.TabIndex = 1
         '
         'txtPath
         '
@@ -115,7 +115,7 @@ Partial Class FrmBroadcastAdd
         Me.txtPath.Name = "txtPath"
         Me.txtPath.ReadOnly = True
         Me.txtPath.Size = New System.Drawing.Size(309, 20)
-        Me.txtPath.TabIndex = 11
+        Me.txtPath.TabIndex = 3
         '
         'panel2
         '
@@ -173,7 +173,11 @@ Partial Class FrmBroadcastAdd
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtbody)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmBroadcastAdd"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Kirim Broadcast"
         Me.panel2.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
