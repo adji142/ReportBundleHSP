@@ -20,6 +20,11 @@
         oApp(0) = "LATE"
         oApp(1) = "LATE - Keterlambatan Anda"
         '-----------------------------------------------------------------------------------
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "CUTI-X"
+        oApp(1) = "CUTI-X - Informasi Cuti Subordinat Anda"
+        '-----------------------------------------------------------------------------------
 
         oDS.AcceptChanges()
         GetAppModule = oDT
@@ -38,6 +43,10 @@
             Case "LATE"
                 Modul = New PluginKeterlambatan(Server)
                 Modul.Execute()
+            Case "CUTI-X"
+                Modul = New Plugin_MultilevelAnualLeave(Server)
+                Modul.Execute()
+
         End Select
         '-------------------------------------------------------------------------
 

@@ -4,12 +4,23 @@ Namespace HSP.Data
         Public Property userid As String
         Public Property karyawanid As Integer
         Public Property NamaKaryawan As String
+        Public Property dept As String
+        Public Property bagian As String
+        Public Property Superior As String
+        Public Property namaDept As String
+        Public Property NamaBagian As String
     End Class
     Public Class User
         Public Property UserID As String
         Public Property UserName As String
         Public Property NIK As String
         Public Property NamaKaryawan As String
+        Public Property dept As String
+        Public Property bagian As String
+        Public Property Superior As String
+        Public Property namaDept As String
+        Public Property NamaBagian As String
+
     End Class
     Public Class UserKaryawan : Implements IDataLookup
         Private _DBConnection As DBConnection
@@ -22,8 +33,8 @@ Namespace HSP.Data
         End Sub
         Public Function AddUser(ByVal Data As KryUpdate) As Integer
             Dim SQL As String
-            SQL = "insert into userkaryawan(userid,karyawanid,namakaryawan) values" +
-                "(@userid,@karyawanid,@NamaKaryawan)"
+            SQL = "insert into userkaryawan(userid,karyawanid,namakaryawan,dept,bagian,Superior,namaDept,NamaBagian) values" +
+                "(@userid,@karyawanid,@NamaKaryawan,@dept,@bagian,@Superior,@namaDept,@NamaBagian)"
             Using DBX As IDbConnection = _DBConnection.Connection
                 AddUser = DBX.Execute(SQL, Data)
             End Using
@@ -91,7 +102,7 @@ Namespace HSP.Data
         Public Function Find(ByVal ID As String) As User
             Dim SQL As String
 
-            SQL = "SELECT a.UserID,a.Username,b.karyawanid as nik,b.namakaryawan FROM user a " +
+            SQL = "SELECT a.UserID,a.Username,b.karyawanid as nik,b.namakaryawan,b.dept,b.bagian,b.Superior,b.namaDept,b.NamaBagian FROM user a " +
                 " left join userkaryawan b on a.UserID = b.userid" +
                   " WHERE a.userid = @userid"
 
@@ -142,8 +153,13 @@ Namespace HSP.Data
 
             SQL = "UPDATE userkaryawan SET " +
                   "karyawanid = @karyawanid, " +
-                  "NamaKaryawan = @NamaKaryawan " +
-                  "WHERE userid = @userid"
+                  "NamaKaryawan = @NamaKaryawan, " +
+                  "dept = @dept," +
+                  "bagian = @bagian," +
+                  "Superior = @Superior," +
+                  "namaDept = @namaDept," +
+                  "NamaBagian = @NamaBagian" +
+                  " WHERE userid = @userid"
 
             Using DBX As IDbConnection = _DBConnection.Connection
                 Edit = DBX.Execute(SQL, Data)

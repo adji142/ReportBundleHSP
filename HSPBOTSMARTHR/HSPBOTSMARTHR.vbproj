@@ -5,12 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{89EB1EBD-24E8-4E98-8613-00CFD2DB8C61}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <StartupObject>HSPBOTSMARTHR.My.MyApplication</StartupObject>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
     <RootNamespace>HSPBOTSMARTHR</RootNamespace>
     <AssemblyName>HSPBOTSMARTHR</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>Windows</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -115,6 +116,7 @@
     </Compile>
     <Compile Include="PluginKeterlambatan.vb" />
     <Compile Include="Plugin_CutiPerUser.vb" />
+    <Compile Include="Plugin_MultilevelAnualLeave.vb" />
     <Compile Include="Plugin_SendAnualLeaveDetail.vb" />
   </ItemGroup>
   <ItemGroup>

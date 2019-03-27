@@ -34,6 +34,14 @@ Partial Class FrmUserSetting
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btClose = New System.Windows.Forms.Button()
         Me.btSave = New System.Windows.Forms.Button()
+        Me.txtkdDept = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.txtNamaDept = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.txtKdBag = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.txtNmBag = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.txtpref = New Enerzie.EPSBasicControls.EPSTextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -115,7 +123,7 @@ Partial Class FrmUserSetting
         Me.panel2.Controls.Add(Me.btClose)
         Me.panel2.Controls.Add(Me.btSave)
         Me.panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.panel2.Location = New System.Drawing.Point(0, 113)
+        Me.panel2.Location = New System.Drawing.Point(0, 184)
         Me.panel2.Name = "panel2"
         Me.panel2.Size = New System.Drawing.Size(536, 54)
         Me.panel2.TabIndex = 13
@@ -150,11 +158,96 @@ Partial Class FrmUserSetting
         Me.btSave.Text = "[F6] &Simpan"
         Me.btSave.UseVisualStyleBackColor = True
         '
+        'txtkdDept
+        '
+        Me.txtkdDept.AllowEnterToMoveNext = True
+        Me.txtkdDept.BackColor = System.Drawing.Color.White
+        Me.txtkdDept.Location = New System.Drawing.Point(77, 100)
+        Me.txtkdDept.Name = "txtkdDept"
+        Me.txtkdDept.ReadOnly = True
+        Me.txtkdDept.Size = New System.Drawing.Size(100, 20)
+        Me.txtkdDept.TabIndex = 14
+        '
+        'txtNamaDept
+        '
+        Me.txtNamaDept.AllowEnterToMoveNext = True
+        Me.txtNamaDept.BackColor = System.Drawing.Color.White
+        Me.txtNamaDept.Location = New System.Drawing.Point(183, 100)
+        Me.txtNamaDept.Name = "txtNamaDept"
+        Me.txtNamaDept.ReadOnly = True
+        Me.txtNamaDept.Size = New System.Drawing.Size(341, 20)
+        Me.txtNamaDept.TabIndex = 15
+        '
+        'txtKdBag
+        '
+        Me.txtKdBag.AllowEnterToMoveNext = True
+        Me.txtKdBag.BackColor = System.Drawing.Color.White
+        Me.txtKdBag.Location = New System.Drawing.Point(77, 126)
+        Me.txtKdBag.Name = "txtKdBag"
+        Me.txtKdBag.ReadOnly = True
+        Me.txtKdBag.Size = New System.Drawing.Size(100, 20)
+        Me.txtKdBag.TabIndex = 16
+        '
+        'txtNmBag
+        '
+        Me.txtNmBag.AllowEnterToMoveNext = True
+        Me.txtNmBag.BackColor = System.Drawing.Color.White
+        Me.txtNmBag.Location = New System.Drawing.Point(183, 126)
+        Me.txtNmBag.Name = "txtNmBag"
+        Me.txtNmBag.ReadOnly = True
+        Me.txtNmBag.Size = New System.Drawing.Size(341, 20)
+        Me.txtNmBag.TabIndex = 17
+        '
+        'txtpref
+        '
+        Me.txtpref.AllowEnterToMoveNext = True
+        Me.txtpref.BackColor = System.Drawing.Color.White
+        Me.txtpref.Location = New System.Drawing.Point(77, 152)
+        Me.txtpref.Name = "txtpref"
+        Me.txtpref.ReadOnly = True
+        Me.txtpref.Size = New System.Drawing.Size(100, 20)
+        Me.txtpref.TabIndex = 18
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 103)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(65, 13)
+        Me.Label1.TabIndex = 20
+        Me.Label1.Text = "Departemen"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 129)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(40, 13)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "Bagian"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(13, 155)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(26, 13)
+        Me.Label3.TabIndex = 22
+        Me.Label3.Text = "Pref"
+        '
         'FrmUserSetting
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(536, 167)
+        Me.ClientSize = New System.Drawing.Size(536, 238)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtpref)
+        Me.Controls.Add(Me.txtNmBag)
+        Me.Controls.Add(Me.txtKdBag)
+        Me.Controls.Add(Me.txtNamaDept)
+        Me.Controls.Add(Me.txtkdDept)
         Me.Controls.Add(Me.panel2)
         Me.Controls.Add(Me.txtNamaKaryawan)
         Me.Controls.Add(Me.btLookupNik)
@@ -188,4 +281,12 @@ Partial Class FrmUserSetting
     Private WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Private WithEvents btClose As System.Windows.Forms.Button
     Private WithEvents btSave As System.Windows.Forms.Button
+    Friend WithEvents txtkdDept As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents txtNamaDept As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents txtKdBag As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents txtNmBag As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents txtpref As Enerzie.EPSBasicControls.EPSTextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
 End Class

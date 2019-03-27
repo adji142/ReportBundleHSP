@@ -39,12 +39,18 @@ Public Class FrmUserSetting
         If _ID <> "" Then
             txtUserID.Text = _ID
             txtUserID_Validating(Nothing, Nothing)
+            '_SaveMode = enumSaveMode.EditMode
             _ID = ""
         Else
             txtUserID.Text = ""
             txtUserName.Text = ""
             txtNik.Text = ""
             txtNamaKaryawan.Text = ""
+            txtKdBag.Text = ""
+            txtkdDept.Text = ""
+            txtNamaDept.Text = ""
+            txtNmBag.Text = ""
+            txtpref.Text = ""
             txtUserID.Focus()
 
         End If
@@ -164,6 +170,11 @@ Public Class FrmUserSetting
                 txtUserName.Text = Kry.UserName
                 txtNik.Text = Kry.NIK
                 txtNamaKaryawan.Text = Kry.NamaKaryawan
+                txtKdBag.Text = Kry.bagian
+                txtNmBag.Text = Kry.NamaBagian
+                txtkdDept.Text = Kry.dept
+                txtNamaDept.Text = Kry.namaDept
+                txtpref.Text = Kry.Superior
             End If
             If (txtNik.Text <> "") Then
                 _SaveMode = enumSaveMode.EditMode
@@ -209,6 +220,11 @@ Public Class FrmUserSetting
         If Form.IDLookup <> "" Then
             txtNik.Text = Form.IDLookup
             txtNamaKaryawan.Text = Form.NamaKaryawan
+            txtKdBag.Text = Form._Bagian
+            txtNmBag.Text = Form._NamaBagian
+            txtkdDept.Text = Form._Departement
+            txtNamaDept.Text = Form._NamaDepartement
+            txtpref.Text = Form._Pref
             btSave.Focus()
             SendKeys.Send("{TAB}")
         End If
@@ -220,15 +236,20 @@ Public Class FrmUserSetting
             Case "btSave"
                 'Code Hire
                 btSave.Enabled = False
-                Validasi()
                 Dim DaftarKry As New UserKaryawan(ActiveSession)
                 Dim Insert As KryUpdate
                 Insert = New KryUpdate
                 Insert.userid = txtUserID.Text
                 Insert.karyawanid = Integer.Parse(txtNik.Text.ToString)
                 Insert.NamaKaryawan = txtNamaKaryawan.Text
+                Insert.dept = txtkdDept.Text
+                Insert.bagian = txtKdBag.Text
+                Insert.Superior = txtpref.Text
+                Insert.NamaBagian = txtNmBag.Text
+                Insert.namaDept = txtNamaDept.Text
 
                 If (_SaveMode = enumSaveMode.AddMode) Then
+                    Validasi()
                     If (Cek) = "" Then
                         Try
                             DaftarKry.AddUser(Insert)

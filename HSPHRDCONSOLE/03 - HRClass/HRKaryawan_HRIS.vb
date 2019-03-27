@@ -24,9 +24,8 @@ Namespace HSP.Data
             Select Case Lookup
                 Case enumLookupKaryawan.DaftarKaryawan
 
-                    SQL = "SELECT * FROM VW_HrKaryawan A " +
-                          "WHERE CONCAT(A.EmpNo,' ',A.FullName) LIKE @Kriteria"
-
+                    SQL = "select * from VW_HrKaryawan A" +
+                          " WHERE CONCAT(A.EmpNo,' ',A.FullName) LIKE @Kriteria"
                     TextSearch = String.Concat(Space(1), TextSearch.Trim, Space(1)).Replace(" ", "%")
 
             End Select

@@ -2,7 +2,7 @@
 Imports CrystalDecisions.Shared
 Imports Dapper
 Imports HSPBOTSMARTHR.HSP.Data
-Public Class Plugin_CutiPerUser
+Public Class Plugin_MultilevelAnualLeave
     Dim _Server As Object = Nothing
     Dim _Date As Date = Now.Date
     Public _NIK As String = ""
@@ -25,7 +25,7 @@ Public Class Plugin_CutiPerUser
         SQL = "select b.*,a.UpdateID from inbox a" +
             " inner join userkaryawan b on a.ChatID = b.UserID " +
             " inner join outbox c on c.UpdateID = a.UpdateID " +
-            " where a.ChatText = '/CUTI'" +
+            " where a.ChatText = '/CUTI_ALL'" +
             " and a.Flag = 0"
         Try
             Using DBX As IDbConnection = _DBConnection.Connection
@@ -39,60 +39,47 @@ Public Class Plugin_CutiPerUser
             'Console.WriteLine(ex.Message)
             _Server.Response(ex.Message, 0, "")
         End Try
+
         If (DS.Tables(0).Rows.Count > 0) Then
             DT = DS.Tables(0)
             For Each DR In DT.Rows
-                'Console.WriteLine(DR("ColName"))
                 _NIK = DR("karyawanid").ToString
                 _UpdateID = DR("UpdateID").ToString
                 Dim exec As New MExecute
-                Dim DataSet As DataSet = exec.GetData(_Date.Year, DR("karyawanid").ToString)
+                Dim DataSet As DataSet = exec.GetData_CutiAll(_Date.Year, DR("karyawanid").ToString, DR("bagian").ToString, DR("dept").ToString, DR("Superior").ToString)
 
-                'fill column
-                If (DataSet.Tables(1).Rows.Count > 0) Then
-                    Dim FileName As String = ""
-                    Dim Title = "Informasi Sisa Cuti Anda " + vbCrLf + "Per " + _Date.ToString("dd/MM/yyyy hh:mm") + vbCrLf +
-                        "NIK        : " + DataSet.Tables(1).Rows(0)("EmpNo").ToString() + vbCrLf +
-                        "Nama       : " + DataSet.Tables(1).Rows(0)("FullName").ToString() + vbCrLf +
-                        "Bagian     : " + DataSet.Tables(1).Rows(0)("NMDEPT").ToString() + vbCrLf +
-                        "Saldo Awal : " + DataSet.Tables(1).Rows(0)("Quota").ToString() + vbCrLf +
-                        "Pemakaian  : " + DataSet.Tables(1).Rows(0)("totalpakai").ToString() + vbCrLf +
-                        "Saldo Akhir: " + DataSet.Tables(1).Rows(0)("sisa").ToString() + vbCrLf +
-                        "Detail Terlampir"
-                    _Rs = "Success"
-                    If FileName <> "ERROR" Then
-                        _Server.Response(Title, 0, FileName)
+                If (DataSet.Tables(0).Rows.Count > 0) Then
+                    Modul = New Plugin_SendAnualLeaveDetail(_Server)
+                    Modul.Execute(_NIK, DR("dept"), DR("bagian"), DR("Superior"))
 
-                        Modul = New Plugin_SendAnualLeaveDetail(_Server)
-                        Modul.Execute(_NIK, "", "", "")
-
-                        _file = Modul._FileName
-                        '_Server.Response(_file, 0)
+                    _file = Modul._FileName
+                    Dim Title = "Informasi Cuti Subordinat " + DR("NamaKaryawan").ToString + "Per " + _Date
+                    If _file <> "ERROR" Then
+                        _Server.Response(Title, 0, _file)
                         'MessageBox.Show(Title)
                     Else
-                        _Server.Response("Permintaan " + Title + ", Gagal diproses oleh Sistem!. Hubungi Administrator...", 0, FileName)
+                        _Server.Response("Permintaan " + Title + ", Gagal diproses oleh Sistem!. Hubungi Administrator...", 0, _file)
                         'MessageBox.Show("Gagal")
                     End If
                 Else
-                    Dim Title = "Anda Belum Memiliki Saldo Cuti.."
-                    _Server.Response(Title, 0, "")
-                    'MessageBox.Show(Title)
+                    _Server.Response("Belum Ada Cuti di Departemen Anda", 0, "")
+                    'MessageBox.Show("Belum Ada Cuti di Departemen Anda")
                 End If
                 _Userid = DR("userid").ToString
             Next
         Else
             _Server.Response("Anda Belum Terdaftar Sebagai Karyawan HardoSoloPlast, Silahkan Hubungi Administrator", 0, "")
-
+            'MessageBox.Show("Anda Belum Terdaftar Sebagai Karyawan HardoSoloPlast, Silahkan Hubungi Administrator")
         End If
-            SQL = "UPDATE inbox SET " +
-                  "flag = 1 " +
-                  " WHERE chatid = '" + _Userid + "'" +
-                  " and Chattext = '/CUTI' and Flag = 0"
-            Try
-                Using DBX As IDbConnection = _DBConnection.Connection
-                    DBX.Execute(SQL)
-                End Using
-            Catch ex As Exception
+        SQL = "UPDATE inbox SET " +
+              "flag = 1 " +
+              " WHERE chatid = '" + _Userid + "'" +
+              " and Chattext = '/CUTI_ALL' and Flag = 0"
+        Try
+            Using DBX As IDbConnection = _DBConnection.Connection
+                DBX.Execute(SQL)
+            End Using
+        Catch ex As Exception
             _Server.Response(ex.Message, 0, "")
         End Try
         'SQL = "Update outbox set status = 0" +

@@ -5,6 +5,11 @@ Public Class frmLookup_HRIS
     Public IDLookup As String = ""
     Public IDLookupALT As String = ""
     Public NamaKaryawan As String = ""
+    Public _Departement As String = ""
+    Public _NamaDepartement As String = ""
+    Public _Bagian As String = ""
+    Public _NamaBagian As String = ""
+    Public _Pref As String = ""
     'Data Private
     Private _LookupDataService As IDataLookup = Nothing
     Private _LookupParameter() As Object
@@ -167,7 +172,13 @@ Public Class frmLookup_HRIS
     'Jika Dipilih
     Private Sub btOK_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btOK.Click
         IDLookup = View(0, View.CurrentCell.RowIndex).Value
-        NamaKaryawan = View(1, View.CurrentCell.RowIndex).Value
+        NamaKaryawan = View(2, View.CurrentCell.RowIndex).Value
+        _Bagian = View(7, View.CurrentCell.RowIndex).Value
+        _NamaBagian = View(8, View.CurrentCell.RowIndex).Value
+        _Departement = View(9, View.CurrentCell.RowIndex).Value
+        _NamaDepartement = View(10, View.CurrentCell.RowIndex).Value
+        _Pref = View(5, View.CurrentCell.RowIndex).Value
+
         If View.Columns(0).HeaderText = "RowID" Then
             IDLookupALT = View(1, View.CurrentCell.RowIndex).Value
         Else

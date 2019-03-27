@@ -8,3 +8,13 @@ E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.pdb
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTGA.dll.config
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTGA.dll
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.dll
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTGA.exe.config
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTGA.exe
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTGA.pdb
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\bin\Debug\HSPBOTGA.xml
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.Form1.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.Resources.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.vbproj.GenerateResource.Cache
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.exe
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.xml
+D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTMTN\obj\Debug\HSPBOTGA.pdb
