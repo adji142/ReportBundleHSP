@@ -117,6 +117,7 @@
     <Compile Include="PluginKeterlambatan.vb" />
     <Compile Include="Plugin_CutiPerUser.vb" />
     <Compile Include="Plugin_MultilevelAnualLeave.vb" />
+    <Compile Include="Plugin_MultiLevelLate.vb" />
     <Compile Include="Plugin_SendAnualLeaveDetail.vb" />
   </ItemGroup>
   <ItemGroup>
