@@ -1298,12 +1298,6 @@ E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe.config
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.exe
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe.config
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.pdb
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.xml
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\Interop.BarTender.dll
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarKeteranganToleransi.resources
@@ -1509,6 +1503,3 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStagin
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStagingCLoom.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.TestKartuStock.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.exe
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.xml
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.pdb

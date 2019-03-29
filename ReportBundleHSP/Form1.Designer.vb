@@ -27,12 +27,14 @@ Partial Class Form1
         Me.LaporanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GudangBenangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PengeluaranBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TambahLokasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ApplicationToolStripMenuItem, Me.LaporanToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ApplicationToolStripMenuItem, Me.LaporanToolStripMenuItem, Me.FormToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(284, 24)
@@ -65,6 +67,19 @@ Partial Class Form1
         Me.PengeluaranBarangToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PengeluaranBarangToolStripMenuItem.Text = "Pengeluaran Barang"
         '
+        'FormToolStripMenuItem
+        '
+        Me.FormToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TambahLokasiToolStripMenuItem})
+        Me.FormToolStripMenuItem.Name = "FormToolStripMenuItem"
+        Me.FormToolStripMenuItem.Size = New System.Drawing.Size(47, 20)
+        Me.FormToolStripMenuItem.Text = "Form"
+        '
+        'TambahLokasiToolStripMenuItem
+        '
+        Me.TambahLokasiToolStripMenuItem.Name = "TambahLokasiToolStripMenuItem"
+        Me.TambahLokasiToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
+        Me.TambahLokasiToolStripMenuItem.Text = "Tambah Lokasi"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -86,5 +101,7 @@ Partial Class Form1
     Friend WithEvents LaporanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents GudangBenangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PengeluaranBarangToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents FormToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents TambahLokasiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

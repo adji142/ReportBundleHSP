@@ -5,13 +5,12 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{E7E6A83A-A034-443A-B660-642BD8AD7272}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <StartupObject>
-    </StartupObject>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HSPKPI.My.MyApplication</StartupObject>
     <RootNamespace>HSPKPI</RootNamespace>
     <AssemblyName>HSPKPI</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>Windows</MyType>
+    <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -248,6 +247,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10 - Data Context\IDataLookup.vb" />
+    <Compile Include="My Project\Application2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
