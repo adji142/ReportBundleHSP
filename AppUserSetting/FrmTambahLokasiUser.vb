@@ -172,10 +172,12 @@ Public Class FrmTambahLokasiUser
 
             Case "btSave"
                 Dim Delete As New GetAllUser(ActiveSession)
-                Delete.Delete()
+
                 Dim Adduser As New GetAllUser(ActiveSession)
                 Dim userdata As UserLokasi
                 For Row = 0 To GridUser.GridLastRow - 1
+                    Delete.Delete(GridUser.GridValue(0, Row).ToString)
+
                     If GridUser.GridValue(3, Row) <> "" Then
                         userdata = New UserLokasi()
                         userdata.KodeLokasi = GridUser.GridValue(2, Row)

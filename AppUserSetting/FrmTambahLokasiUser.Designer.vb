@@ -165,6 +165,9 @@ Partial Class FrmTambahLokasiUser
         Me.GridUser.AlternatingCellFocusForeColor = System.Drawing.Color.Black
         Me.GridUser.AlternatingDataGridBackColor = System.Drawing.Color.White
         Me.GridUser.AlternatingDataGridForeColor = System.Drawing.Color.Empty
+        Me.GridUser.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GridUser.CellFocusBackColor = System.Drawing.Color.LightBlue
         Me.GridUser.CellFocusForeColor = System.Drawing.Color.Black
         Me.GridUser.DataGridBackColor = System.Drawing.Color.Empty

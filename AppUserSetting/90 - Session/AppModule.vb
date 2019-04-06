@@ -9,13 +9,12 @@
         oDT = oDS.Tables.Add("AppModule")
         oDT.Columns.Add("AppID")
         oDT.Columns.Add("AppDescription")
-
         '*************************************************************************
         'Master Data
         '*************************************************************************
         oApp = oDT.Rows.Add()
         oApp(0) = "9001"
-        oApp(1) = "Master Shift Produksi"
+        oApp(1) = "Setting User Sparepart"
         '-----------------------------------------------------------------------------------
         oDS.AcceptChanges()
         GetAppModule = oDT
@@ -26,20 +25,20 @@
     Public Function Form(ByVal AppID As String, ByVal Session As Object) As Object
         Dim AppForm As Object = Nothing
 
-        ActiveSession.KodePerusahaan = Session.KodePerusahaan
-        ActiveSession.NamaPerusahaan = Session.NamaPerusahaan
-        ActiveSession.Alamat1 = Session.Alamat1
-        ActiveSession.Alamat2 = Session.Alamat2
-        ActiveSession.Kota = Session.Kota
-        ActiveSession.Propinsi = Session.Propinsi
-        ActiveSession.NoTelpon = Session.NoTelpon
-        ActiveSession.NoFax = Session.NoFax
-        ActiveSession.KodeUser = Session.KodeUser
-        ActiveSession.NamaUser = Session.NamaUser
-        ActiveSession.HakAkses = Session.HakAkses
-        ActiveSession.Supervisor = Session.Supervisor
-        ActiveSession.HakUbahTanggal = Session.HakUbahTanggal
-        ActiveSession.DBConnection = Session.DBConnection
+        'ActiveSession.KodePerusahaan = Session.KodePerusahaan
+        'ActiveSession.NamaPerusahaan = Session.NamaPerusahaan
+        'ActiveSession.Alamat1 = Session.Alamat1
+        'ActiveSession.Alamat2 = Session.Alamat2
+        'ActiveSession.Kota = Session.Kota
+        'ActiveSession.Propinsi = Session.Propinsi
+        'ActiveSession.NoTelpon = Session.NoTelpon
+        'ActiveSession.NoFax = Session.NoFax
+        'ActiveSession.KodeUser = Session.KodeUser
+        'ActiveSession.NamaUser = Session.NamaUser
+        'ActiveSession.HakAkses = Session.HakAkses
+        'ActiveSession.Supervisor = Session.Supervisor
+        'ActiveSession.HakUbahTanggal = Session.HakUbahTanggal
+        'ActiveSession.DBConnection = Session.DBConnection
 
         '*************************************************************************
         'Master Data

@@ -22,9 +22,9 @@ Public Class GetAllUser
             Add = DBX.Execute(SQL, Data)
         End Using
     End Function
-    Public Function Delete() As Integer
+    Public Function Delete(ByVal UserID As String) As Integer
         Dim SQL As String
-        SQL = "delete from hspspm.lokasiuser"
+        SQL = "delete from hspspm.lokasiuser where KodeUser = '" + UserID + "'"
         Using DBX As IDbConnection = _DBConnection.Connection
             Delete = DBX.Execute(SQL)
         End Using
