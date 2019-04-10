@@ -74,7 +74,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("hspproduction")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("hspspm")>  _
         Public ReadOnly Property DatabaseName() As String
             Get
                 Return CType(Me("DatabaseName"),String)

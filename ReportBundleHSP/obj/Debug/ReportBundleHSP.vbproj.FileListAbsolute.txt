@@ -13,13 +13,22 @@ E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundle
 E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.exe
 E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.xml
 E:\Kantor\HSP\Source Code\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.pdb
-D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.vbprojResolveAssemblyReference.cache
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.pdb
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.xml
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\Interop.BarTender.dll
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\Interop.SAPbobsCOM.dll
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.vbproj.ResolveComReference.cache
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.frmLookup.resources
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.Form1.resources
-D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmTambahLokasiUser.resources
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.Resources.resources
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmPengeluaranBarang.resources
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmPengeluaranBonSparepart.resources
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmRPT_7701_PengeluaranBarang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.vbproj.GenerateResource.Cache
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.xml
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.pdb
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmRPT_7702_PenerimaanBarangRetur.resources
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmRPT_7703_DistribusiSparePart.resources
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.exe.config
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.exe
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.exe

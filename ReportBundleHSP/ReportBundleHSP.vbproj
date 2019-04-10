@@ -115,6 +115,7 @@
     <Compile Include="10 - Data Context\DBConnection.vb" />
     <Compile Include="10 - Data Context\IDataLookup.vb" />
     <Compile Include="11 - Data Models\DataWarehouse.vb" />
+    <Compile Include="11 - Data Models\Pengebon.vb" />
     <Compile Include="11 - Data Models\ShiftProduksi.vb" />
     <Compile Include="11 - Data Models\UnitProduksi.vb" />
     <Compile Include="11 - Data Models\UserAppList.vb" />
@@ -128,6 +129,7 @@
     <Compile Include="80 - General\mdlSetting.vb" />
     <Compile Include="80 - General\NetInfo.vb" />
     <Compile Include="80 - General\PrinterSet.vb" />
+    <Compile Include="90 - Session\AppModule.vb" />
     <Compile Include="90 - Session\SessionApp.vb" />
     <Compile Include="bin\Debug\Reports\Rpt110111_GudangBenang.vb">
       <DependentUpon>Rpt110111_GudangBenang.rpt</DependentUpon>
@@ -160,12 +162,6 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTambahLokasiUser.Designer.vb">
-      <DependentUpon>FrmTambahLokasiUser.vb</DependentUpon>
-    </Compile>
-    <Compile Include="FrmTambahLokasiUser.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -185,6 +181,30 @@
       <DependentUpon>FrmPengeluaranBarang.vb</DependentUpon>
     </Compile>
     <Compile Include="Report\FrmPengeluaranBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmPengeluaranBonSparepart.Designer.vb">
+      <DependentUpon>FrmPengeluaranBonSparepart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmPengeluaranBonSparepart.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7701_PengeluaranBarang.designer.vb">
+      <DependentUpon>FrmRPT_7701_PengeluaranBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7701_PengeluaranBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7702_PenerimaanBarangRetur.designer.vb">
+      <DependentUpon>FrmRPT_7702_PenerimaanBarangRetur.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7702_PenerimaanBarangRetur.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7703_DistribusiSparePart.designer.vb">
+      <DependentUpon>FrmRPT_7703_DistribusiSparePart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7703_DistribusiSparePart.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SAP Class Interfaces\SAPDBConnection.vb" />
@@ -212,9 +232,6 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTambahLokasiUser.resx">
-      <DependentUpon>FrmTambahLokasiUser.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -223,6 +240,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\FrmPengeluaranBarang.resx">
       <DependentUpon>FrmPengeluaranBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmPengeluaranBonSparepart.resx">
+      <DependentUpon>FrmPengeluaranBonSparepart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_7701_PengeluaranBarang.resx">
+      <DependentUpon>FrmRPT_7701_PengeluaranBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_7702_PenerimaanBarangRetur.resx">
+      <DependentUpon>FrmRPT_7702_PenerimaanBarangRetur.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_7703_DistribusiSparePart.resx">
+      <DependentUpon>FrmRPT_7703_DistribusiSparePart.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -277,6 +306,7 @@
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Debug\Reports\Sparepart\" />
     <Folder Include="bin\Release\" />
     <Folder Include="Report\Rpt\" />
   </ItemGroup>
