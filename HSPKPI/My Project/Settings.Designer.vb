@@ -107,7 +107,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("192.168.1.115")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("192.168.1.113")>  _
         Public ReadOnly Property HRserver() As String
             Get
                 Return CType(Me("HRserver"),String)
@@ -117,7 +117,7 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("H@Rd0Admin2017@")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("h4rd0MIP")>  _
         Public ReadOnly Property HRpassword() As String
             Get
                 Return CType(Me("HRpassword"),String)

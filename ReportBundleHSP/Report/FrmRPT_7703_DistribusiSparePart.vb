@@ -30,15 +30,20 @@ Public Class FrmRPT_7703_DistribusiSparePart
         Dim Drow As DataRow
 
         Dim DaftarPengebon As New Pengebon(ActiveSession)
-
-        DS = DaftarPengebon.Read()
+        DS = DaftarPengebon.Read(ActiveSession.KodeUser)
+        If (DS.Tables("View").Rows.Count = 0) Then
+            DS.Tables.Remove("View")
+            DS = DaftarPengebon.Read("")
+        End If
         CmbPengebon.ComboBox.DataSource = DS.Tables("View")
         CmbPengebon.ComboBox.DisplayMember = "NamaLokasi"
         CmbPengebon.ComboBox.ValueMember = "KodeLokasi"
 
-        Drow = DS.Tables("View").Rows.Add
-        Drow("KodeLokasi") = ""
-        Drow("NamaLokasi") = "<SEMUA PENGEBON>"
+        If (DS.Tables("View").Rows.Count > 1) Then
+            Drow = DS.Tables("View").Rows.Add
+            Drow("KodeLokasi") = ""
+            Drow("NamaLokasi") = "<SEMUA PENGEBON>"
+        End If
 
         CmbPengebon.ComboBox.SelectedIndex = CmbPengebon.Items.Count - 1
     End Sub
@@ -46,7 +51,7 @@ Public Class FrmRPT_7703_DistribusiSparePart
     Private Sub btRefresh_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btRefresh.Click
         Dim Server As New ConnectionInfo
         Dim DataTable As Table
-
+        'MessageBox.Show(ActiveSession.KodeUser)
         Me.Cursor = Cursors.WaitCursor
         '-----------------------------------------------------------------------------------------   
 
@@ -92,7 +97,11 @@ Public Class FrmRPT_7703_DistribusiSparePart
         Else
             RPTObject.DataDefinition.FormulaFields("Periode").Text = "'" + txtTglAwal.Value.ToString("dd-MM-yy") + " S/D " + txtTglAkhir.Value.ToString("dd-MM-yy") + "'"
         End If
-
+        If (CmbPengebon.ComboBox.SelectedValue <> "") Then
+            RPTObject.DataDefinition.FormulaFields("Pengebon").Text = "'Pengebon : " + CmbPengebon.Text + "'"
+        Else
+            RPTObject.DataDefinition.FormulaFields("Pengebon").Text = "'Pengebon : All'"
+        End If
         RPT.ReportSource = RPTObject
         HideTabControl(RPT)
 

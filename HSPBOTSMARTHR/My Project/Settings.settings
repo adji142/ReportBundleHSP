@@ -19,9 +19,9 @@
     <Setting Name="HRpassword" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;H@Rd0Admin2017@&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;h4rd0MIP&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">H@Rd0Admin2017@</Value>
+      <Value Profile="(Default)">h4rd0MIP</Value>
     </Setting>
     <Setting Name="DatabaseName" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
@@ -61,9 +61,9 @@
     <Setting Name="HRserver" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;192.168.1.115&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;192.168.1.113&lt;/ConnectionString&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">192.168.1.115</Value>
+      <Value Profile="(Default)">192.168.1.113</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -31,7 +31,7 @@ Public Class FrmBroadcastAdd
                 p.StartInfo.CreateNoWindow = True
                 p.Start()
                 p.StandardInput.WriteLine("net use \\192.168.1.112 password:H4rd05050/user:administrator" + vbCrLf +
-                                          "copy " + txtpath.Text + " \\192.168.1.112\c$\Windows\SysWOW64")
+                                          "copy """ + txtPath.Text + """ \\192.168.1.112\c$\Windows\SysWOW64")
                 p.StandardInput.WriteLine("exit")
                 p.Close()
                 Threading.Thread.Sleep(4000)

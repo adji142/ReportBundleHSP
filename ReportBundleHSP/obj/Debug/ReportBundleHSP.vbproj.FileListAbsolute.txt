@@ -29,6 +29,6 @@ D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.xml
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.pdb
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmRPT_7702_PenerimaanBarangRetur.resources
 D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.FrmRPT_7703_DistribusiSparePart.resources
-D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.exe.config
-D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.exe
-D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.exe
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.dll.config
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\bin\Debug\ReportBundleHSP.dll
+D:\AJI\HSPPoject\ReportBundleHSP\ReportBundleHSP\obj\Debug\ReportBundleHSP.dll

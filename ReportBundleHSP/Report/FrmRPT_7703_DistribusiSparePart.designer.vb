@@ -149,7 +149,7 @@ Partial Class FrmRPT_7703_DistribusiSparePart
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "FrmRPT_7703_DistribusiSparePart"
-        Me.Text = "Laporan Penerimaan Retur Sparepart"
+        Me.Text = "Laporan Distribusi Sparepart"
         Me.Toolbar.ResumeLayout(False)
         Me.Toolbar.PerformLayout()
         Me.ResumeLayout(False)

@@ -19,9 +19,9 @@ Namespace HSP.Data
                 GetLookup = DS
             End Using
         End Function
-        Public Function Read() As DataSet
+        Public Function Read(ByVal UserID As String) As DataSet
             Dim SQL As String
-            SQL = "Select KodeLokasi,NamaLokasi from hspspm.LokasiUser order by NamaLokasi"
+            SQL = "Select KodeLokasi,NamaLokasi from hspspm.LokasiUser where KodeUser like '%" + UserID + "%' order by NamaLokasi"
 
             Using DBX As IDbConnection = _DBConnection.Connection
                 Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)

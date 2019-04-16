@@ -31,14 +31,20 @@ Public Class FrmRPT_7701_PengeluaranBarang
 
         Dim DaftarPengebon As New Pengebon(ActiveSession)
 
-        DS = DaftarPengebon.Read()
+        DS = DaftarPengebon.Read(ActiveSession.KodeUser)
+        If (DS.Tables("View").Rows.Count = 0) Then
+            DS.Tables.Remove("View")
+            DS = DaftarPengebon.Read("")
+        End If
         CmbPengebon.ComboBox.DataSource = DS.Tables("View")
         CmbPengebon.ComboBox.DisplayMember = "NamaLokasi"
         CmbPengebon.ComboBox.ValueMember = "KodeLokasi"
 
-        Drow = DS.Tables("View").Rows.Add
-        Drow("KodeLokasi") = ""
-        Drow("NamaLokasi") = "<SEMUA PENGEBON>"
+        If (DS.Tables("View").Rows.Count > 1) Then
+            Drow = DS.Tables("View").Rows.Add
+            Drow("KodeLokasi") = ""
+            Drow("NamaLokasi") = "<SEMUA PENGEBON>"
+        End If
 
         CmbPengebon.ComboBox.SelectedIndex = CmbPengebon.Items.Count - 1
     End Sub

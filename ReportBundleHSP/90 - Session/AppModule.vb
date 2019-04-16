@@ -36,15 +36,15 @@
         Dim AppForm As Object = Nothing
 
         'ActiveSession.KodePerusahaan = Session.KodePerusahaan
-        'ActiveSession.NamaPerusahaan = Session.NamaPerusahaan
+        ActiveSession.NamaPerusahaan = Session.NamaPerusahaan
         'ActiveSession.Alamat1 = Session.Alamat1
         'ActiveSession.Alamat2 = Session.Alamat2
         'ActiveSession.Kota = Session.Kota
         'ActiveSession.Propinsi = Session.Propinsi
         'ActiveSession.NoTelpon = Session.NoTelpon
         'ActiveSession.NoFax = Session.NoFax
-        'ActiveSession.KodeUser = Session.KodeUser
-        'ActiveSession.NamaUser = Session.NamaUser
+        ActiveSession.KodeUser = Session.KodeUser
+        ActiveSession.NamaUser = Session.NamaUser
         'ActiveSession.HakAkses = Session.HakAkses
         'ActiveSession.Supervisor = Session.Supervisor
         'ActiveSession.HakUbahTanggal = Session.HakUbahTanggal
@@ -59,7 +59,7 @@
             Case "7702"
                 AppForm = New FrmRPT_7702_PenerimaanBarangRetur
             Case "7703"
-                AppForm = New FrmRPT_7702_PenerimaanBarangRetur
+                AppForm = New FrmRPT_7703_DistribusiSparePart
         End Select
 
         Select Case AppID
