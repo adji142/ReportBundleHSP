@@ -29,9 +29,11 @@ Partial Class Form1
         Me.PengeluaranBarangToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PengeluaranBonSparepartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PenerimaanSparepartReturToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DistribusiSparepartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MutasiSparepartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahLokasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DistribusiSparepartToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BackOrderPenjualanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -52,7 +54,7 @@ Partial Class Form1
         '
         'LaporanToolStripMenuItem
         '
-        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GudangBenangToolStripMenuItem, Me.PengeluaranBonSparepartToolStripMenuItem, Me.PenerimaanSparepartReturToolStripMenuItem, Me.DistribusiSparepartToolStripMenuItem})
+        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GudangBenangToolStripMenuItem, Me.PengeluaranBonSparepartToolStripMenuItem, Me.PenerimaanSparepartReturToolStripMenuItem, Me.DistribusiSparepartToolStripMenuItem, Me.MutasiSparepartToolStripMenuItem, Me.BackOrderPenjualanToolStripMenuItem})
         Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
         Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.LaporanToolStripMenuItem.Text = "Laporan"
@@ -82,6 +84,18 @@ Partial Class Form1
         Me.PenerimaanSparepartReturToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
         Me.PenerimaanSparepartReturToolStripMenuItem.Text = "Penerimaan Sparepart(Retur)"
         '
+        'DistribusiSparepartToolStripMenuItem
+        '
+        Me.DistribusiSparepartToolStripMenuItem.Name = "DistribusiSparepartToolStripMenuItem"
+        Me.DistribusiSparepartToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.DistribusiSparepartToolStripMenuItem.Text = "DistribusiSparepart"
+        '
+        'MutasiSparepartToolStripMenuItem
+        '
+        Me.MutasiSparepartToolStripMenuItem.Name = "MutasiSparepartToolStripMenuItem"
+        Me.MutasiSparepartToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.MutasiSparepartToolStripMenuItem.Text = "Mutasi Sparepart"
+        '
         'FormToolStripMenuItem
         '
         Me.FormToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TambahLokasiToolStripMenuItem})
@@ -95,11 +109,11 @@ Partial Class Form1
         Me.TambahLokasiToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.TambahLokasiToolStripMenuItem.Text = "Tambah Lokasi"
         '
-        'DistribusiSparepartToolStripMenuItem
+        'BackOrderPenjualanToolStripMenuItem
         '
-        Me.DistribusiSparepartToolStripMenuItem.Name = "DistribusiSparepartToolStripMenuItem"
-        Me.DistribusiSparepartToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
-        Me.DistribusiSparepartToolStripMenuItem.Text = "DistribusiSparepart"
+        Me.BackOrderPenjualanToolStripMenuItem.Name = "BackOrderPenjualanToolStripMenuItem"
+        Me.BackOrderPenjualanToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.BackOrderPenjualanToolStripMenuItem.Text = "Back Order Penjualan"
         '
         'Form1
         '
@@ -127,5 +141,7 @@ Partial Class Form1
     Friend WithEvents PengeluaranBonSparepartToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents PenerimaanSparepartReturToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents DistribusiSparepartToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents MutasiSparepartToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BackOrderPenjualanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

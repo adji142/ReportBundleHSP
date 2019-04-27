@@ -37,4 +37,18 @@
         ifrmChil.MdiParent = Me
         ifrmChil.Show()
     End Sub
+
+    Private Sub MutasiSparepartToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MutasiSparepartToolStripMenuItem.Click
+        Dim ifrmChil As New FrmRPT_7704_MutasiSparePart
+        IsMdiContainer = True
+        ifrmChil.MdiParent = Me
+        ifrmChil.Show()
+    End Sub
+
+    Private Sub BackOrderPenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackOrderPenjualanToolStripMenuItem.Click
+        Dim ifrmChil As New FrmRPT_BackOrderPenjualanLombok
+        IsMdiContainer = True
+        ifrmChil.MdiParent = Me
+        ifrmChil.Show()
+    End Sub
 End Class

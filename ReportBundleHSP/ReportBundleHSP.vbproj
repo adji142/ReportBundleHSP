@@ -208,6 +208,18 @@
     <Compile Include="Report\FrmRPT_7703_DistribusiSparePart.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\FrmRPT_BackOrderPenjualanLombok.designer.vb">
+      <DependentUpon>FrmRPT_BackOrderPenjualanLombok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_BackOrderPenjualanLombok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7704_MutasiSparePart.designer.vb">
+      <DependentUpon>FrmRPT_7704_MutasiSparePart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_7704_MutasiSparePart.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SAP Class Interfaces\SAPDBConnection.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -253,6 +265,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\FrmRPT_7703_DistribusiSparePart.resx">
       <DependentUpon>FrmRPT_7703_DistribusiSparePart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_BackOrderPenjualanLombok.resx">
+      <DependentUpon>FrmRPT_BackOrderPenjualanLombok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_7704_MutasiSparePart.resx">
+      <DependentUpon>FrmRPT_7704_MutasiSparePart.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -95,10 +95,10 @@ Public Class Plugin_MultiLevelLate
             'Setting Koneksi Database
             With Server
                 '.ServerName = "DRIVER={MySQL ODBC 5.3 ANSI Driver};SERVER=192.168.1.112; PORT = 3306; "
-                .ServerName = "Driver={SQL Server};Server=192.168.1.115; " 'Database=myDataBase;Uid=myUsername;Pwd=myPassword"
+                .ServerName = "Driver={SQL Server};Server=192.168.1.113; " 'Database=myDataBase;Uid=myUsername;Pwd=myPassword"
                 .DatabaseName = "MIP_HARDO"
                 .UserID = "sa"
-                .Password = "H@Rd0Admin2017@"
+                .Password = "h4rd0MIP"
             End With
             '-----------------------------------------------------------------------------------------
 

@@ -32,5 +32,8 @@
     <Setting Name="HanaSTGDatabaseName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">STAGINGDB_LIVE</Value>
     </Setting>
+    <Setting Name="DBName2" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">xadistribusilombok</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

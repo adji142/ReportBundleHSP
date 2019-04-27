@@ -143,6 +143,15 @@ Namespace My
                 Return CType(Me("HanaSTGDatabaseName"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("xadistribusilombok")>  _
+        Public ReadOnly Property DBName2() As String
+            Get
+                Return CType(Me("DBName2"),String)
+            End Get
+        End Property
     End Class
 End Namespace
 

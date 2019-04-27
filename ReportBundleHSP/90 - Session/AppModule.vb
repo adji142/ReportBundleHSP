@@ -25,6 +25,14 @@
         oApp(0) = "7703"
         oApp(1) = "Laporan Distribusi Sparepart"
         '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "7704"
+        oApp(1) = "Laporan Mutasi Sparepart"
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "BO01"
+        oApp(1) = "Laporan BackOrder"
+        '-----------------------------------------------------------------------------------
 
         oDS.AcceptChanges()
         GetAppModule = oDT
@@ -60,6 +68,10 @@
                 AppForm = New FrmRPT_7702_PenerimaanBarangRetur
             Case "7703"
                 AppForm = New FrmRPT_7703_DistribusiSparePart
+            Case "7704"
+                AppForm = New FrmRPT_7704_MutasiSparePart
+            Case "BO01"
+                AppForm = New FrmRPT_BackOrderPenjualanLombok
         End Select
 
         Select Case AppID
