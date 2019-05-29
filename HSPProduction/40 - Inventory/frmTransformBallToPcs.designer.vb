@@ -39,6 +39,7 @@ Partial Class frmTransformBallToPcs
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btSave = New System.Windows.Forms.Button()
         Me.btClose = New System.Windows.Forms.Button()
         Me.tmrJam = New System.Windows.Forms.Timer(Me.components)
@@ -66,13 +67,12 @@ Partial Class frmTransformBallToPcs
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.txtKeterangan = New Enerzie.EPSBasicControls.EPSTextBox()
-        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        Me.Panel6.SuspendLayout()
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -272,6 +272,16 @@ Partial Class frmTransformBallToPcs
         Me.Panel3.Size = New System.Drawing.Size(714, 45)
         Me.Panel3.TabIndex = 8
         '
+        'pictureBox2
+        '
+        Me.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.pictureBox2.Name = "pictureBox2"
+        Me.pictureBox2.Size = New System.Drawing.Size(714, 4)
+        Me.pictureBox2.TabIndex = 7
+        Me.pictureBox2.TabStop = False
+        '
         'btSave
         '
         Me.btSave.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -311,13 +321,13 @@ Partial Class frmTransformBallToPcs
         '
         Me.cboKodeLokasi.AllowEnterToMoveNext = True
         Me.cboKodeLokasi.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.cboKodeLokasi.DataLocked = False
+        Me.cboKodeLokasi.DataLocked = True
         Me.cboKodeLokasi.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.cboKodeLokasi.DropDownHeight = 105
-        Me.cboKodeLokasi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboKodeLokasi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple
         Me.cboKodeLokasi.Font = New System.Drawing.Font("Arial", 11.25!)
         Me.cboKodeLokasi.ForeColor = System.Drawing.Color.Black
-        Me.cboKodeLokasi.IndexLocked = False
+        Me.cboKodeLokasi.IndexLocked = True
         Me.cboKodeLokasi.IntegralHeight = False
         Me.cboKodeLokasi.Location = New System.Drawing.Point(120, 221)
         Me.cboKodeLokasi.Name = "cboKodeLokasi"
@@ -596,16 +606,6 @@ Partial Class frmTransformBallToPcs
         Me.txtKeterangan.Size = New System.Drawing.Size(576, 25)
         Me.txtKeterangan.TabIndex = 7
         '
-        'pictureBox2
-        '
-        Me.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(714, 4)
-        Me.pictureBox2.TabIndex = 7
-        Me.pictureBox2.TabStop = False
-        '
         'frmTransformBallToPcs
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -649,8 +649,8 @@ Partial Class frmTransformBallToPcs
         Me.Panel2.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        Me.Panel6.ResumeLayout(False)
         CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel6.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

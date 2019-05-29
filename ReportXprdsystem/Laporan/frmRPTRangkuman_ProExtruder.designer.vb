@@ -1,0 +1,180 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmRPTRangkuman_ProExtruder
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmRPTRangkuman_ProExtruder))
+        Me.Toolbar = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.btRefresh = New System.Windows.Forms.ToolStripButton()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.RPT = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.Toolbar.SuspendLayout()
+        Me.TabControl1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'Toolbar
+        '
+        Me.Toolbar.BackColor = System.Drawing.SystemColors.Control
+        Me.Toolbar.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.Toolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripLabel4, Me.ToolStripSeparator4, Me.btRefresh})
+        Me.Toolbar.Location = New System.Drawing.Point(0, 0)
+        Me.Toolbar.Name = "Toolbar"
+        Me.Toolbar.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.Toolbar.Size = New System.Drawing.Size(1086, 31)
+        Me.Toolbar.TabIndex = 5
+        Me.Toolbar.TabStop = True
+        Me.Toolbar.Text = "ToolStrip1"
+        '
+        'ToolStripLabel3
+        '
+        Me.ToolStripLabel3.Name = "ToolStripLabel3"
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(56, 28)
+        Me.ToolStripLabel3.Text = "&Periode : "
+        '
+        'ToolStripLabel4
+        '
+        Me.ToolStripLabel4.Name = "ToolStripLabel4"
+        Me.ToolStripLabel4.Size = New System.Drawing.Size(24, 28)
+        Me.ToolStripLabel4.Text = "s/d"
+        '
+        'ToolStripSeparator4
+        '
+        Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(6, 31)
+        '
+        'btRefresh
+        '
+        Me.btRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btRefresh.Image = CType(resources.GetObject("btRefresh.Image"), System.Drawing.Image)
+        Me.btRefresh.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btRefresh.Name = "btRefresh"
+        Me.btRefresh.Size = New System.Drawing.Size(28, 28)
+        Me.btRefresh.Text = "Tampilkan Laporan"
+        Me.btRefresh.ToolTipText = " [F5]-Tampilkan Laporan"
+        '
+        'TabControl1
+        '
+        Me.TabControl1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 34)
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(1086, 353)
+        Me.TabControl1.TabIndex = 6
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1078, 327)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Rekap Produksi Extruder"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'TabPage2
+        '
+        Me.TabPage2.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage2.Size = New System.Drawing.Size(1078, 327)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "Afval Produksi Extruder"
+        Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(1078, 327)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Grafik Afval Produksi Extruder"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'RPT
+        '
+        Me.RPT.ActiveViewIndex = -1
+        Me.RPT.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.RPT.AutoScroll = True
+        Me.RPT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.RPT.Cursor = System.Windows.Forms.Cursors.Default
+        Me.RPT.DisplayBackgroundEdge = False
+        Me.RPT.DisplayStatusBar = False
+        Me.RPT.EnableDrillDown = False
+        Me.RPT.EnableRefresh = False
+        Me.RPT.EnableToolTips = False
+        Me.RPT.Location = New System.Drawing.Point(28, 17)
+        Me.RPT.Name = "RPT"
+        Me.RPT.ShowCloseButton = False
+        Me.RPT.ShowLogo = False
+        Me.RPT.ShowParameterPanelButton = False
+        Me.RPT.ShowRefreshButton = False
+        Me.RPT.Size = New System.Drawing.Size(1086, 353)
+        Me.RPT.TabIndex = 3
+        Me.RPT.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
+        Me.RPT.ToolPanelWidth = 250
+        '
+        'frmRPTRangkuman_ProExtruder
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
+        Me.ClientSize = New System.Drawing.Size(1086, 385)
+        Me.Controls.Add(Me.TabControl1)
+        Me.Controls.Add(Me.Toolbar)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.KeyPreview = True
+        Me.Name = "frmRPTRangkuman_ProExtruder"
+        Me.Text = "Laporan Saldo Stock Bahan"
+        Me.Toolbar.ResumeLayout(False)
+        Me.Toolbar.PerformLayout()
+        Me.TabControl1.ResumeLayout(False)
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+    'Friend WithEvents RPT As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents Toolbar As System.Windows.Forms.ToolStrip
+    Friend WithEvents ToolStripLabel3 As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents ToolStripLabel4 As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents ToolStripSeparator4 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents btRefresh As System.Windows.Forms.ToolStripButton
+    Friend WithEvents TabControl1 As System.Windows.Forms.TabControl
+    Friend WithEvents TabPage1 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage2 As System.Windows.Forms.TabPage
+    Friend WithEvents TabPage3 As System.Windows.Forms.TabPage
+    Private WithEvents RPT As CrystalDecisions.Windows.Forms.CrystalReportViewer
+
+End Class

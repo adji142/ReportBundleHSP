@@ -25,6 +25,7 @@ Public Class frmMesin
 
     Private Sub frmMesin_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         FillCombo()
+        FillComboJenis()
         ResetData()
     End Sub
 
@@ -42,6 +43,23 @@ Public Class frmMesin
         Dim Drow As DataRow = DS.Tables("View").Rows.Add
         Drow("Kode") = ""
         Drow("Unit Produksi") = "-"
+
+    End Sub
+
+    Private Sub FillComboJenis()
+        'Jenis Mesin
+        Dim DaftarJenisMesin As New DaftarJenisMesin(ActiveSession)
+        Dim DS As DataSet
+
+        DS = New DataSet
+        DS = DaftarJenisMesin.Read("%", cboUnitProduksi.SelectedValue)
+        cboJenisMesin.DataSource = DS.Tables("View")
+        cboJenisMesin.DisplayMember = "Jenis Mesin"
+        cboJenisMesin.ValueMember = "Kode"
+
+        Dim Drow As DataRow = DS.Tables("View").Rows.Add
+        Drow("Kode") = ""
+        Drow("Jenis Mesin") = "-"
     End Sub
 
     Private Sub ResetData()
@@ -53,6 +71,7 @@ Public Class frmMesin
         txtKodeMesin.Text = ""
         txtNamaMesin.Text = ""
         cboUnitProduksi.SelectedIndex = cboUnitProduksi.Items.Count - 1
+        cboJenisMesin.SelectedIndex = cboJenisMesin.Items.Count - 1
         chkAktif.Checked = False
         txtKodeMesinSAP.Text = ""
 
@@ -74,7 +93,19 @@ Public Class frmMesin
                             txtKodeMesin.TextChanged,
                             txtNamaMesin.TextChanged,
                             cboUnitProduksi.SelectedIndexChanged,
-                            txtKodeMesinSAP.TextChanged
+                            txtKodeMesinSAP.TextChanged,
+                            cboJenisMesin.SelectedIndexChanged
+
+        Dim ObjectName As String = sender.Name.ToString().Trim()
+
+        If ObjectName = "cboUnitProduksi" Then
+            If cboUnitProduksi.SelectedIndex <> cboUnitProduksi.Items.Count - 1 Then
+                Try
+                    FillComboJenis()
+                Catch
+                End Try
+            End If
+        End If
 
         SetEnableCommand()
     End Sub
@@ -104,6 +135,7 @@ Public Class frmMesin
                 cboUnitProduksi.SelectedValue = Mesin.KodeUnit
                 chkAktif.Checked = If(Mesin.Aktif = "1", True, False)
                 txtKodeMesinSAP.Text = Mesin.KodeMesinSAP
+                cboJenisMesin.SelectedValue = Mesin.JenisMesin
 
                 txtKodeMesin.Enabled = False
                 _SaveMode = enumSaveMode.EditMode
@@ -157,6 +189,7 @@ Public Class frmMesin
                 Mesin.KodeUnit = cboUnitProduksi.SelectedValue
                 Mesin.Aktif = If(chkAktif.Checked, 1, 0)
                 Mesin.KodeMesinSAP = txtKodeMesinSAP.Text
+                Mesin.JenisMesin = cboJenisMesin.SelectedValue
 
                 If _SaveMode = enumSaveMode.AddMode Then
                     DaftarMesin.Add(Mesin)
@@ -186,7 +219,8 @@ Public Class frmMesin
         btSave.Enabled = If(txtKodeMesin.Text.Trim() = "", False, True) And _
                          If(txtNamaMesin.Text.Trim() = "", False, True) And _
                          If(cboUnitProduksi.SelectedIndex = cboUnitProduksi.Items.Count - 1, False, True) And _
-                         If(txtKodeMesinSAP.Text = "", False, True)
+                         If(txtKodeMesinSAP.Text = "", False, True) And _
+                         If(cboJenisMesin.SelectedIndex = cboJenisMesin.Items.Count - 1, False, True)
 
         If _SaveMode = enumSaveMode.AddMode Then
             Me.Text = Me.Tag + " | ** Data Baru **"

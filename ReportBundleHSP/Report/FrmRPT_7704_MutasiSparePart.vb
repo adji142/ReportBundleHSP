@@ -61,7 +61,7 @@ Public Class FrmRPT_7704_MutasiSparePart
         'Setting Koneksi Database
         With Server
             .ServerName = "DRIVER={MySQL ODBC 5.3 ANSI Driver};SERVER=" + DBX.Server + "; PORT = " + DBX.Port.ToString + "; "
-            .DatabaseName = DBX.Database
+            .DatabaseName = "hspspm"
             .UserID = DBX.UserID
             .Password = DBX.Password
         End With

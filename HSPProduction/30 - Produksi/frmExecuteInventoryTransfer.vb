@@ -44,8 +44,8 @@ Public Class frmExecuteInventoryTransfer
         'Execute From Staging
         SAP.Execute(txtNoTransaksi.Text.Trim, SAPStaging.enumTransaction.InventoryTransfer)
 
-        MessageBox.Show("Eksekusi Inventory Transfer Berhasil...")
-        ResetData()
+        'MessageBox.Show("Eksekusi Inventory Transfer Berhasil...")
+        'ResetData()
 
     End Sub
 
@@ -54,6 +54,6 @@ Public Class frmExecuteInventoryTransfer
     End Sub
 
     Private Sub SetEnableCommand()
-        btSave.Enabled = If(txtKodeItem.Text = "", False, True)
+        'btSave.Enabled = If(txtKodeItem.Text = "", False, True)
     End Sub
 End Class

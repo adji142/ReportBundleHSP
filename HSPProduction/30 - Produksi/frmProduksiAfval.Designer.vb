@@ -854,7 +854,7 @@ Partial Class frmProduksiAfval
         Me.Name = "frmProduksiAfval"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Produksi | Packing Pcs"
+        Me.Text = "Produksi | Penerimaan Afval"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)

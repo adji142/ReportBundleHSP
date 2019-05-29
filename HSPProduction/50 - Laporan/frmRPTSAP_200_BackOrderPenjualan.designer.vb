@@ -27,14 +27,14 @@ Partial Class frmRPTSAP_200_BackOrderPenjualan
         Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
-        Me.cboLaporan = New System.Windows.Forms.ToolStripComboBox()
-        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripLabel7 = New System.Windows.Forms.ToolStripLabel()
         Me.cboStatus = New System.Windows.Forms.ToolStripComboBox()
+        Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.cboLaporan = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
-        Me.RPT = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.btRefresh = New System.Windows.Forms.ToolStripButton()
+        Me.RPT = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.Toolbar.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -68,24 +68,6 @@ Partial Class frmRPTSAP_200_BackOrderPenjualan
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 31)
         '
-        'ToolStripLabel1
-        '
-        Me.ToolStripLabel1.Name = "ToolStripLabel1"
-        Me.ToolStripLabel1.Size = New System.Drawing.Size(81, 28)
-        Me.ToolStripLabel1.Text = "Seri Laporan : "
-        '
-        'cboLaporan
-        '
-        Me.cboLaporan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboLaporan.Items.AddRange(New Object() {"MKT001", "MKT002"})
-        Me.cboLaporan.Name = "cboLaporan"
-        Me.cboLaporan.Size = New System.Drawing.Size(150, 31)
-        '
-        'ToolStripSeparator6
-        '
-        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
-        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 31)
-        '
         'ToolStripLabel7
         '
         Me.ToolStripLabel7.Name = "ToolStripLabel7"
@@ -99,10 +81,38 @@ Partial Class frmRPTSAP_200_BackOrderPenjualan
         Me.cboStatus.Name = "cboStatus"
         Me.cboStatus.Size = New System.Drawing.Size(75, 31)
         '
+        'ToolStripSeparator6
+        '
+        Me.ToolStripSeparator6.Name = "ToolStripSeparator6"
+        Me.ToolStripSeparator6.Size = New System.Drawing.Size(6, 31)
+        '
+        'ToolStripLabel1
+        '
+        Me.ToolStripLabel1.Name = "ToolStripLabel1"
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(81, 28)
+        Me.ToolStripLabel1.Text = "Seri Laporan : "
+        '
+        'cboLaporan
+        '
+        Me.cboLaporan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboLaporan.Items.AddRange(New Object() {"MKT001", "MKT002"})
+        Me.cboLaporan.Name = "cboLaporan"
+        Me.cboLaporan.Size = New System.Drawing.Size(150, 31)
+        '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
         Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 31)
+        '
+        'btRefresh
+        '
+        Me.btRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.btRefresh.Image = CType(resources.GetObject("btRefresh.Image"), System.Drawing.Image)
+        Me.btRefresh.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.btRefresh.Name = "btRefresh"
+        Me.btRefresh.Size = New System.Drawing.Size(28, 28)
+        Me.btRefresh.Text = "Tampilkan Laporan"
+        Me.btRefresh.ToolTipText = " [F5]-Tampilkan Laporan"
         '
         'RPT
         '
@@ -129,16 +139,6 @@ Partial Class frmRPTSAP_200_BackOrderPenjualan
         Me.RPT.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         Me.RPT.ToolPanelWidth = 250
         '
-        'btRefresh
-        '
-        Me.btRefresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.btRefresh.Image = CType(resources.GetObject("btRefresh.Image"), System.Drawing.Image)
-        Me.btRefresh.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.btRefresh.Name = "btRefresh"
-        Me.btRefresh.Size = New System.Drawing.Size(28, 28)
-        Me.btRefresh.Text = "Tampilkan Laporan"
-        Me.btRefresh.ToolTipText = " [F5]-Tampilkan Laporan"
-        '
         'frmRPTSAP_200_BackOrderPenjualan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -150,7 +150,7 @@ Partial Class frmRPTSAP_200_BackOrderPenjualan
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
         Me.Name = "frmRPTSAP_200_BackOrderPenjualan"
-        Me.Text = "Laporan Hasil Rewind"
+        Me.Text = "Laporan Back Order Penjualan"
         Me.Toolbar.ResumeLayout(False)
         Me.Toolbar.PerformLayout()
         Me.ResumeLayout(False)

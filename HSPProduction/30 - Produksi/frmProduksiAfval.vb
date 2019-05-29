@@ -180,6 +180,7 @@ Public Class frmProduksiAfval
                             cboKodeMesin.SelectedIndexChanged,
                             cboKodeItem.SelectedIndexChanged,
                             cboKodeMedia.SelectedIndexChanged,
+                            cboNomorSPK.SelectedIndexChanged,
                             txtKeterangan.TextChanged
 
         Dim ObjectName As String = sender.Name.ToString().Trim()
@@ -208,9 +209,15 @@ Public Class frmProduksiAfval
                     lblKodeMesin.Enabled = False
                     cboKodeMesin.SelectedIndex = cboKodeMesin.Items.Count - 1
                 Else
-                    cboKodeMesin.Enabled = True
-                    btLookupKodeMesin.Enabled = True
-                    lblKodeMesin.Enabled = True
+                    If cboKodeUnit.SelectedValue = "001" Then
+                        cboKodeMesin.Enabled = False
+                        btLookupKodeMesin.Enabled = False
+                        lblKodeMesin.Enabled = False
+                    Else
+                        cboKodeMesin.Enabled = True
+                        btLookupKodeMesin.Enabled = True
+                        lblKodeMesin.Enabled = True
+                    End If
                 End If
 
                 If UnitProduksi.FlagAfvalWO = 0 Then
@@ -235,6 +242,13 @@ Public Class frmProduksiAfval
                 BeratMedia = 0
             Else
                 BeratMedia = MediaTimbang.Berat
+            End If
+        End If
+
+        If ObjectName = "cboNomorSPK" Then
+            If cboNomorSPK.SelectedIndex <> cboNomorSPK.Items.Count - 1 Then
+                Dim KodeMesin As String = New SAPWorkOrder().FindMesin(New DaftarUnitProduksi(ActiveSession).Find(cboKodeUnit.SelectedValue).KodeUnitSAP, cboNomorSPK.SelectedValue).KodeMesin
+                cboKodeMesin.SelectedValue = New DaftarMesin(ActiveSession).FindBySAP(KodeMesin).KodeMesin
             End If
         End If
 
@@ -895,4 +909,5 @@ Jump:
             cboNomorSPK.Focus()
         End If
     End Sub
+
 End Class

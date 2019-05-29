@@ -37,6 +37,20 @@ Public Class frmRPT600_110_GudangAfval
         Dim DS As DataSet
         Dim Drow As DataRow
 
+        'Lokasi Afval
+        Dim DaftarLokasi As New DaftarLokasi(ActiveSession)
+        DS = New DataSet
+        DS = DaftarLokasi.Read("90")
+        cboLokasi.ComboBox.DataSource = DS.Tables("View")
+        cboLokasi.ComboBox.DisplayMember = "Nama Lokasi"
+        cboLokasi.ComboBox.ValueMember = "Kode"
+
+        Drow = DS.Tables("View").Rows.Add
+        Drow("Kode") = ""
+        Drow("Nama Lokasi") = "<SEMUA LOKASI>"
+
+        cboLokasi.SelectedIndex = cboLokasi.Items.Count - 1
+
         'Shift Produksi
         Dim DaftarShiftProduksi As New DaftarShiftProduksi(ActiveSession)
 
@@ -160,6 +174,7 @@ Public Class frmRPT600_110_GudangAfval
         RPTObject.ParameterFields("Grup").CurrentValues.AddValue(cboKodeGrup.ComboBox.SelectedValue)
         RPTObject.ParameterFields("KodeUnit").CurrentValues.AddValue(cboKodeUnit.ComboBox.SelectedValue)
         RPTObject.ParameterFields("Mesin").CurrentValues.AddValue(cboKodeMesin.ComboBox.SelectedValue)
+        RPTObject.ParameterFields("Lokasi").CurrentValues.AddValue(cboLokasi.ComboBox.SelectedValue)
 
         'Informasi
         RPTObject.DataDefinition.FormulaFields("UserID").Text = "'" + ActiveSession.KodeUser + "'"

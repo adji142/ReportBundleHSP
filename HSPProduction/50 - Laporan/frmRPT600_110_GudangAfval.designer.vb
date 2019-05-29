@@ -40,6 +40,9 @@ Partial Class frmRPT600_110_GudangAfval
         Me.cboKodeMesin = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.btRefresh = New System.Windows.Forms.ToolStripButton()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
+        Me.cboLokasi = New System.Windows.Forms.ToolStripComboBox()
         Me.Toolbar.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -73,7 +76,7 @@ Partial Class frmRPT600_110_GudangAfval
         '
         Me.Toolbar.BackColor = System.Drawing.SystemColors.Control
         Me.Toolbar.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.Toolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripLabel4})
+        Me.Toolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripLabel4, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.cboLokasi})
         Me.Toolbar.Location = New System.Drawing.Point(0, 0)
         Me.Toolbar.Name = "Toolbar"
         Me.Toolbar.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
@@ -182,6 +185,23 @@ Partial Class frmRPT600_110_GudangAfval
         Me.btRefresh.Text = "Tampilkan Laporan"
         Me.btRefresh.ToolTipText = " [F5]-Tampilkan Laporan"
         '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(6, 31)
+        '
+        'ToolStripLabel2
+        '
+        Me.ToolStripLabel2.Name = "ToolStripLabel2"
+        Me.ToolStripLabel2.Size = New System.Drawing.Size(49, 28)
+        Me.ToolStripLabel2.Text = "Lokasi : "
+        '
+        'cboLokasi
+        '
+        Me.cboLokasi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboLokasi.Name = "cboLokasi"
+        Me.cboLokasi.Size = New System.Drawing.Size(250, 31)
+        '
         'frmRPT600_110_GudangAfval
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -221,5 +241,8 @@ Partial Class frmRPT600_110_GudangAfval
     Friend WithEvents ToolStripLabel1 As System.Windows.Forms.ToolStripLabel
     Friend WithEvents cboKodeMesin As System.Windows.Forms.ToolStripComboBox
     Friend WithEvents ToolStripSeparator2 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
+    Friend WithEvents ToolStripLabel2 As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents cboLokasi As System.Windows.Forms.ToolStripComboBox
 
 End Class

@@ -32,6 +32,10 @@ Public Class SAPLokasi : Implements IDataLookup
     End Function
 
     Public Function GetLookup(TextSearch As String, Parameter As Object) As DataSet Implements HSP.Data.IDataLookup.GetLookup
+        Dim WhsCode = ""
+        If (Parameter IsNot Nothing) Then
+            WhsCode = Parameter(0)
+        End If
         Dim DB As New SAPDBConnection
         Dim SQL As String
 
@@ -39,9 +43,11 @@ Public Class SAPLokasi : Implements IDataLookup
               "     ""WhsCode""        AS ""Kode"", " +
               "     ""WhsName""        AS ""Lokasi"" " +
               "FROM ""OWHS"" " +
-              "WHERE ""WhsCode"" ||' '||""WhsName"" LIKE '%" + Parameter(0) + "%' and ""U_beas_lck"" = 'VSP'" +
-              "ORDER BY ""WhsName"" "
-
+              "WHERE CONCAT(""WhsCode"",""WhsName"") LIKE '" + TextSearch + "' and ""U_beas_lck"" = 'VSP' " '+
+        '"ORDER BY ""WhsName"" "
+        If WhsCode <> "" Then
+            SQL += "AND ""WhsCode"" LIKE '%" + WhsCode + "%'"
+        End If
         Using DBX As IDbConnection = DB.Connection()
 
             Dim CMD As New HanaCommand(SQL, DBX)

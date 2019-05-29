@@ -23,8 +23,8 @@ Partial Class frmProduksiExtruder
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -77,7 +77,7 @@ Partial Class frmProduksiExtruder
         Me.cboNomorSpk = New Enerzie.EPSBasicControls.EPSComboBox()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblSatuanTimbangManual = New System.Windows.Forms.Label()
         Me.lblTimbangManual = New System.Windows.Forms.Label()
         Me.txtTimbangManual = New Enerzie.EPSBasicControls.EPSTextBoxNum()
         Me.chkManual = New Enerzie.EPSBasicControls.EPSCheckBox()
@@ -622,12 +622,12 @@ Partial Class frmProduksiExtruder
         Me.Panel4.Controls.Add(Me.txtRMNamaItem)
         Me.Panel4.Controls.Add(Me.btLookupKodeArea)
         Me.Panel4.Controls.Add(Me.btLookupNomorSpk)
-        Me.Panel4.Controls.Add(Me.Label23)
-        Me.Panel4.Controls.Add(Me.cboKodeArea)
-        Me.Panel4.Controls.Add(Me.Label24)
-        Me.Panel4.Controls.Add(Me.cboStatusQc)
         Me.Panel4.Controls.Add(Me.Label25)
         Me.Panel4.Controls.Add(Me.cboNomorSpk)
+        Me.Panel4.Controls.Add(Me.Label23)
+        Me.Panel4.Controls.Add(Me.cboKodeArea)
+        Me.Panel4.Controls.Add(Me.cboStatusQc)
+        Me.Panel4.Controls.Add(Me.Label24)
         Me.Panel4.Location = New System.Drawing.Point(374, 272)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(380, 268)
@@ -637,21 +637,23 @@ Partial Class frmProduksiExtruder
         '
         Me.lblItemRetur.AutoSize = True
         Me.lblItemRetur.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblItemRetur.Location = New System.Drawing.Point(7, 148)
+        Me.lblItemRetur.Location = New System.Drawing.Point(7, 242)
         Me.lblItemRetur.Name = "lblItemRetur"
         Me.lblItemRetur.Size = New System.Drawing.Size(68, 16)
         Me.lblItemRetur.TabIndex = 97
         Me.lblItemRetur.Text = "Item Retur"
+        Me.lblItemRetur.Visible = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(7, 47)
+        Me.Label1.Location = New System.Drawing.Point(7, 141)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(90, 16)
         Me.Label1.TabIndex = 96
         Me.Label1.Text = "Daftar Benang"
+        Me.Label1.Visible = False
         '
         'View
         '
@@ -659,8 +661,8 @@ Partial Class frmProduksiExtruder
         Me.View.AllowUserToDeleteRows = False
         Me.View.AllowUserToOrderColumns = True
         Me.View.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.View.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
+        Me.View.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
         Me.View.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -669,15 +671,15 @@ Partial Class frmProduksiExtruder
         Me.View.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
         Me.View.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.View.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.View.DefaultCellStyle = DataGridViewCellStyle2
-        Me.View.Location = New System.Drawing.Point(103, 46)
+        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.View.DefaultCellStyle = DataGridViewCellStyle6
+        Me.View.Location = New System.Drawing.Point(103, 140)
         Me.View.MultiSelect = False
         Me.View.Name = "View"
         Me.View.ReadOnly = True
@@ -689,21 +691,23 @@ Partial Class frmProduksiExtruder
         Me.View.Size = New System.Drawing.Size(263, 100)
         Me.View.StandardTab = True
         Me.View.TabIndex = 95
+        Me.View.Visible = False
         '
         'txtRMNamaItem
         '
         Me.txtRMNamaItem.AllowEnterToMoveNext = True
         Me.txtRMNamaItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtRMNamaItem.Location = New System.Drawing.Point(103, 147)
+        Me.txtRMNamaItem.Location = New System.Drawing.Point(103, 241)
         Me.txtRMNamaItem.Name = "txtRMNamaItem"
         Me.txtRMNamaItem.ReadOnly = True
         Me.txtRMNamaItem.Size = New System.Drawing.Size(263, 20)
         Me.txtRMNamaItem.TabIndex = 94
         Me.txtRMNamaItem.TabStop = False
+        Me.txtRMNamaItem.Visible = False
         '
         'btLookupKodeArea
         '
-        Me.btLookupKodeArea.Location = New System.Drawing.Point(303, 184)
+        Me.btLookupKodeArea.Location = New System.Drawing.Point(303, 61)
         Me.btLookupKodeArea.Name = "btLookupKodeArea"
         Me.btLookupKodeArea.Size = New System.Drawing.Size(28, 25)
         Me.btLookupKodeArea.TabIndex = 92
@@ -726,7 +730,7 @@ Partial Class frmProduksiExtruder
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(7, 188)
+        Me.Label23.Location = New System.Drawing.Point(7, 65)
         Me.Label23.Name = "Label23"
         Me.Label23.Size = New System.Drawing.Size(83, 16)
         Me.Label23.TabIndex = 89
@@ -745,7 +749,7 @@ Partial Class frmProduksiExtruder
         Me.cboKodeArea.ForeColor = System.Drawing.Color.Blue
         Me.cboKodeArea.IndexLocked = False
         Me.cboKodeArea.IntegralHeight = False
-        Me.cboKodeArea.Location = New System.Drawing.Point(103, 184)
+        Me.cboKodeArea.Location = New System.Drawing.Point(103, 61)
         Me.cboKodeArea.Name = "cboKodeArea"
         Me.cboKodeArea.Size = New System.Drawing.Size(197, 25)
         Me.cboKodeArea.TabIndex = 1
@@ -754,7 +758,7 @@ Partial Class frmProduksiExtruder
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(7, 218)
+        Me.Label24.Location = New System.Drawing.Point(7, 95)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(69, 16)
         Me.Label24.TabIndex = 88
@@ -774,7 +778,7 @@ Partial Class frmProduksiExtruder
         Me.cboStatusQc.IndexLocked = False
         Me.cboStatusQc.IntegralHeight = False
         Me.cboStatusQc.Items.AddRange(New Object() {"OK", "NON OK", "OVER", "UNDER", "-"})
-        Me.cboStatusQc.Location = New System.Drawing.Point(103, 214)
+        Me.cboStatusQc.Location = New System.Drawing.Point(103, 91)
         Me.cboStatusQc.Name = "cboStatusQc"
         Me.cboStatusQc.Size = New System.Drawing.Size(197, 25)
         Me.cboStatusQc.TabIndex = 2
@@ -823,7 +827,7 @@ Partial Class frmProduksiExtruder
         'Panel5
         '
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.Label2)
+        Me.Panel5.Controls.Add(Me.lblSatuanTimbangManual)
         Me.Panel5.Controls.Add(Me.lblTimbangManual)
         Me.Panel5.Controls.Add(Me.txtTimbangManual)
         Me.Panel5.Controls.Add(Me.chkManual)
@@ -854,15 +858,15 @@ Partial Class frmProduksiExtruder
         Me.Panel5.Size = New System.Drawing.Size(415, 268)
         Me.Panel5.TabIndex = 2
         '
-        'Label2
+        'lblSatuanTimbangManual
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(245, 211)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(27, 16)
-        Me.Label2.TabIndex = 119
-        Me.Label2.Text = "KG"
+        Me.lblSatuanTimbangManual.AutoSize = True
+        Me.lblSatuanTimbangManual.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblSatuanTimbangManual.Location = New System.Drawing.Point(245, 211)
+        Me.lblSatuanTimbangManual.Name = "lblSatuanTimbangManual"
+        Me.lblSatuanTimbangManual.Size = New System.Drawing.Size(27, 16)
+        Me.lblSatuanTimbangManual.TabIndex = 119
+        Me.lblSatuanTimbangManual.Text = "KG"
         '
         'lblTimbangManual
         '
@@ -1429,7 +1433,7 @@ Partial Class frmProduksiExtruder
     Private WithEvents View As Enerzie.EPSGridControls.EPSDataGridView
     Private WithEvents Label1 As System.Windows.Forms.Label
     Private WithEvents lblItemRetur As System.Windows.Forms.Label
-    Private WithEvents Label2 As System.Windows.Forms.Label
+    Private WithEvents lblSatuanTimbangManual As System.Windows.Forms.Label
     Private WithEvents lblTimbangManual As System.Windows.Forms.Label
     Friend WithEvents txtTimbangManual As Enerzie.EPSBasicControls.EPSTextBoxNum
     Friend WithEvents chkManual As Enerzie.EPSBasicControls.EPSCheckBox

@@ -97,6 +97,8 @@ Public Class frmRPT310_100_Laminating
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT310103_Laminating.RPT")
             Case 4
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT310104_Laminating.RPT")
+            Case 5
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT310105_Laminating.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

@@ -99,7 +99,9 @@ Public Class SAPWorkOrder : Implements IDataLookup
               " ""FG_ItemCode""         AS ""Kode Item"", " +
               " ""FG_ItemName""         AS ""Nama Item"" " +
               "FROM ""SOL_WO_BOM"" " +
-              "WHERE ""FG_POS_Closed"" = 'N' AND ""WO_TYPE"" = '" + Unit + "' AND CAST(""WO_Date"" AS DATE) <= '" + Tanggal.Date.ToString("yyyyMMdd") + "' "
+              "WHERE ""WO_Number""||' '|| " +
+              "      ""FG_ItemCode""||' '|| " +
+              "      ""FG_ItemName"" LIKE '%' AND ""FG_POS_Closed"" = 'N' AND ""WO_TYPE"" = '" + Unit + "' AND CAST(""WO_Date"" AS DATE) <= '" + Tanggal.Date.ToString("yyyyMMdd") + "' "
 
         Using DBX As IDbConnection = DB.Connection()
 
@@ -896,6 +898,27 @@ Public Class SAPWorkOrder : Implements IDataLookup
             DA.Fill(DS, "View")
 
             ReadWOPlanQty = DS
+        End Using
+
+    End Function
+
+    Public Function ReadWOPlanQtyMesin(Unit As String) As DataSet
+        Dim DB As New SAPDBConnection
+        Dim SQL As String
+
+        SQL = "SELECT * FROM ""HSP_RPT_PLAN_WOMESIN"" " +
+              "WHERE ""Unit""='" + Unit + "' AND ""StatusWO"" = 'OPEN' "
+
+        Using DBX As IDbConnection = DB.Connection()
+
+            Dim CMD As New HanaCommand(SQL, DBX)
+            Dim DA As New HanaDataAdapter
+            Dim DS As New DataSet
+
+            DA.SelectCommand = CMD
+            DA.Fill(DS, "View")
+
+            ReadWOPlanQtyMesin = DS
         End Using
 
     End Function

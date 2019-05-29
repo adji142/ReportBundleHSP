@@ -101,6 +101,8 @@ Public Class frmRPT320_100_PrintingRoll
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT320105_PrintingRoll.RPT")
             Case 6
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT320106_PrintingRoll.RPT")
+            Case 7
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT320107_PrintingRoll.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

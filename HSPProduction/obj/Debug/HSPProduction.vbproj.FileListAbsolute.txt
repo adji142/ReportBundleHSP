@@ -682,7 +682,6 @@ D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProducti
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
-D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBarang.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
@@ -734,7 +733,6 @@ D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProducti
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
-D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_140_Extruder.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
@@ -866,445 +864,381 @@ D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProducti
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockRoll.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockPacking.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_110_StockHasilPrintingPcs.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMReceipt.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_170_AnalisaBerat.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_220_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_GudangRoll.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterExtruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmParameterExtruder.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_200_SisaRollCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT325_101_PembatalanProduksiBallpress.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_100_Stock.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_200_BackOrderPenjualan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_300_Piutang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_400_Penjualan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKelompokKoreksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKelompokKoreksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Form2.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT340_100_RekapHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPriceList.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanAcct.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanAcct.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransaksiPricelist.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarJenisKoreksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmJenisKoreksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiKeluar.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_500_Pricelist.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_600_DaftarOrderPenjualan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_700_LaporanPenjualan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_800_MonitoringOrderPenjualan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarJenisMesin.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmJenisMesin.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_BackOrderProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_MonitoringOrderProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_SinkronisasiKarung.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_SinkronisasiMultifilament.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_130_HasilCementBag.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruderTester.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_LaporanKartuStock.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_200_PenyerahanHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_160_Bmf.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransaksiPricelistPrinting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPriceListPrinting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120b_bahanRollCBMesin.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringBahanProduksiWO.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringHasilProduksiWO.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringKebutuhanBahan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringWO.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringHasilProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringBahanProduksi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGoodIssue.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_900_AnalisaBeratPenjualan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBenangKeluar.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBenangMasuk.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoomLama.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenerimaanBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\Interop.SAPbobsCOM.dll
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_130_CostAccounting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_140_CostAcoounting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransformBallToPcs.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGIssue.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_160_AnalisaLaminasi.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_230_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_LaporanFloorLoom.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_150_CostAccounting.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_240_GudangBenang.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenu.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPro_SaldoStockBahan.resources
+D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalSementara.resources
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
 D:\Project\PT. Hardo Soloplast\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKeteranganToleransi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKaryawan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKaryawan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmParameterRollLaminasi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKeteranganToleransi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterRollLaminasi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPenjelasanProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRecycle.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGReceipt.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteInventoryTransfer.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMIssue.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenjelasanProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalManual.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRewind.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_StockRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_140_StockPacking.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBMF.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBMF.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_110_StockHasilPrintingPcs.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_110_StockBatch.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_180_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_170_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_160_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_150_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_190_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_200_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160b_CircularLoom.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160_Loom.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_110_AnalisaBeratHasilProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_120_AnalisaBerat.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT_FR_Persediaan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_110_StockRollRewind.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_100_Rewind.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_150_Slitting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_140_SisaRollCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_150_PackingCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_150_CementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_110_CostAccounting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_100_CostAccounting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_120_CostAccounting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanEx.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanEx.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBSP.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiMakloonRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiInner.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBarang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBmf.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_190_GudangRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_110_StockHasilInner.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_100_Inner.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_150_PackingKarung.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_150_Jahit.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_150_Cutting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_150_PrintingRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_150_Laminasi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_150_Loom.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_150_Extruder.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_100_Produksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_140_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_100_PrintingPcs.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_140_AnalisaBmf.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_140_Extruder.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_130_CircularLoom.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_140_AnalisaProduksiLoomByMesin.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_130_GudangRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_120_Slitting_AnalisaRollKeRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_130_Laminating_AnalisaRollKeRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120_BahanRollCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_100_PackingCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_110_StockBallCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_130_StockHasilBenangMultifilament.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_121_Cutting_AnalisaRollKePcs.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_120_DaftarItem.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting_1.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_110_GudangAfval.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT610100_Recycle.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTStock.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransferBDP.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT770_100_TransferBDP.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBDP.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Form1.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockPacking.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockRoll.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLINQ.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingFGExtruder.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingCLoom.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.TestKartuStock.resources
-E:\Kantor\HSP\Source Code\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.pdb
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.xml
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.xml
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\Interop.BarTender.dll
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarKeteranganToleransi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKaryawan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarKaryawan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmParameterRollLaminasi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKeteranganToleransi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterRollLaminasi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPenjelasanProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteRecycle.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGReceipt.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteInventoryTransfer.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMIssue.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPenjelasanProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalManual.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiRewind.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_StockRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT329_140_StockPacking.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBMF.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBMF.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT323_110_StockHasilPrintingPcs.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT900_110_StockBatch.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_180_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_170_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_160_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_150_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_190_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_200_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160b_CircularLoom.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160_Loom.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT400_110_AnalisaBeratHasilProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT400_120_AnalisaBerat.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT_FR_Persediaan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT910_110_StockRollRewind.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT910_100_Rewind.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT311_150_Slitting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_140_SisaRollCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT319_150_PackingCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_150_CementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_110_CostAccounting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_100_CostAccounting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_120_CostAccounting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanEx.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanEx.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBSP.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiMakloonRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiInner.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBarang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBmf.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_190_GudangRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT324_110_StockHasilInner.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT324_100_Inner.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT329_150_PackingKarung.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT322_150_Jahit.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT321_150_Cutting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT320_150_PrintingRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_150_Laminasi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200_150_Loom.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT100_150_Extruder.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT900_100_Produksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_140_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT323_100_PrintingPcs.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT500_140_AnalisaBmf.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT100_140_Extruder.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200_130_CircularLoom.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200_140_AnalisaProduksiLoomByMesin.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_130_GudangRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT311_120_Slitting_AnalisaRollKeRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_130_Laminating_AnalisaRollKeRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120_BahanRollCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT319_100_PackingCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT319_110_StockBallCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT500_130_StockHasilBenangMultifilament.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT321_121_Cutting_AnalisaRollKePcs.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT329_120_DaftarItem.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting_1.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT600_110_GudangAfval.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT610100_Recycle.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTStock.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransferBDP.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT770_100_TransferBDP.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmTransferBDP.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.Form1.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.Resources.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmInsertStockPacking.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmInsertStockRoll.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmLINQ.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStagingFGExtruder.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStagingCLoom.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.TestKartuStock.resources
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.xml
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.pdb
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe.config
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe
-E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.exe
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe.config
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\Interop.SAPbobsCOM.dll
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.exe
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.xml
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.pdb
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\bin\Debug\HSPProduction.exe
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\bin\Debug\HSPProduction.xml
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarJenisMesin.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarJenisKoreksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransaksiPricelistPrinting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmJenisMesin.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmJenisKoreksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransaksiPricelist.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKelompokKoreksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKeteranganToleransi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterExtruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKaryawan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarKaryawan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKelompokKoreksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmParameterExtruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmParameterRollLaminasi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKeteranganToleransi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPriceListPrinting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPriceList.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCStatus.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmCetakBarcodeRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterRollLaminasi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanAcct.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPenjelasanProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGIssue.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRecycle.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGReceipt.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteInventoryTransfer.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMReceipt.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMIssue.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanAcct.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenerimaanBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenjelasanProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalSementara.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalManual.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruderTester.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRewind.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_StockRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_140_StockPacking.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBMF.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiKeluar.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBMF.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBenangKeluar.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBenangMasuk.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransformBallToPcs.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_230_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_220_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_160_AnalisaLaminasi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120b_bahanRollCBMesin.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_130_HasilCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_200_SisaRollCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_110_StockHasilPrintingPcs.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_170_AnalisaBerat.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT325_101_PembatalanProduksiBallpress.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT340_100_RekapHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_200_PenyerahanHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_160_Bmf.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_140_CostAcoounting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_130_CostAccounting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_150_CostAccounting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_110_StockBatch.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_180_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_170_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_160_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_150_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_190_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_200_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160b_CircularLoom.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160_Loom.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_110_AnalisaBeratHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_120_AnalisaBerat.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_900_AnalisaBeratPenjualan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_500_Pricelist.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_400_Penjualan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_300_Piutang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_200_BackOrderPenjualan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_100_Stock.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_600_DaftarOrderPenjualan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_700_LaporanPenjualan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_800_MonitoringOrderPenjualan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_BackOrderProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_LaporanFloorLoom.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_LaporanKartuStock.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_MonitoringOrderProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_SinkronisasiKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_SinkronisasiMultifilament.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT_FR_Persediaan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_110_StockRollRewind.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT910_100_Rewind.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_150_Slitting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_140_SisaRollCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_150_PackingCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_150_CementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_110_CostAccounting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_100_CostAccounting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT800_120_CostAccounting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringBahanProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringBahanProduksiWO.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringHasilProduksiWO.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringKebutuhanBahan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMonitoringWO.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanEx.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanEx.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBSP.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiMakloonRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPenyerahanHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiInner.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPackingKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_240_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBmf.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBHP.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCBPR.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiCutting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiBenangMultifilament.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiJahit.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingPcs.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiPrintingRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiRecycle.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiSlitting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProsesTimbang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiBall.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCDisposisiRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiBall.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmQCInspeksiRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBall.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodePrinting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeLaminasi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempPengeluaranBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTempDaftarPengeluaranBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPengeluaranBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiAreaBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMutasiRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPermintaanBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMutasiRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPermintaanBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmArea.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarAreaProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarGrupProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarLokasiProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMediaTimbang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarMesinProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarPolaMediaTimbang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarSatuan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarShiftProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarUnitProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGrupProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLokasi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMediaTimbang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmMesin.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPolaMediaTimbang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSatuan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmSetting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmShiftProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTPro_SaldoStockBahan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_190_GudangRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_110_StockHasilInner.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT324_100_Inner.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_150_PackingKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_150_Jahit.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_150_Cutting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_150_PrintingRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_150_Laminasi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_150_Loom.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_150_Extruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT900_100_Produksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_140_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT323_100_PrintingPcs.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_140_AnalisaBmf.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_140_Extruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_130_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_130_CircularLoom.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT200_140_AnalisaProduksiLoomByMesin.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_130_GudangRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_120_Slitting_AnalisaRollKeRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_130_Laminating_AnalisaRollKeRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120_BahanRollCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_100_PackingCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT319_110_StockBallCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_130_PrintingRoll_AnalisaRollKeRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_130_StockHasilBenangMultifilament.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_121_Cutting_AnalisaRollKePcs.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_120_DaftarItem.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_GudangRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_100_Slitting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT311_110_StockRollSlitting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_100_HasilCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT312_110_StockCementBag.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_110_StockHasilJahit.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_110_StockHasilCutting_1.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_100_GudangAfval.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT500_100_BenangMultifilament.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT100_120_PemakaianBahanExtruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_100_PrintingRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_110_StockRollPrinting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT320_120_PemakaianBPPrintingRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT322_100_Jahit.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT321_100_Cutting.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_100_PackingKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT410_100_ReturHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT400_100_PenyerahanHasilProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT329_110_StockBallKarung.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_120_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT600_110_GudangAfval.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT610100_Recycle.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoomLama.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPTStock.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransferBDP.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmRPT770_100_TransferBDP.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmTransferBDP.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenu.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Form1.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.Form2.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmGoodIssue.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockPacking.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmInsertStockRoll.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmLINQ.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockBenang.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingFGExtruder.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.frmStagingCLoom.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.TestKartuStock.resources
+D:\AJI\HSPPoject\HSPProduction\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe.config
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.exe
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.pdb
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\HSPProduction.xml
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\bin\Debug\Sap.Data.Hana.v4.5.dll
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbprojResolveAssemblyReference.cache
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\Interop.BarTender.dll
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\Interop.SAPbobsCOM.dll
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbproj.ResolveComReference.cache
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarJenisMesin.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarJenisKoreksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransaksiPricelistPrinting.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmJenisMesin.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmJenisKoreksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarTransaksiPricelist.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarKelompokKoreksi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarKeteranganToleransi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterExtruder.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKaryawan.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarKaryawan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKelompokKoreksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmParameterExtruder.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmParameterRollLaminasi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKeteranganToleransi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPriceListPrinting.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPriceList.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmUpdateBeratStandarPackingKarung.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCDisposisi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCStatus.resources
@@ -1314,25 +1248,52 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmCetakB
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarParameterRollLaminasi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarItem.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarBMF.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanAcct.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingCementBag.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanCutting.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPembatalanPackingKarung.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPenjelasanProduksi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusBall.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarQCUpdateStatusRoll.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGIssue.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteRecycle.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteFGReceipt.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteInventoryTransfer.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMReceipt.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmExecuteRMIssue.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanAcct.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPenerimaanBenang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPenjelasanProduksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalSementara.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfvalManual.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiExtruderTester.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiRewind.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_StockRoll.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT329_140_StockPacking.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBMF.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockRoll.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKoreksiKeluar.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBMF.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmTransferBenangKeluar.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmTransferBenangMasuk.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmTransformBallToPcs.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_230_GudangBenang.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_220_GudangBenang.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_160_AnalisaLaminasi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_120b_bahanRollCBMesin.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_130_HasilCementBag.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312_200_SisaRollCementBag.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT323_110_StockHasilPrintingPcs.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200_170_AnalisaBerat.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT325_101_PembatalanProduksiBallpress.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT340_100_RekapHasilProduksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT400_200_PenyerahanHasilProduksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT500_160_Bmf.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_140_CostAcoounting.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_130_CostAccounting.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_150_CostAccounting.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT900_110_StockBatch.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_180_GudangBenang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_170_GudangBenang.resources
@@ -1344,6 +1305,21 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT200_160_Loom.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT400_110_AnalisaBeratHasilProduksi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT400_120_AnalisaBerat.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_900_AnalisaBeratPenjualan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_500_Pricelist.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_400_Penjualan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_300_Piutang.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_200_BackOrderPenjualan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_100_Stock.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_600_DaftarOrderPenjualan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_700_LaporanPenjualan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_800_MonitoringOrderPenjualan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_BackOrderProduksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_LaporanFloorLoom.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_LaporanKartuStock.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_MonitoringOrderProduksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_SinkronisasiKarung.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSAP_SinkronisasiMultifilament.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT_FR_Persediaan.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT910_110_StockRollRewind.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT910_100_Rewind.resources
@@ -1354,6 +1330,12 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT312
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_110_CostAccounting.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_100_CostAccounting.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT800_120_CostAccounting.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMonitoringBahanProduksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMonitoringHasilProduksi.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMonitoringBahanProduksiWO.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMonitoringHasilProduksiWO.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMonitoringKebutuhanBahan.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmMonitoringWO.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarPemakaianBahanEx.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPemakaianBahanEx.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPembatalanPackingCementBag.resources
@@ -1369,7 +1351,7 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduk
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiLaminating.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarStockBenang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmKoreksiStockBenang.resources
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPengeluaranBarang.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_240_GudangBenang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeRoll.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReprintBarcodeBmf.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReturHasilProduksi.resources
@@ -1423,7 +1405,7 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmShiftP
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmUnitProduksi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStockOpnameBenang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmReport.resources
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT100_100_StockBahanExtruder.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTPro_SaldoStockBahan.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT100_110_InventoryTransferExtruder.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_190_GudangRoll.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT324_110_StockHasilInner.resources
@@ -1456,7 +1438,7 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT329
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT500_110_PemakaianBahanBmf.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_100_GudangRoll.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_110_StockRollGudangRoll.resources
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_120_TransferGudangRoll.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT210_140_GudangRoll.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_100_Laminating.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_110_StockRollLaminating.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT310_120_PemakaianBPLaminating.resources
@@ -1484,7 +1466,7 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT610
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPTSaldoBahan.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_100_GudangBenang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT110_110_GudangBenang.resources
-D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoom.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiLoomLama.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftarItemPemakaianProduksi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmItemPemakaianProduksi.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmProduksiAfval.resources
@@ -1493,13 +1475,20 @@ D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmDaftar
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmRPT770_100_TransferBDP.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmTransferBDP.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmLookup.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.aMenu.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.aMenuTester.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.Form1.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.Resources.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.Form2.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmGoodIssue.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmInsertStockPacking.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmInsertStockRoll.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmLINQ.resources
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmPengakuanStockBenang.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStagingFGExtruder.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.frmStagingCLoom.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.TestKartuStock.resources
 D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.vbproj.GenerateResource.Cache
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.exe
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.xml
+D:\AJI\HSPPoject\ReportBundleHSP\HSPProduction\obj\Debug\HSPProduction.pdb

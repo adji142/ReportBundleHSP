@@ -15,23 +15,23 @@ Public Class frmExecuteFGReceipt
     End Sub
 
     Private Sub txtNoTransaksi_Validating(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles txtNoTransaksi.Validating
-        If txtNoTransaksi.Text <> "" Then
-            Dim SAP As New SAPStaging
-            Dim Data As FGReceipt = SAP.GetStagingFGReceipt(txtNoTransaksi.Text.Trim)
-            If Not IsNothing(Data) Then
-                txtKodeProduksi.Text = Data.KodeProduksi
-                txtKodeItem.Text = Data.KodeItem
-                txtNamaItem.Text = Data.NamaItem
-                txtLokasiAsal.Text = Data.Lokasi
-                txtQty.Value = Data.Quantity
-            Else
-                MessageBox.Show("Nomor Transaksi Tidak Valid...!!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                ResetData()
-                txtNoTransaksi.Focus()
-            End If
-        End If
+        'If txtNoTransaksi.Text <> "" Then
+        '    Dim SAP As New SAPStaging
+        '    Dim Data As FGReceipt = SAP.GetStagingFGReceipt(txtNoTransaksi.Text.Trim)
+        '    If Not IsNothing(Data) Then
+        '        txtKodeProduksi.Text = Data.KodeProduksi
+        '        txtKodeItem.Text = Data.KodeItem
+        '        txtNamaItem.Text = Data.NamaItem
+        '        txtLokasiAsal.Text = Data.Lokasi
+        '        txtQty.Value = Data.Quantity
+        '    Else
+        '        MessageBox.Show("Nomor Transaksi Tidak Valid...!!!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        '        ResetData()
+        '        txtNoTransaksi.Focus()
+        '    End If
+        'End If
 
-        SetEnableCommand()
+        'SetEnableCommand()
     End Sub
 
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click
@@ -44,8 +44,8 @@ Public Class frmExecuteFGReceipt
         'Execute From Staging
         SAP.Execute(txtNoTransaksi.Text.Trim, SAPStaging.enumTransaction.FinishedGoodReceipt)
 
-        MessageBox.Show("Eksekusi FG Receipt Berhasil...")
-        ResetData()
+        'MessageBox.Show("Eksekusi FG Receipt Berhasil...")
+        'ResetData()
 
     End Sub
 

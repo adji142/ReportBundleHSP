@@ -63,6 +63,19 @@ Public Class frmRPT312_120_BahanRollCementBag
 
         cboGrup.SelectedIndex = cboGrup.Items.Count - 1
 
+        Dim DaftarMesinProduksi As New DaftarMesin(ActiveSession)
+
+        DS = DaftarMesinProduksi.Read("%", GetSetting(enumFormID.frmSemenBag, enumSetting.settingKodeUnit))
+        cboMesin.ComboBox.DataSource = DS.Tables("View")
+        cboMesin.ComboBox.DisplayMember = "Nama Mesin"
+        cboMesin.ComboBox.ValueMember = "Kode"
+
+        Drow = DS.Tables("View").Rows.Add
+        Drow("Kode") = ""
+        Drow("Nama Mesin") = "-"
+
+        cboMesin.SelectedIndex = cboMesin.Items.Count - 1
+
     End Sub
 
     'Tampilkan Laporan
@@ -109,6 +122,7 @@ Public Class frmRPT312_120_BahanRollCementBag
         RPTObject.ParameterFields("TglAkhir").CurrentValues.AddValue(txtTglAkhir.Value.Date)
         RPTObject.ParameterFields("KodeShift").CurrentValues.AddValue(cboShift.ComboBox.SelectedValue.ToString)
         RPTObject.ParameterFields("KodeGrup").CurrentValues.AddValue(If(cboGrup.ComboBox.Text = "-", "", cboGrup.ComboBox.Text))
+        RPTObject.ParameterFields("KodeMesin").CurrentValues.AddValue(cboMesin.ComboBox.SelectedValue)
 
         'Informasi
         RPTObject.DataDefinition.FormulaFields("UserID").Text = "'" + ActiveSession.KodeUser + "'"

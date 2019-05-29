@@ -12,17 +12,9 @@ Public Class frmTransformBallToPcs
     Private TglTransaksi As Date
     Private TglPencatatan As Date
     Private KodeGrup As String
+    Private KodeLokasi As String
 
-    Private SAPStaging As SAPStaging = Nothing
-
-    Sub New()
-        InitializeComponent()
-    End Sub
-
-    Sub New(SAPStagingObject As Object)
-        Me.New()
-        SAPStaging = SAPStagingObject
-    End Sub
+    Private Shared oCompany As New SAPbobsCOM.Company
 
     Private Sub FillCombo()
         Dim DS As DataSet
@@ -43,6 +35,10 @@ Public Class frmTransformBallToPcs
 
     End Sub
 
+    Private Sub frmTransformBallToPcs_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        DissconnectToDatabase()
+    End Sub
+
     'Form Load
     Private Sub frmTransformBallToPcs_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Call tmrJam_Tick(Nothing, Nothing)
@@ -54,8 +50,8 @@ Public Class frmTransformBallToPcs
 
     'Form Shown
     Private Sub frmHasilProduksiLoom_Shown(sender As Object, e As EventArgs) Handles Me.Shown
-        If Not New SAPDBConnection().OpenConnectionSDK() Then
-            MessageBox.Show("Koneksi Ke Server SAP Gagal !", "Peingatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+        If Not ConnectToDatabase() Then
+            MessageBox.Show("Koneksi Ke Server SAP Gagal !", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
             If Not ActiveSession.KodeUser.ToUpper = "SPVS" Then
                 Me.Close()
                 Me.Dispose()
@@ -66,7 +62,7 @@ Public Class frmTransformBallToPcs
     'Reset data
     Private Sub ResetData()
 
-        Dim KodeLokasi As String = GetSetting(enumFormID.frmPackingKarung, enumSetting.settingKodeLokasi)
+        KodeLokasi = GetSetting(enumFormID.frmPackingKarung, enumSetting.settingKodeLokasi)
 
         If KodeLokasi <> "" Then
             cboKodeLokasi.SelectedValue = KodeLokasi
@@ -126,10 +122,10 @@ Public Class frmTransformBallToPcs
 
     'Jika Data Berubah
     Private Sub Data_Change(sender As Object, e As EventArgs) Handles _
-        cboKodeLokasi.SelectedIndexChanged,
-        txtKodeProduksi.TextChanged,
-        txtPcsAktual.TextChanged,
-        txtKeterangan.TextChanged
+                                                                        cboKodeLokasi.SelectedIndexChanged,
+                                                                        txtKodeProduksi.TextChanged,
+                                                                        txtPcsAktual.TextChanged,
+                                                                        txtKeterangan.TextChanged
 
         lblNamaLokasi.Text = cboKodeLokasi.Text.ToUpper
 
@@ -190,198 +186,206 @@ Public Class frmTransformBallToPcs
     End Sub
 
     'Simpan Data
-    '    Private Sub ProsesData(sender As Object, e As EventArgs) Handles btSave.Click, btClose.Click
-    '        Dim Periode As String = GetPeriod(Now)
-    '        Dim NoTransaksi As String = ""
+    Private Sub ProsesData(sender As Object, e As EventArgs) Handles btSave.Click, btClose.Click
+        Dim Periode As String = GetPeriod(Now)
+        Dim NoTransaksi As String = ""
 
-    '        Dim TXTglTransaksi = TglTransaksi.Date
-    '        Dim TXTglPencatatan = TglPencatatan
+        Dim TXTglTransaksi = TglTransaksi.Date
+        Dim TXTglPencatatan = TglPencatatan
 
-    '        Dim KodeItemPcs As String
-    '        Dim NamaItemPcs As String
+        Dim KodeItemPcs As String
+        Dim NamaItemPcs As String
 
-    '        SaveXASetting("TBKodeLokasi", cboKodeLokasi.SelectedValue)
+        sender.Focus()
+        DirectCast(sender, Button).Enabled = False
 
-    '        sender.Focus()
-    '        DirectCast(sender, Button).Enabled = False
+        Select Case DirectCast(sender, Button).Name
+            Case "btSave"
 
-    '        Select Case DirectCast(sender, Button).Name
-    '            Case "btSave"
+                btSave.Enabled = False
+                Me.Cursor = Cursors.WaitCursor
+                Dim Scope As New TransactionScope
 
-    '                'Konfirmasi Transaksi
-    '                Dim F As New frmKonfirmasiTransaksi
-    '                F.ShowDialog()
-    '                If F.Result = "" Then
-    '                    GoTo Jump
-    '                End If
+                Dim DaftarTransformBallToPcs As New DaftarTransformBallToPcs(ActiveSession)
+                Dim Stock As New SAPInventory()
 
-    '                btSave.Enabled = False
-    '                Me.Cursor = Cursors.WaitCursor
-    '                Dim Scope As New TransactionScope
+                'Dim DaftarStockBall As New DaftarStockBall(ActiveSession)
 
-    '                Dim DaftarTransformBallToPcs As New DaftarTransformBallToPcs(ActiveSession)
-    '                Dim DaftarStockBall As New DaftarStockBall(ActiveSession)
+                '*******************************************************************************************************
+                'Simpan Ke Database Internal
+                '*******************************************************************************************************
+                Try
+                    Dim HeaderTransformBallToPcs As HeaderTransformBallToPcs
 
-    '                '*******************************************************************************************************
-    '                'Simpan Ke Database Internal
-    '                '*******************************************************************************************************
-    '                Try
-    '                    Dim HeaderTransformBallToPcs As HeaderTransformBallToPcs
+                    'Nomor Transaksi
+                    NoTransaksi = DaftarTransformBallToPcs.GetNomorTransaksi(Periode)
 
-    '                    'Nomor Transaksi
-    '                    NoTransaksi = DaftarTransformBallToPcs.GetNomorTransaksi(Periode)
+                    'Simpan HeaderTransformBallToPcs
+                    '----------------------------------------------------------------------------------------------------
+                    HeaderTransformBallToPcs = New HeaderTransformBallToPcs
+                    HeaderTransformBallToPcs.NoTransaksi = NoTransaksi
+                    HeaderTransformBallToPcs.TglTransaksi = TXTglTransaksi
+                    HeaderTransformBallToPcs.TglPencatatan = TXTglPencatatan
+                    HeaderTransformBallToPcs.KodeShift = lblKodeShift.Text.Trim()
+                    HeaderTransformBallToPcs.KodeGrup = ""
+                    HeaderTransformBallToPcs.KodeLokasi = cboKodeLokasi.SelectedValue
+                    HeaderTransformBallToPcs.Keterangan = txtKeterangan.Text
+                    HeaderTransformBallToPcs.UserID = ActiveSession.KodeUser
 
-    '                    'Simpan HeaderTransformBallToPcs
-    '                    '----------------------------------------------------------------------------------------------------
-    '                    HeaderTransformBallToPcs = New HeaderTransformBallToPcs
-    '                    HeaderTransformBallToPcs.NoTransaksi = NoTransaksi
-    '                    HeaderTransformBallToPcs.TglTransaksi = TXTglTransaksi
-    '                    HeaderTransformBallToPcs.TglPencatatan = TXTglPencatatan
-    '                    HeaderTransformBallToPcs.KodeShift = lblKodeShift.Text.Trim()
-    '                    HeaderTransformBallToPcs.KodeLokasi = cboKodeLokasi.SelectedValue
-    '                    HeaderTransformBallToPcs.Keterangan = txtKeterangan.Text
-    '                    HeaderTransformBallToPcs.UserID = ActiveSession.KodeUser
+                    DaftarTransformBallToPcs.AddHeader(HeaderTransformBallToPcs)
+                    '----------------------------------------------------------------------------------------------------
 
-    '                    DaftarTransformBallToPcs.AddHeader(HeaderTransformBallToPcs)
-    '                    '----------------------------------------------------------------------------------------------------
+                    'Simpan DetailTransformBallToPcs
+                    '----------------------------------------------------------------------------------------------------
+                    Dim DetailTransformBallToPcs As DetailTransformBallToPcs = Nothing
 
-    '                    'Simpan DetailTransformBallToPcs
-    '                    '----------------------------------------------------------------------------------------------------
-    '                    Dim DetailTransformBallToPcs As DetailTransformBallToPcs = Nothing
+                    Dim DataPcs = New DaftarProduksiPackingPcs(ActiveSession).FindBahanProduksi(txtKodeProduksi.Tag)
+                    KodeItemPcs = DataPcs.RMKodeItem
+                    NamaItemPcs = DataPcs.RMNamaItem
 
-    '                    Dim DataPcs = New DaftarProduksiBallPress(ActiveSession).FindBahanProduksi(txtKodeProduksi.Tag)
-    '                    KodeItemPcs = DataPcs.KodeItemRM
-    '                    NamaItemPcs = DataPcs.NamaItemRM
+                    '------------------------------------------------------------------------------------------------
+                    DetailTransformBallToPcs = New DetailTransformBallToPcs
+                    DetailTransformBallToPcs.NoTransaksi = NoTransaksi
+                    DetailTransformBallToPcs.NoUrut = 0
+                    DetailTransformBallToPcs.KodeItemBall = txtKodeItem.Text
+                    DetailTransformBallToPcs.NamaItemBall = txtNamaItem.Text
+                    DetailTransformBallToPcs.KodeProduksiBall = txtKodeProduksi.Text
+                    DetailTransformBallToPcs.QtyBall = txtPcs.Value
+                    DetailTransformBallToPcs.KodeItemPcs = KodeItemPcs
+                    DetailTransformBallToPcs.NamaItemPcs = NamaItemPcs
+                    DetailTransformBallToPcs.QtyPcs = txtPcsAktual.Value
 
-    '                    '------------------------------------------------------------------------------------------------
-    '                    DetailTransformBallToPcs = New DetailTransformBallToPcs
-    '                    DetailTransformBallToPcs.NoTransaksi = NoTransaksi
-    '                    DetailTransformBallToPcs.NoUrut = 0
-    '                    DetailTransformBallToPcs.KodeItemBall = txtKodeItem.Text
-    '                    DetailTransformBallToPcs.NamaItemBall = txtNamaItem.Text
-    '                    DetailTransformBallToPcs.KodeProduksiBall = txtKodeProduksi.Text
-    '                    DetailTransformBallToPcs.QtyBall = txtPcs.Value
-    '                    DetailTransformBallToPcs.KodeItemPcs = KodeItemPcs
-    '                    DetailTransformBallToPcs.NamaItemPcs = NamaItemPcs
-    '                    DetailTransformBallToPcs.QtyPcs = txtPcsAktual.Value
+                    DaftarTransformBallToPcs.AddDetail(DetailTransformBallToPcs)
+                    '------------------------------------------------------------------------------------------------
 
-    '                    DaftarTransformBallToPcs.AddDetail(DetailTransformBallToPcs)
-    '                    '------------------------------------------------------------------------------------------------
+                    '----------------------------------------------------------------------------------------------------
+                    Scope.Complete()
+                    Scope.Dispose()
+                    '----------------------------------------------------------------------------------------------------
 
-    '                    '----------------------------------------------------------------------------------------------------
-    '                    Scope.Complete()
-    '                    Scope.Dispose()
-    '                    '----------------------------------------------------------------------------------------------------
+                Catch ex As Exception
+                    Me.Cursor = Cursors.Default
+                    Scope.Dispose()
+                    MessageBox.Show("Internal Error : " + vbCrLf + "Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
+                                   ex.Message, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                    GoTo Jump
+                End Try
+                '*******************************************************************************************************
 
-    '                Catch ex As Exception
-    '                    Me.Cursor = Cursors.Default
-    '                    Scope.Dispose()
-    '                    MessageBox.Show("Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
-    '                                   ex.Message, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-    '                    GoTo Jump
-    '                End Try
-    '                '*******************************************************************************************************
+                '*******************************************************************************************************
+                'Simpan Ke Database SAP
+                '*******************************************************************************************************
+                Try
+                    'Good Issue
+                    'Cek Stock Batch
+                    If Not Stock.GetCurrentStock(cboKodeLokasi.SelectedValue, txtKodeProduksi.Text) Then
+                        DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
+                        DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
+                        Me.Cursor = Cursors.Default
 
-    '                '*******************************************************************************************************
-    '                'Simpan Ke Database SAP
-    '                '*******************************************************************************************************
-    '                Try
+                        MessageBox.Show("SAP Error : " + vbCrLf + "Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
+                                       "Kode Produksi Tidak Valid/ Stock Tidak Ada", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                        GoTo Jump
+                    End If
 
+                    Dim SeriesIssue = New DaftarSAPKelompokTransaksi().Find(enumObjectTransaction.GoodsIssue, Year(Now))
 
-    '                    Dim ITData As STGTransform = Nothing
+                    Dim oGoodsIssue As SAPbobsCOM.Documents
+                    oGoodsIssue = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oInventoryGenExit)
 
-    '                    'Simpan Staging Bahan Transform
-    '                    '------------------------------------------------------------------------------------------------
-    '                    ITData = New STGTransform
-    '                    ITData.NoTransaksi = NoTransaksi
-    '                    ITData.TglTransaksi = TXTglTransaksi
-    '                    ITData.NoUrut = 0
-    '                    ITData.KodeItem = txtKodeItem.Text
-    '                    ITData.NamaItem = txtNamaItem.Text
-    '                    ITData.Batch = "Y"
-    '                    ITData.Qty = txtPcs.Value
-    '                    ITData.KodeProduksi = txtKodeProduksi.Text
-    '                    ITData.QtyTimbang = txtBerat.Value
-    '                    ITData.KodeLokasi = cboKodeLokasi.SelectedValue
-    '                    ITData.Keterangan = "BAHAN TRANSFORM BALL TO PCS"
+                    'Header
+                    '**********************************************************************************************************************************
+                    oGoodsIssue.Series = SeriesIssue.KodeKelompok                            'Numbering Series : 19GII
+                    oGoodsIssue.DocDate = TXTglTransaksi
+                    oGoodsIssue.TaxDate = TXTglTransaksi
+                    oGoodsIssue.Comments = "GOOD ISSUE BALL #" & NoTransaksi
 
-    '                    If Not SAPStaging.PostTransform(2, ITData) Then
-    '                        SAPStaging.Remove(TRSProduction.SAPStaging.enumSAPTransaction.Transform, NoTransaksi)
-    '                        DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
-    '                        DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
-    '                        Me.Cursor = Cursors.Default
-    '                        MessageBox.Show("Posting Data Ke Database Staging SAP Gagal Dilakukan.." + vbCrLf + "Transaksi Tidak Tersimpan, Ulangi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-    '                        GoTo Jump
-    '                    End If
-    '                    '----------------------------------------------------------------------------------------------------
+                    'Detail
+                    '**********************************************************************************************************************************
+                    oGoodsIssue.Lines.ItemCode = txtKodeItem.Text
+                    oGoodsIssue.Lines.ItemDescription = txtNamaItem.Text
+                    oGoodsIssue.Lines.Quantity = txtPcs.Value
+                    oGoodsIssue.Lines.WarehouseCode = cboKodeLokasi.SelectedValue
 
-    '                    'Simpan Staging Hasil Transform
-    '                    '----------------------------------------------------------------------------------------------------                    
-    '                    ITData = New STGTransform
-    '                    ITData.NoTransaksi = NoTransaksi
-    '                    ITData.TglTransaksi = TXTglTransaksi
-    '                    ITData.NoUrut = 0
-    '                    ITData.KodeItem = KodeItemPcs
-    '                    ITData.NamaItem = NamaItemPcs
-    '                    ITData.Batch = "N"
-    '                    ITData.Qty = txtPcsAktual.Value
-    '                    ITData.KodeProduksi = ""
-    '                    ITData.KodeLokasi = cboKodeLokasi.SelectedValue
-    '                    ITData.Keterangan = "HASIL TRANSFORM BALL TO PCS"
+                    oGoodsIssue.Lines.Add()
 
-    '                    If Not SAPStaging.PostTransform(1, ITData) Then
-    '                        SAPStaging.Remove(TRSProduction.SAPStaging.enumSAPTransaction.Transform, NoTransaksi)
-    '                        DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
-    '                        DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
-    '                        Me.Cursor = Cursors.Default
-    '                        MessageBox.Show("Posting Data Ke Database Staging SAP Gagal Dilakukan.." + vbCrLf + "Transaksi Tidak Tersimpan, Ulangi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-    '                        GoTo Jump
-    '                    End If
-    '                    '----------------------------------------------------------------------------------------------------
+                    Dim nStatus As Long = oGoodsIssue.Add()
+                    Dim nError As Long = 0
+                    Dim sError As String = ""
 
+                    If nStatus <> 0 Then
+                        oCompany.GetLastError(nError, sError)
 
-    '                    'Posting Staging -> Database SAP
-    '                    '----------------------------------------------------------------------------------------------------                    
-    '                    Dim STX = SAPStaging.Execute(TRSProduction.SAPStaging.enumSAPTransaction.Transform, NoTransaksi)
-    '                    If STX.ResultStatus.Trim.ToUpper = "FAILED" Then
-    '                        SAPStaging.Remove(TRSProduction.SAPStaging.enumSAPTransaction.Transform, NoTransaksi)
-    '                        DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
-    '                        DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
-    '                        Me.Cursor = Cursors.Default
-    '                        MessageBox.Show("Eksekusi Data Staging Ke Database SAP Gagal Dilakukan.." + vbCrLf + "Transaksi Tidak Tersimpan, Ulangi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-    '                        GoTo Jump
-    '                    Else
-    '                        Me.Cursor = Cursors.Default
-    '                        MessageBox.Show("Transaksi Berhasil Diproses !", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
-    '                    End If
-    '                    '----------------------------------------------------------------------------------------------------
+                        DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
+                        DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
+                        Me.Cursor = Cursors.Default
 
-    '                    Me.Cursor = Cursors.Default
+                        MessageBox.Show("SAP Error : Goods Issue " + vbCrLf + "Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
+                                       nError & " : " & sError, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                        GoTo Jump
+                    End If
 
-    '                    ResetData()
-    '                    txtKodeProduksi.Focus()
+                    'Good Receipt
+                    Dim SeriesReceipt = New DaftarSAPKelompokTransaksi().Find(enumObjectTransaction.GoodsReceipt, Year(Now))
 
-    '                    GoTo Jump
+                    Dim oGoodsReceipt As SAPbobsCOM.Documents
+                    oGoodsReceipt = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oInventoryGenEntry)
 
-    '                Catch ex As Exception
-    '                    SAPStaging.Remove(TRSProduction.SAPStaging.enumSAPTransaction.Transform, NoTransaksi)
-    '                    DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
-    '                    DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
-    '                    Me.Cursor = Cursors.Default
+                    oGoodsReceipt.Series = SeriesReceipt.KodeKelompok                                  'Numbering Series : 19GRI
+                    oGoodsReceipt.DocDate = TXTglTransaksi
+                    oGoodsReceipt.TaxDate = TXTglTransaksi
+                    oGoodsReceipt.Comments = "GOOD RECEIPT/BAHAN BALL #" & NoTransaksi
 
-    '                    MessageBox.Show("Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
-    '                                   ex.Message, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
-    '                    GoTo Jump
-    '                End Try
-    '                '*******************************************************************************************************
+                    'Detail
+                    '**********************************************************************************************************************************
+                    oGoodsReceipt.Lines.ItemCode = KodeItemPcs
+                    oGoodsReceipt.Lines.ItemDescription = NamaItemPcs
+                    oGoodsReceipt.Lines.Quantity = txtPcsAktual.Value
+                    oGoodsReceipt.Lines.WarehouseCode = cboKodeLokasi.SelectedValue
 
-    '            Case "btClose"
-    '                Me.Close()
-    '        End Select
+                    oGoodsReceipt.Lines.Add()
 
-    'Jump:
+                    Dim nStatusReceipt As Long = oGoodsReceipt.Add()
+                    Dim nErrorReceipt As Long = 0
+                    Dim sErrorReceipt As String = ""
 
-    '    End Sub
+                    If nStatusReceipt <> 0 Then
+                        oCompany.GetLastError(nErrorReceipt, sErrorReceipt)
+
+                        DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
+                        DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
+                        Me.Cursor = Cursors.Default
+
+                        MessageBox.Show("SAP Error : Goods Receipt " + vbCrLf + "Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
+                                       nErrorReceipt & " : " & sErrorReceipt, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                        GoTo Jump
+                    End If
+
+                    Me.Cursor = Cursors.Default
+
+                    ResetData()
+                    txtKodeProduksi.Focus()
+
+                    GoTo Jump
+
+                Catch ex As Exception
+                    DaftarTransformBallToPcs.DeleteHeader(NoTransaksi)
+                    DaftarTransformBallToPcs.DeleteDetail(NoTransaksi)
+                    Me.Cursor = Cursors.Default
+
+                    MessageBox.Show("SAP Error : " + vbCrLf + "Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
+                                   ex.Message, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                    GoTo Jump
+                End Try
+                '*******************************************************************************************************
+
+            Case "btClose"
+                Me.Close()
+        End Select
+
+Jump:
+
+    End Sub
 
     'Enable / Disable Button
     Private Sub SetEnableCommand()
@@ -389,5 +393,37 @@ Public Class frmTransformBallToPcs
                          cboKodeLokasi.SelectedIndex <> cboKodeLokasi.Items.Count - 1 And
                          txtKeterangan.Text.Trim.Length >= 10
     End Sub
+
+    Private Function ConnectToDatabase() As Boolean
+        oCompany.SLDServer = "192.168.1.222:40000"
+        oCompany.Server = My.Settings.HanaServer
+        oCompany.DbServerType = SAPbobsCOM.BoDataServerTypes.dst_HANADB
+        oCompany.CompanyDB = My.Settings.HanaSAPDatabaseName
+        MsgBox(IP())
+        If IP() = "192.168.1.11" Then
+            oCompany.UserName = "RMD"
+            oCompany.Password = "1234"
+        End If
+        If IP() = "192.168.1.208" Then
+            oCompany.UserName = "NND"
+            oCompany.Password = "1234"
+        End If
+
+        oCompany.language = SAPbobsCOM.BoSuppLangs.ln_English
+
+        Dim nStatus As Long
+        nStatus = oCompany.Connect
+
+        If nStatus <> 0 Then
+            ConnectToDatabase = False
+        Else
+            ConnectToDatabase = True
+        End If
+    End Function
+
+    Private Function DissconnectToDatabase() As Boolean
+        oCompany.Disconnect()
+        DissconnectToDatabase = True
+    End Function
 
 End Class

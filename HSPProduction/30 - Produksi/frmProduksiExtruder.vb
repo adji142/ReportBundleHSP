@@ -256,6 +256,11 @@ Public Class frmProduksiExtruder
                     cboKodeMesin.Enabled = True
                     btLookupKodeMesin.Enabled = True
                 End If
+
+                If cboKodeUnit.SelectedValue = "001" Then
+                    cboKodeMesin.Enabled = False
+                    cboKodeMesin.SelectedIndex = cboKodeMesin.Items.Count - 1
+                End If
             Catch
             End Try
 
@@ -271,6 +276,11 @@ Public Class frmProduksiExtruder
 
                     If cboKodeUnit.SelectedValue <> "001" Then
                         DaftarRM()
+                    End If
+
+                    If cboKodeUnit.SelectedValue = "001" Then
+                        Dim KodeMesin As String = New SAPWorkOrder().FindMesin(New DaftarUnitProduksi(ActiveSession).Find(cboKodeUnit.SelectedValue).KodeUnitSAP, cboNomorSpk.SelectedValue).KodeMesin
+                        cboKodeMesin.SelectedValue = New DaftarMesin(ActiveSession).FindBySAP(KodeMesin).KodeMesin
                     End If
                 Catch
                     View.DataSource = Nothing
@@ -431,7 +441,7 @@ Public Class frmProduksiExtruder
 
     Private Sub btLookupKodeUnit_Click(sender As Object, e As EventArgs) Handles btLookupKodeUnit.Click
         Dim DaftarUnitProduksi As IDataLookup = New DaftarUnitProduksi(ActiveSession)
-        Dim Parameter() As String = {0}
+        Dim Parameter() As String = {"001"}
 
         Dim Form As New frmLookup(DaftarUnitProduksi, Parameter)
         Form.Text = "Lookup Daftar Unit Produksi"
@@ -494,7 +504,7 @@ Public Class frmProduksiExtruder
         Dim Drow As DataRow
 
         DS = New DataSet
-        DS = DaftarUnitProduksi.Read("%")
+        DS = DaftarUnitProduksi.Read("%", "001")
         cboKodeUnit.DataSource = DS.Tables("View")
         cboKodeUnit.DisplayMember = "Unit Produksi"
         cboKodeUnit.ValueMember = "Kode"
@@ -1022,9 +1032,9 @@ jump:
                     End If
 
                     'Simpan Media Timbang
-                    RegKey = Registry.CurrentUser.OpenSubKey("Software\Timbangan", True)
-                    RegKey.SetValue("PolaMedia", cboKodePolaMediaTimbang.SelectedValue)
-                    RegKey.Close()
+                    'RegKey = Registry.CurrentUser.OpenSubKey("Software\Timbangan", True)
+                    'RegKey.SetValue("PolaMedia", cboKodePolaMediaTimbang.SelectedValue)
+                    'RegKey.Close()
 
                     Scope.Complete()
                     Scope.Dispose()
@@ -1063,18 +1073,18 @@ Jump:
     End Sub
 
     Private Sub SetEnableCommand()
-        lblItemRetur.Visible = False
-        Try
-            If cboKodeUnit.SelectedValue <> "001" Then
-                View.Enabled = True
-                lblItemRetur.Visible = True
-            Else
-                View.Enabled = False
-            End If
-        Catch
-            View.Enabled = False
-            lblItemRetur.Visible = False
-        End Try
+        'lblItemRetur.Visible = False
+        'Try
+        '    If cboKodeUnit.SelectedValue <> "001" Then
+        '        View.Enabled = True
+        '        lblItemRetur.Visible = True
+        '    Else
+        '        View.Enabled = False
+        '    End If
+        'Catch
+        '    View.Enabled = False
+        '    lblItemRetur.Visible = False
+        'End Try
 
         If cboNomorSpk.SelectedIndex <> cboNomorSpk.Items.Count - 1 Then
             If View.SelectedRows.Count <> 0 Then
@@ -1113,6 +1123,11 @@ Jump:
         BeratNetto = BeratBrutto - BeratMedia
         lblBeratNetto.Text = BeratNetto.ToString("###,##0.00")
         lblBeratNetto.Tag = BeratNetto
+
+        chkManual.Visible = ActiveSession.Supervisor
+        lblTimbangManual.Visible = ActiveSession.Supervisor
+        txtTimbangManual.Visible = ActiveSession.Supervisor
+        lblSatuanTimbangManual.Visible = ActiveSession.Supervisor
     End Sub
 #End Region
 
@@ -1185,8 +1200,6 @@ Jump:
         X_DPB.Delete(NoTransaksi)
     End Function
 
-
-
     Private Sub chkManual_CheckedChanged(sender As Object, e As EventArgs) Handles chkManual.CheckedChanged
         If chkManual.Checked Then
             txtTimbangManual.Enabled = True
@@ -1208,4 +1221,17 @@ Jump:
         lblBeratBrutto.Tag = BeratBrutto
         SetEnableCommand()
     End Sub
+
+    'Private Sub frmProduksiExtruder_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+    'FillComboUnitProduksi()
+    'cboKodeUnit.SelectedValue = GetSetting(enumFormID.frmExtruder, enumSetting.settingKodeUnit)
+    'FillComboMesin()
+    'FillComboArea()
+    'FillNomorSPK()
+    'FillComboArea()
+    'FillComboPolaMedia()
+    'FillComboMediaTimbang()
+
+
+    'End Sub
 End Class

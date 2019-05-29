@@ -125,6 +125,87 @@ Public Class FrmMonitoringSO
             Next
         End If
     End Sub
+    Private Sub CallStkProd()
+        Dim Row As Integer = 0
+        Dim DaftarSO As New MasterClass()
+        Dim BS As New BindingSource
+        Dim DataSet As DataSet = DaftarSO.ReadStkProd(_NoSO, _KdItem)
+        BS.DataSource = DataSet
+        BS.DataMember = "View"
+
+        GridStockProd.DataSource = BS
+
+        Dim Column As DataColumn
+        If (DataSet.Tables(0).Rows.Count > 0) Then
+            For Each Column In DataSet.Tables("View").Columns
+                If Column.DataType.Name.ToUpper = "DATETIME" Then
+                    GridStockProd.Columns(Column.ColumnName).DefaultCellStyle.Format = "dd/MM/yyyy"
+                    GridStockProd.Columns(Column.ColumnName).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+                    GridStockProd.Columns(Column.ColumnName).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+                End If
+
+                If Column.DataType.Name.ToUpper = "DOUBLE" Then
+                    GridStockProd.Columns(Column.ColumnName).DefaultCellStyle.Format = "#,##0.00"
+                    GridStockProd.Columns(Column.ColumnName).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+                    GridStockProd.Columns(Column.ColumnName).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
+                End If
+            Next
+        End If
+    End Sub
+    Private Sub CallStkWH()
+        Dim Row As Integer = 0
+        Dim DaftarSO As New MasterClass()
+        Dim BS As New BindingSource
+        Dim DataSet As DataSet = DaftarSO.ReadStkWH(_NoSO, _KdItem)
+        BS.DataSource = DataSet
+        BS.DataMember = "View"
+
+        GridStockWHS.DataSource = BS
+
+        Dim Column As DataColumn
+        If (DataSet.Tables(0).Rows.Count > 0) Then
+            For Each Column In DataSet.Tables("View").Columns
+                If Column.DataType.Name.ToUpper = "DATETIME" Then
+                    GridStockWHS.Columns(Column.ColumnName).DefaultCellStyle.Format = "dd/MM/yyyy"
+                    GridStockWHS.Columns(Column.ColumnName).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+                    GridStockWHS.Columns(Column.ColumnName).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+                End If
+
+                If Column.DataType.Name.ToUpper = "DOUBLE" Then
+                    GridStockWHS.Columns(Column.ColumnName).DefaultCellStyle.Format = "#,##0.00"
+                    GridStockWHS.Columns(Column.ColumnName).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+                    GridStockWHS.Columns(Column.ColumnName).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
+                End If
+            Next
+        End If
+    End Sub
+    Private Sub CallDelivering()
+        Dim Row As Integer = 0
+        Dim DaftarSO As New MasterClass()
+        Dim BS As New BindingSource
+        Dim DataSet As DataSet = DaftarSO.ReadDeliv(_NoSO, _KdItem)
+        BS.DataSource = DataSet
+        BS.DataMember = "View"
+
+        GridDeliv.DataSource = BS
+
+        Dim Column As DataColumn
+        If (DataSet.Tables(0).Rows.Count > 0) Then
+            For Each Column In DataSet.Tables("View").Columns
+                If Column.DataType.Name.ToUpper = "DATETIME" Then
+                    GridDeliv.Columns(Column.ColumnName).DefaultCellStyle.Format = "dd/MM/yyyy"
+                    GridDeliv.Columns(Column.ColumnName).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter
+                    GridDeliv.Columns(Column.ColumnName).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter
+                End If
+
+                If Column.DataType.Name.ToUpper = "DOUBLE" Then
+                    GridDeliv.Columns(Column.ColumnName).DefaultCellStyle.Format = "#,##0.00"
+                    GridDeliv.Columns(Column.ColumnName).DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight
+                    GridDeliv.Columns(Column.ColumnName).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
+                End If
+            Next
+        End If
+    End Sub
     Private Sub Execute(ByVal ID As String)
 
         'PopupMenu.Hide()
@@ -143,5 +224,8 @@ Public Class FrmMonitoringSO
         _KdItem = If(View.Rows.Count = 0, "", View(4, View.CurrentCell.RowIndex).Value.ToString())
         CallOP()
         CallWO()
+        CallStkProd()
+        CallStkWH()
+        CallDelivering()
     End Sub
 End Class

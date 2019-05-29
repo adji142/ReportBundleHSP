@@ -76,7 +76,9 @@ Public Class frmRPT800_130_CostAccounting
         'Report
         Select Case cboTipeLaporan.SelectedIndex + 1
             Case 1
-                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\rptLapWIPAccount.RPT")
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\rpt800131_LapWIPAccount.RPT")
+            Case 2
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\rpt800132_LapWIPAccount.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

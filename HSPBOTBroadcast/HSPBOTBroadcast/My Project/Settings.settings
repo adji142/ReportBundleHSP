@@ -46,5 +46,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">dbxroothsp123</Value>
     </Setting>
+    <Setting Name="ScheduledTimeOth" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10:00</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

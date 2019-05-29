@@ -38,6 +38,9 @@ Partial Class frmMesin
         Me.chkAktif = New Enerzie.EPSBasicControls.EPSCheckBox()
         Me.txtKodeMesinSAP = New Enerzie.EPSBasicControls.EPSTextBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.cboJenisMesin = New Enerzie.EPSBasicControls.EPSComboBox()
+        Me.btLookupJenisMesin = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.Locked, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,7 +124,7 @@ Partial Class frmMesin
         Me.panel2.Controls.Add(Me.btClose)
         Me.panel2.Controls.Add(Me.btSave)
         Me.panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.panel2.Location = New System.Drawing.Point(0, 142)
+        Me.panel2.Location = New System.Drawing.Point(0, 169)
         Me.panel2.Name = "panel2"
         Me.panel2.Size = New System.Drawing.Size(542, 54)
         Me.panel2.TabIndex = 4
@@ -206,12 +209,53 @@ Partial Class frmMesin
         Me.Label4.TabIndex = 88
         Me.Label4.Text = "Kode Mesin SAP"
         '
+        'cboJenisMesin
+        '
+        Me.cboJenisMesin.AllowEnterToMoveNext = True
+        Me.cboJenisMesin.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cboJenisMesin.BackColor = System.Drawing.Color.White
+        Me.cboJenisMesin.DataLocked = False
+        Me.cboJenisMesin.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.cboJenisMesin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboJenisMesin.IndexLocked = False
+        Me.cboJenisMesin.Location = New System.Drawing.Point(113, 123)
+        Me.cboJenisMesin.Name = "cboJenisMesin"
+        Me.cboJenisMesin.Size = New System.Drawing.Size(381, 21)
+        Me.cboJenisMesin.TabIndex = 89
+        '
+        'btLookupJenisMesin
+        '
+        Me.btLookupJenisMesin.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btLookupJenisMesin.BackColor = System.Drawing.Color.Transparent
+        Me.btLookupJenisMesin.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.btLookupJenisMesin.ForeColor = System.Drawing.Color.Silver
+        Me.btLookupJenisMesin.Location = New System.Drawing.Point(495, 123)
+        Me.btLookupJenisMesin.Name = "btLookupJenisMesin"
+        Me.btLookupJenisMesin.Size = New System.Drawing.Size(23, 21)
+        Me.btLookupJenisMesin.TabIndex = 91
+        Me.btLookupJenisMesin.TabStop = False
+        Me.btLookupJenisMesin.Text = ".."
+        Me.btLookupJenisMesin.UseVisualStyleBackColor = False
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(22, 126)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(62, 13)
+        Me.Label5.TabIndex = 90
+        Me.Label5.Text = "Jenis Mesin"
+        '
         'frmMesin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(542, 196)
+        Me.ClientSize = New System.Drawing.Size(542, 223)
+        Me.Controls.Add(Me.cboJenisMesin)
+        Me.Controls.Add(Me.btLookupJenisMesin)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.txtKodeMesinSAP)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.chkAktif)
@@ -254,4 +298,7 @@ Partial Class frmMesin
     Friend WithEvents chkAktif As Enerzie.EPSBasicControls.EPSCheckBox
     Private WithEvents txtKodeMesinSAP As Enerzie.EPSBasicControls.EPSTextBox
     Private WithEvents Label4 As System.Windows.Forms.Label
+    Private WithEvents cboJenisMesin As Enerzie.EPSBasicControls.EPSComboBox
+    Friend WithEvents btLookupJenisMesin As System.Windows.Forms.Button
+    Private WithEvents Label5 As System.Windows.Forms.Label
 End Class

@@ -80,7 +80,7 @@ Partial Class frmRPT310_100_Laminating
         'cboLaporan
         '
         Me.cboLaporan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboLaporan.Items.AddRange(New Object() {"310101", "310102", "310103", "310104"})
+        Me.cboLaporan.Items.AddRange(New Object() {"310101", "310102", "310103", "310104", "310105"})
         Me.cboLaporan.Name = "cboLaporan"
         Me.cboLaporan.Size = New System.Drawing.Size(150, 31)
         '

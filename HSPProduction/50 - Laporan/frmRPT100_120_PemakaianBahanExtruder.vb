@@ -140,6 +140,8 @@ Public Class frmRPT100_120_PemakaianBahanExtruder
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\rpt100123_Extruder.RPT")
             Case 4
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\rpt100124_Extruder.RPT")
+            Case 5
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\rpt100125_Extruder.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

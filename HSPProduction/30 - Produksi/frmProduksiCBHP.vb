@@ -123,6 +123,12 @@ Public Class frmProduksiCBHP
         FillComboMesin()
 
         ResetData()
+
+        If Not ActiveSession.KodeUser = "SPVS" Then
+            btTest.Visible = False
+        Else
+            btTest.Visible = True
+        End If
     End Sub
 
     'Form Close
@@ -326,24 +332,25 @@ Public Class frmProduksiCBHP
 
                 Dim Scope As New TransactionScope
                 Try
-                    'Cek Pemakaian Bahan Utama
-                    If New DaftarProduksiCBPR(ActiveSession).IsEmptyUtama(cboNomorSPK.SelectedValue, DaftarProduksiCBPR.enumProsesPemakaianBahanutama.CementBag) Then
-                        MessageBox.Show("Pemakaian Bahan Utama Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    Dim DPB As New DaftarProduksiCBPR(ActiveSession)
+                    Dim DT As DataTable = DPB.ReadBahanUtama(cboNomorSPK.SelectedValue).Tables("View")
+                    Dim JenisBahan As String = ""
+                    Dim QtyBahan As Double = 0
+
+                    If DT.Rows.Count < 3 Then
+                        MessageBox.Show("Internal Error : " + vbCrLf + "Pemakaian Bahan Utama Tidak Lengkap. " + vbCrLf +
+                                        cboNomorSPK.SelectedValue + vbCrLf +
+                                        "Pastikan Bahan Utama (BODY, PATCH, VALVE) Sudah Dimasukkan. ", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
                         GoTo Jump
-                    Else
-                        If Not New DaftarProduksiCBPR(ActiveSession).IsPemakaianBahanUtama(cboNomorSPK.SelectedValue, DaftarProduksiCBPR.enumProsesPemakaianBahanutama.CementBag) Then
-                            MessageBox.Show("Pemakaian Bahan Utama Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                            GoTo Jump
-                        End If
                     End If
 
-                    'Cek Pemakaian Bahan Pembantu
-                    'If New DaftarPemakaianBahan(ActiveSession).IsEmpty(cboNomorSPK.SelectedValue) Then
-                    '    MessageBox.Show("Pemakaian Bahan Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    'Cek Pemakaian Bahan Utama
+                    'If New DaftarProduksiCBPR(ActiveSession).IsEmptyUtama(cboNomorSPK.SelectedValue, DaftarProduksiCBPR.enumProsesPemakaianBahanutama.CementBag) Then
+                    '    MessageBox.Show("Pemakaian Bahan Utama Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     '    GoTo Jump
                     'Else
-                    '    If Not New DaftarPemakaianBahan(ActiveSession).IsPemakaianBahan(cboNomorSPK.SelectedValue) Then
-                    '        MessageBox.Show("Pemakaian Bahan Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+                    '    If Not New DaftarProduksiCBPR(ActiveSession).IsPemakaianBahanUtama(cboNomorSPK.SelectedValue, DaftarProduksiCBPR.enumProsesPemakaianBahanutama.CementBag) Then
+                    '        MessageBox.Show("Pemakaian Bahan Utama Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                     '        GoTo Jump
                     '    End If
                     'End If
@@ -487,4 +494,20 @@ Jump:
         X_DPB.Delete(NoTransaksi)
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btTest.Click
+        Dim DPB As New DaftarProduksiCBPR(ActiveSession)
+        Dim DT As DataTable = DPB.ReadBahanUtama("001").Tables("View")
+        Dim JenisBahan As String = ""
+        Dim QtyBahan As Double = 0
+
+        If DT.Rows.Count < 3 Then
+            MessageBox.Show("Internal Error : " + vbCrLf + "Pemakaian Bahan Utama Tidak Lengkap. " + vbCrLf +
+                            cboNomorSPK.SelectedValue + vbCrLf +
+                            "Pastikan Bahan Utama (BODY, PATCH, VALVE) Sudah Dimasukkan. ", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+            GoTo Jump
+        End If
+
+Jump:
+
+    End Sub
 End Class

@@ -48,6 +48,33 @@ Public Class SAPInventory : Implements IDataLookup
         End Using
     End Function
 
+    Public Function GetCurrentStock(KodeLokasi As String, ByVal KodeProduksi As String) As Boolean
+        Dim DB As New SAPDBConnection
+        Dim SQL As String
+
+        SQL = "SELECT ""Quantity"" As SaldoStock FROM ""SOL_ITEMBATCHWHSSTOCK"" " +
+                          "WHERE ""DistNumber"" = '" + UCase(KodeProduksi) + "' AND ""WhsCode"" = '" + KodeLokasi + "' "
+
+        Using DBX As IDbConnection = DB.Connection()
+
+            Dim CMD As New HanaCommand(SQL, DBX)
+            Dim DR As HanaDataReader = CMD.ExecuteReader()
+
+            If DR.Read() Then
+                If DR("SaldoStock") <= 0 Then
+                    GetCurrentStock = False
+                Else
+                    GetCurrentStock = True
+                End If
+            Else
+                GetCurrentStock = False
+            End If
+
+            DR.Close()
+
+        End Using
+    End Function
+
     Public Function GetItem(KodeItem As String) As String
         Dim DB As New SAPDBConnection
         Dim SQL As String
@@ -311,6 +338,27 @@ Public Class SAPInventory : Implements IDataLookup
 
     End Function
 
+    Public Function ReadItemRoll(ByVal UnitProduksi As String) As DataSet
+        Dim DB As New SAPDBConnection
+        Dim SQL As String
+
+        SQL = "SELECT * FROM ""HSP_ITEMROLL"" " +
+              "WHERE ""UnitProduksi"" ='" & UnitProduksi & "' "
+
+        Using DBX As IDbConnection = DB.Connection()
+
+            Dim CMD As New HanaCommand(SQL, DBX)
+            Dim DA As New HanaDataAdapter
+            Dim DS As New DataSet
+
+            DA.SelectCommand = CMD
+            DA.Fill(DS, "View")
+
+            ReadItemRoll = DS
+        End Using
+
+    End Function
+
     Public Function GetLookup(TextSearch As String, Parameter As Object) As DataSet Implements IDataLookup.GetLookup
         Dim DB As New SAPDBConnection
         Dim SQL As String = ""
@@ -322,7 +370,8 @@ Public Class SAPInventory : Implements IDataLookup
               " ""ItemName""                            AS ""Nama Item"", " +
               " ""InvntryUom""                          AS ""Satuan"" " +
               "FROM ""OITM"" " +
-              "WHERE ""ItmsGrpCod""='" + GrupItem + "' AND ""validFor""='Y' " +
+              "WHERE ""ItemCode""||' '||""ItemName"" LIKE '%" + TextSearch + "%' " +
+              " AND ""ItmsGrpCod""='" + GrupItem + "' AND ""validFor""='Y' " +
               "ORDER BY ""ItemCode"" "
 
         Using DBX As IDbConnection = DB.Connection()

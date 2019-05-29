@@ -58,6 +58,10 @@ Public Class frmRPT320_120_PemakaianBPPrintingRoll
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT320122_PemakaianBPPrintingRoll.RPT")
             Case 3
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT320123_PemakaianBPPrintingRoll.RPT")
+            Case 4
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT320124_PemakaianBPPrintingRoll.RPT")
+            Case 5
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT320125_PemakaianBPPrintingRoll.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

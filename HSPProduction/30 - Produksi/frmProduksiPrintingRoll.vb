@@ -731,6 +731,451 @@ ExitProcedure:
 
 #Region "Save To Database"
 
+    '    Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click, btClose.Click, btReprint.Click
+    '        Dim KodeLokasi As String = lblKodeLokasiHasilProduksi.Tag.ToString.Trim()
+    '        Dim SAPStaging As New SAPStaging
+
+    '        Dim NoTransaksi As String
+    '        Dim KodeProduksi As String
+
+    '        Dim PeriodeTransaksi As String = GetPeriod(TglTransaksi)
+
+    '        Select Case DirectCast(sender, Button).Name
+    '            Case "btSave"
+    '                If CekWO(cboNomorSPK.SelectedValue.ToString) Then
+    '                    If MessageBox.Show("Hasil Produksi Printing Nomor SPK : " + cboNomorSPK.SelectedValue.ToString + " Sudah Melampaui Quantity Plan PPIC." + vbCrLf +
+    '                                   "Plan    = " + QtyPlan.ToString("##,##0") + " METER" + vbCrLf +
+    '                                   "Hasil   = " + QtyHasil.ToString("##,##0") + " METER" + vbCrLf +
+    '                                   "Apakah Akan Melanjutkan Proses Printing...?", "Peringatan", MessageBoxButtons.YesNo, MessageBoxIcon.Information) <> Windows.Forms.DialogResult.Yes Then
+    '                        ResetData()
+    '                    End If
+    '                End If
+
+    '                Dim DaftarStockRoll As New DaftarStockRoll(ActiveSession)
+    '                Dim StockRoll As StockRoll
+
+    '                'Cek Lokasi Gudang Stock
+    '                If txtKodeProduksiBahan1.Text.Trim() <> "" Then
+    '                    Dim LokasiStockWO As String = New SAPWorkOrder().FindRMByWO(KodeUnitSAP, cboNomorSPK.SelectedValue, txtKodeItemBahan1.Text).KodeLokasi
+    '                    If LokasiStockWO <> KodeLokasi Then
+    '                        Me.Cursor = Cursors.Default
+    '                        MsgBox("Lokasi Stock Bahan Menurut Work Order Tidak Sesuai...!!! " & vbCrLf & "Hubungi PPIC...!!!")
+    '                        GoTo Jump
+    '                    End If
+    '                End If
+
+    '                If txtKodeProduksiBahan2.Text.Trim() <> "" Then
+    '                    Dim LokasiStockWO As String = New SAPWorkOrder().FindRMByWO(KodeUnitSAP, cboNomorSPK.SelectedValue, txtKodeItemBahan2.Text).KodeLokasi
+    '                    If LokasiStockWO <> KodeLokasi Then
+    '                        Me.Cursor = Cursors.Default
+    '                        MsgBox("Lokasi Stock Bahan Menurut Work Order Tidak Sesuai...!!! " & vbCrLf & "Hubungi PPIC...!!!")
+    '                        GoTo Jump
+    '                    End If
+    '                End If
+
+    '                'Konfirmasi Transaksi
+    '                If MessageBox.Show("Simpan Data Produksi Printing ?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = Windows.Forms.DialogResult.No Then
+    '                    GoTo Jump
+    '                End If
+
+    '                '---------------------------------------------------------------------------------------------------------
+    '                btSave.Enabled = False
+    '                Me.Cursor = Cursors.WaitCursor
+
+    '                Dim Scope As New TransactionScope
+    '                Try
+    '                    If New DaftarPemakaianBahan(ActiveSession).IsEmpty(cboNomorSPK.SelectedValue) Then
+    '                        MessageBox.Show("Pemakaian Bahan Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    '                        GoTo Jump
+    '                    Else
+    '                        If Not New DaftarPemakaianBahan(ActiveSession).IsPemakaianBahan(cboNomorSPK.SelectedValue) Then
+    '                            MessageBox.Show("Pemakaian Bahan Atas Nomor SPK : " + cboNomorSPK.SelectedValue + " Belum Dimasukkan...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    '                            GoTo Jump
+    '                        End If
+    '                    End If
+
+    '                    Dim DaftarProduksiPrintingRoll As New DaftarProduksiPrintingRoll(ActiveSession)
+    '                    Dim ProduksiPrintingRoll As ProduksiPrintingRoll
+    '                    Dim PrefikKodeProduksi As String = New DaftarLokasi(ActiveSession).Find(KodeLokasi).PrefikKodeTransaksi
+    '                    Dim UnitProduksi = New DaftarUnitProduksi(ActiveSession).Find(lblKodeUnitProduksi.Tag)
+
+    '                    NoTransaksi = DaftarProduksiPrintingRoll.GetNomorTransaksi(PeriodeTransaksi)
+    '                    KodeProduksi = DaftarStockRoll.GetKodeProduksi(lblKodeUnitProduksi.Tag, cboKodeMesin.SelectedValue, PeriodeTransaksi)
+
+    '                    'Hitung Berat Standar Jika Sisa Roll Ada Dimesin
+    '                    If txtSisaBahanMeter.Value = 0 Or chkLokasiMesin.Checked Then
+
+    '                        If txtSisaBahan1.Value <> 0 Then
+    '                            SBBeratBrutto = txtSisaBahan1.Value * RMRataRata1
+    '                            SBBeratMedia = 0
+    '                            SBBeratNetto = SBBeratBrutto
+    '                            SBKodeMedia = ""
+    '                        End If
+
+    '                        If txtSisaBahan2.Value <> 0 Then
+    '                            SBBeratBrutto = txtSisaBahan2.Value * RMRataRata2
+    '                            SBBeratMedia = 0
+    '                            SBBeratNetto = SBBeratBrutto
+    '                            SBKodeMedia = ""
+    '                        End If
+
+    '                    End If
+
+    '                    'Proses Kalkulasi kebutuhan bahan pembantu sesuai BoM
+    '                    '========================================================================================
+    '                    Dim FGQty As Double = New SAPWorkOrder().FindFGByWO(KodeUnitSAP, cboNomorSPK.SelectedValue).QtyBOM
+    '                    Dim DT As DataTable = New SAPWorkOrder().ReadRMByWO(cboNomorSPK.SelectedValue, KodeUnitSAP).Tables("View")
+    '                    Dim DR As DataRow
+
+    '                    Dim KodeItemBahan As String
+    '                    Dim NamaItemBahan As String
+    '                    Dim QtyBahan As Double
+    '                    Dim Satuan As String
+
+    '                    'Header Pemakaian Bahan
+    '                    Dim DaftarPemakaianBahan As New DaftarPemakaianBahan(ActiveSession)
+    '                    Dim HeaderPemakaianBahan As HeaderPemakaianBahan
+    '                    Dim DetailPemakaianBahan As DetailPemakaianBahan
+
+    '                    HeaderPemakaianBahan = New HeaderPemakaianBahan
+    '                    HeaderPemakaianBahan.NoTransaksi = NoTransaksi
+    '                    HeaderPemakaianBahan.TglTransaksi = TglTransaksi.Date
+    '                    HeaderPemakaianBahan.TglPencatatan = TglPencatatan
+    '                    HeaderPemakaianBahan.NomorWO = cboNomorSPK.SelectedValue
+    '                    HeaderPemakaianBahan.KodeUnit = lblKodeUnitProduksi.Tag
+    '                    HeaderPemakaianBahan.KodeShift = lblKodeShift.Text
+    '                    HeaderPemakaianBahan.KodeGrup = lblGrupProduksi.Text
+    '                    HeaderPemakaianBahan.KodeMesin = cboKodeMesin.SelectedValue
+    '                    HeaderPemakaianBahan.KodeItemFG = lblKodeItemHasilProduksi.Text
+    '                    HeaderPemakaianBahan.NamaItemFG = lblNamaItemHasilProduksi.Text
+    '                    HeaderPemakaianBahan.Keterangan = txtKeterangan.Text
+    '                    HeaderPemakaianBahan.UserID = ActiveSession.KodeUser
+
+    '                    DaftarPemakaianBahan.AddHeader(HeaderPemakaianBahan)
+
+    '                    Dim NoUrut As Integer = 0
+
+    '                    For Each DR In DT.Rows
+    '                        NoUrut += 1
+    '                        Dim Stock As Double
+
+    '                        If Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "302" And
+    '                           Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "303" And
+    '                           Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "304" And
+    '                           Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "305" Then
+
+    '                            KodeItemBahan = DR("Kode Item")
+    '                            NamaItemBahan = DR("Nama Item")
+    '                            QtyBahan = DR("Qty") * (txtHasilMeter.Value / FGQty)
+    '                            Satuan = DR("Satuan")
+
+    '                            Dim QtyIssue As Double = QtyBahan
+
+    '                            Stock = New SAPInventory().GetCurrentStock(KodeLokasi, KodeItemBahan, "")
+
+    '                            If Stock <= 0 Then
+    '                                Me.Cursor = Cursors.Default
+    '                                Scope.Dispose()
+    '                                MessageBox.Show("Stock Bahan " + KodeItemBahan + " | " + NamaItemBahan + " Tidak Mencukupi-(0)...!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+    '                                GoTo Jump
+    '                            End If
+
+    '                            If QtyBahan > Stock Then
+    '                                QtyIssue = Stock
+    '                            End If
+
+    '                            DetailPemakaianBahan = New DetailPemakaianBahan
+    '                            DetailPemakaianBahan.NoTransaksi = NoTransaksi
+    '                            DetailPemakaianBahan.NoUrut = NoUrut
+    '                            DetailPemakaianBahan.KodeItemRM = KodeItemBahan
+    '                            DetailPemakaianBahan.NamaItemRM = NamaItemBahan
+    '                            DetailPemakaianBahan.Qty = QtyIssue
+    '                            DetailPemakaianBahan.Satuan = Satuan
+    '                            DetailPemakaianBahan.Keterangan = ""
+
+    '                            DaftarPemakaianBahan.AddDetail(DetailPemakaianBahan)
+
+    '                            'Posting Material Issue Ke Staging
+    '                            SAPStaging.PostMaterialIssue(KodeUnitSAP,
+    '                                                     cboNomorSPK.SelectedValue,
+    '                                                     TglTransaksi,
+    '                                                     KodeItemBahan,
+    '                                                     QtyIssue,
+    '                                                     "",
+    '                                                     NoTransaksi,
+    '                                                     KodeLokasi)
+
+    '                            'MsgBox(KodeItemBahan + " " + NamaItemBahan + " : " + DR("Qty").ToString + " / " + FGQty.ToString + " >> " + QtyIssue.ToString)
+    '                        End If
+    '                    Next
+
+    '                    'Simpan Data Transaksi Produksi
+    '                    ProduksiPrintingRoll = New ProduksiPrintingRoll
+    '                    With ProduksiPrintingRoll
+
+    '                        .NoTransaksi = NoTransaksi
+    '                        .TglTransaksi = TglTransaksi.Date
+    '                        .TglPencatatan = TglPencatatan
+    '                        .NomorWO = cboNomorSPK.SelectedValue
+    '                        .KodeUnitSAP = KodeUnitSAP
+    '                        .KodeUnit = lblKodeUnitProduksi.Tag
+    '                        .KodeShift = lblKodeShift.Text
+    '                        .KodeGrup = lblGrupProduksi.Text
+    '                        .KodeMesin = cboKodeMesin.SelectedValue
+    '                        .ShiftSebelumnya = chkShiftSebelumnya.Checked
+
+    '                        .FGKodeLokasi = KodeLokasi
+    '                        .FGKodeProduksi = KodeProduksi
+    '                        .FGKodeItem = lblKodeItemHasilProduksi.Text
+    '                        .FGNamaItem = lblNamaItemHasilProduksi.Text
+    '                        .FGPanjang = txtHasilMeter.Value
+    '                        .FGBeratBrutto = FGBeratBrutto
+    '                        .FGBeratNetto = FGBeratNetto
+    '                        .FGKodeMedia = FGKodeMedia
+    '                        .FGBeratMedia = FGBeratMedia
+    '                        .FGKodeUnitPeruntukan = cboKodeUnitPeruntukan.SelectedValue
+    '                        .FGKeterangan = txtKeterangan.Text
+    '                        .KodeKaryawan = txtNIKOperator.Text
+
+    '                        If txtKodeProduksiBahan1.Text.Trim() <> "" Then
+    '                            .RM1KodeLokasi = KodeLokasi
+    '                            .RM1KodeProduksi = txtKodeProduksiBahan1.Text
+    '                            .RM1KodeItem = txtKodeItemBahan1.Text
+    '                            .RM1NamaItem = lblNamaItemBahan1.Text
+    '                            .RM1StockPanjang = txtStockBahan1.Value
+    '                            .RM1StockBerat = RM1StockBahan
+    '                            .RM1PemakaianPanjang = txtPemakaianBahan1.Value
+    '                            .RM1PemakaianBerat = If(txtSisaBahan1.Value = 0, .RM1StockBerat, .RM1StockBerat - SBBeratNetto)
+    '                            .RM1SisaPanjang = txtSisaBahan1.Value
+    '                            .RM1SisaBerat = .RM1StockBerat - .RM1PemakaianBerat
+    '                        Else
+    '                            .RM1KodeLokasi = ""
+    '                            .RM1KodeProduksi = ""
+    '                            .RM1KodeItem = ""
+    '                            .RM1NamaItem = ""
+    '                            .RM1StockPanjang = 0
+    '                            .RM1StockBerat = 0
+    '                            .RM1PemakaianPanjang = 0
+    '                            .RM1PemakaianBerat = 0
+    '                            .RM1SisaPanjang = 0
+    '                            .RM1SisaBerat = 0
+    '                        End If
+
+    '                        If txtKodeProduksiBahan2.Text.Trim() <> "" Then
+    '                            .RM2KodeLokasi = KodeLokasi
+    '                            .RM2KodeProduksi = txtKodeProduksiBahan2.Text
+    '                            .RM2KodeItem = txtKodeItemBahan2.Text
+    '                            .RM2NamaItem = lblNamaItemBahan2.Text
+    '                            .RM2StockPanjang = txtStockBahan2.Value
+    '                            .RM2StockBerat = RM2StockBahan
+    '                            .RM2PemakaianPanjang = txtPemakaianBahan2.Value
+    '                            .RM2PemakaianBerat = If(txtSisaBahan2.Value = 0, .RM2StockBerat, .RM2StockBerat - SBBeratNetto)
+    '                            .RM2SisaPanjang = txtSisaBahan2.Value
+    '                            .RM2SisaBerat = .RM2StockBerat - .RM2PemakaianBerat
+    '                        Else
+    '                            .RM2KodeLokasi = ""
+    '                            .RM2KodeProduksi = ""
+    '                            .RM2KodeItem = ""
+    '                            .RM2NamaItem = ""
+    '                            .RM2StockPanjang = 0
+    '                            .RM2StockBerat = 0
+    '                            .RM2PemakaianPanjang = 0
+    '                            .RM2PemakaianBerat = 0
+    '                            .RM2SisaPanjang = 0
+    '                            .RM2SisaBerat = 0
+    '                        End If
+
+    '                        .SBKodeProduksi = If(txtSisaBahan1.Value = 0 And txtSisaBahan2.Value = 0, "", If(txtSisaBahan1.Value <> 0, txtKodeProduksiBahan1.Text, If(txtSisaBahan2.Value <> 0, txtKodeProduksiBahan2.Text, "")))
+    '                        .SBPanjang = txtSisaBahanMeter.Value
+    '                        .SBBeratBrutto = SBBeratBrutto
+    '                        .SBBeratNetto = SBBeratNetto
+    '                        .SBKodeMedia = SBKodeMedia
+    '                        .SBBeratMedia = SBBeratMedia
+
+    '                        .SisaDiMesin = If(chkLokasiMesin.Checked, 1, 0)
+
+    '                        .UserID = ActiveSession.KodeUser
+    '                    End With
+    '                    DaftarProduksiPrintingRoll.Add(ProduksiPrintingRoll)
+
+    '                    'Simpan Data Stock Roll Hasil Produksi
+    '                    StockRoll = New StockRoll
+    '                    StockRoll.NoTransaksi = NoTransaksi
+    '                    StockRoll.TglTransaksi = TglTransaksi.Date
+    '                    StockRoll.TglTimbang = TglPencatatan
+    '                    StockRoll.NomorWO = cboNomorSPK.SelectedValue
+    '                    StockRoll.KodeItem = lblKodeItemHasilProduksi.Text
+    '                    StockRoll.NamaItem = lblNamaItemHasilProduksi.Text
+    '                    StockRoll.KodeShift = lblKodeShift.Text
+    '                    StockRoll.KodeGrup = cboKodeGrup.SelectedValue
+    '                    StockRoll.KodeUnit = lblKodeUnitProduksi.Tag
+    '                    StockRoll.KodeUnitPeruntukan = cboKodeUnitPeruntukan.SelectedValue
+    '                    StockRoll.KodeMesin = cboKodeMesin.SelectedValue
+    '                    StockRoll.KodeLokasi = KodeLokasi
+    '                    StockRoll.KodeProduksi = KodeProduksi
+    '                    StockRoll.BeratBrutto = FGBeratBrutto
+    '                    StockRoll.KodeMedia = FGKodeMedia
+    '                    StockRoll.JumlahMedia = 1
+    '                    StockRoll.BeratMedia = FGBeratMedia
+    '                    StockRoll.BeratNetto = FGBeratNetto
+    '                    StockRoll.PanjangRoll = txtHasilMeter.Value
+    '                    StockRoll.Pcs = txtHasilPcs.Value
+    '                    StockRoll.Transaksi = 1         ' Hasil Produksi
+    '                    StockRoll.StatusStock = 1       ' Stock Aktif
+    '                    StockRoll.StatusQc = 1          ' Status OK
+    '                    StockRoll.KodeStatus = ""
+    '                    StockRoll.StatusDisposisi = 0
+    '                    StockRoll.KodeDisposisi = ""
+    '                    StockRoll.Satuan1 = UnitProduksi.KodeSatuan1
+    '                    StockRoll.Satuan2 = UnitProduksi.KodeSatuan2
+    '                    StockRoll.Satuan3 = UnitProduksi.KodeSatuan3
+    '                    StockRoll.Jumlah1 = 1
+    '                    StockRoll.Jumlah2 = txtHasilMeter.Value
+    '                    StockRoll.Jumlah3 = txtHasilTimbang.Value
+    '                    StockRoll.Keterangan = txtKeterangan.Text
+    '                    StockRoll.InputData = 0
+    '                    StockRoll.UserID = ActiveSession.KodeUser
+    '                    DaftarStockRoll.Add(StockRoll)
+
+    '                    'Simpan Data Stock Roll Sisa Bahan Produksi
+    '                    If txtSisaBahanMeter.Value <> 0 Then
+
+    '                        Dim RMKodeProduksi As String = If(txtSisaBahan1.Value = 0, txtKodeProduksiBahan2.Text, txtKodeProduksiBahan1.Text)
+    '                        StockRoll = DaftarStockRoll.FindLastID(RMKodeProduksi)
+
+    '                        StockRoll.NoTransaksi = NoTransaksi
+    '                        StockRoll.TglTransaksi = TglTransaksi.Date
+    '                        StockRoll.TglTimbang = TglPencatatan
+    '                        StockRoll.NomorWO = cboNomorSPK.SelectedValue
+    '                        StockRoll.KodeShift = lblKodeShift.Text
+    '                        StockRoll.KodeGrup = cboKodeGrup.SelectedValue
+    '                        StockRoll.KodeLokasi = KodeLokasi
+    '                        StockRoll.BeratBrutto = SBBeratBrutto
+    '                        StockRoll.KodeMedia = SBKodeMedia
+    '                        StockRoll.JumlahMedia = 1
+    '                        StockRoll.BeratMedia = SBBeratMedia
+    '                        StockRoll.BeratNetto = SBBeratNetto
+    '                        StockRoll.PanjangRoll = txtSisaBahanMeter.Value
+    '                        StockRoll.StatusStock = 1
+    '                        StockRoll.Jumlah1 = 1
+    '                        StockRoll.Jumlah2 = txtSisaBahanMeter.Value
+    '                        StockRoll.Jumlah3 = txtSisaBahanTimbang.Value
+    '                        StockRoll.UserID = ActiveSession.KodeUser
+    '                        DaftarStockRoll.Add(StockRoll)
+
+    '                    End If
+
+    '                    'Posting Ke SAP Data Staging
+
+    '                    '--------------------------------------------------------------------------------------------------
+    '                    'Bahan Produksi
+    '                    '--------------------------------------------------------------------------------------------------
+    '                    'Bahan Pembantu
+
+    '                    'Bahan #1
+    '                    If txtKodeProduksiBahan1.Text.Trim() <> "" Then
+    '                        SAPStaging.PostMaterialIssue(KodeUnitSAP,
+    '                                                     cboNomorSPK.SelectedValue,
+    '                                                     TglTransaksi,
+    '                                                     txtKodeItemBahan1.Text,
+    '                                                     txtPemakaianBahan1.Value,
+    '                                                     txtKodeProduksiBahan1.Text,
+    '                                                     NoTransaksi,
+    '                                                     KodeLokasi)
+    '                    End If
+
+    '                    'Bahan #2
+    '                    If txtKodeProduksiBahan2.Text.Trim() <> "" Then
+    '                        SAPStaging.PostMaterialIssue(KodeUnitSAP,
+    '                                                     cboNomorSPK.SelectedValue,
+    '                                                     TglTransaksi,
+    '                                                     txtKodeItemBahan2.Text,
+    '                                                     txtPemakaianBahan2.Value,
+    '                                                     txtKodeProduksiBahan2.Text,
+    '                                                     NoTransaksi,
+    '                                                     KodeLokasi)
+    '                    End If
+
+    '                    'Bahan Pembantu
+
+
+    '                    'Eksekusi Data Staging
+    '                    SAPStaging.Execute(NoTransaksi, HSPProduction.SAPStaging.enumTransaction.MaterialIssue)
+
+    '                    '--------------------------------------------------------------------------------------------------
+    '                    'Hasil Produksi
+    '                    '--------------------------------------------------------------------------------------------------
+    '                    SAPStaging.PostFinishedGoodReceipt(KodeUnitSAP,
+    '                                                       cboNomorSPK.SelectedValue,
+    '                                                       TglTransaksi,
+    '                                                       lblKodeItemHasilProduksi.Text,
+    '                                                       txtHasilMeter.Value,
+    '                                                       txtHasilTimbang.Value,
+    '                                                       KodeProduksi,
+    '                                                       "",
+    '                                                       NoTransaksi,
+    '                                                       KodeLokasi)
+
+    '                    '**************************************************************************************************
+    '                    'Eksekusi Data Staging
+    '                    '**************************************************************************************************
+    '                    Try
+    '                        'Eksekusi
+    '                        SAPStaging.Execute(NoTransaksi, HSPProduction.SAPStaging.enumTransaction.FinishedGoodReceipt)
+
+    '                        Scope.Complete()
+    '                        Scope.Dispose()
+
+    '                    Catch ex2 As Exception
+    '                        'Remove Staging Data
+    '                        SAPStaging.RemoveStagingData(NoTransaksi)
+
+    '                        Scope.Dispose()
+    '                    End Try
+    '                    '**************************************************************************************************
+
+
+    '                    'Cetak Struk
+    '                    MessageBox.Show("Siapkan Label Untuk Mencetak Struk Hasil Roll Produksi Printing", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    '                    PrintBarcode(KodeProduksi)
+
+    '                    If txtSisaBahanTimbang.Value <> 0 Then
+    '                        If Not chkLokasiMesin.Checked Then
+    '                            MessageBox.Show("Siapkan Label Untuk Mencetak Struk Sisa Roll Bahan", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    '                            PrintBarcode(If(txtSisaBahan1.Value = 0, txtKodeProduksiBahan2.Text, txtKodeProduksiBahan1.Text))
+    '                        End If
+    '                    End If
+
+    '                    Me.Cursor = Cursors.Default
+    '                    Me.Close()
+    '                    '---------------------------------------------------------------------------------------------------------
+
+    '                Catch ex As Exception
+    '                    Me.Cursor = Cursors.Default
+
+    '                    'Remove Staging Data
+    '                    SAPStaging.RemoveStagingData(NoTransaksi)
+
+    '                    Scope.Dispose()
+    '                    MessageBox.Show("Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
+    '                                   ex.Message, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+    '                    GoTo Jump
+    '                End Try
+
+    '            Case "btReprint"
+    '                '---------------------------------------------------------------------------------------------------------
+    '                PrintBarcode(New DaftarStockRoll(ActiveSession).FindLastProductionID(lblKodeUnitProduksi.Tag).KodeProduksi, True)
+    '                '---------------------------------------------------------------------------------------------------------
+
+    '            Case "btClose"
+    '                '---------------------------------------------------------------------------------------------------------
+    '                Me.Close()
+    '                '---------------------------------------------------------------------------------------------------------
+    '        End Select
+
+    'Jump:
+    '        Me.Cursor = Cursors.Default
+    '    End Sub
     Private Sub btSave_Click(sender As Object, e As EventArgs) Handles btSave.Click, btClose.Click, btReprint.Click
         Dim KodeLokasi As String = lblKodeLokasiHasilProduksi.Tag.ToString.Trim()
 
@@ -1264,4 +1709,59 @@ Jump:
         End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        '        Dim KodeLokasi As String = lblKodeLokasiHasilProduksi.Tag.ToString.Trim()
+
+        '        Dim FGQty As Double = New SAPWorkOrder().FindFGByWO(KodeUnitSAP, cboNomorSPK.SelectedValue).QtyBOM
+        '        Dim DT As DataTable = New SAPWorkOrder().ReadRMByWO(cboNomorSPK.SelectedValue, KodeUnitSAP).Tables("View")
+        '        Dim DR As DataRow
+
+        '        Dim KodeItemBahan As String
+        '        Dim NamaItemBahan As String
+        '        Dim QtyBahan As Double
+
+        '        For Each DR In DT.Rows
+        '            Dim Stock As Double
+
+        '            If Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "302" And
+        '               Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "303" And
+        '               Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "304" And
+        '               Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "305" Then
+
+        '                KodeItemBahan = DR("Kode Item")
+        '                NamaItemBahan = DR("Nama Item")
+        '                QtyBahan = DR("Qty") * (txtHasilMeter.Value / FGQty)
+
+        '                Dim QtyIssue As Double = QtyBahan
+
+        '                Stock = New SAPInventory().GetCurrentStock(KodeLokasi, KodeItemBahan, "")
+
+        '                If Stock <= 0 Then
+        '                    MsgBox("Stock Bahan " + NamaItemBahan + " Tidak Mencukupi...!")
+        '                    GoTo Jump
+        '                End If
+
+        '                If QtyBahan > Stock Then
+        '                    QtyIssue = Stock
+        '                End If
+
+        '                MsgBox(KodeItemBahan + " " + NamaItemBahan + " : " + DR("Qty").ToString + " / " + FGQty.ToString + " >> " + QtyIssue.ToString)
+        '            End If
+        '        Next
+
+        'Jump:
+        Dim NoTransaksi As String
+        Try
+            NoTransaksi = "001"
+
+            MsgBox("'" + NoTransaksi + 9 + "''")
+            Try
+                MsgBox(NoTransaksi)
+            Catch ex As Exception
+                MsgBox("False")
+            End Try
+        Catch ex As Exception
+            MsgBox("'" + NoTransaksi + " ERROR")
+        End Try
+    End Sub
 End Class

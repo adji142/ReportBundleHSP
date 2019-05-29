@@ -51,4 +51,25 @@
         ifrmChil.MdiParent = Me
         ifrmChil.Show()
     End Sub
+
+    Private Sub AgingBackOrderPenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AgingBackOrderPenjualanToolStripMenuItem.Click
+        Dim ifrmChil As New FrmRPT_BO001_BackOrderWAging
+        IsMdiContainer = True
+        ifrmChil.MdiParent = Me
+        ifrmChil.Show()
+    End Sub
+
+    Private Sub CancelationDateToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CancelationDateToolStripMenuItem.Click
+        Dim ifrmChil As New FrmRpt_Cancelationdate_SO
+        IsMdiContainer = True
+        ifrmChil.MdiParent = Me
+        ifrmChil.Show()
+    End Sub
+
+    Private Sub BSVsAfvalToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BSVsAfvalToolStripMenuItem.Click
+        Dim ifrmChil As New FrmRpt_BSvsAfval
+        IsMdiContainer = True
+        ifrmChil.MdiParent = Me
+        ifrmChil.Show()
+    End Sub
 End Class

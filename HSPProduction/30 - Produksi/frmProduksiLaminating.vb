@@ -1291,4 +1291,7 @@ Jump:
         End If
     End Sub
 
+    Private Sub tmrStabil_Tick(sender As Object, e As EventArgs) Handles tmrStabil.Tick
+
+    End Sub
 End Class

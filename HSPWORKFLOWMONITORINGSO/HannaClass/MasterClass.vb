@@ -69,10 +69,7 @@ Public Class MasterClass : Implements IDataLookup
             " ""TglWO""                         AS ""Tanggal WO"",  " +
             " ""OP_KodeItem""                   AS ""Kode Item"",  " +
             " ""OP_NamaItem""                   AS ""Nama Item"",  " +
-            " TO_DECIMAL(""QtySO"",6,2)         AS ""Qty Order"",  " +
-            " TO_DECIMAL(""QtyOP"",6,2)         AS ""Qty Req Produksi"",  " +
-            " TO_DECIMAL(""QtyWO"",6,2)         AS ""Qty WO"",  " +
-            " TO_DECIMAL(""QtyOPJadi"",6,2)     AS ""Qty Hasil""  " +
+            " ""QtyWO""                         AS ""Qty WO""  " +
             " from HSP_WORKFLOW_WO " +
             " WHERE ""NoSO"" = '" + NoReff + "' and ""OP_KodeItem"" = '" + KodeItem + "'"
 
@@ -86,6 +83,95 @@ Public Class MasterClass : Implements IDataLookup
             DA.Fill(DS, "View")
 
             ReadWO = DS
+        End Using
+    End Function
+    Public Function ReadStkProd(ByVal NoReff As String, ByVal KodeItem As String) As DataSet
+        Dim DB As New SAPDBConnection
+        Dim SQL As String
+
+        SQL = "Select " +
+            " ""NoSO""                          AS ""Nomor SO"",  " +
+            " ""OP_Nomor""                      AS ""Nomor OP"",  " +
+            " ""NoWO""                          AS ""Nomor WO"",  " +
+            " ""ItemCode""                      AS ""Kode Item"",  " +
+            " ""ItemName""                      AS ""Nama Item"",  " +
+            " ""WhsCode""                       AS ""Kode Warehouse"",  " +
+            " ""WhsName""                       AS ""Nama Warehouse"",  " +
+            " ""QtyReq""                        AS ""Qty Req Produksi"",  " +
+            " ""OP_QtyHasil""                   AS ""Qty Hasil Produksi"",  " +
+            " ""QtyWO""                         AS ""Qty WO"",  " +
+            " ""QtyProduksi""                   AS ""Qty Stock Floor""  " +
+            " from HSP_WORKFLOW_STK_PROD " +
+            " WHERE ""NoSO"" = '" + NoReff + "' and ""ItemCode"" = '" + KodeItem + "'"
+
+        Using DBX As IDbConnection = DB.Connection()
+
+            Dim CMD As New HanaCommand(SQL, DBX)
+            Dim DA As New HanaDataAdapter
+            Dim DS As New DataSet
+
+            DA.SelectCommand = CMD
+            DA.Fill(DS, "View")
+
+            ReadStkProd = DS
+        End Using
+    End Function
+    Public Function ReadStkWH(ByVal NoReff As String, ByVal KodeItem As String) As DataSet
+        Dim DB As New SAPDBConnection
+        Dim SQL As String
+
+        SQL = "Select " +
+            " ""NoSO""                          AS ""Nomor SO"",  " +
+            " ""OP_Nomor""                      AS ""Nomor OP"",  " +
+            " ""NoWO""                          AS ""Nomor WO"",  " +
+            " ""ItemCode""                      AS ""Kode Item"",  " +
+            " ""ItemName""                      AS ""Nama Item"",  " +
+            " ""WhsCode""                       AS ""Kode Warehouse"",  " +
+            " ""WhsName""                       AS ""Nama Warehouse"",  " +
+            " ""QtyReq""                        AS ""Qty Req Produksi"",  " +
+            " ""OP_QtyHasil""                   AS ""Qty Hasil Produksi"",  " +
+            " ""QtyWO""                         AS ""Qty WO"",  " +
+            " ""QtyProduksi""                   AS ""Qty Stock Floor""  " +
+            " from HSP_WORKFLOW_STK_WH " +
+            " WHERE ""NoSO"" = '" + NoReff + "' and ""ItemCode"" = '" + KodeItem + "'"
+
+        Using DBX As IDbConnection = DB.Connection()
+
+            Dim CMD As New HanaCommand(SQL, DBX)
+            Dim DA As New HanaDataAdapter
+            Dim DS As New DataSet
+
+            DA.SelectCommand = CMD
+            DA.Fill(DS, "View")
+
+            ReadStkWH = DS
+        End Using
+    End Function
+
+    Public Function ReadDeliv(ByVal NoReff As String, ByVal KodeItem As String) As DataSet
+        Dim DB As New SAPDBConnection
+        Dim SQL As String
+
+        SQL = "Select " +
+            " ""INV_Nomor""                     AS ""Nomor INV"",  " +
+            " ""OJ_Tanggal""                    AS ""Tanggal INV"",  " +
+            " ""OJ_TglBatasKirim""              AS ""Tanggal Batas Kirim"",  " +
+            " ""OJ_KodeItem""                   AS ""Kode Item"",  " +
+            " ""OJ_NamaItem""                   AS ""Nama Item"",  " +
+            " ""OJ_QtyKirim""                   AS ""Qty Kirim""  " +
+            " from HSP_WORKFLOW_INV " +
+            " WHERE ""OJ_Nomor"" = '" + NoReff + "' and ""OJ_KodeItem"" = '" + KodeItem + "'"
+
+        Using DBX As IDbConnection = DB.Connection()
+
+            Dim CMD As New HanaCommand(SQL, DBX)
+            Dim DA As New HanaDataAdapter
+            Dim DS As New DataSet
+
+            DA.SelectCommand = CMD
+            DA.Fill(DS, "View")
+
+            ReadDeliv = DS
         End Using
     End Function
     Public Function GetLookup(TextSearch As String, Parameter As Object) As DataSet Implements HSP.Data.IDataLookup.GetLookup

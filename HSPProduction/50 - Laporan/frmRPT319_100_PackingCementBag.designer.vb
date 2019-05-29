@@ -80,7 +80,7 @@ Partial Class frmRPT319_100_PackingCementBag
         'cboLaporan
         '
         Me.cboLaporan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboLaporan.Items.AddRange(New Object() {"319101", "319102", "319103", "319104", "319105", "319106"})
+        Me.cboLaporan.Items.AddRange(New Object() {"319101", "319102", "319103", "319104", "319105", "319106", "319107"})
         Me.cboLaporan.Name = "cboLaporan"
         Me.cboLaporan.Size = New System.Drawing.Size(150, 31)
         '

@@ -90,7 +90,7 @@ Public Class aMenuTester
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Dim frm As New frmDaftarMutasiRoll
+        Dim frm As New frmMonitoringHasilProduksi
         frm.ShowDialog()
     End Sub
 
@@ -165,7 +165,7 @@ Public Class aMenuTester
     End Sub
 
     Private Sub Button32_Click(sender As Object, e As EventArgs) Handles Button32.Click
-        Dim frm As New frmRPT100_100_StockBahanExtruder
+        Dim frm As New frmRPTPro_SaldoStockBahan
         frm.ShowDialog()
     End Sub
 
@@ -290,7 +290,7 @@ Public Class aMenuTester
     End Sub
 
     Private Sub Button55_Click(sender As Object, e As EventArgs) Handles Button55.Click
-        Dim frm As New frmRPT100_100_StockBahanExtruder
+        Dim frm As New frmRPTPro_SaldoStockBahan
         frm.ShowDialog()
     End Sub
 
@@ -355,7 +355,7 @@ Public Class aMenuTester
     End Sub
 
     Private Sub Button70_Click(sender As Object, e As EventArgs) Handles Button70.Click
-        Dim frm As New frmRPT210_120_TransferGudangRoll
+        Dim frm As New frmRPT210_140_GudangRoll
         frm.ShowDialog()
     End Sub
 
@@ -718,7 +718,7 @@ Public Class aMenuTester
     End Sub
 
     Private Sub KeteranganToleransiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeteranganToleransiToolStripMenuItem.Click
-        Dim frm As New frmDaftarAreaProduksi 'frmDaftarKeteranganToleransi
+        Dim frm As New frmDaftarKeteranganToleransi
         frm.ShowDialog()
     End Sub
 
@@ -754,6 +754,195 @@ Public Class aMenuTester
 
     Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
         Dim frm As New frmRPT320_110_StockRollPrinting
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub Button124_Click(sender As Object, e As EventArgs) Handles Button124.Click
+        Dim frm As New frmExecuteRMReceipt
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub AnalisaBeratRollToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnalisaBeratRollToolStripMenuItem.Click
+        Dim frm As New frmRPT200_170_AnalisaBerat
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PengakuanRollToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PengakuanRollToolStripMenuItem.Click
+        Dim frm As New frmRPT210_140_GudangRoll
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub ParameterExtruderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ParameterExtruderToolStripMenuItem.Click
+        Dim frm As New frmDaftarParameterExtruder
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub SaldoStockToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaldoStockToolStripMenuItem.Click
+        Dim frm As New frmRPTSAP_100_Stock
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub BackOrderPenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackOrderPenjualanToolStripMenuItem.Click
+        Dim frm As New frmRPTSAP_200_BackOrderPenjualan
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PiutangUsahaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PiutangUsahaToolStripMenuItem.Click
+        Dim frm As New frmRPTSAP_300_Piutang
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PenjualanToolStripMenuItem.Click
+        Dim frm As New frmRPTSAP_700_LaporanPenjualan
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub KelompokKoreksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KelompokKoreksiToolStripMenuItem.Click
+        Dim frm As New frmDaftarKelompokKoreksi
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PriceListToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PriceListToolStripMenuItem.Click
+        Dim frm As New frmDaftarTransaksiPricelist
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PemakaianBahanAcctToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PemakaianBahanAcctToolStripMenuItem.Click
+        Dim frm As New frmDaftarPemakaianBahanAcct
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub JenisKoreksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles JenisKoreksiToolStripMenuItem.Click
+        Dim frm As New frmDaftarJenisKoreksi
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub AdjustmentStockOUTToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AdjustmentStockOUTToolStripMenuItem.Click
+        Dim frm As New frmKoreksiKeluar
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub Button125_Click(sender As Object, e As EventArgs) Handles Button125.Click
+        MsgBox(Format(Stod("01-07-2018"), "dd/MM/yyyy"))
+    End Sub
+
+    Private Sub SalesOrderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalesOrderToolStripMenuItem.Click
+        Dim frm As New Form2
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PricelistToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles PricelistToolStripMenuItem1.Click
+        Dim frm As New frmRPTSAP_500_Pricelist
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub JenisMesinToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles JenisMesinToolStripMenuItem.Click
+        Dim frm As New frmDaftarJenisMesin
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub LapHasilCBMesinToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapHasilCBMesinToolStripMenuItem.Click
+        Dim frm As New frmRPT312_130_HasilCementBag
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub Button126_Click(sender As Object, e As EventArgs) Handles Button126.Click
+        Dim frm As New frmProduksiExtruderTester
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PenyerahanPerformaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PenyerahanPerformaToolStripMenuItem.Click
+        Dim frm As New frmRPT400_200_PenyerahanHasilProduksi
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        Dim frm As New frmRPT500_160_Bmf
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PriceListPrintingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PriceListPrintingToolStripMenuItem.Click
+        Dim frm As New frmDaftarTransaksiPricelistPrinting
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub Button127_Click(sender As Object, e As EventArgs) Handles Button127.Click
+        Dim frm As New frmRPT312_120_BahanRollCementBag
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub KartuStockToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KartuStockToolStripMenuItem.Click
+        Dim frm As New frmRPTSAP_LaporanKartuStock
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub MonitorHasilProduksiWorkOrderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MonitorHasilProduksiWorkOrderToolStripMenuItem.Click
+        Dim frm As New frmMonitoringHasilProduksi
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub MonitorBahanProduksiWorkOrderToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MonitorBahanProduksiWorkOrderToolStripMenuItem.Click
+        Dim frm As New frmMonitoringBahanProduksi
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub MonitoringKebutuhanBahanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MonitoringKebutuhanBahanToolStripMenuItem.Click
+        Dim frm As New frmMonitoringKebutuhanBahan
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub MonitoringWOToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles MonitoringWOToolStripMenuItem.Click
+        Dim frm As New frmMonitoringWO
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PengakuanBenangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PengakuanBenangToolStripMenuItem.Click
+        Dim frm As New frmPengakuanStockBenang
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub AnalisaBeratPenjualanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnalisaBeratPenjualanToolStripMenuItem.Click
+        Dim frm As New frmRPTSAP_900_AnalisaBeratPenjualan
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub TransferBenangKeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransferBenangKeluarToolStripMenuItem.Click
+        Dim frm As New frmDaftarPengeluaranBenang
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub TransferBenangMasukToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransferBenangMasukToolStripMenuItem.Click
+        Dim frm As New frmTransferBenangMasuk
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PenerimaanBenangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PenerimaanBenangToolStripMenuItem.Click
+        Dim frm As New frmPenerimaanBenang
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub TransferBenangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransferBenangToolStripMenuItem.Click
+        Dim frm As New Form2
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub WIPAccountToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WIPAccountToolStripMenuItem.Click
+        Dim frm As New frmRPT800_130_CostAccounting
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub UnpackingBallToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UnpackingBallToolStripMenuItem.Click
+        Dim frm As New frmTransformBallToPcs
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub Button128_Click(sender As Object, e As EventArgs) Handles Button128.Click
+        Dim frm As New frmExecuteFGIssue
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub PengeluaranBenangToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PengeluaranBenangToolStripMenuItem.Click
+        Dim frm As New frmRPT110_230_GudangBenang
         frm.ShowDialog()
     End Sub
 End Class

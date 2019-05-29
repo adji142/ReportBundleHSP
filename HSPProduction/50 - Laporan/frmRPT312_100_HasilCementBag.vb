@@ -97,6 +97,8 @@ Public Class frmRPT312_100_HasilCementBag
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT312103_HasilCementBag.RPT")
             Case 4
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT312104_HasilCementBag.RPT")
+            Case 5
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT312105_HasilCementBag.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

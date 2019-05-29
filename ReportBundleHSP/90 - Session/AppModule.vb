@@ -33,6 +33,14 @@
         oApp(0) = "BO01"
         oApp(1) = "Laporan BackOrder"
         '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "SO01"
+        oApp(1) = "Laporan Cancelation date SO"
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "2001"
+        oApp(1) = "Laporan Afval vs BS"
+        '-----------------------------------------------------------------------------------
 
         oDS.AcceptChanges()
         GetAppModule = oDT
@@ -72,6 +80,10 @@
                 AppForm = New FrmRPT_7704_MutasiSparePart
             Case "BO01"
                 AppForm = New FrmRPT_BackOrderPenjualanLombok
+            Case "SO01"
+                AppForm = New FrmRpt_Cancelationdate_SO
+            Case "2001"
+                AppForm = New FrmRpt_BSvsAfval
         End Select
 
         Select Case AppID

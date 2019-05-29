@@ -10,13 +10,12 @@ Public Class frmDaftarPemakaianBahan
         'Unit Produksi
         Dim DaftarUnitProduksi As New DaftarUnitProduksi(ActiveSession)
         DS = New DataSet
-        DS = DaftarUnitProduksi.Read("%", 0, 1, 0)
+        DS = DaftarUnitProduksi.Read("%", "", 0, 1, 0)
         cboKodeUnit.ComboBox.DataSource = DS.Tables("View")
         cboKodeUnit.ComboBox.DisplayMember = "Unit Produksi"
         cboKodeUnit.ComboBox.ValueMember = "Kode"
 
     End Sub
-
 
     'Form Load
     Private Sub frmDaftarPemakaianBahan_Load(sender As Object, e As EventArgs) Handles MyBase.Load

@@ -256,7 +256,8 @@ Public Class frmDaftarPengeluaranBenang
                 '---------------------------------------------------------------------------------------------------------
                 Dim DataKey As String = If(ViewPermintaan.Rows.Count = 0, "", ViewPermintaan(0, ViewPermintaan.CurrentCell.RowIndex).Value.ToString())
 
-                Dim FormEdit As New frmPengeluaranBenang(DataKey)
+                'Dim FormEdit As New frmPengeluaranBenang(DataKey)
+                Dim FormEdit As New frmTransferBenangKeluar(DataKey)
                 FormEdit.ShowDialog()
 
                 If FormEdit.IDData <> "" Then

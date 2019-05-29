@@ -31,6 +31,8 @@ Public Class SAPStaging
         DirectProcess = 7
         InventoryTransferRequest = 8
         FinishedGoodIssue = 9
+        GoodIssue = 10
+        GoodReceipt = 11
     End Enum
 
     Public Enum enumTransaksiStaging
@@ -293,6 +295,36 @@ Public Class SAPStaging
                 '-----------------------------------------------------------------------------------------------------
                 Dim STX As New SOLStaging.AfvalProcess(DB)
                 STX.ProcessSortir(NoTransaksi)
+                '-----------------------------------------------------------------------------------------------------
+
+            Case enumTransaction.GoodIssue
+
+                '-----------------------------------------------------------------------------------------------------
+                Dim STX As New SOLStaging.FinishedGood(DB)
+
+                'Query
+                Dim SQL As String = ""
+
+                SQL += "SELECT ""EntryNo"" FROM  ""Staging_Goods_Issue"" "
+                SQL += "WHERE ""Ref"" = '" + NoTransaksi + "' AND ""Imported"" = 'N' "
+
+                'Baca Data
+                Dim DBSTG As New SAPDBConnection("STAGINGDB")
+                Dim DaftarTransaksi As New List(Of Integer)()
+
+                Using DBX As IDbConnection = DBSTG.Connection()
+                    Dim CMD As New HanaCommand(SQL, DBX)
+                    Dim DR As HanaDataReader = CMD.ExecuteReader()
+
+                    While DR.Read()
+                        DaftarTransaksi.Add(DR("EntryNo").ToString())
+                    End While
+                End Using
+
+                'Eksekuasi
+                If DaftarTransaksi.Count > 0 Then
+                    STX.IssueFG(DaftarTransaksi)
+                End If
                 '-----------------------------------------------------------------------------------------------------
         End Select
 
@@ -1069,6 +1101,20 @@ Jump:
         End Using
     End Function
 
+    Public Function UpdateStagingFGIssue(ByVal NoTransaksi As String)
+        Dim DB As New SAPDBConnection("STAGINGDB_LIVE")
+        Dim SQL As String
+
+        SQL = "UPDATE ""Staging_FG_Issue"" SET " +
+              " ""Imported""='N' " +
+              "WHERE ""Ref""='" + NoTransaksi + "' "
+
+        Using DBX As IDbConnection = DB.Connection()
+            Dim CMD As New HanaCommand(SQL, DBX)
+            CMD.ExecuteNonQuery()
+        End Using
+    End Function
+
     Public Function UpdateStagingRecycleReceipt(ByVal NoTransaksi As String)
         Dim DB As New SAPDBConnection("STAGINGDB_LIVE")
         Dim SQL As String
@@ -1102,6 +1148,20 @@ Jump:
         Dim SQL As String
 
         SQL = "UPDATE ""Staging_RM_Issue"" SET " +
+              " ""Imported""='N' " +
+              "WHERE ""Ref""='" + NoTransaksi + "' "
+
+        Using DBX As IDbConnection = DB.Connection()
+            Dim CMD As New HanaCommand(SQL, DBX)
+            CMD.ExecuteNonQuery()
+        End Using
+    End Function
+
+    Public Function UpdateStagingRMReceipt(ByVal NoTransaksi As String)
+        Dim DB As New SAPDBConnection("STAGINGDB_LIVE")
+        Dim SQL As String
+
+        SQL = "UPDATE ""Staging_RM_Receipt"" SET " +
               " ""Imported""='N' " +
               "WHERE ""Ref""='" + NoTransaksi + "' "
 

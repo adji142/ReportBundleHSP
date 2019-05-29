@@ -23,18 +23,18 @@ Partial Class FrmMonitoringSO
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMonitoringSO))
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle13 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle14 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle15 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle16 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle17 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle18 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle19 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle20 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle21 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle22 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle23 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle24 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Toolbar = New System.Windows.Forms.ToolStrip()
         Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel4 = New System.Windows.Forms.ToolStripLabel()
@@ -51,12 +51,15 @@ Partial Class FrmMonitoringSO
         Me.Tab4 = New System.Windows.Forms.TabPage()
         Me.TabSubDetail = New System.Windows.Forms.TabControl()
         Me.SubDetail1 = New System.Windows.Forms.TabPage()
-        Me.SubDetail2 = New System.Windows.Forms.TabPage()
-        Me.Tab5 = New System.Windows.Forms.TabPage()
-        Me.View = New Enerzie.EPSGridControls.EPSDataGridView()
         Me.GridStockProd = New Enerzie.EPSGridControls.EPSDataGridView()
+        Me.SubDetail2 = New System.Windows.Forms.TabPage()
         Me.GridStockWHS = New Enerzie.EPSGridControls.EPSDataGridView()
+        Me.Tab5 = New System.Windows.Forms.TabPage()
         Me.GridDeliv = New Enerzie.EPSGridControls.EPSDataGridView()
+        Me.View = New Enerzie.EPSGridControls.EPSDataGridView()
+        Me.ToolStripLabel1 = New System.Windows.Forms.ToolStripLabel()
+        Me.txtCari = New System.Windows.Forms.ToolStripTextBox()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.Toolbar.SuspendLayout()
         Me.TabDetail.SuspendLayout()
         Me.Tab1.SuspendLayout()
@@ -66,19 +69,19 @@ Partial Class FrmMonitoringSO
         Me.Tab4.SuspendLayout()
         Me.TabSubDetail.SuspendLayout()
         Me.SubDetail1.SuspendLayout()
-        Me.SubDetail2.SuspendLayout()
-        Me.Tab5.SuspendLayout()
-        CType(Me.View, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.GridStockProd, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SubDetail2.SuspendLayout()
         CType(Me.GridStockWHS, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Tab5.SuspendLayout()
         CType(Me.GridDeliv, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.View, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Toolbar
         '
         Me.Toolbar.BackColor = System.Drawing.SystemColors.Control
         Me.Toolbar.ImageScalingSize = New System.Drawing.Size(24, 24)
-        Me.Toolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripLabel4, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.CmbStatus, Me.ToolStripSeparator2, Me.btRefresh})
+        Me.Toolbar.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel3, Me.ToolStripLabel4, Me.ToolStripSeparator1, Me.ToolStripLabel2, Me.CmbStatus, Me.ToolStripSeparator2, Me.ToolStripLabel1, Me.txtCari, Me.ToolStripSeparator3, Me.btRefresh})
         Me.Toolbar.Location = New System.Drawing.Point(0, 0)
         Me.Toolbar.Name = "Toolbar"
         Me.Toolbar.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
@@ -164,8 +167,8 @@ Partial Class FrmMonitoringSO
         Me.GridOP.AllowUserToDeleteRows = False
         Me.GridOP.AllowUserToOrderColumns = True
         Me.GridOP.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.White
-        Me.GridOP.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle13.BackColor = System.Drawing.Color.White
+        Me.GridOP.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle13
         Me.GridOP.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -176,14 +179,14 @@ Partial Class FrmMonitoringSO
         Me.GridOP.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.GridOP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.GridOP.ColumnHeadersHeight = 35
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GridOP.DefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle14.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridOP.DefaultCellStyle = DataGridViewCellStyle14
         Me.GridOP.Location = New System.Drawing.Point(6, 6)
         Me.GridOP.MultiSelect = False
         Me.GridOP.Name = "GridOP"
@@ -214,8 +217,8 @@ Partial Class FrmMonitoringSO
         Me.GridWO.AllowUserToDeleteRows = False
         Me.GridWO.AllowUserToOrderColumns = True
         Me.GridWO.AllowUserToResizeRows = False
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.White
-        Me.GridWO.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle3
+        DataGridViewCellStyle15.BackColor = System.Drawing.Color.White
+        Me.GridWO.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle15
         Me.GridWO.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GridWO.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -225,14 +228,14 @@ Partial Class FrmMonitoringSO
         Me.GridWO.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.GridWO.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.GridWO.ColumnHeadersHeight = 35
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GridWO.DefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle16.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridWO.DefaultCellStyle = DataGridViewCellStyle16
         Me.GridWO.Location = New System.Drawing.Point(6, 6)
         Me.GridWO.MultiSelect = False
         Me.GridWO.Name = "GridWO"
@@ -281,74 +284,14 @@ Partial Class FrmMonitoringSO
         Me.SubDetail1.Text = "Production"
         Me.SubDetail1.UseVisualStyleBackColor = True
         '
-        'SubDetail2
-        '
-        Me.SubDetail2.Controls.Add(Me.GridStockWHS)
-        Me.SubDetail2.Location = New System.Drawing.Point(4, 22)
-        Me.SubDetail2.Name = "SubDetail2"
-        Me.SubDetail2.Padding = New System.Windows.Forms.Padding(3)
-        Me.SubDetail2.Size = New System.Drawing.Size(759, 100)
-        Me.SubDetail2.TabIndex = 1
-        Me.SubDetail2.Text = "Warehoueses"
-        Me.SubDetail2.UseVisualStyleBackColor = True
-        '
-        'Tab5
-        '
-        Me.Tab5.Controls.Add(Me.GridDeliv)
-        Me.Tab5.Location = New System.Drawing.Point(4, 22)
-        Me.Tab5.Name = "Tab5"
-        Me.Tab5.Padding = New System.Windows.Forms.Padding(3)
-        Me.Tab5.Size = New System.Drawing.Size(779, 138)
-        Me.Tab5.TabIndex = 4
-        Me.Tab5.Text = "Delivery"
-        Me.Tab5.UseVisualStyleBackColor = True
-        '
-        'View
-        '
-        Me.View.AllowUserToAddRows = False
-        Me.View.AllowUserToDeleteRows = False
-        Me.View.AllowUserToOrderColumns = True
-        Me.View.AllowUserToResizeRows = False
-        DataGridViewCellStyle11.BackColor = System.Drawing.Color.White
-        Me.View.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle11
-        Me.View.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.View.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.View.BackgroundColor = System.Drawing.Color.White
-        Me.View.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.View.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
-        Me.View.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
-        Me.View.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.View.ColumnHeadersHeight = 35
-        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.View.DefaultCellStyle = DataGridViewCellStyle12
-        Me.View.Location = New System.Drawing.Point(12, 34)
-        Me.View.MultiSelect = False
-        Me.View.Name = "View"
-        Me.View.ReadOnly = True
-        Me.View.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        Me.View.RowHeadersVisible = False
-        Me.View.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
-        Me.View.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.View.ShowEditingIcon = False
-        Me.View.Size = New System.Drawing.Size(787, 181)
-        Me.View.StandardTab = True
-        Me.View.TabIndex = 16
-        '
         'GridStockProd
         '
         Me.GridStockProd.AllowUserToAddRows = False
         Me.GridStockProd.AllowUserToDeleteRows = False
         Me.GridStockProd.AllowUserToOrderColumns = True
         Me.GridStockProd.AllowUserToResizeRows = False
-        DataGridViewCellStyle5.BackColor = System.Drawing.Color.White
-        Me.GridStockProd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle17.BackColor = System.Drawing.Color.White
+        Me.GridStockProd.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle17
         Me.GridStockProd.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GridStockProd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -358,14 +301,14 @@ Partial Class FrmMonitoringSO
         Me.GridStockProd.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.GridStockProd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.GridStockProd.ColumnHeadersHeight = 35
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GridStockProd.DefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle18.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle18.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle18.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle18.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridStockProd.DefaultCellStyle = DataGridViewCellStyle18
         Me.GridStockProd.Location = New System.Drawing.Point(6, 6)
         Me.GridStockProd.MultiSelect = False
         Me.GridStockProd.Name = "GridStockProd"
@@ -379,14 +322,25 @@ Partial Class FrmMonitoringSO
         Me.GridStockProd.StandardTab = True
         Me.GridStockProd.TabIndex = 17
         '
+        'SubDetail2
+        '
+        Me.SubDetail2.Controls.Add(Me.GridStockWHS)
+        Me.SubDetail2.Location = New System.Drawing.Point(4, 22)
+        Me.SubDetail2.Name = "SubDetail2"
+        Me.SubDetail2.Padding = New System.Windows.Forms.Padding(3)
+        Me.SubDetail2.Size = New System.Drawing.Size(759, 100)
+        Me.SubDetail2.TabIndex = 1
+        Me.SubDetail2.Text = "Warehoueses"
+        Me.SubDetail2.UseVisualStyleBackColor = True
+        '
         'GridStockWHS
         '
         Me.GridStockWHS.AllowUserToAddRows = False
         Me.GridStockWHS.AllowUserToDeleteRows = False
         Me.GridStockWHS.AllowUserToOrderColumns = True
         Me.GridStockWHS.AllowUserToResizeRows = False
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        Me.GridStockWHS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle19.BackColor = System.Drawing.Color.White
+        Me.GridStockWHS.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle19
         Me.GridStockWHS.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GridStockWHS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -396,14 +350,14 @@ Partial Class FrmMonitoringSO
         Me.GridStockWHS.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.GridStockWHS.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.GridStockWHS.ColumnHeadersHeight = 35
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GridStockWHS.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle20.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridStockWHS.DefaultCellStyle = DataGridViewCellStyle20
         Me.GridStockWHS.Location = New System.Drawing.Point(6, 6)
         Me.GridStockWHS.MultiSelect = False
         Me.GridStockWHS.Name = "GridStockWHS"
@@ -417,14 +371,25 @@ Partial Class FrmMonitoringSO
         Me.GridStockWHS.StandardTab = True
         Me.GridStockWHS.TabIndex = 18
         '
+        'Tab5
+        '
+        Me.Tab5.Controls.Add(Me.GridDeliv)
+        Me.Tab5.Location = New System.Drawing.Point(4, 22)
+        Me.Tab5.Name = "Tab5"
+        Me.Tab5.Padding = New System.Windows.Forms.Padding(3)
+        Me.Tab5.Size = New System.Drawing.Size(779, 138)
+        Me.Tab5.TabIndex = 4
+        Me.Tab5.Text = "Delivery"
+        Me.Tab5.UseVisualStyleBackColor = True
+        '
         'GridDeliv
         '
         Me.GridDeliv.AllowUserToAddRows = False
         Me.GridDeliv.AllowUserToDeleteRows = False
         Me.GridDeliv.AllowUserToOrderColumns = True
         Me.GridDeliv.AllowUserToResizeRows = False
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        Me.GridDeliv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle21.BackColor = System.Drawing.Color.White
+        Me.GridDeliv.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle21
         Me.GridDeliv.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GridDeliv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
@@ -434,14 +399,14 @@ Partial Class FrmMonitoringSO
         Me.GridDeliv.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
         Me.GridDeliv.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.GridDeliv.ColumnHeadersHeight = 35
-        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.GridDeliv.DefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle22.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle22.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle22.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle22.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle22.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.GridDeliv.DefaultCellStyle = DataGridViewCellStyle22
         Me.GridDeliv.Location = New System.Drawing.Point(6, 6)
         Me.GridDeliv.MultiSelect = False
         Me.GridDeliv.Name = "GridDeliv"
@@ -454,6 +419,60 @@ Partial Class FrmMonitoringSO
         Me.GridDeliv.Size = New System.Drawing.Size(767, 126)
         Me.GridDeliv.StandardTab = True
         Me.GridDeliv.TabIndex = 18
+        '
+        'View
+        '
+        Me.View.AllowUserToAddRows = False
+        Me.View.AllowUserToDeleteRows = False
+        Me.View.AllowUserToOrderColumns = True
+        Me.View.AllowUserToResizeRows = False
+        DataGridViewCellStyle23.BackColor = System.Drawing.Color.White
+        Me.View.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle23
+        Me.View.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.View.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.View.BackgroundColor = System.Drawing.Color.White
+        Me.View.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.View.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None
+        Me.View.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable
+        Me.View.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.View.ColumnHeadersHeight = 35
+        DataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle24.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle24.Font = New System.Drawing.Font("Tahoma", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle24.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle24.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle24.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.View.DefaultCellStyle = DataGridViewCellStyle24
+        Me.View.Location = New System.Drawing.Point(12, 34)
+        Me.View.MultiSelect = False
+        Me.View.Name = "View"
+        Me.View.ReadOnly = True
+        Me.View.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        Me.View.RowHeadersVisible = False
+        Me.View.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing
+        Me.View.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.View.ShowEditingIcon = False
+        Me.View.Size = New System.Drawing.Size(787, 181)
+        Me.View.StandardTab = True
+        Me.View.TabIndex = 16
+        '
+        'ToolStripLabel1
+        '
+        Me.ToolStripLabel1.Name = "ToolStripLabel1"
+        Me.ToolStripLabel1.Size = New System.Drawing.Size(61, 28)
+        Me.ToolStripLabel1.Text = "Cari Data :"
+        '
+        'txtCari
+        '
+        Me.txtCari.Name = "txtCari"
+        Me.txtCari.Size = New System.Drawing.Size(100, 31)
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(6, 31)
         '
         'FrmMonitoringSO
         '
@@ -477,12 +496,12 @@ Partial Class FrmMonitoringSO
         Me.Tab4.ResumeLayout(False)
         Me.TabSubDetail.ResumeLayout(False)
         Me.SubDetail1.ResumeLayout(False)
-        Me.SubDetail2.ResumeLayout(False)
-        Me.Tab5.ResumeLayout(False)
-        CType(Me.View, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.GridStockProd, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SubDetail2.ResumeLayout(False)
         CType(Me.GridStockWHS, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Tab5.ResumeLayout(False)
         CType(Me.GridDeliv, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.View, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -509,4 +528,7 @@ Partial Class FrmMonitoringSO
     Private WithEvents GridStockProd As Enerzie.EPSGridControls.EPSDataGridView
     Private WithEvents GridStockWHS As Enerzie.EPSGridControls.EPSDataGridView
     Private WithEvents GridDeliv As Enerzie.EPSGridControls.EPSDataGridView
+    Friend WithEvents ToolStripLabel1 As System.Windows.Forms.ToolStripLabel
+    Friend WithEvents txtCari As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents ToolStripSeparator3 As System.Windows.Forms.ToolStripSeparator
 End Class

@@ -28,11 +28,11 @@ Partial Class frmRPT800_130_CostAccounting
         Me.cboTipeLaporan = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator6 = New System.Windows.Forms.ToolStripSeparator()
         Me.Toolbar = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.cboKelompokWIP = New System.Windows.Forms.ToolStripComboBox()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.btRefresh = New System.Windows.Forms.ToolStripButton()
-        Me.ToolStripLabel3 = New System.Windows.Forms.ToolStripLabel()
         Me.Toolbar.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -70,7 +70,7 @@ Partial Class frmRPT800_130_CostAccounting
         'cboTipeLaporan
         '
         Me.cboTipeLaporan.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboTipeLaporan.Items.AddRange(New Object() {"800131"})
+        Me.cboTipeLaporan.Items.AddRange(New Object() {"800131", "800132"})
         Me.cboTipeLaporan.Name = "cboTipeLaporan"
         Me.cboTipeLaporan.Size = New System.Drawing.Size(150, 31)
         '
@@ -91,6 +91,12 @@ Partial Class frmRPT800_130_CostAccounting
         Me.Toolbar.TabIndex = 4
         Me.Toolbar.TabStop = True
         Me.Toolbar.Text = "ToolStrip1"
+        '
+        'ToolStripLabel3
+        '
+        Me.ToolStripLabel3.Name = "ToolStripLabel3"
+        Me.ToolStripLabel3.Size = New System.Drawing.Size(80, 28)
+        Me.ToolStripLabel3.Text = "S/D Tanggal : "
         '
         'ToolStripLabel2
         '
@@ -119,12 +125,6 @@ Partial Class frmRPT800_130_CostAccounting
         Me.btRefresh.Size = New System.Drawing.Size(28, 28)
         Me.btRefresh.Text = "Tampilkan Laporan"
         Me.btRefresh.ToolTipText = " [F5]-Tampilkan Laporan"
-        '
-        'ToolStripLabel3
-        '
-        Me.ToolStripLabel3.Name = "ToolStripLabel3"
-        Me.ToolStripLabel3.Size = New System.Drawing.Size(80, 28)
-        Me.ToolStripLabel3.Text = "S/D Tanggal : "
         '
         'frmRPT800_130_CostAccounting
         '

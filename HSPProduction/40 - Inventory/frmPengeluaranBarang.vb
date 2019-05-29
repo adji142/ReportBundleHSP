@@ -1,7 +1,7 @@
 ﻿Imports HSPProduction.HSP.Data
 Imports System.Transactions
 
-Public Class frmPengeluaranBarang
+Public Class frmRPT110_240_GudangBenang
     'Data Public
     Public IDData As String
 

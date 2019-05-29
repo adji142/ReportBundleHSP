@@ -42,7 +42,6 @@ Partial Class frmProduksiCBHP
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btSave = New System.Windows.Forms.Button()
         Me.btClose = New System.Windows.Forms.Button()
         Me.tmrJam = New System.Windows.Forms.Timer(Me.components)
@@ -70,13 +69,15 @@ Partial Class frmProduksiCBHP
         Me.tmrStabil = New System.Windows.Forms.Timer(Me.components)
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
+        Me.btTest = New System.Windows.Forms.Button()
+        Me.pictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
         Me.Panel3.SuspendLayout()
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
+        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -307,6 +308,7 @@ Partial Class frmProduksiCBHP
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel3.Controls.Add(Me.btTest)
         Me.Panel3.Controls.Add(Me.pictureBox2)
         Me.Panel3.Controls.Add(Me.btSave)
         Me.Panel3.Controls.Add(Me.btClose)
@@ -315,16 +317,6 @@ Partial Class frmProduksiCBHP
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(950, 54)
         Me.Panel3.TabIndex = 3
-        '
-        'pictureBox2
-        '
-        Me.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.pictureBox2.Name = "pictureBox2"
-        Me.pictureBox2.Size = New System.Drawing.Size(950, 4)
-        Me.pictureBox2.TabIndex = 7
-        Me.pictureBox2.TabStop = False
         '
         'btSave
         '
@@ -655,6 +647,27 @@ Partial Class frmProduksiCBHP
         Me.Label13.Text = "HASIL PRODUKSI"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'btTest
+        '
+        Me.btTest.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btTest.Location = New System.Drawing.Point(434, 16)
+        Me.btTest.Name = "btTest"
+        Me.btTest.Size = New System.Drawing.Size(83, 23)
+        Me.btTest.TabIndex = 8
+        Me.btTest.Text = "[F6] &Proses"
+        Me.btTest.UseVisualStyleBackColor = True
+        Me.btTest.Visible = False
+        '
+        'pictureBox2
+        '
+        Me.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pictureBox2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.pictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.pictureBox2.Name = "pictureBox2"
+        Me.pictureBox2.Size = New System.Drawing.Size(950, 4)
+        Me.pictureBox2.TabIndex = 7
+        Me.pictureBox2.TabStop = False
+        '
         'frmProduksiCBHP
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -679,11 +692,11 @@ Partial Class frmProduksiCBHP
         Me.Panel2.ResumeLayout(False)
         Me.Panel5.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
-        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
         Me.GroupBox2.PerformLayout()
+        CType(Me.pictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -734,4 +747,5 @@ Partial Class frmProduksiCBHP
     Private WithEvents Label11 As System.Windows.Forms.Label
     Private WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents txtHasilTotal As Enerzie.EPSBasicControls.EPSTextBoxNum
+    Private WithEvents btTest As System.Windows.Forms.Button
 End Class

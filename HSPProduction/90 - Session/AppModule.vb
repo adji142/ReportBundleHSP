@@ -77,6 +77,18 @@
         oApp(0) = "1016"
         oApp(1) = "Master Karyawan"
         '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "1017"
+        oApp(1) = "Parameter Extruder"
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "1018"
+        oApp(1) = "Price List Karung"
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "1019"
+        oApp(1) = "Price List Karung - Printing"
+        '-----------------------------------------------------------------------------------
 
         '*************************************************************************
         'Produksi
@@ -193,6 +205,20 @@
         oApp(0) = "2027"
         oApp(1) = "Penjelasan Proses Produksi"
         '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "2028"
+        oApp(1) = "Pemakaian Bahan Produksi"
+        '-----------------------------------------------------------------------------------
+
+        oApp = oDT.Rows.Add()
+        oApp(0) = "2029"
+        oApp(1) = "Penerimaan Benang"
+        '-----------------------------------------------------------------------------------
+
+        oApp = oDT.Rows.Add()
+        oApp(0) = "2030"
+        oApp(1) = "Penerimaan Afval Sementara"
+        '-----------------------------------------------------------------------------------
 
         oApp = oDT.Rows.Add()
         oApp(0) = "9000"
@@ -202,6 +228,11 @@
         oApp(0) = "9001"
         oApp(1) = "Pembatalan Data Produksi Packing Cement Bag"
         '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "9002"
+        oApp(1) = "Transform Ball To Pcs"
+        '-----------------------------------------------------------------------------------
+
 
         '*************************************************************************
         'Inventory
@@ -262,6 +293,33 @@
         oApp(0) = "3014"
         oApp(1) = "Koreksi Stock Benang Multifilament"
         '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "3015"
+        oApp(1) = "Transfer Benang Masuk"
+        '-----------------------------------------------------------------------------------
+
+        '*************************************************************************
+        'PPIC
+        '*************************************************************************
+        oApp = oDT.Rows.Add()
+        oApp(0) = "4001"
+        oApp(1) = "Monitoring Hasil Produksi - Work Order"
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "4002"
+        oApp(1) = "Monitoring Bahan Produksi - Work Order"
+        '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "4003"
+        oApp(1) = "Monitoring Work Order"
+        '-----------------------------------------------------------------------------------
+
+        oApp = oDT.Rows.Add()
+        oApp(0) = "XXX01"
+        oApp(1) = "Tools > Pengakuan Stock Benang"
+        '-----------------------------------------------------------------------------------
+
+
 
         '*************************************************************************
         'Laporan 100 - Extruder
@@ -334,6 +392,14 @@
         oApp(0) = "R110200"
         oApp(1) = "Lap. Penerimaan Benang (Summary)"
         '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R110220"
+        oApp(1) = "Lap. Pengeluaran Benang"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R110230"
+        oApp(1) = "Lap. Detail Pengeluaran Benang"
+        '-------------------------------------------------------------------------
 
         '*************************************************************************
         'Laporan 200 - Circular Loom
@@ -358,6 +424,14 @@
         oApp(0) = "R200160b"
         oApp(1) = "Lap. Penyelesaian WO Loom Summary - B"
         '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R200170"
+        oApp(1) = "Lap. Analisa Berat Roll"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R200180"
+        oApp(1) = "Lap. Pemakaian Bahan Loom"
+        '-------------------------------------------------------------------------
 
 
         '*************************************************************************
@@ -378,6 +452,10 @@
         oApp = oDT.Rows.Add()
         oApp(0) = "R210130"
         oApp(1) = "Lap. Daftar Item Roll"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R210140"
+        oApp(1) = "Lap. Pengakuan Roll"
         '-------------------------------------------------------------------------
         oApp = oDT.Rows.Add()
         oApp(0) = "R210190"
@@ -406,6 +484,10 @@
         oApp = oDT.Rows.Add()
         oApp(0) = "R310150"
         oApp(1) = "Lap. Penyelesaian WO Laminasi"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R310160"
+        oApp(1) = "Lap. Analisa Produksi Laminasi"
         '-------------------------------------------------------------------------
 
         '*************************************************************************
@@ -442,6 +524,10 @@
         oApp = oDT.Rows.Add()
         oApp(0) = "R312120"
         oApp(1) = "Lap. Pemakaian Bahan Roll Cement Bag"
+
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R312130"
+        oApp(1) = "Lap. Hasil Produksi Cement Bag"
 
         oApp = oDT.Rows.Add()
         oApp(0) = "R312140"
@@ -549,6 +635,13 @@
         oApp(1) = "Lap. Stock Hasil Inner"
         '-------------------------------------------------------------------------
 
+        '*************************************************************************
+        'Laporan 325 - Pembatalan
+        '*************************************************************************
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R325100"
+        oApp(1) = "Lap. Pembatalan Produksi Ballpress"
+        '-------------------------------------------------------------------------
 
         '*************************************************************************
         'Laporan 320 - Printing Roll
@@ -573,6 +666,10 @@
         oApp(0) = "R320150"
         oApp(1) = "Lap. Penyelesaian WO Printing Roll"
         '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R340001"
+        oApp(1) = "Lap. Rekap Hasil Produksi"
+        '-------------------------------------------------------------------------
 
         '*************************************************************************
         'Laporan 400 - Penyerahan Hasil Produksi
@@ -585,6 +682,11 @@
         oApp = oDT.Rows.Add()
         oApp(0) = "R400110"
         oApp(1) = "Lap. Analisa Berat Hasil Produksi"
+        '-------------------------------------------------------------------------
+
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R400200"
+        oApp(1) = "Lap. Penyerahan Hasil Produksi Karung (Performa)"
         '-------------------------------------------------------------------------
 
         '*************************************************************************
@@ -609,6 +711,10 @@
         oApp = oDT.Rows.Add()
         oApp(0) = "R500130"
         oApp(1) = "Lap. Stock Benang Multifilament"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R500160"
+        oApp(1) = "Lap. Rekap Hasil Benang Multifilament"
         '-------------------------------------------------------------------------
 
         '*************************************************************************
@@ -679,6 +785,14 @@
         oApp(0) = "R800120"
         oApp(1) = "Lap. Produksi (Cost Accounting) - WO"
         '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R800130"
+        oApp(1) = "Lap. WIP (Cost Accounting)"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R800150"
+        oApp(1) = "Lap. Variant (Cost Accounting)"
+        '-------------------------------------------------------------------------
 
         '*************************************************************************
         'Laporan 810 - Laporan Keuangan
@@ -700,7 +814,50 @@
         oApp(1) = "Lap. Stock Roll Rewind"
         '-------------------------------------------------------------------------
         '-------------------------------------------------------------------------
-        
+
+        '*************************************************************************
+        'Laporan Marketing
+        '*************************************************************************
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT001"
+        oApp(1) = "Lap. Saldo Stock Barang"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT002"
+        oApp(1) = "Lap. Back Order Penjualan"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT003"
+        oApp(1) = "Lap. Piutang Customer"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT004"
+        oApp(1) = "Lap. Penjualan"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT005"
+        oApp(1) = "Lap. Pricelist - Sales Order"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT006"
+        oApp(1) = "Lap. Daftar Order Penjualan"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT007"
+        oApp(1) = "Lap. Penjualan"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT008"
+        oApp(1) = "Lap. Monitoring Order Penjualan"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT009"
+        oApp(1) = "Lap. Kartu Stock"
+        '-------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "R_MKT010"
+        oApp(1) = "Lap. Analisa Berat Penjualan"
+        '-------------------------------------------------------------------------
 
         '*************************************************************************
         'Laporan
@@ -791,6 +948,12 @@
                 AppForm = New frmDaftarParameterRollLaminasi
             Case "1016"
                 AppForm = New frmDaftarKaryawan
+            Case "1017"
+                AppForm = New frmDaftarParameterExtruder
+            Case "1018"
+                AppForm = New frmDaftarTransaksiPricelist
+            Case "1019"
+                AppForm = New frmDaftarTransaksiPricelistPrinting
         End Select
 
         '*************************************************************************
@@ -804,6 +967,7 @@
             Case "2002"
                 AppForm = New frmProduksiExtruder
             Case "2003"
+                'AppForm = New frmProduksiLoomLama
                 AppForm = New frmProduksiLoom
             Case "2004"
                 AppForm = New frmProduksiLaminating
@@ -853,10 +1017,18 @@
                 AppForm = New frmProduksiAfvalManual
             Case "2027"
                 AppForm = New frmDaftarPenjelasanProduksi
+            Case "2028"
+                AppForm = New frmDaftarPemakaianBahanAcct
+            Case "2029"
+                AppForm = New frmPenerimaanBenang
+            Case "2030"
+                AppForm = New frmProduksiAfvalSementara
             Case "9000"
                 AppForm = New frmDaftarPembatalanPackingKarung
             Case "9001"
                 AppForm = New frmDaftarPembatalanPackingCementBag
+            Case "9002"
+                AppForm = New frmTransformBallToPcs
         End Select
 
         '*************************************************************************
@@ -891,6 +1063,25 @@
                 AppForm = New frmDaftarStockRoll
             Case "3014"
                 AppForm = New frmDaftarStockBMF
+            Case "3015"
+                AppForm = New frmTransferBenangMasuk
+        End Select
+
+        '*************************************************************************
+        'PPIC
+        '*************************************************************************
+        Select Case AppID
+            Case "4001"
+                AppForm = New frmMonitoringHasilProduksi
+            Case "4002"
+                AppForm = New frmMonitoringBahanProduksi
+            Case "4003"
+                AppForm = New frmMonitoringWO
+        End Select
+
+        Select Case AppID
+            Case "XXX01"
+                AppForm = New frmPengakuanStockBenang
         End Select
 
         '*************************************************************************
@@ -898,7 +1089,7 @@
         '*************************************************************************
         Select Case AppID
             Case "R100100"
-                AppForm = New frmRPT100_100_StockBahanExtruder
+                AppForm = New frmRPTPro_SaldoStockBahan
             Case "R100110"
                 AppForm = New frmRPT100_110_InventoryTransferExtruder
             Case "R100120"
@@ -935,6 +1126,10 @@
                 AppForm = New frmRPT110_190_GudangBenang
             Case "R110200"
                 AppForm = New frmRPT110_200_GudangBenang
+            Case "R110220"
+                AppForm = New frmRPT110_220_GudangBenang
+            Case "R110230"
+                AppForm = New frmRPT110_230_GudangBenang
         End Select
 
         '*************************************************************************
@@ -951,6 +1146,10 @@
                 AppForm = New frmRPT200_160_Loom
             Case "R200160b"
                 AppForm = New frmRPT200_160b_CircularLoom
+            Case "R200170"
+                AppForm = New frmRPT200_170_AnalisaBerat
+            Case "R200180"
+                AppForm = New frmRPTSAP_LaporanFloorLoom
         End Select
 
         '*************************************************************************
@@ -965,6 +1164,8 @@
                 AppForm = New frmRPT210_120_TransferGudangRoll
             Case "R210130"
                 AppForm = New frmRPT210_130_GudangRoll
+            Case "R210140"
+                AppForm = New frmRPT210_140_GudangRoll
             Case "R210190"
                 AppForm = New frmRPT210_190_GudangRoll
         End Select
@@ -983,6 +1184,8 @@
                 AppForm = New frmRPT310_130_Laminating_AnalisaRollKeRoll
             Case "R310150"
                 AppForm = New frmRPT310_150_Laminasi
+            Case "R310160"
+                AppForm = New frmRPT310_160_AnalisaLaminasi
         End Select
 
         '*************************************************************************
@@ -1009,10 +1212,14 @@
                 AppForm = New frmRPT312_110_StockCementBag
             Case "R312120"
                 AppForm = New frmRPT312_120_BahanRollCementBag
+            Case "R312130"
+                AppForm = New frmRPT312_130_HasilCementBag
             Case "R312140"
                 AppForm = New frmRPT312_140_SisaRollCementBag
             Case "R312150"
                 AppForm = New frmRPT312_150_CementBag
+                'Case "R312200"
+                '    AppForm = New frmRPT312_200_SisaRollCementBag
         End Select
 
         '*************************************************************************
@@ -1087,6 +1294,15 @@
                 AppForm = New frmRPT324_110_StockHasilInner
         End Select
 
+
+        '*************************************************************************
+        'Laporan 325 - Pembatalan Produksi
+        '*************************************************************************
+        Select Case AppID
+            Case "R325100"
+                AppForm = New frmRPT325_101_PembatalanProduksiBallpress
+        End Select
+
         '*************************************************************************
         'Laporan 320 - Printing Roll
         '*************************************************************************
@@ -1103,6 +1319,11 @@
                 AppForm = New frmRPT320_150_PrintingRoll
         End Select
 
+        Select Case AppID
+            Case "R340001"
+                AppForm = New frmRPT340_100_RekapHasilProduksi
+        End Select
+
         '*************************************************************************
         'Laporan 400 - Penyerahan Hasil Produksi
         '*************************************************************************
@@ -1111,6 +1332,8 @@
                 AppForm = New frmRPT400_100_PenyerahanHasilProduksi
             Case "R400110"
                 AppForm = New frmRPT400_110_AnalisaBeratHasilProduksi
+            Case "R400200"
+                AppForm = New frmRPT400_200_PenyerahanHasilProduksi
         End Select
 
         '*************************************************************************
@@ -1131,6 +1354,8 @@
                 AppForm = New frmRPT500_110_PemakaianBahanBmf
             Case "R500130"
                 AppForm = New frmRPT500_130_StockHasilBenangMultifilament
+            Case "R500160"
+                AppForm = New frmRPT500_160_Bmf
         End Select
 
         '*************************************************************************
@@ -1195,6 +1420,10 @@
         Select Case AppID
             Case "R800120"
                 AppForm = New frmRPT800_120_CostAccounting
+            Case "R800130"
+                AppForm = New frmRPT800_130_CostAccounting
+            Case "R800150"
+                AppForm = New frmRPT800_150_CostAccounting
         End Select
 
         '*************************************************************************
@@ -1218,8 +1447,32 @@
         End Select
 
         '*************************************************************************
-        'Laporan
+        'Laporan Marketing
         '*************************************************************************
+        Select Case AppID
+            Case "R_MKT001"
+                AppForm = New frmRPTSAP_100_Stock
+            Case "R_MKT002"
+                AppForm = New frmRPTSAP_200_BackOrderPenjualan
+            Case "R_MKT003"
+                AppForm = New frmRPTSAP_300_Piutang
+            Case "R_MKT004"
+                AppForm = New frmRPTSAP_400_Penjualan
+            Case "R_MKT005"
+                AppForm = New frmRPTSAP_500_Pricelist
+            Case "R_MKT006"
+                AppForm = New frmRPTSAP_600_DaftarOrderPenjualan
+            Case "R_MKT007"
+                AppForm = New frmRPTSAP_700_LaporanPenjualan
+            Case "R_MKT008"
+                AppForm = New frmRPTSAP_800_MonitoringOrderPenjualan
+            Case "R_MKT009"
+                AppForm = New frmRPTSAP_LaporanKartuStock
+            Case "R_MKT010"
+                AppForm = New frmRPTSAP_900_AnalisaBeratPenjualan
+        End Select
+
+
         Select Case AppID
             Case "5001"
                 AppForm = New frmRPT110_100_GudangBenang

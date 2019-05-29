@@ -69,6 +69,7 @@ Public Class frmLookupLokasi
 
     'Tampilkan Data
     Private Sub ShowData()
+
         Me.Cursor = Cursors.WaitCursor
         View.SuspendLayout()
 
@@ -134,8 +135,10 @@ Public Class frmLookupLokasi
 
         Select Case e.KeyCode
             Case Keys.Enter
+                _LookupParameter = Nothing
                 If btOK.Enabled Then btOK.PerformClick()
             Case Keys.F5
+                _LookupParameter = Nothing
                 Toolbar.Items("btRefresh").PerformClick()
             Case Keys.F9
                 txtCariData.Focus()
@@ -146,6 +149,7 @@ Public Class frmLookupLokasi
     'Jika Tombol Refresh Di Click
     Private Sub Toolbar_ItemClicked(ByVal sender As Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles Toolbar.ItemClicked
         If e.ClickedItem.Name = "btRefresh" Then
+            _LookupParameter = Nothing
             View.SaveColumnOrder()
             ShowData()
             View.SetColumnOrder()

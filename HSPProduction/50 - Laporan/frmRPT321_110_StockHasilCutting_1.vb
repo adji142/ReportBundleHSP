@@ -25,7 +25,7 @@ Public Class frmRPT321_110_StockHasilCutting_1
 
         'Setting Koneksi Database
         With Server
-            .ServerName = "192.168.1.222:30015"
+            .ServerName = "192.168.1.222:30015;"
             .DatabaseName = "HARDO_LIVE"
             .UserID = "SYSTEM"
             .Password = "sys825050SYS"
@@ -37,10 +37,12 @@ Public Class frmRPT321_110_StockHasilCutting_1
         ''Report
         RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\rpt321111_StockHasilCutting.RPT")
 
-        For Each DataTable In RPTObject.Database.Tables
-            DataTable.LogOnInfo.ConnectionInfo = Server
-            DataTable.ApplyLogOnInfo(DataTable.LogOnInfo)
-        Next
+        'For Each DataTable In RPTObject.Database.Tables
+        '    DataTable.LogOnInfo.ConnectionInfo = Server
+        '    DataTable.ApplyLogOnInfo(DataTable.LogOnInfo)
+        'Next
+
+        RPTObject.SetDatabaseLogon("SYSTEM", "sys825050SYS")
 
         'Parameter
         RPTObject.ParameterFields("KODELOKASI").CurrentValues.AddValue(GetSetting(enumFormID.frmCutting, enumSetting.settingKodeLokasi))

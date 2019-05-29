@@ -35,6 +35,7 @@ Public Class frmProduksiLoom
     Private TglTransaksi As DateTime
     Private _NoTransaksi As String
     Private _KodeProduksi As String
+    Private LokasiStockBahan As String
 
     Private TempScale As String
     Private BeratBrutto As Double
@@ -261,6 +262,8 @@ Public Class frmProduksiLoom
             lblKodeLokasiProduksi.Text = "LOKASI BELUM DISETTING"
         End If
         '-------------------------------------------------------------------------------------------------------------------
+
+        LokasiStockBahan = New DaftarUnitProduksi(ActiveSession).Find(lblKodeUnit.Tag).KodeLokasi
 
         lblStatusTimbang.Text = ""
 
@@ -577,8 +580,17 @@ Public Class frmProduksiLoom
                     Dim DaftarStockRoll As New DaftarStockRoll(ActiveSession)
                     Dim StockRoll As New StockRoll
 
+                    Dim SAPWorkOrder As New SAPWorkOrder()
+                    Dim SAPStaging As New SAPStaging()
+
+                    Dim DaftarPemakaianBL As New DaftarPemakaianBahanLoom(ActiveSession)
+                    Dim HeaderPemakaianBL As New HeaderPemakaianBahanLoom
+                    Dim DetailPemakaianBL As New DetailPemakaianBahanLoom
+
                     Dim TanggalTransaksi As DateTime
                     TanggalTransaksi = DateAdd(DateInterval.Day, -1, TglTransaksi.Date)
+
+                    Dim NoUrut As Integer = 0
 
                     Periode = GetPeriod(Now)
                     PeriodeTransaksi = GetPeriodFull(Now)
@@ -589,6 +601,9 @@ Public Class frmProduksiLoom
                     'Get Kode Produksi
                     _KodeProduksi = DaftarStockRoll.GetKodeProduksi(lblKodeUnit.Tag, cboKodeMesin.SelectedValue, PeriodeTransaksi)
 
+                    Dim KodeUnitSAP As String = ""
+                    KodeUnitSAP = New DaftarUnitProduksi(ActiveSession).Find(lblKodeUnit.Tag).KodeUnitSAP
+
                     'Ambil data satuan default
                     Dim DaftarUnitProduksi As New DaftarUnitProduksi(ActiveSession)
                     Dim UnitProduksi As UnitProduksi = DaftarUnitProduksi.Find(lblKodeUnit.Tag)
@@ -597,6 +612,107 @@ Public Class frmProduksiLoom
                         Satuan2 = UnitProduksi.KodeSatuan2
                         Satuan3 = UnitProduksi.KodeSatuan3
                     End If
+
+                    'Simpan Pemakaian Bahan
+                    'Header Pemakaian Bahan Loom
+                    HeaderPemakaianBL.NoTransaksi = _NoTransaksi
+                    HeaderPemakaianBL.TglTransaksi = TanggalTransaksi
+                    HeaderPemakaianBL.TglPencatatan = Now
+                    HeaderPemakaianBL.NomorWO = cboNomorSpk.SelectedValue
+                    HeaderPemakaianBL.KodeUnit = lblKodeUnit.Tag
+                    HeaderPemakaianBL.KodeShift = txtKodeShift.Text
+                    HeaderPemakaianBL.KodeGrup = ""
+                    HeaderPemakaianBL.KodeLokasi = lblKodeLokasiProduksi.Tag
+                    HeaderPemakaianBL.KodeMesin = cboKodeMesin.SelectedValue
+                    HeaderPemakaianBL.FGKodeItem = lblItemProduksi.Tag
+                    HeaderPemakaianBL.FGNamaItem = lblItemProduksi.Text
+                    HeaderPemakaianBL.FGQtyMeter = txtPanjangRoll.Value
+                    HeaderPemakaianBL.FGQtyTimbang = BeratNetto
+                    HeaderPemakaianBL.FGKodeProduksi = _KodeProduksi
+                    HeaderPemakaianBL.UserID = ActiveSession.KodeUser
+
+                    DaftarPemakaianBL.AddHeader(HeaderPemakaianBL)
+
+                    '==================================================================================================================
+                    'PERHITUNGAN PEMAKAIAN BAHAN CLOOM
+                    'START
+                    '==================================================================================================================
+
+                    'Ambil Data Plan FG Quantity
+                    Dim PlanQtyMeter As Double = 0
+                    Dim PlanQtyTimbang As Double = 0
+                    Dim RMQty As Double = 0
+
+                    Dim FGWO As FGWorkOrder = SAPWorkOrder.FindFGByWO(KodeUnitSAP, cboNomorSpk.SelectedValue)
+                    If Not IsNothing(FGWO) Then
+                        PlanQtyTimbang = (FGWO.QtyBOM * FGWO.BeratStandar) / 1000
+                    End If
+
+                    'Detail Pemakaian Bahan Loom
+                    Dim DT As DataTable = SAPWorkOrder.ReadRMByWO(cboNomorSpk.SelectedValue, KodeUnitSAP).Tables("View")
+                    For Each DR As DataRow In DT.Rows
+                        NoUrut += 1
+
+                        'Cek Lokasi Gudang Stock
+                        Dim LokasiStockWO As String = New SAPWorkOrder().FindRMByWO(KodeUnitSAP, cboNomorSpk.SelectedValue, DR("Kode Item")).KodeLokasi
+                        If LokasiStockWO <> LokasiStockBahan Then
+                            Me.Cursor = Cursors.Default
+                            MsgBox("Lokasi Stock Bahan (" & DR("Kode Item") & ") Menurut Work Order Tidak Sesuai...!!! " & vbCrLf & "Hubungi PPIC...!!!")
+                            SAPStaging.RemoveStagingData(_NoTransaksi)
+                            Scope.Dispose()
+                            GoTo Jump
+                        End If
+
+                        DetailPemakaianBL.NoTransaksi = _NoTransaksi
+                        DetailPemakaianBL.NoUrut = NoUrut
+                        DetailPemakaianBL.RMKodeItem = DR("Kode Item")
+                        DetailPemakaianBL.RMNamaItem = DR("Nama Item")
+
+                        'Hitung Pemakaian Bahan Sesuai Bom WO
+                        RMQty = (BeratNetto / PlanQtyTimbang) * DR("Qty")
+
+                        Dim StockBahan As Double
+                        Dim TimbangBahan As Double = RMQty
+
+                        'Cek Stock Bahan
+                        '---------------------------------------------------------------------------------------------
+                        StockBahan = New SAPInventory().GetCurrentStock(LokasiStockWO, DR("Kode Item"), "")
+
+                        'Jika stock kurang dari hasil
+                        'Pemakaian bahan sebanyak sisa stock
+                        'Pemakaian dirubah, jika stock kurang tidak bisa diproses
+                        '---------------------------------------------------------------------------------------------
+                        If RMQty > StockBahan Then
+                            'TimbangBahan = Math.Abs(StockBahan)
+                            Me.Cursor = Cursors.Default
+                            MsgBox("Stock Bahan (" & DR("Kode Item") & " | " & DR("Nama Item") & ") Tidak Cukup...!!! " & vbCrLf & "Hubungi Admin Gudang Benang...!!!")
+                            SAPStaging.RemoveStagingData(_NoTransaksi)
+                            Scope.Dispose()
+                            GoTo Jump
+                        End If
+
+                        If TimbangBahan <= 0 Then
+                            Me.Cursor = Cursors.Default
+                            MsgBox("Stock Bahan (" & DR("Kode Item") & " | " & DR("Nama Item") & ") Tidak Ada...!!! " & vbCrLf & "Hubungi Admin Gudang Benang...!!!")
+                            SAPStaging.RemoveStagingData(_NoTransaksi)
+                            Scope.Dispose()
+                            GoTo Jump
+                        End If
+
+                        DetailPemakaianBL.RMQty = TimbangBahan
+                        DetailPemakaianBL.RMLokasi = lblKodeLokasiProduksi.Tag
+
+                        DaftarPemakaianBL.AddDetail(DetailPemakaianBL)
+
+                        'Posting Ke Staging RM Issue
+                        SAPStaging.PostMaterialIssue(KodeUnitSAP, cboNomorSpk.SelectedValue, TanggalTransaksi, DR("Kode Item"), TimbangBahan, "", _NoTransaksi, LokasiStockBahan)
+                    Next
+
+                    '==================================================================================================================
+                    'PERHITUNGAN PEMAKAIAN BAHAN CLOOM
+                    'FINISH
+                    '==================================================================================================================
+
 
                     'Simpan Transaksi Produksi Loom
                     '-----------------------------------------------------------------------------------------------------
@@ -691,14 +807,17 @@ Public Class frmProduksiLoom
 
                     'Simpan Data Penerimaan Benang Staging
                     '------------------------------------------------------------------------------------------------------
-                    Dim SAPStaging As New SAPStaging
                     SAPStaging.PostFinishedGoodReceipt(New DaftarUnitProduksi(ActiveSession).Find(lblKodeUnit.Tag).KodeUnitSAP, cboNomorSpk.SelectedValue, TanggalTransaksi, lblItemProduksi.Tag, txtPanjangRoll.Value, BeratNetto, _KodeProduksi, "", _NoTransaksi, lblKodeLokasiProduksi.Tag)
+
 
                     '**************************************************************************************************
                     'Eksekusi Data Staging
                     '**************************************************************************************************
                     Try
-                        'Eksekusi
+                        'Eksekusi Bahan
+                        SAPStaging.Execute(_NoTransaksi, HSPProduction.SAPStaging.enumTransaction.MaterialIssue)
+
+                        'Eksekusi Hasil
                         SAPStaging.Execute(_NoTransaksi, HSPProduction.SAPStaging.enumTransaction.FinishedGoodReceipt)
 
                         Scope.Complete()
@@ -982,5 +1101,83 @@ jump:
         lblBeratBrutto.Text = BeratBrutto.ToString("###,##0.00")
         lblBeratBrutto.Tag = BeratBrutto
         SetEnableCommand()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Dim SAPWorkOrder As New SAPWorkOrder()
+
+        Dim DaftarPemakaianBL As New DaftarPemakaianBahanLoom(ActiveSession)
+        Dim HeaderPemakaianBL As New HeaderPemakaianBahanLoom
+        Dim DetailPemakaianBL As New DetailPemakaianBahanLoom
+
+        Dim KodeUnitSAP As String = ""
+        KodeUnitSAP = New DaftarUnitProduksi(ActiveSession).Find(lblKodeUnit.Tag).KodeUnitSAP
+
+        _NoTransaksi = "TEST-0001"
+
+        BeratNetto = 300
+
+        Dim NoUrut As Integer = 0
+
+        'Simpan Pemakaian Bahan
+        'Header Pemakaian Bahan Loom
+        HeaderPemakaianBL.NoTransaksi = _NoTransaksi
+        HeaderPemakaianBL.TglTransaksi = Now.Date
+        HeaderPemakaianBL.TglPencatatan = Now
+        HeaderPemakaianBL.NomorWO = cboNomorSpk.SelectedValue
+        HeaderPemakaianBL.KodeUnit = lblKodeUnit.Tag
+        HeaderPemakaianBL.KodeShift = txtKodeShift.Text
+        HeaderPemakaianBL.KodeGrup = ""
+        HeaderPemakaianBL.KodeLokasi = lblKodeLokasiProduksi.Tag
+        HeaderPemakaianBL.KodeMesin = cboKodeMesin.SelectedValue
+        HeaderPemakaianBL.FGKodeItem = lblItemProduksi.Tag
+        HeaderPemakaianBL.FGNamaItem = lblItemProduksi.Text
+        HeaderPemakaianBL.FGQtyMeter = 3000
+        HeaderPemakaianBL.FGQtyTimbang = 300
+        HeaderPemakaianBL.FGKodeProduksi = "001"
+        HeaderPemakaianBL.UserID = ActiveSession.KodeUser
+
+        DaftarPemakaianBL.AddHeader(HeaderPemakaianBL)
+
+        'Ambil Data Plan FG Quantity
+        Dim PlanQtyMeter As Double = 0
+        Dim PlanQtyTimbang As Double = 0
+        Dim RMQty As Double = 0
+
+        Dim FGWO As FGWorkOrder = SAPWorkOrder.FindFGByWO(KodeUnitSAP, cboNomorSpk.SelectedValue)
+        If Not IsNothing(FGWO) Then
+            PlanQtyTimbang = (FGWO.QtyBOM * FGWO.BeratStandar) / 1000
+        End If
+
+        'Detail Pemakaian Bahan Loom
+        Dim DT As DataTable = SAPWorkOrder.ReadRMByWO(cboNomorSpk.SelectedValue, KodeUnitSAP).Tables("View")
+        For Each DR As DataRow In DT.Rows
+            NoUrut += 1
+
+            'Cek Lokasi Gudang Stock
+            Dim LokasiStockWO As String = New SAPWorkOrder().FindRMByWO(KodeUnitSAP, cboNomorSpk.SelectedValue, DR("Kode Item")).KodeLokasi
+            If LokasiStockWO <> lblKodeLokasiProduksi.Tag Then
+                Me.Cursor = Cursors.Default
+                MsgBox("Lokasi Stock Bahan (" & DR("Kode Item") & ") Menurut Work Order Tidak Sesuai...!!! " & vbCrLf & "Hubungi PPIC...!!!")
+                'Scope.Dispose()
+                'GoTo Jump
+            End If
+
+            DetailPemakaianBL.NoTransaksi = _NoTransaksi
+            DetailPemakaianBL.NoUrut = NoUrut
+            DetailPemakaianBL.RMKodeItem = DR("Kode Item")
+            DetailPemakaianBL.RMNamaItem = DR("Nama Item")
+
+            'Hitung Pemakaian Bahan Sesuai Bom WO
+            RMQty = (300 / PlanQtyTimbang) * DR("Qty")
+
+            DetailPemakaianBL.RMQty = RMQty
+            DetailPemakaianBL.RMLokasi = lblKodeLokasiProduksi.Tag
+
+            DaftarPemakaianBL.AddDetail(DetailPemakaianBL)
+        Next
+
+Jump:
+
     End Sub
 End Class

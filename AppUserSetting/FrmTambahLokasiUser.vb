@@ -1,7 +1,7 @@
 ﻿Imports AppUserSetting.HSP.Data
 Imports Enerzie.EPSGridControls.EPSTableEdit
 Imports Microsoft.Win32
-Imports HSPKPI.HSP.Data
+
 Imports System.Text.RegularExpressions
 
 Public Class FrmTambahLokasiUser
@@ -17,10 +17,11 @@ Public Class FrmTambahLokasiUser
         GridUser.AlternatingDataGridBackColor = Color.White
 
         GridUser.AddColumnHeader("UserName", 13, 13, GridColumnStyle.csFixed, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
-        GridUser.AddColumnHeader("Nama User", 35, 35, GridColumnStyle.csFixed, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
+        GridUser.AddColumnHeader("Nama User", 25, 35, GridColumnStyle.csFixed, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
         GridUser.AddColumnHeader("Kode Lokasi", 15, 20, GridColumnStyle.csInputWithLookup, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
-        GridUser.AddColumnHeader("Nama Lokasi", 25, 25, GridColumnStyle.csFixed, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
-
+        GridUser.AddColumnHeader("Nama Lokasi", 15, 25, GridColumnStyle.csFixed, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
+        GridUser.AddColumnHeader("UserID Telegram", 15, 15, GridColumnStyle.csInputWithLookup, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
+        GridUser.AddColumnHeader("Nick Name Telegram", 35, 35, GridColumnStyle.csFixed, GridColumnType.ctText, GridColumnAlignment.caLeft, True)
         GridUser.ShowHeader()
     End Sub
     'Cek Jika Ditekan Enter Pada Saat Pengisian Kriteria            
@@ -64,6 +65,8 @@ Public Class FrmTambahLokasiUser
             GridUser.GridValue(1, Row) = DR("NamaUser")
             GridUser.GridValue(2, Row) = DR("KodeLokasi")
             GridUser.GridValue(3, Row) = DR("NamaLokasi")
+            GridUser.GridValue(4, Row) = DR("UserTelegram")
+            GridUser.GridValue(5, Row) = DR("UsernameTelegram")
 
             Row += 1
         Next
@@ -139,16 +142,39 @@ Public Class FrmTambahLokasiUser
     End Sub
 
     Private Sub GridUser_GridCellLookup(Col As Integer, Row As Integer) Handles GridUser.GridCellLookup
-        Dim DaftarLokasi As AppUserSetting.HSP.Data.IDataLookup = New SAPLokasi()
-        Dim Parameter() As String = {GridUser.GridValue(2, Row)}
+        If (Col = 2) Then
+            Dim DaftarLokasi As AppUserSetting.HSP.Data.IDataLookup = New SAPLokasi()
+            Dim Parameter() As String = {GridUser.GridValue(2, Row)}
 
-        Dim Form As New frmLookupLokasi(DaftarLokasi, Parameter)
-        Form.Text = "Lookup Lokasi"
-        Form.ShowDialog()
+            Dim Form As New frmLookupLokasi(DaftarLokasi, Parameter)
+            Form.Text = "Lookup Lokasi"
+            Form.ShowDialog()
 
-        If Form.IDLookup <> "" Then
-            GridUser.SetGridCellLookupResult(Col, Row, Form.IDLookup)
-            GridUser.SetGridCellLookupResult(3, Row, Form.NamaLokasi)
+            If Form.IDLookup <> "" Then
+                GridUser.SetGridCellLookupResult(Col, Row, Form.IDLookup)
+                GridUser.SetGridCellLookupResult(3, Row, Form.NamaLokasi)
+            End If
+        ElseIf (Col = 4) Then
+            Dim DaftarUserTelegram As AppUserSetting.HSP.Data.IDataLookup = New TelegramUsers(ActiveSession)
+            Dim Parameter() As String = {GridUser.GridValue(4, Row)}
+
+            Dim Form As New frmLookup(DaftarUserTelegram, Parameter)
+            Form.Text = "Lookup Lokasi"
+            Form.ShowDialog()
+
+            If Form.IDLookup <> "" Then
+                GridUser.SetGridCellLookupResult(Col, Row, Form.IDLookup)
+                Dim DftarUserTele As New TelegramUsers(ActiveSession)
+                Dim tel As ListUsers = DftarUserTele.Find(Form.IDLookup)
+
+                If Not IsNothing(tel) Then
+                    GridUser.SetGridCellLookupResult(5, Row, tel.Username)
+                Else
+                    MessageBox.Show("Data User Tidak Valid")
+                    GridUser.SetGridCellLookupResult(4, Row, "")
+                    GridUser.SetGridCellLookupResult(5, Row, "")
+                End If
+            End If
         End If
     End Sub
 
@@ -165,6 +191,21 @@ Public Class FrmTambahLokasiUser
             MessageBox.Show("Lokasi Tidak ditemukan.")
             GridUser.GridValue(2, Row) = ""
             GridUser.GridValue(3, Row) = ""
+        End If
+
+        ' Second Validation
+        Dim AksesUser As New TelegramUsers(ActiveSession)
+        Dataset = AksesUser.Read(GridUser.GridValue(4, Row))
+
+        If Dataset.Tables(0).Rows.Count > 0 Then
+            GridUser.GridValue(4, Row) = Dataset.Tables(0).Rows(0)(0).ToString()
+            GridUser.GridValue(5, Row) = Dataset.Tables(0).Rows(0)(1).ToString()
+        ElseIf GridUser.GridValue(2, Row) = "" Then
+            GridUser.GridValue(4, Row) = ""
+        Else
+            MessageBox.Show("Lokasi Tidak ditemukan.")
+            GridUser.GridValue(4, Row) = ""
+            GridUser.GridValue(5, Row) = ""
         End If
     End Sub
     Private Sub Button_Click(sender As Object, e As EventArgs) Handles btSave.Click, btClose.Click, btClose.Click
@@ -183,6 +224,10 @@ Public Class FrmTambahLokasiUser
                         userdata.KodeLokasi = GridUser.GridValue(2, Row)
                         userdata.KodeUser = GridUser.GridValue(0, Row)
                         userdata.NamaLokasi = GridUser.GridValue(3, Row)
+                        If GridUser.GridValue(5, Row) <> "" Then
+                            userdata.UserIDTelegram = GridUser.GridValue(4, Row)
+                            userdata.NickNameTelegram = GridUser.GridValue(5, Row)
+                        End If
                         Try
                             Adduser.Add(userdata)
                             XStatus = "Complate"

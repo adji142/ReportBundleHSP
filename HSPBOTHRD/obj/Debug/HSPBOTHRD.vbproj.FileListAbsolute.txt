@@ -8,12 +8,3 @@ E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.Resource
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.Test.resources
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.vbproj.GenerateResource.Cache
 E:\Kantor\HSP\Source Code\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.vbprojResolveAssemblyReference.cache
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.exe
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.xml
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.pdb
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\bin\Debug\HSPBOTHRD.exe
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\bin\Debug\HSPBOTHRD.pdb
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\bin\Debug\HSPBOTHRD.xml
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.Resources.resources
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.Test.resources
-D:\AJI\HSPPoject\ReportBundleHSP\HSPBOTHRD\obj\Debug\HSPBOTHRD.vbproj.GenerateResource.Cache

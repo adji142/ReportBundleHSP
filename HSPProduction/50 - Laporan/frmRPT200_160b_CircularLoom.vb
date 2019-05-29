@@ -63,6 +63,8 @@ Public Class frmRPT200_160b_CircularLoom
         Dim DaftarRptPlanWO As New DaftarRptPlanWO(ActiveSession)
         Dim RptPlanWO As New RptPlanWO
 
+        DaftarRptPlanWO.Truncate()
+
         Dim Record As Integer = DS.Tables("View").Rows.Count
         ProgressBar.Visible = True
         ProgressBar.Value = 0

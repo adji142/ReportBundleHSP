@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmPengeluaranBarang
+Partial Class frmRPT110_240_GudangBenang
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.

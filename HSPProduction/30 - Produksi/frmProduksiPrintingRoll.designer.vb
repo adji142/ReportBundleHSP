@@ -121,6 +121,7 @@ Partial Class frmProduksiPrintingRoll
         Me.txtNamaOperator = New Enerzie.EPSBasicControls.EPSTextBox()
         Me.txtNIKOperator = New Enerzie.EPSBasicControls.EPSTextBox()
         Me.Label31 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -360,6 +361,7 @@ Partial Class frmProduksiPrintingRoll
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.Panel3.Controls.Add(Me.Button1)
         Me.Panel3.Controls.Add(Me.btReprint)
         Me.Panel3.Controls.Add(Me.pictureBox2)
         Me.Panel3.Controls.Add(Me.btSave)
@@ -1428,6 +1430,16 @@ Partial Class frmProduksiPrintingRoll
         Me.Label31.TabIndex = 128
         Me.Label31.Text = "OPERATOR"
         '
+        'Button1
+        '
+        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button1.Location = New System.Drawing.Point(124, 10)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(83, 23)
+        Me.Button1.TabIndex = 10
+        Me.Button1.Text = "Reprint"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'frmProduksiPrintingRoll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -1570,4 +1582,5 @@ Partial Class frmProduksiPrintingRoll
     Friend WithEvents txtNamaOperator As Enerzie.EPSBasicControls.EPSTextBox
     Friend WithEvents txtNIKOperator As Enerzie.EPSBasicControls.EPSTextBox
     Private WithEvents Label31 As System.Windows.Forms.Label
+    Private WithEvents Button1 As System.Windows.Forms.Button
 End Class

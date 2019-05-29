@@ -133,8 +133,10 @@ Public Class frmLookup
 
         Select Case e.KeyCode
             Case Keys.Enter
+                _LookupParameter = Nothing
                 If btOK.Enabled Then btOK.PerformClick()
             Case Keys.F5
+                _LookupParameter = Nothing
                 Toolbar.Items("btRefresh").PerformClick()
             Case Keys.F9
                 txtCariData.Focus()
@@ -145,6 +147,7 @@ Public Class frmLookup
     'Jika Tombol Refresh Di Click
     Private Sub Toolbar_ItemClicked(ByVal sender As Object, ByVal e As System.Windows.Forms.ToolStripItemClickedEventArgs) Handles Toolbar.ItemClicked
         If e.ClickedItem.Name = "btRefresh" Then
+            _LookupParameter = Nothing
             View.SaveColumnOrder()
             ShowData()
             View.SetColumnOrder()

@@ -101,6 +101,8 @@ Public Class frmRPT319_100_PackingCementBag
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT319105_PackingCementBag.RPT")
             Case 6
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT319106_PackingCementBag.RPT")
+            Case 7
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT319107_PackingCementBag.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

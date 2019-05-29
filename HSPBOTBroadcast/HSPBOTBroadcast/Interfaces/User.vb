@@ -149,7 +149,25 @@ Namespace BOT
 
             End Using
         End Function
+        Public Function ReadUser_BC(ByVal Keyword As String) As DataSet
+            Dim SQL As String
 
+            SQL = "SELECT DISTINCT userid AS ID FROM broadcastsetting WHERE rolename = @Keyword "
+
+            Using DBX As IDbConnection = _DBConnection.Connection()
+
+                Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
+                Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@Keyword", Keyword)
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "View")
+
+                ReadUser_BC = DS
+
+            End Using
+        End Function
         'Lookup
         Public Function GetLookup(ByVal TextSearch As String, ByVal Parameter As Object) As DataSet Implements IDataLookup.GetLookup
 

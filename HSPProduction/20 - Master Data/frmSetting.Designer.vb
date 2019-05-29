@@ -113,6 +113,7 @@ Partial Class frmSetting
         Me.panel2.Controls.Add(Me.PictureBox2)
         Me.panel2.Controls.Add(Me.btClose)
         Me.panel2.Controls.Add(Me.btSave)
+        Me.panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.panel2.Location = New System.Drawing.Point(0, 222)
         Me.panel2.Name = "panel2"
         Me.panel2.Size = New System.Drawing.Size(535, 54)

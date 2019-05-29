@@ -116,6 +116,7 @@
     <Compile Include="10 - Data Context\DBConnection.vb" />
     <Compile Include="10 - Data Context\IDataLookup.vb" />
     <Compile Include="11 - Data Models\DataWarehouse.vb" />
+    <Compile Include="11 - Data Models\MesinProduksi.vb" />
     <Compile Include="11 - Data Models\Pengebon.vb" />
     <Compile Include="11 - Data Models\ShiftProduksi.vb" />
     <Compile Include="11 - Data Models\UnitProduksi.vb" />
@@ -220,6 +221,24 @@
     <Compile Include="Report\FrmRPT_7704_MutasiSparePart.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\FrmRPT_BO001_BackOrderWAging.designer.vb">
+      <DependentUpon>FrmRPT_BO001_BackOrderWAging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_BO001_BackOrderWAging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpt_BSvsAfval.designer.vb">
+      <DependentUpon>FrmRpt_BSvsAfval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpt_BSvsAfval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpt_Cancelationdate_SO.designer.vb">
+      <DependentUpon>FrmRpt_Cancelationdate_SO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpt_Cancelationdate_SO.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="SAP Class Interfaces\SAPDBConnection.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -271,6 +290,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Report\FrmRPT_7704_MutasiSparePart.resx">
       <DependentUpon>FrmRPT_7704_MutasiSparePart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_BO001_BackOrderWAging.resx">
+      <DependentUpon>FrmRPT_BO001_BackOrderWAging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpt_BSvsAfval.resx">
+      <DependentUpon>FrmRpt_BSvsAfval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpt_Cancelationdate_SO.resx">
+      <DependentUpon>FrmRpt_Cancelationdate_SO.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

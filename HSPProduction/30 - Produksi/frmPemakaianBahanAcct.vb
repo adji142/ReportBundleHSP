@@ -654,26 +654,26 @@ Jump:
     Private Sub tmrJam_Tick(sender As Object, e As EventArgs) Handles tmrJam.Tick
         'Shift & Tanggal Transaksi
         '---------------------------------------------------------------------------------------------------
-        Dim Jam = GetDateTimeServer().ToLongTimeString
+        Dim Jam = Now().ToLongTimeString
 
         If Microsoft.VisualBasic.Right(Jam, 2) = "AM" Then
             If Jam < TimeSerial(7, 0, 0) Then
                 txtKodeShift.Text = "3"
-                TglTransaksi = DateAdd("D", -1, GetDateTimeServer().Date)
+                TglTransaksi = DateAdd("D", -1, Now().Date)
             Else
                 txtKodeShift.Text = "1"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             End If
         Else
             If Jam < TimeSerial(15, 0, 0) Then
                 txtKodeShift.Text = "1"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             ElseIf Jam >= TimeSerial(15, 0, 0) And Jam < TimeSerial(23, 0, 0) Then
                 txtKodeShift.Text = "2"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             Else
                 txtKodeShift.Text = "3"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             End If
         End If
 

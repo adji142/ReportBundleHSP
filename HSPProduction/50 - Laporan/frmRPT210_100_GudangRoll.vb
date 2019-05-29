@@ -28,6 +28,38 @@ Public Class frmRPT210_100_GudangRoll
 
     End Sub
 
+    Private Sub AmbilData()
+        Dim SAP As New SAPInventory()
+        Dim DS As DataSet
+
+        DS = SAP.ReadItemRoll("CLOOM")
+
+        Dim DaftarTSO As New DaftarTmpItemRoll(ActiveSession)
+        Dim TSO As New TmpItemRoll
+
+        DaftarTSO.DeleteAll()
+
+        Dim Record As Integer = DS.Tables("View").Rows.Count
+        ProgressBar.Visible = True
+        ProgressBar.Value = 0
+        ProgressBar.Maximum = Record
+
+        For Each DR As DataRow In DS.Tables("View").Rows
+
+            TSO.KodeItem = DR("KodeItem")
+            TSO.NamaItem = DR("NamaItem")
+            TSO.BeratStandart = DR("BeratStandart")
+
+            DaftarTSO.Add(TSO)
+
+            ProgressBar.Value += 1
+        Next
+
+        If ProgressBar.Value = Record Then
+            ProgressBar.Visible = False
+        End If
+    End Sub
+
     'Tampilkan Laporan
     Private Sub btRefresh_Click(ByVal sender As Object, ByVal e As EventArgs) Handles btRefresh.Click
         Dim Server As New ConnectionInfo
@@ -35,7 +67,10 @@ Public Class frmRPT210_100_GudangRoll
 
         Me.Cursor = Cursors.WaitCursor
         '-----------------------------------------------------------------------------------------   
-
+        Select Case cboLaporan.SelectedIndex + 1
+            Case 6
+                AmbilData()
+        End Select
         '-----------------------------------------------------------------------------------------   
         Dim DBX As Object = New DBConnection(ActiveSession).ConnectionSetting()
 
@@ -62,6 +97,8 @@ Public Class frmRPT210_100_GudangRoll
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT210104_GudangRoll.RPT")
             Case 5
                 RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT210105_GudangRoll.RPT")
+            Case 6
+                RPTObject.Load(System.AppDomain.CurrentDomain.BaseDirectory() + "\Reports\RPT210106_GudangRoll.RPT")
         End Select
 
         For Each DataTable In RPTObject.Database.Tables

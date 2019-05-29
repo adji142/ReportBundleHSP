@@ -4,6 +4,8 @@ Public Class UserLokasi
     Public Property KodeUser As String
     Public Property KodeLokasi As String
     Public Property NamaLokasi As String
+    Public Property UserIDTelegram As String
+    Public Property NickNameTelegram As String
 End Class
 Public Class GetAllUser
     Private _DBConnection As DBConnection
@@ -16,7 +18,7 @@ Public Class GetAllUser
 
         SQL = "INSERT INTO hspspm.lokasiuser " +
                "VALUES " +
-               "(@KodeUser,@KodeLokasi,@NamaLokasi)"
+               "(@KodeUser,@KodeLokasi,@NamaLokasi,@UserIDTelegram,@NickNameTelegram)"
 
         Using DBX As IDbConnection = _DBConnection.Connection
             Add = DBX.Execute(SQL, Data)
@@ -41,7 +43,7 @@ Public Class GetAllUser
     End Function
     Public Function Read(ByVal Kriteria As String)
         Dim SQL As String
-        SQL = "select a.KodeUser as 'KodeUser',a.NamaUser As 'NamaUser',coalesce (b.KodeLokasi,'') as 'KodeLokasi',coalesce(b.NamaLokasi,'') as 'NamaLokasi' from `user` a" +
+        SQL = "select a.KodeUser as 'KodeUser',a.NamaUser As 'NamaUser',coalesce (b.KodeLokasi,'') as 'KodeLokasi',coalesce(b.NamaLokasi,'') as 'NamaLokasi',coalesce(b.UserIDTelegram,'') As 'UserTelegram',coalesce(b.NickNameTelegram,'') As 'UsernameTelegram' from `user` a" +
             " LEFT JOIN hspspm.lokasiuser b on a.KodeUser = b.KodeUser" +
             " where a.Aktif = 1" +
             " and CONCAT(a.KodeUser,' ',a.NamaUser) LIKE @Kriteria "

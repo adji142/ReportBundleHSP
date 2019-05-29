@@ -49,6 +49,10 @@ Partial Class frmProduksiLoom
         Me.lblTransaksi = New System.Windows.Forms.Label()
         Me.lblBeratBrutto = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label20 = New System.Windows.Forms.Label()
+        Me.lblTimbangManual = New System.Windows.Forms.Label()
+        Me.txtTimbangManual = New Enerzie.EPSBasicControls.EPSTextBoxNum()
+        Me.chkManual = New Enerzie.EPSBasicControls.EPSCheckBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -95,10 +99,6 @@ Partial Class frmProduksiLoom
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.tmrWarning = New System.Windows.Forms.Timer(Me.components)
-        Me.Label20 = New System.Windows.Forms.Label()
-        Me.lblTimbangManual = New System.Windows.Forms.Label()
-        Me.txtTimbangManual = New Enerzie.EPSBasicControls.EPSTextBoxNum()
-        Me.chkManual = New Enerzie.EPSBasicControls.EPSCheckBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel5.SuspendLayout()
@@ -460,6 +460,55 @@ Partial Class frmProduksiLoom
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(441, 181)
         Me.Panel3.TabIndex = 0
+        '
+        'Label20
+        '
+        Me.Label20.AutoSize = True
+        Me.Label20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(363, 128)
+        Me.Label20.Name = "Label20"
+        Me.Label20.Size = New System.Drawing.Size(27, 16)
+        Me.Label20.TabIndex = 123
+        Me.Label20.Text = "KG"
+        '
+        'lblTimbangManual
+        '
+        Me.lblTimbangManual.AutoSize = True
+        Me.lblTimbangManual.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTimbangManual.Location = New System.Drawing.Point(126, 128)
+        Me.lblTimbangManual.Name = "lblTimbangManual"
+        Me.lblTimbangManual.Size = New System.Drawing.Size(103, 16)
+        Me.lblTimbangManual.TabIndex = 122
+        Me.lblTimbangManual.Text = "Timbang Manual"
+        '
+        'txtTimbangManual
+        '
+        Me.txtTimbangManual.AllowEnterToMoveNext = True
+        Me.txtTimbangManual.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtTimbangManual.CheckIsValid = False
+        Me.txtTimbangManual.DataFormat = "###,##0.00"
+        Me.txtTimbangManual.DataType = Enerzie.EPSBasicControls.EPSTextBoxNum.enumDataType.dtDecimal
+        Me.txtTimbangManual.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold)
+        Me.txtTimbangManual.ForeColor = System.Drawing.Color.Blue
+        Me.txtTimbangManual.Location = New System.Drawing.Point(255, 124)
+        Me.txtTimbangManual.Name = "txtTimbangManual"
+        Me.txtTimbangManual.Size = New System.Drawing.Size(102, 25)
+        Me.txtTimbangManual.TabIndex = 121
+        Me.txtTimbangManual.Text = "3,000.00"
+        Me.txtTimbangManual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.txtTimbangManual.Value = 3000.0R
+        '
+        'chkManual
+        '
+        Me.chkManual.AllowEnterToMoveNext = True
+        Me.chkManual.AutoSize = True
+        Me.chkManual.Location = New System.Drawing.Point(129, 101)
+        Me.chkManual.Name = "chkManual"
+        Me.chkManual.Size = New System.Drawing.Size(108, 21)
+        Me.chkManual.TabIndex = 120
+        Me.chkManual.TabStop = False
+        Me.chkManual.Text = "Input Manual"
+        Me.chkManual.UseVisualStyleBackColor = True
         '
         'Label18
         '
@@ -1015,55 +1064,6 @@ Partial Class frmProduksiLoom
         'tmrWarning
         '
         Me.tmrWarning.Interval = 500
-        '
-        'Label20
-        '
-        Me.Label20.AutoSize = True
-        Me.Label20.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(363, 128)
-        Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(27, 16)
-        Me.Label20.TabIndex = 123
-        Me.Label20.Text = "KG"
-        '
-        'lblTimbangManual
-        '
-        Me.lblTimbangManual.AutoSize = True
-        Me.lblTimbangManual.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTimbangManual.Location = New System.Drawing.Point(126, 128)
-        Me.lblTimbangManual.Name = "lblTimbangManual"
-        Me.lblTimbangManual.Size = New System.Drawing.Size(103, 16)
-        Me.lblTimbangManual.TabIndex = 122
-        Me.lblTimbangManual.Text = "Timbang Manual"
-        '
-        'txtTimbangManual
-        '
-        Me.txtTimbangManual.AllowEnterToMoveNext = True
-        Me.txtTimbangManual.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtTimbangManual.CheckIsValid = False
-        Me.txtTimbangManual.DataFormat = "###,##0.00"
-        Me.txtTimbangManual.DataType = Enerzie.EPSBasicControls.EPSTextBoxNum.enumDataType.dtDecimal
-        Me.txtTimbangManual.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.txtTimbangManual.ForeColor = System.Drawing.Color.Blue
-        Me.txtTimbangManual.Location = New System.Drawing.Point(255, 124)
-        Me.txtTimbangManual.Name = "txtTimbangManual"
-        Me.txtTimbangManual.Size = New System.Drawing.Size(102, 25)
-        Me.txtTimbangManual.TabIndex = 121
-        Me.txtTimbangManual.Text = "3,000.00"
-        Me.txtTimbangManual.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.txtTimbangManual.Value = 3000.0R
-        '
-        'chkManual
-        '
-        Me.chkManual.AllowEnterToMoveNext = True
-        Me.chkManual.AutoSize = True
-        Me.chkManual.Location = New System.Drawing.Point(129, 101)
-        Me.chkManual.Name = "chkManual"
-        Me.chkManual.Size = New System.Drawing.Size(108, 21)
-        Me.chkManual.TabIndex = 120
-        Me.chkManual.TabStop = False
-        Me.chkManual.Text = "Input Manual"
-        Me.chkManual.UseVisualStyleBackColor = True
         '
         'frmProduksiLoom
         '

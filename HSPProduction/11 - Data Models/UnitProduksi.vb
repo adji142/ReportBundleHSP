@@ -111,7 +111,18 @@ Namespace HSP.Data
             End Using
         End Function
 
-        Public Function Read(ByVal Kriteria As String, Optional FlagProduksi As Byte = 0, Optional FlagPemakaian As Byte = 0, Optional FlagAfval As Byte = 0) As DataSet
+        Public Function FindByLokasi(ByVal ID As String) As UnitProduksi
+            Dim SQL As String
+
+            SQL = "SELECT * FROM tunitproduksi " +
+                  "WHERE KodeLokasi = @KodeLokasi "
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                FindByLokasi = DBX.Query(Of UnitProduksi)(SQL, New With {.KodeLokasi = ID}).FirstOrDefault
+            End Using
+        End Function
+
+        Public Function Read(ByVal Kriteria As String, Optional KodeUnit As String = "", Optional FlagProduksi As Byte = 0, Optional FlagPemakaian As Byte = 0, Optional FlagAfval As Byte = 0) As DataSet
             Dim SQL As String
 
             SQL = "SELECT " +
@@ -127,6 +138,10 @@ Namespace HSP.Data
                   "FROM tunitproduksi UP " +
                   "LEFT JOIN tlokasiproduksi LP ON LP.KodeLokasi = UP.KodeLokasi " +
                   "WHERE CONCAT(UP.KodeUnit, ' ', UP.NamaUnit) LIKE @Kriteria "
+
+            If KodeUnit <> "" Then
+                SQL += " AND UP.KodeUnit = '" & KodeUnit & "' "
+            End If
 
             If FlagProduksi = 1 Then
                 SQL += "AND UP.FlagProduksi = 1 "
@@ -180,6 +195,7 @@ Namespace HSP.Data
 
         Public Function GetLookup(TextSearch As String, Parameter As Object) As DataSet Implements IDataLookup.GetLookup
             Dim SQL As String
+            Dim KodeUnit As String = Parameter(0)
 
             SQL = "SELECT " +
                   "UP.KodeUnit                                      AS 'Kode', " +
@@ -191,6 +207,10 @@ Namespace HSP.Data
                   "IF(UP.FlagAfvalWO=1,'YES','NO')                       AS 'WO' " +
                   "FROM tunitproduksi UP " +
                   "WHERE CONCAT(UP.KodeUnit, ' ', UP.NamaUnit) LIKE @Kriteria "
+
+            If KodeUnit <> "" Then
+                SQL += " AND UP.KodeUnit = '" & KodeUnit & "' "
+            End If
 
             TextSearch = String.Concat(Space(1), TextSearch.Trim(), Space(1)).Replace(" ", "%")
 

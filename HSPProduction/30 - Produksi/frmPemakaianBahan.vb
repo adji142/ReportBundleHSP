@@ -80,33 +80,33 @@ Public Class frmPemakaianBahan
 
     Private Sub FillComboMesin()
         Try
-            If cboKodeUnit.SelectedIndex <> cboKodeUnit.Items.Count - 1 Then
-                Dim DaftarMesin As New DaftarMesin(ActiveSession)
-                Dim DS As DataSet
+            'If cboKodeUnit.SelectedIndex <> cboKodeUnit.Items.Count - 1 Then
+            Dim DaftarMesin As New DaftarMesin(ActiveSession)
+            Dim DS As DataSet
 
-                DS = New DataSet
-                DS = DaftarMesin.Read("%", cboKodeUnit.SelectedValue)
-                cboKodeMesin.DataSource = DS.Tables("View")
-                cboKodeMesin.DisplayMember = "Nama Mesin"
-                cboKodeMesin.ValueMember = "Kode"
+            DS = New DataSet
+            DS = DaftarMesin.Read("%", cboKodeUnit.SelectedValue)
+            cboKodeMesin.DataSource = DS.Tables("View")
+            cboKodeMesin.DisplayMember = "Nama Mesin"
+            cboKodeMesin.ValueMember = "Kode"
 
-                Dim Drow As DataRow = DS.Tables("View").Rows.Add
-                Drow("Kode") = ""
-                Drow("Nama Mesin") = "-"
-            Else
-                Dim DS As New DataSet
-                DS.Tables.Add("View")
-                DS.Tables("View").Columns.Add("Kode")
-                DS.Tables("View").Columns.Add("Nama Mesin")
+            Dim Drow As DataRow = DS.Tables("View").Rows.Add
+            Drow("Kode") = ""
+            Drow("Nama Mesin") = "-"
+            'Else
+            'Dim DS As New DataSet
+            'DS.Tables.Add("View")
+            'DS.Tables("View").Columns.Add("Kode")
+            'DS.Tables("View").Columns.Add("Nama Mesin")
 
-                cboKodeMesin.DataSource = DS.Tables("View")
-                cboKodeMesin.DisplayMember = "Nama Mesin"
-                cboKodeMesin.ValueMember = "Kode"
+            'cboKodeMesin.DataSource = DS.Tables("View")
+            'cboKodeMesin.DisplayMember = "Nama Mesin"
+            'cboKodeMesin.ValueMember = "Kode"
 
-                Dim Drow As DataRow = DS.Tables("View").Rows.Add
-                Drow("Kode") = ""
-                Drow("Nama Mesin") = "-"
-            End If
+            'Dim Drow As DataRow = DS.Tables("View").Rows.Add
+            'Drow("Kode") = ""
+            'Drow("Nama Mesin") = "-"
+            'End If
 
             cboKodeMesin.SelectedIndex = cboKodeMesin.Items.Count - 1
         Catch
@@ -115,32 +115,32 @@ Public Class frmPemakaianBahan
 
     Private Sub FillNomorSPK()
         Try
-            If cboKodeUnit.SelectedIndex <> cboKodeUnit.Items.Count - 1 Then
-                Dim SAPWorkOrder As New SAPWorkOrder
-                Dim DS As DataSet
+            'If cboKodeUnit.SelectedIndex <> cboKodeUnit.Items.Count - 1 Then
+            Dim SAPWorkOrder As New SAPWorkOrder
+            Dim DS As DataSet
 
-                DS = New DataSet
-                DS = SAPWorkOrder.ReadFGWorkOrderByUnit(New DaftarUnitProduksi(ActiveSession).Find(cboKodeUnit.SelectedValue).KodeUnitSAP, txtTglPencatatan.Value.Date)
-                cboNomorSpk.DataSource = DS.Tables("View")
-                cboNomorSpk.DisplayMember = "Nomor"
-                cboNomorSpk.ValueMember = "Nomor"
+            DS = New DataSet
+            DS = SAPWorkOrder.ReadFGWorkOrderByUnit(New DaftarUnitProduksi(ActiveSession).Find(cboKodeUnit.SelectedValue.ToString).KodeUnitSAP, txtTglPencatatan.Value.Date)
+            cboNomorSpk.DataSource = DS.Tables("View")
+            cboNomorSpk.DisplayMember = "Nomor"
+            cboNomorSpk.ValueMember = "Nomor"
 
-                Dim Drow As DataRow = DS.Tables("View").Rows.Add
-                Drow("Nomor") = ""
-                Drow("Nomor") = "-"
-            Else
-                Dim DS As New DataSet
-                DS.Tables.Add("View")
-                DS.Tables("View").Columns.Add("Nomor")
+            Dim Drow As DataRow = DS.Tables("View").Rows.Add
+            Drow("Nomor") = ""
+            Drow("Nomor") = "-"
+            'Else
+            'Dim DS As New DataSet
+            'DS.Tables.Add("View")
+            'DS.Tables("View").Columns.Add("Nomor")
 
-                cboNomorSpk.DataSource = DS.Tables("View")
-                cboNomorSpk.DisplayMember = "Nomor"
-                cboNomorSpk.ValueMember = "Nomor"
+            'cboNomorSpk.DataSource = DS.Tables("View")
+            'cboNomorSpk.DisplayMember = "Nomor"
+            'cboNomorSpk.ValueMember = "Nomor"
 
-                Dim Drow As DataRow = DS.Tables("View").Rows.Add
-                Drow("Nomor") = ""
-                Drow("Nomor") = "-"
-            End If
+            'Dim Drow As DataRow = DS.Tables("View").Rows.Add
+            'Drow("Nomor") = ""
+            'Drow("Nomor") = "-"
+            'End If
 
             cboNomorSpk.SelectedIndex = cboNomorSpk.Items.Count - 1
         Catch
@@ -244,7 +244,7 @@ Jump:
                Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "304" And
                Microsoft.VisualBasic.Left(DR("Kode Item"), 3) <> "305" Then
 
-                If Row = Grid.Rows Then
+                If Row >= Grid.Rows Then
                     Grid.DataGridView.Rows.Add()
                 End If
 
@@ -632,26 +632,26 @@ Jump:
     Private Sub tmrJam_Tick(sender As Object, e As EventArgs) Handles tmrJam.Tick
         'Shift & Tanggal Transaksi
         '---------------------------------------------------------------------------------------------------
-        Dim Jam = GetDateTimeServer().ToLongTimeString
+        Dim Jam = Now().ToLongTimeString
 
         If Microsoft.VisualBasic.Right(Jam, 2) = "AM" Then
             If Jam < TimeSerial(7, 0, 0) Then
                 txtKodeShift.Text = "3"
-                TglTransaksi = DateAdd("D", -1, GetDateTimeServer().Date)
+                TglTransaksi = DateAdd("D", -1, Now().Date)
             Else
                 txtKodeShift.Text = "1"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             End If
         Else
             If Jam < TimeSerial(15, 0, 0) Then
                 txtKodeShift.Text = "1"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             ElseIf Jam >= TimeSerial(15, 0, 0) And Jam < TimeSerial(23, 0, 0) Then
                 txtKodeShift.Text = "2"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             Else
                 txtKodeShift.Text = "3"
-                TglTransaksi = GetDateTimeServer().Date
+                TglTransaksi = Now().Date
             End If
         End If
 
@@ -663,7 +663,7 @@ Jump:
 
         btSave.Enabled = If(txtNoTransaksi.Text = "", False, True) And _
                          If(txtTglPencatatan.Text = "", False, True) And _
-                         If(cboKodeUnit.SelectedIndex = cboKodeUnit.Items.Count - 1, False, True) And _
+                         If(cboKodeUnit.SelectedIndex = -1, False, True) And _
                          If(cboKodeGrup.SelectedIndex = cboKodeGrup.Items.Count - 1, False, True) And _
                          If(cboKodeMesin.SelectedIndex = cboKodeMesin.Items.Count - 1, False, True) And _
                          If(cboNomorSpk.SelectedIndex = cboNomorSpk.Items.Count - 1, False, True) And _
@@ -702,4 +702,8 @@ Jump:
         SetEnableCommand()
     End Sub
 #End Region
+
+    Private Sub frmPemakaianBahan_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+        FillNomorSPK()
+    End Sub
 End Class

@@ -18,7 +18,7 @@ Public Class frmTransferBenangMasuk
 
     Private TglTransaksi As DateTime
 
-    Private _SDKConnection As New SDKConnection()
+    Private Shared oCompany As New SAPbobsCOM.Company
 
 #End Region
 
@@ -307,7 +307,7 @@ Public Class frmTransferBenangMasuk
 
     Private Sub frmPenerimaanBenang_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         ScalePort.Close()
-        _SDKConnection.CloseConnectionSDK()
+        DissconnectToDatabase()
     End Sub
 
     Private Sub frmPenerimaanBenang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -942,6 +942,9 @@ jump:
                     End If
 
                     'SAPConnectionSDK.oCompany.StartTransaction()
+                    If Not oCompany.Connected Then
+                        ConnectToDatabase()
+                    End If
 
                     'Posting Staging
                     '>>---------------------------------------------------------------------------------------------
@@ -949,7 +952,7 @@ jump:
                     'START
                     '===============================================================================================
                     Dim oGoodsIssue As SAPbobsCOM.Documents
-                    oGoodsIssue = _SDKConnection.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oInventoryGenExit)
+                    oGoodsIssue = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oInventoryGenExit)
 
                     'Header
                     '**********************************************************************************************************************************
@@ -972,7 +975,7 @@ jump:
                     Dim sError As String = ""
 
                     If nStatus <> 0 Then
-                        _SDKConnection.oCompany.GetLastError(nError, sError)
+                        oCompany.GetLastError(nError, sError)
                         MsgBox(nError & " : " & sError)
                     End If
 
@@ -987,7 +990,7 @@ jump:
                     'Header
                     '**********************************************************************************************************************************
                     Dim oGoodsReceipt As SAPbobsCOM.Documents
-                    oGoodsReceipt = _SDKConnection.oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oInventoryGenEntry)
+                    oGoodsReceipt = oCompany.GetBusinessObject(SAPbobsCOM.BoObjectTypes.oInventoryGenEntry)
 
                     oGoodsReceipt.Series = 517                                  'Numbering Series : 19GRI
                     oGoodsReceipt.DocDate = Now.Date
@@ -1008,7 +1011,7 @@ jump:
                     Dim sErrorReceipt As String = ""
 
                     If nStatusReceipt <> 0 Then
-                        _SDKConnection.oCompany.GetLastError(nErrorReceipt, sErrorReceipt)
+                        oCompany.GetLastError(nErrorReceipt, sErrorReceipt)
                         MsgBox(nErrorReceipt & " : " & sErrorReceipt)
                     End If
 
@@ -1199,10 +1202,7 @@ Jump:
     End Sub
 
     Private Sub frmTransferBenangMasuk_Shown(sender As Object, e As EventArgs) Handles Me.Shown
-        If _SDKConnection.oCompany.Connected Then
-            _SDKConnection.oCompany.Disconnect()
-        End If
-        If Not _SDKConnection.OpenConnectionSDK() Then
+        If Not ConnectToDatabase() Then
             MessageBox.Show("Koneksi Ke Server SAP Gagal !", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
             If Not ActiveSession.KodeUser.ToUpper = "SPVS" Then
                 Me.Close()
@@ -1212,10 +1212,45 @@ Jump:
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If _SDKConnection.oCompany.Connected Then
+        If oCompany.Connected Then
             MsgBox("Koneksi OK")
         Else
             MsgBox("Koneksi Gagal")
         End If
     End Sub
+
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
+        If oCompany.Connected Then
+            MsgBox("Koneksi OK || " + IP() + " || " + oCompany.UserName)
+        Else
+            MsgBox("Koneksi Gagal || " + IP() + " || " + oCompany.UserName)
+        End If
+    End Sub
+
+    Private Function ConnectToDatabase() As Boolean
+        oCompany.SLDServer = "192.168.1.222:40000"
+        oCompany.Server = My.Settings.HanaServer
+        oCompany.DbServerType = SAPbobsCOM.BoDataServerTypes.dst_HANADB
+        oCompany.CompanyDB = My.Settings.HanaSAPDatabaseName
+        If IP() = "192.168.1.163" Then
+            oCompany.UserName = "IT"
+            oCompany.Password = "hspHSP5050"
+        End If
+
+        oCompany.language = SAPbobsCOM.BoSuppLangs.ln_English
+
+        Dim nStatus As Long
+        nStatus = oCompany.Connect
+
+        If nStatus <> 0 Then
+            ConnectToDatabase = False
+        Else
+            ConnectToDatabase = True
+        End If
+    End Function
+
+    Private Function DissconnectToDatabase() As Boolean
+        oCompany.Disconnect()
+        DissconnectToDatabase = True
+    End Function
 End Class

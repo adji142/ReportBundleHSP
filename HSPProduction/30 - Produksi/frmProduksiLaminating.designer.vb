@@ -698,6 +698,9 @@ Partial Class frmProduksiLaminating
         Me.Label14.TabIndex = 131
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'tmrStabil
+        '
+        '
         'Label7
         '
         Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _

@@ -7,6 +7,7 @@ Namespace HSP.Data
         Public Property KodeUnit As String
         Public Property Aktif As Byte
         Public Property KodeMesinSAP As String
+        Public Property JenisMesin As String
     End Class
 
     Public Class DaftarMesin : Implements IDataLookup
@@ -20,9 +21,9 @@ Namespace HSP.Data
             Dim SQL As String
 
             SQL = "INSERT INTO tmesinproduksi " +
-                  "(KodeMesin, NamaMesin, KodeUnit, Aktif, KodeMesinSAP) " +
+                  "(KodeMesin, NamaMesin, KodeUnit, Aktif, KodeMesinSAP, JenisMesin) " +
                   "VALUES " +
-                  "(@KodeMesin, @NamaMesin, @KodeUnit, @Aktif, @KodeMesinSAP)"
+                  "(@KodeMesin, @NamaMesin, @KodeUnit, @Aktif, @KodeMesinSAP, @JenisMesin)"
 
             Using DBX As IDbConnection = _DBConnection.Connection
                 Add = DBX.Execute(SQL, Data)
@@ -37,7 +38,8 @@ Namespace HSP.Data
                   "NamaMesin = @NamaMesin, " +
                   "KodeUnit = @KodeUnit, " +
                   "Aktif = @Aktif, " +
-                  "KodeMesinSAP = @KodeMesinSAP " +
+                  "KodeMesinSAP = @KodeMesinSAP, " +
+                  "JenisMesin = @JenisMesin " +
                   "WHERE KodeMesin = @KodeMesin "
 
             Using DBX As IDbConnection = _DBConnection.Connection
@@ -97,14 +99,18 @@ Namespace HSP.Data
                   "A.NamaMesin                          AS 'Nama Mesin', " +
                   "B.NamaUnit                           AS 'Unit Produksi', " +
                   "A.KodeMesinSAP                       AS 'Kode Mesin SAP', " +
+                  "C.NamaJenis                          AS 'Jenis Mesin', " +
                   "IF(A.Aktif=1,'Aktif','Non Aktif')    AS 'Status' " +
                   "FROM tmesinproduksi A " +
                   "LEFT JOIN tunitproduksi B ON B.KodeUnit = A.KodeUnit " +
+                  "LEFT JOIN tjenismesin C ON C.KodeJenis = A.JenisMesin " +
                   "WHERE CONCAT(A.KodeMesin,' ',A.NamaMesin) LIKE @Kriteria"
 
             If KodeUnit <> "" Then
                 SQL += " AND A.KodeUnit = '" + KodeUnit + "'"
             End If
+
+            SQL += " ORDER BY A.KodeMesin "
 
             Kriteria = String.Concat(Space(1), Kriteria.Trim, Space(1)).Replace(" ", "%")
 
@@ -132,9 +138,11 @@ Namespace HSP.Data
                   "A.NamaMesin                          AS 'Nama Mesin', " +
                   "B.NamaUnit                           AS 'Unit Produksi', " +
                   "A.KodeMesinSAP                       AS 'Kode Mesin SAP', " +
+                  "C.NamaJenis                          AS 'Jenis Mesin', " +
                   "IF(A.Aktif=1,'Aktif','Non Aktif')    AS 'Status' " +
                   "FROM tmesinproduksi A " +
                   "LEFT JOIN tunitproduksi B ON B.KodeUnit = A.KodeUnit " +
+                  "LEFT JOIN tjenismesin C ON C.KodeJenis = A.JenisMesin " +
                   "WHERE CONCAT(A.KodeMesin,' ',A.NamaMesin) LIKE @Kriteria"
 
             If KodeUnit <> "" Then

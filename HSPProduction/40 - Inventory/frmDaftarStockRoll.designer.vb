@@ -237,7 +237,7 @@ Partial Class frmDaftarStockRoll
         Me.View.StandardTab = True
         Me.View.TabIndex = 0
         '
-        'frmDaftarStockBenang
+        'frmDaftarStockRoll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -247,7 +247,7 @@ Partial Class frmDaftarStockRoll
         Me.Controls.Add(Me.Toolbar)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.KeyPreview = True
-        Me.Name = "frmDaftarStockBenang"
+        Me.Name = "frmDaftarStockRoll"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Daftar Stock Benang"
         Me.Toolbar.ResumeLayout(False)

@@ -208,6 +208,7 @@ Public Class frmMutasiRoll
                     Dim StockRoll = DaftarStockRoll.Find(txtKodeProduksi.Text, cboKodeLokasiAsal.SelectedValue)
                     If Not IsNothing(StockRoll) Then
                         DaftarStockRoll.UpdateStatus(txtKodeProduksi.Text)
+
                         StockRoll.NoTransaksi = txtNoTransaksi.Text
                         StockRoll.KodeLokasi = cboKodeLokasiTujuan.SelectedValue
                         StockRoll.StatusStock = 1
@@ -263,4 +264,11 @@ Jump:
                          If(txtStatus.Tag = 1 Or lblDisposisi.Tag = 1, True, False)
     End Sub
 
+    Private Sub btLookupKodeLokasiAsal_Click(sender As Object, e As EventArgs) Handles btLookupKodeLokasiAsal.Click
+
+    End Sub
+
+    Private Sub btLookupKodeLokasiTujuan_Click(sender As Object, e As EventArgs) Handles btLookupKodeLokasiTujuan.Click
+
+    End Sub
 End Class
