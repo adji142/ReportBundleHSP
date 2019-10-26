@@ -1,7 +1,7 @@
 ﻿Imports CrystalDecisions.CrystalReports.Engine
 Imports CrystalDecisions.Shared
 
-Imports HSPProduction.HSP.Data
+Imports ReportXprdsystem.HSP.Data
 
 Public Class frmRPT329_110_StockBallKarung
 

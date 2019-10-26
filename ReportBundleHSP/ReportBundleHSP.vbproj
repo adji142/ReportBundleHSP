@@ -221,6 +221,12 @@
     <Compile Include="Report\FrmRPT_7704_MutasiSparePart.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Report\FrmRPT_BackOrderPenjualanMakasar.designer.vb">
+      <DependentUpon>FrmRPT_BackOrderPenjualanMakasar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_BackOrderPenjualanMakasar.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Report\FrmRPT_BO001_BackOrderWAging.designer.vb">
       <DependentUpon>FrmRPT_BO001_BackOrderWAging.vb</DependentUpon>
     </Compile>
@@ -231,6 +237,12 @@
       <DependentUpon>FrmRpt_BSvsAfval.vb</DependentUpon>
     </Compile>
     <Compile Include="Report\FrmRpt_BSvsAfval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRPT_BukuKasMakasar.designer.vb">
+      <DependentUpon>FrmRPT_BukuKasMakasar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRPT_BukuKasMakasar.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Report\FrmRpt_Cancelationdate_SO.designer.vb">
@@ -291,11 +303,17 @@
     <EmbeddedResource Include="Report\FrmRPT_7704_MutasiSparePart.resx">
       <DependentUpon>FrmRPT_7704_MutasiSparePart.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_BackOrderPenjualanMakasar.resx">
+      <DependentUpon>FrmRPT_BackOrderPenjualanMakasar.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\FrmRPT_BO001_BackOrderWAging.resx">
       <DependentUpon>FrmRPT_BO001_BackOrderWAging.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\FrmRpt_BSvsAfval.resx">
       <DependentUpon>FrmRpt_BSvsAfval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRPT_BukuKasMakasar.resx">
+      <DependentUpon>FrmRPT_BukuKasMakasar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\FrmRpt_Cancelationdate_SO.resx">
       <DependentUpon>FrmRpt_Cancelationdate_SO.vb</DependentUpon>

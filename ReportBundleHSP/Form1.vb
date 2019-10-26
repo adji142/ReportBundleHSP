@@ -72,4 +72,11 @@
         ifrmChil.MdiParent = Me
         ifrmChil.Show()
     End Sub
+
+    Private Sub BackOrderPenjualanMakasarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackOrderPenjualanMakasarToolStripMenuItem.Click
+        Dim ifrmChil As New FrmRPT_BackOrderPenjualanMakasar
+        IsMdiContainer = True
+        ifrmChil.MdiParent = Me
+        ifrmChil.Show()
+    End Sub
 End Class

@@ -229,6 +229,60 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Laporan\BALLPRESS CEMENT BAG\frmRPT319_100_PackingCementBag.designer.vb">
+      <DependentUpon>frmRPT319_100_PackingCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\BALLPRESS CEMENT BAG\frmRPT319_100_PackingCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\BALLPRESS CEMENT BAG\frmRPT319_110_StockBallCementBag.designer.vb">
+      <DependentUpon>frmRPT319_110_StockBallCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\BALLPRESS CEMENT BAG\frmRPT319_110_StockBallCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT312_100_HasilCementBag.designer.vb">
+      <DependentUpon>frmRPT312_100_HasilCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT312_100_HasilCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT312_110_StockCementBag.designer.vb">
+      <DependentUpon>frmRPT312_110_StockCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT312_110_StockCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT329_100_PackingKarung.designer.vb">
+      <DependentUpon>frmRPT329_100_PackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT329_100_PackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT329_110_StockBallKarung.designer.vb">
+      <DependentUpon>frmRPT329_110_StockBallKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT329_110_StockBallKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT329_150_PackingKarung.designer.vb">
+      <DependentUpon>frmRPT329_150_PackingKarung.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT329_150_PackingKarung.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT400_100_PenyerahanHasilProduksi.designer.vb">
+      <DependentUpon>frmRPT400_100_PenyerahanHasilProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT400_100_PenyerahanHasilProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT410_100_ReturHasilProduksi.designer.vb">
+      <DependentUpon>frmRPT410_100_ReturHasilProduksi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\ballpress\frmRPT410_100_ReturHasilProduksi.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Laporan\BMF\frmRPT500_100_BenangMultifilament.designer.vb">
       <DependentUpon>frmRPT500_100_BenangMultifilament.vb</DependentUpon>
     </Compile>
@@ -263,6 +317,90 @@
       <DependentUpon>frmRPT321_150_Cutting.vb</DependentUpon>
     </Compile>
     <Compile Include="Laporan\Cutting\frmRPT321_150_Cutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_100_Laminating.designer.vb">
+      <DependentUpon>frmRPT310_100_Laminating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_100_Laminating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_110_StockRollLaminating.designer.vb">
+      <DependentUpon>frmRPT310_110_StockRollLaminating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_110_StockRollLaminating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_120_PemakaianBPLaminating.designer.vb">
+      <DependentUpon>frmRPT310_120_PemakaianBPLaminating.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_120_PemakaianBPLaminating.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_130_Laminating_AnalisaRollKeRoll.designer.vb">
+      <DependentUpon>frmRPT310_130_Laminating_AnalisaRollKeRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_130_Laminating_AnalisaRollKeRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_150_Laminasi.designer.vb">
+      <DependentUpon>frmRPT310_150_Laminasi.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT310_150_Laminasi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_100_Slitting.designer.vb">
+      <DependentUpon>frmRPT311_100_Slitting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_100_Slitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_110_StockRollSlitting.designer.vb">
+      <DependentUpon>frmRPT311_110_StockRollSlitting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_110_StockRollSlitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_120_Slitting_AnalisaRollKeRoll.designer.vb">
+      <DependentUpon>frmRPT311_120_Slitting_AnalisaRollKeRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_120_Slitting_AnalisaRollKeRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_150_Slitting.designer.vb">
+      <DependentUpon>frmRPT311_150_Slitting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT311_150_Slitting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_120_BahanRollCementBag.designer.vb">
+      <DependentUpon>frmRPT312_120_BahanRollCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_120_BahanRollCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_130_HasilCementBag.designer.vb">
+      <DependentUpon>frmRPT312_130_HasilCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_130_HasilCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_140_SisaRollCementBag.designer.vb">
+      <DependentUpon>frmRPT312_140_SisaRollCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_140_SisaRollCementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_150_CementBag.designer.vb">
+      <DependentUpon>frmRPT312_150_CementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT312_150_CementBag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT319_150_PackingCementBag.designer.vb">
+      <DependentUpon>frmRPT319_150_PackingCementBag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Finishing 2\frmRPT319_150_PackingCementBag.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laporan\frmRDO1201_OperatorProduksi.designer.vb">
@@ -385,6 +523,24 @@
     <Compile Include="Laporan\frmRPTRekap_ProExtruder.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT600_100_GudangAfval.designer.vb">
+      <DependentUpon>frmRPT600_100_GudangAfval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT600_100_GudangAfval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT600_110_GudangAfval.designer.vb">
+      <DependentUpon>frmRPT600_110_GudangAfval.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT600_110_GudangAfval.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT610100_Recycle.designer.vb">
+      <DependentUpon>frmRPT610100_Recycle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT610100_Recycle.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Laporan\Gudang Roll\frmRPT210_100_GudangRoll.designer.vb">
       <DependentUpon>frmRPT210_100_GudangRoll.vb</DependentUpon>
     </Compile>
@@ -415,6 +571,18 @@
     <Compile Include="Laporan\Gudang Roll\frmRPT210_190_GudangRoll.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Laporan\inner\frmRPT324_100_Inner.designer.vb">
+      <DependentUpon>frmRPT324_100_Inner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\inner\frmRPT324_100_Inner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\inner\frmRPT324_110_StockHasilInner.designer.vb">
+      <DependentUpon>frmRPT324_110_StockHasilInner.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\inner\frmRPT324_110_StockHasilInner.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Laporan\jahit\frmRPT322_100_Jahit.designer.vb">
       <DependentUpon>frmRPT322_100_Jahit.vb</DependentUpon>
     </Compile>
@@ -431,6 +599,18 @@
       <DependentUpon>frmRPT322_150_Jahit.vb</DependentUpon>
     </Compile>
     <Compile Include="Laporan\jahit\frmRPT322_150_Jahit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\lain lain\frmRPT210_130_GudangRoll.designer.vb">
+      <DependentUpon>frmRPT210_130_GudangRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\lain lain\frmRPT210_130_GudangRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\lain lain\frmRPT329_120_DaftarItem.designer.vb">
+      <DependentUpon>frmRPT329_120_DaftarItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\lain lain\frmRPT329_120_DaftarItem.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laporan\Loom\frmRPT200_130_CircularLoom.designer.vb">
@@ -485,6 +665,18 @@
       <DependentUpon>frmRPTSAP_LaporanFloorLoom.vb</DependentUpon>
     </Compile>
     <Compile Include="Laporan\Loom\frmRPTSAP_LaporanFloorLoom.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\PrintingPcs\frmRPT323_100_PrintingPcs.designer.vb">
+      <DependentUpon>frmRPT323_100_PrintingPcs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\PrintingPcs\frmRPT323_100_PrintingPcs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\PrintingPcs\frmRPT323_110_StockHasilPrintingPcs.designer.vb">
+      <DependentUpon>frmRPT323_110_StockHasilPrintingPcs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\PrintingPcs\frmRPT323_110_StockHasilPrintingPcs.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laporan\printing\frmRPT320_100_PrintingRoll.designer.vb">
@@ -549,6 +741,33 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\BALLPRESS CEMENT BAG\frmRPT319_100_PackingCementBag.resx">
+      <DependentUpon>frmRPT319_100_PackingCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\BALLPRESS CEMENT BAG\frmRPT319_110_StockBallCementBag.resx">
+      <DependentUpon>frmRPT319_110_StockBallCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ballpress\frmRPT312_100_HasilCementBag.resx">
+      <DependentUpon>frmRPT312_100_HasilCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ballpress\frmRPT312_110_StockCementBag.resx">
+      <DependentUpon>frmRPT312_110_StockCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ballpress\frmRPT329_100_PackingKarung.resx">
+      <DependentUpon>frmRPT329_100_PackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ballpress\frmRPT329_110_StockBallKarung.resx">
+      <DependentUpon>frmRPT329_110_StockBallKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ballpress\frmRPT329_150_PackingKarung.resx">
+      <DependentUpon>frmRPT329_150_PackingKarung.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ballpress\frmRPT400_100_PenyerahanHasilProduksi.resx">
+      <DependentUpon>frmRPT400_100_PenyerahanHasilProduksi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\ballpress\frmRPT410_100_ReturHasilProduksi.resx">
+      <DependentUpon>frmRPT410_100_ReturHasilProduksi.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Laporan\BMF\frmRPT500_100_BenangMultifilament.resx">
       <DependentUpon>frmRPT500_100_BenangMultifilament.vb</DependentUpon>
     </EmbeddedResource>
@@ -566,6 +785,48 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\Cutting\frmRPT321_150_Cutting.resx">
       <DependentUpon>frmRPT321_150_Cutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT310_100_Laminating.resx">
+      <DependentUpon>frmRPT310_100_Laminating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT310_110_StockRollLaminating.resx">
+      <DependentUpon>frmRPT310_110_StockRollLaminating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT310_120_PemakaianBPLaminating.resx">
+      <DependentUpon>frmRPT310_120_PemakaianBPLaminating.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT310_130_Laminating_AnalisaRollKeRoll.resx">
+      <DependentUpon>frmRPT310_130_Laminating_AnalisaRollKeRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT310_150_Laminasi.resx">
+      <DependentUpon>frmRPT310_150_Laminasi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT311_100_Slitting.resx">
+      <DependentUpon>frmRPT311_100_Slitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT311_110_StockRollSlitting.resx">
+      <DependentUpon>frmRPT311_110_StockRollSlitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT311_120_Slitting_AnalisaRollKeRoll.resx">
+      <DependentUpon>frmRPT311_120_Slitting_AnalisaRollKeRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT311_150_Slitting.resx">
+      <DependentUpon>frmRPT311_150_Slitting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT312_120_BahanRollCementBag.resx">
+      <DependentUpon>frmRPT312_120_BahanRollCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT312_130_HasilCementBag.resx">
+      <DependentUpon>frmRPT312_130_HasilCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT312_140_SisaRollCementBag.resx">
+      <DependentUpon>frmRPT312_140_SisaRollCementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT312_150_CementBag.resx">
+      <DependentUpon>frmRPT312_150_CementBag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Finishing 2\frmRPT319_150_PackingCementBag.resx">
+      <DependentUpon>frmRPT319_150_PackingCementBag.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\frmRDO1201_OperatorProduksi.resx">
       <DependentUpon>frmRDO1201_OperatorProduksi.vb</DependentUpon>
@@ -627,6 +888,15 @@
     <EmbeddedResource Include="Laporan\frmRPTRekap_ProExtruder.resx">
       <DependentUpon>frmRPTRekap_ProExtruder.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT600_100_GudangAfval.resx">
+      <DependentUpon>frmRPT600_100_GudangAfval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT600_110_GudangAfval.resx">
+      <DependentUpon>frmRPT600_110_GudangAfval.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\GUDANG AFVAL RECYCLE\frmRPT610100_Recycle.resx">
+      <DependentUpon>frmRPT610100_Recycle.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Laporan\Gudang Roll\frmRPT210_100_GudangRoll.resx">
       <DependentUpon>frmRPT210_100_GudangRoll.vb</DependentUpon>
     </EmbeddedResource>
@@ -642,6 +912,12 @@
     <EmbeddedResource Include="Laporan\Gudang Roll\frmRPT210_190_GudangRoll.resx">
       <DependentUpon>frmRPT210_190_GudangRoll.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\inner\frmRPT324_100_Inner.resx">
+      <DependentUpon>frmRPT324_100_Inner.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\inner\frmRPT324_110_StockHasilInner.resx">
+      <DependentUpon>frmRPT324_110_StockHasilInner.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Laporan\jahit\frmRPT322_100_Jahit.resx">
       <DependentUpon>frmRPT322_100_Jahit.vb</DependentUpon>
     </EmbeddedResource>
@@ -650,6 +926,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\jahit\frmRPT322_150_Jahit.resx">
       <DependentUpon>frmRPT322_150_Jahit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\lain lain\frmRPT210_130_GudangRoll.resx">
+      <DependentUpon>frmRPT210_130_GudangRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\lain lain\frmRPT329_120_DaftarItem.resx">
+      <DependentUpon>frmRPT329_120_DaftarItem.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\Loom\frmRPT200_130_CircularLoom.resx">
       <DependentUpon>frmRPT200_130_CircularLoom.vb</DependentUpon>
@@ -675,6 +957,12 @@
     <EmbeddedResource Include="Laporan\Loom\frmRPTSAP_LaporanFloorLoom.resx">
       <DependentUpon>frmRPTSAP_LaporanFloorLoom.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\PrintingPcs\frmRPT323_100_PrintingPcs.resx">
+      <DependentUpon>frmRPT323_100_PrintingPcs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\PrintingPcs\frmRPT323_110_StockHasilPrintingPcs.resx">
+      <DependentUpon>frmRPT323_110_StockHasilPrintingPcs.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Laporan\printing\frmRPT320_100_PrintingRoll.resx">
       <DependentUpon>frmRPT320_100_PrintingRoll.vb</DependentUpon>
     </EmbeddedResource>
@@ -693,8 +981,175 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmLookup.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRDO1201_OperatorProduksi.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT100_110_InventoryTransferExtruder.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT100_120_PemakaianBahanExtruder.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT100_140_Extruder.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT100_150_Extruder.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_100_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_110_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_120_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_130_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_140_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_150_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_160_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_190_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_200_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_220_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT110_230_GudangBenang.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT200_130_CircularLoom.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT200_140_AnalisaProduksiLoomByMesin.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT200_150_Loom.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT200_160b_CircularLoom.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT200_160_Loom.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT200_170_AnalisaBerat.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT2100_HasilCircularLoom.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT210_100_GudangRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT210_110_StockRollGudangRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT210_120_TransferGudangRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT210_140_GudangRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT210_190_GudangRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT320_100_PrintingRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT320_110_StockRollPrinting.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT320_120_PemakaianBPPrintingRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT320_150_PrintingRoll.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT321_100_Cutting.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT321_110_StockHasilCutting_1.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT321_150_Cutting.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT322_100_Jahit.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT322_110_StockHasilJahit.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT322_150_Jahit.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT500_100_BenangMultifilament.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT500_110_PemakaianBahanBmf.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPT500_160_Bmf.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPTDowntime_ProExtruder.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPTPro_SaldoStockBahan.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPTRangkuman_ProExtruder.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPTRekap_ProExtruder.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.frmRPTSAP_LaporanFloorLoom.resources" />
+    <EmbeddedResource Include="obj\Debug\ReportXprdsystem.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\Reports\rpt100111_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100112_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100121_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100122_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100123_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100124_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100125_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100141_AnalisaProduksiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100142_AnalisaProduksiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100143_AnalisaProduksiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100144_AnalisaProduksiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100145_AnalisaProduksiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100146_AnalisaProduksiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt100151_PenyelesaianWO_Extruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt110101_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110102_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110103_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110104_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110105_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110111_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110112_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110121_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110122_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110141_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110142_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110143_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110144_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110145_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110151_GudangBenang_KartuStock.rpt" />
+    <None Include="bin\Debug\Reports\rpt110191_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\Rpt1101_RDO_RekapProduksiExtru.rpt" />
+    <None Include="bin\Debug\Reports\rpt110200_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110221_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\rpt110235_GudangBenang.rpt" />
+    <None Include="bin\Debug\Reports\Rpt1201_RDO_DowntimeProExtruder.rpt" />
+    <None Include="bin\Debug\Reports\Rpt1301_RekapProduksiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rpt200131_AnalisaProduksiLoom.rpt" />
+    <None Include="bin\Debug\Reports\rpt200141_AnalisaProduksiLoomByMesin.rpt" />
+    <None Include="bin\Debug\Reports\rpt200142_AnalisaProduksiLoomByMesin.rpt" />
+    <None Include="bin\Debug\Reports\rpt200151_PenyelesaianWO_Loom.rpt" />
+    <None Include="bin\Debug\Reports\rpt200161b_PenyelesaianWO_Loom.rpt" />
+    <None Include="bin\Debug\Reports\rpt200161_PenyelesaianWO_Loom.rpt" />
+    <None Include="bin\Debug\Reports\rpt200162b_PenyelesaianWO_Loom.rpt" />
+    <None Include="bin\Debug\Reports\rpt200170_AnalisaBeratRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210101_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210102_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210103_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210104_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210105_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210106_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210111_StockGudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210112_StockGudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210113_StockGudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210121_TransferGudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210122_TransferGudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210123_TransferGudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210141_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210142_GudangRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt210191_GudangRollMakloon.rpt" />
+    <None Include="bin\Debug\Reports\rpt210192_GudangRollMakloon.rpt" />
+    <None Include="bin\Debug\Reports\rpt210193_GudangRollMakloon.rpt" />
+    <None Include="bin\Debug\Reports\rpt210194_GudangRollMakloon.rpt" />
+    <None Include="bin\Debug\Reports\rpt210195_GudangRollMakloon.rpt" />
+    <None Include="bin\Debug\Reports\rpt2801_LaporanHasilProduksiCloom.rpt" />
+    <None Include="bin\Debug\Reports\rpt2802_LaporanHasilProduksiCloom.rpt" />
+    <None Include="bin\Debug\Reports\rpt2803_LaporanHasilProduksiCloom.rpt" />
+    <None Include="bin\Debug\Reports\rpt2804_LaporanHasilProduksiCloom.rpt" />
+    <None Include="bin\Debug\Reports\rpt2806_LaporanHasilProduksiCloom.rpt" />
+    <None Include="bin\Debug\Reports\rpt2807_LaporanHasilProduksiCloom.rpt" />
+    <None Include="bin\Debug\Reports\rpt2808_LaporanHasilProduksiCloom.rpt" />
+    <None Include="bin\Debug\Reports\rpt320101_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320102_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320103_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320104_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320105_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320106_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320107_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320111_StockRollPrinting.rpt" />
+    <None Include="bin\Debug\Reports\rpt320112_StockRollPrinting.rpt" />
+    <None Include="bin\Debug\Reports\rpt320121_PemakaianBPPrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320122_PemakaianBPPrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320123_PemakaianBPPrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320124_PemakaianBPPrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320125_PemakaianBPPrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt320151_PenyelesaianWO_PrintingRoll.rpt" />
+    <None Include="bin\Debug\Reports\rpt321101_Cutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt321102_Cutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt321103_Cutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt321104_Cutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt321105_Cutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt321106_Cutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt321111_StockHasilCutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt321151_PenyelesaianWO_Cutting.rpt" />
+    <None Include="bin\Debug\Reports\rpt322101_Jahit.rpt" />
+    <None Include="bin\Debug\Reports\rpt322102_Jahit.rpt" />
+    <None Include="bin\Debug\Reports\rpt322103_Jahit.rpt" />
+    <None Include="bin\Debug\Reports\rpt322104_Jahit.rpt" />
+    <None Include="bin\Debug\Reports\rpt322111_StockHasilJahit.rpt" />
+    <None Include="bin\Debug\Reports\rpt322151_PenyelesaianWO_Jahit.rpt" />
+    <None Include="bin\Debug\Reports\rpt500101_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500102_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500103_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500104_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500105_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500121_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500122_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500123_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rpt500161_Bmf.rpt" />
+    <None Include="bin\Debug\Reports\rptPro_SaldoStockBahan.rpt" />
+    <None Include="bin\Debug\Reports\rptRDO1001_PremiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rptRDO1002_PremiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rptRDO1003_PremiExtruder.rpt" />
+    <None Include="bin\Debug\Reports\rptRDO1201_Extruder_OperatorProduksi.rpt" />
+    <None Include="bin\Debug\Reports\rptRDP2200_LapOprasionalProduksiCLoom.rpt" />
+    <None Include="bin\Debug\Reports\rptSAP_LaporanFloorLoom.rpt" />
+    <None Include="bin\Debug\ReportXprdsystem.exe.config" />
+    <None Include="bin\Debug\ReportXprdsystem.vshost.exe.config" />
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -705,6 +1160,37 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\ReportXprdsystem.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\ReportXprdsystem.vbprojResolveAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Dapper.dll" />
+    <Content Include="bin\Debug\EPSBasicControls.dll" />
+    <Content Include="bin\Debug\EPSGridControls.dll" />
+    <Content Include="bin\Debug\Interop.BarTender.dll" />
+    <Content Include="bin\Debug\Interop.SAPbobsCOM.dll" />
+    <Content Include="bin\Debug\MySql.Data.dll" />
+    <Content Include="bin\Debug\ReportXprdsystem.exe" />
+    <Content Include="bin\Debug\ReportXprdsystem.pdb" />
+    <Content Include="bin\Debug\ReportXprdsystem.vshost.exe" />
+    <Content Include="bin\Debug\ReportXprdsystem.xml" />
+    <Content Include="bin\Debug\Sap.Data.Hana.v4.5.dll" />
+    <Content Include="bin\Debug\Sap.Data.Hana.v4.5.xml" />
+    <Content Include="bin\Debug\SOLStaging.dll" />
+    <Content Include="obj\Debug\ReportXprdsystem.exe" />
+    <Content Include="obj\Debug\ReportXprdsystem.pdb" />
+    <Content Include="obj\Debug\ReportXprdsystem.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ReportXprdsystem.xml" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <None Include="Resources\delivery.png" />
+    <None Include="Resources\dbx%281%29%281%29.png" />
+    <None Include="Resources\barcode_reader_128x128_32.png" />
+    <None Include="Resources\barcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

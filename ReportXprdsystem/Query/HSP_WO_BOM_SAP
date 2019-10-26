@@ -1,0 +1,17 @@
+SET SCHEMA "HARDO_LIVE";
+CREATE VIEW HARDO_LIVE.HSP_WO_BOM_SAP (WO_ID, "WO_Number", WO_TYPE, "WO_Date", "FG_ItemCode", "FG_ItemName", "FG_Quantity", "RM_ItemCode", "RM_ItemName") AS 
+SELECT A."DocEntry" "WO_ID",
+       A.U_SOL_NO_WO "WO_Number",
+       A.U_SOL_ROUTING "WO_TYPE",
+       A."PostDate" "WO_Date",
+       A."ItemCode" "FG_ItemCode",
+       D."ItemName" "FG_ItemName",
+       A."PlannedQty" "FG_Quantity",
+       B."ItemCode" "RM_ItemCode",
+       E."ItemName" "RM_ItemName"
+  FROM OWOR A
+       LEFT JOIN WOR1 B ON A."DocEntry" = B."DocEntry"
+       LEFT JOIN OITM D ON A."ItemCode" = D."ItemCode"
+       LEFT JOIN OITM E ON B."ItemCode" = E."ItemCode"
+ WHERE B."IssueType" = 'M' AND A."CloseDate" IS NULL
+;

@@ -35,6 +35,10 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Project1", "Vb.Net2010\Gene
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ReportXprdsystem", "ReportXprdsystem\ReportXprdsystem.vbproj", "{662A6ABC-5EFD-4372-BC1D-905D7B164FCA}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TRSReports", "TRSReports\TRSReports\TRSReports.vbproj", "{2C956467-901E-4580-B5C4-807E5CF25128}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HSPNotulen", "HSPNotulen\HSPNotulen.vbproj", "{C12D0F65-4794-4CFD-B115-491542C9D52F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{662A6ABC-5EFD-4372-BC1D-905D7B164FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{662A6ABC-5EFD-4372-BC1D-905D7B164FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{662A6ABC-5EFD-4372-BC1D-905D7B164FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C956467-901E-4580-B5C4-807E5CF25128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C956467-901E-4580-B5C4-807E5CF25128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C956467-901E-4580-B5C4-807E5CF25128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C956467-901E-4580-B5C4-807E5CF25128}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C12D0F65-4794-4CFD-B115-491542C9D52F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C12D0F65-4794-4CFD-B115-491542C9D52F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C12D0F65-4794-4CFD-B115-491542C9D52F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C12D0F65-4794-4CFD-B115-491542C9D52F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

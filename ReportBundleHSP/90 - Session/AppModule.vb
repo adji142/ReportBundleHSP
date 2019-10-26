@@ -41,7 +41,15 @@
         oApp(0) = "2001"
         oApp(1) = "Laporan Afval vs BS"
         '-----------------------------------------------------------------------------------
+        oApp = oDT.Rows.Add()
+        oApp(0) = "BO02"
+        oApp(1) = "Laporan BackOrder Makasar"
+        '-----------------------------------------------------------------------------------
 
+        oApp = oDT.Rows.Add()
+        oApp(0) = "KAS01"
+        oApp(1) = "Laporan Buku KAS"
+        '-----------------------------------------------------------------------------------
         oDS.AcceptChanges()
         GetAppModule = oDT
 
@@ -64,7 +72,7 @@
         'ActiveSession.HakAkses = Session.HakAkses
         'ActiveSession.Supervisor = Session.Supervisor
         'ActiveSession.HakUbahTanggal = Session.HakUbahTanggal
-        'ActiveSession.DBConnection = Session.DBConnection
+        ActiveSession.DBConnection = Session.DBConnection
 
         '*************************************************************************
         'Master Data
@@ -84,6 +92,10 @@
                 AppForm = New FrmRpt_Cancelationdate_SO
             Case "2001"
                 AppForm = New FrmRpt_BSvsAfval
+            Case "BO02"
+                AppForm = New FrmRPT_BackOrderPenjualanMakasar
+            Case "KAS01"
+                AppForm = New FrmRPT_BukuKasMakasar
         End Select
 
         Select Case AppID

@@ -340,4 +340,240 @@
         'frmformDO.Dock = DockStyle.Fill
         ifrmChild.Show()
     End Sub
+
+    Private Sub R323100LapHasilPrintingPcsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R323100LapHasilPrintingPcsToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT323_100_PrintingPcs
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R323110LapStockHasilPrintingPcsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R323110LapStockHasilPrintingPcsToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT323_110_StockHasilPrintingPcs
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R324100LapHasilInnerToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R324100LapHasilInnerToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT324_100_Inner
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R329100LapHasilBallpressKarungToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R329100LapHasilBallpressKarungToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT329_100_PackingKarung
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R329110LapStockRollToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R329110LapStockRollToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT329_110_StockBallKarung
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R329150LapPenyelesaianWOPackingKarungToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R329150LapPenyelesaianWOPackingKarungToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT329_150_PackingKarung
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R329120DaftarItemProduksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R329120DaftarItemProduksiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT210_130_GudangRoll
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub LapAfvalProduksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapAfvalProduksiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT600_100_GudangAfval
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub LapHasilRecycleToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapHasilRecycleToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT610100_Recycle
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub LapPenerimaanAfvalProduksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapPenerimaanAfvalProduksiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT600_110_GudangAfval
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub BALLPRESSCEMENTBAGToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BALLPRESSCEMENTBAGToolStripMenuItem.Click
+        
+    End Sub
+
+    Private Sub LapHasilBallpressCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapHasilBallpressCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT319_100_PackingCementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub LapStockBallpressCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapStockBallpressCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT319_110_StockBallCementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+    End Sub
+
+    Private Sub LapPenyerahanHasilProduksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapPenyerahanHasilProduksiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT400_100_PenyerahanHasilProduksi
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub LapReturHasilProduksiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapReturHasilProduksiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT410_100_ReturHasilProduksi
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub LapHasilCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapHasilCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT312_100_HasilCementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub LapStockCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LapStockCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT312_110_StockCementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R310100LapHasilLaminasiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R310100LapHasilLaminasiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT310_100_Laminating
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R310110LapStockRollLaminasiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R310110LapStockRollLaminasiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT310_110_StockRollLaminating
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT310_120_PemakaianBPLaminating
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R310150LapPenyelesaianWOLaminasiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R310150LapPenyelesaianWOLaminasiToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT310_150_Laminasi
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R311100LapHasilSlittingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R311100LapHasilSlittingToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT311_100_Slitting
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R311110LapStockRollSlittingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R311110LapStockRollSlittingToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT311_110_StockRollSlitting
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R311120LapSlittingAnalisaRollKeRollToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R311120LapSlittingAnalisaRollKeRollToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT311_120_Slitting_AnalisaRollKeRoll
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R311150LapPenyelesaianWOSlittingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R311150LapPenyelesaianWOSlittingToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT311_150_Slitting
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R312120LapPemakaianBahanRollCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R312120LapPemakaianBahanRollCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT312_120_BahanRollCementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R312130LapHasilProduksiCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R312130LapHasilProduksiCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT312_130_HasilCementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R312110LapStockCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R312110LapStockCementBagToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub R312150LapPenyelesaianWOCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R312150LapPenyelesaianWOCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT312_150_CementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
+
+    Private Sub R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem.Click
+        Dim ifrmChild As New frmRPT319_150_PackingCementBag
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
 End Class

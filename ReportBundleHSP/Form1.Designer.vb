@@ -34,9 +34,10 @@ Partial Class Form1
         Me.BackOrderPenjualanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AgingBackOrderPenjualanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CancelationDateToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BSVsAfvalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.FormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TambahLokasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BSVsAfvalToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BackOrderPenjualanMakasarToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -57,7 +58,7 @@ Partial Class Form1
         '
         'LaporanToolStripMenuItem
         '
-        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GudangBenangToolStripMenuItem, Me.PengeluaranBonSparepartToolStripMenuItem, Me.PenerimaanSparepartReturToolStripMenuItem, Me.DistribusiSparepartToolStripMenuItem, Me.MutasiSparepartToolStripMenuItem, Me.BackOrderPenjualanToolStripMenuItem, Me.AgingBackOrderPenjualanToolStripMenuItem, Me.CancelationDateToolStripMenuItem, Me.BSVsAfvalToolStripMenuItem})
+        Me.LaporanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GudangBenangToolStripMenuItem, Me.PengeluaranBonSparepartToolStripMenuItem, Me.PenerimaanSparepartReturToolStripMenuItem, Me.DistribusiSparepartToolStripMenuItem, Me.MutasiSparepartToolStripMenuItem, Me.BackOrderPenjualanToolStripMenuItem, Me.AgingBackOrderPenjualanToolStripMenuItem, Me.CancelationDateToolStripMenuItem, Me.BSVsAfvalToolStripMenuItem, Me.BackOrderPenjualanMakasarToolStripMenuItem})
         Me.LaporanToolStripMenuItem.Name = "LaporanToolStripMenuItem"
         Me.LaporanToolStripMenuItem.Size = New System.Drawing.Size(62, 20)
         Me.LaporanToolStripMenuItem.Text = "Laporan"
@@ -66,7 +67,7 @@ Partial Class Form1
         '
         Me.GudangBenangToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PengeluaranBarangToolStripMenuItem})
         Me.GudangBenangToolStripMenuItem.Name = "GudangBenangToolStripMenuItem"
-        Me.GudangBenangToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.GudangBenangToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.GudangBenangToolStripMenuItem.Text = "Gudang Benang"
         '
         'PengeluaranBarangToolStripMenuItem
@@ -78,44 +79,50 @@ Partial Class Form1
         'PengeluaranBonSparepartToolStripMenuItem
         '
         Me.PengeluaranBonSparepartToolStripMenuItem.Name = "PengeluaranBonSparepartToolStripMenuItem"
-        Me.PengeluaranBonSparepartToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.PengeluaranBonSparepartToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.PengeluaranBonSparepartToolStripMenuItem.Text = "Pengeluaran Bon Sparepart"
         '
         'PenerimaanSparepartReturToolStripMenuItem
         '
         Me.PenerimaanSparepartReturToolStripMenuItem.Name = "PenerimaanSparepartReturToolStripMenuItem"
-        Me.PenerimaanSparepartReturToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.PenerimaanSparepartReturToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.PenerimaanSparepartReturToolStripMenuItem.Text = "Penerimaan Sparepart(Retur)"
         '
         'DistribusiSparepartToolStripMenuItem
         '
         Me.DistribusiSparepartToolStripMenuItem.Name = "DistribusiSparepartToolStripMenuItem"
-        Me.DistribusiSparepartToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.DistribusiSparepartToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.DistribusiSparepartToolStripMenuItem.Text = "DistribusiSparepart"
         '
         'MutasiSparepartToolStripMenuItem
         '
         Me.MutasiSparepartToolStripMenuItem.Name = "MutasiSparepartToolStripMenuItem"
-        Me.MutasiSparepartToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.MutasiSparepartToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.MutasiSparepartToolStripMenuItem.Text = "Mutasi Sparepart"
         '
         'BackOrderPenjualanToolStripMenuItem
         '
         Me.BackOrderPenjualanToolStripMenuItem.Name = "BackOrderPenjualanToolStripMenuItem"
-        Me.BackOrderPenjualanToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.BackOrderPenjualanToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.BackOrderPenjualanToolStripMenuItem.Text = "Back Order Penjualan"
         '
         'AgingBackOrderPenjualanToolStripMenuItem
         '
         Me.AgingBackOrderPenjualanToolStripMenuItem.Name = "AgingBackOrderPenjualanToolStripMenuItem"
-        Me.AgingBackOrderPenjualanToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.AgingBackOrderPenjualanToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.AgingBackOrderPenjualanToolStripMenuItem.Text = "Aging Back Order Penjualan"
         '
         'CancelationDateToolStripMenuItem
         '
         Me.CancelationDateToolStripMenuItem.Name = "CancelationDateToolStripMenuItem"
-        Me.CancelationDateToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
+        Me.CancelationDateToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
         Me.CancelationDateToolStripMenuItem.Text = "Cancelation Date"
+        '
+        'BSVsAfvalToolStripMenuItem
+        '
+        Me.BSVsAfvalToolStripMenuItem.Name = "BSVsAfvalToolStripMenuItem"
+        Me.BSVsAfvalToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
+        Me.BSVsAfvalToolStripMenuItem.Text = "BS vs Afval"
         '
         'FormToolStripMenuItem
         '
@@ -130,11 +137,11 @@ Partial Class Form1
         Me.TambahLokasiToolStripMenuItem.Size = New System.Drawing.Size(153, 22)
         Me.TambahLokasiToolStripMenuItem.Text = "Tambah Lokasi"
         '
-        'BSVsAfvalToolStripMenuItem
+        'BackOrderPenjualanMakasarToolStripMenuItem
         '
-        Me.BSVsAfvalToolStripMenuItem.Name = "BSVsAfvalToolStripMenuItem"
-        Me.BSVsAfvalToolStripMenuItem.Size = New System.Drawing.Size(226, 22)
-        Me.BSVsAfvalToolStripMenuItem.Text = "BS vs Afval"
+        Me.BackOrderPenjualanMakasarToolStripMenuItem.Name = "BackOrderPenjualanMakasarToolStripMenuItem"
+        Me.BackOrderPenjualanMakasarToolStripMenuItem.Size = New System.Drawing.Size(234, 22)
+        Me.BackOrderPenjualanMakasarToolStripMenuItem.Text = "Back Order Penjualan Makasar"
         '
         'Form1
         '
@@ -167,5 +174,6 @@ Partial Class Form1
     Friend WithEvents AgingBackOrderPenjualanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CancelationDateToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BSVsAfvalToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BackOrderPenjualanMakasarToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

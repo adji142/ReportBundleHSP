@@ -95,18 +95,51 @@ Partial Class Form1
         Me.R329110LapStockRollToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.R329150LapPenyelesaianWOPackingKarungToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.R325100LapPembatalanProduksiBallpressToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapPenyerahanHasilProduksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapReturHasilProduksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapHasilCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapStockCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.LainLainToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.R329120DaftarItemProduksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.R210130LapDaftarItemRollToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GudangAfvalDanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapAfvalProduksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapHasilRecycleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapPenerimaanAfvalProduksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Finishing2ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BALLPRESSCEMENTBAGToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapHasilBallpressCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LapStockBallpressCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R310100LapHasilLaminasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R310110LapStockRollLaminasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R310150LapPenyelesaianWOLaminasiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R311100LapHasilSlittingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R311110LapStockRollSlittingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R311120LapSlittingAnalisaRollKeRollToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R311150LapPenyelesaianWOSlittingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R312100LapHasilCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R312130LapHasilProduksiCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R312110LapStockCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R312120LapPemakaianBahanRollCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R312150LapPenyelesaianWOCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R319100LapHasilBallpressCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R319110LapStockBallpressCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.R600110LapPenerimaanAfvalProduksiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExtruderToolStripMenuItem, Me.GudangBenangToolStripMenuItem, Me.CircularLoomToolStripMenuItem, Me.GudangRollToolStripMenuItem, Me.BMFToolStripMenuItem, Me.Finishing1ToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExtruderToolStripMenuItem, Me.GudangBenangToolStripMenuItem, Me.CircularLoomToolStripMenuItem, Me.GudangRollToolStripMenuItem, Me.BMFToolStripMenuItem, Me.Finishing1ToolStripMenuItem, Me.GudangAfvalDanToolStripMenuItem, Me.Finishing2ToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(775, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1061, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -527,7 +560,7 @@ Partial Class Form1
         '
         'BallpressToolStripMenuItem
         '
-        Me.BallpressToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.R329100LapHasilBallpressKarungToolStripMenuItem, Me.R329110LapStockRollToolStripMenuItem, Me.R329150LapPenyelesaianWOPackingKarungToolStripMenuItem, Me.R325100LapPembatalanProduksiBallpressToolStripMenuItem})
+        Me.BallpressToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.R329100LapHasilBallpressKarungToolStripMenuItem, Me.R329110LapStockRollToolStripMenuItem, Me.R329150LapPenyelesaianWOPackingKarungToolStripMenuItem, Me.R325100LapPembatalanProduksiBallpressToolStripMenuItem, Me.LapPenyerahanHasilProduksiToolStripMenuItem, Me.LapReturHasilProduksiToolStripMenuItem, Me.LapHasilCementBagToolStripMenuItem, Me.LapStockCementBagToolStripMenuItem})
         Me.BallpressToolStripMenuItem.Name = "BallpressToolStripMenuItem"
         Me.BallpressToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.BallpressToolStripMenuItem.Text = "Ballpress"
@@ -556,6 +589,30 @@ Partial Class Form1
         Me.R325100LapPembatalanProduksiBallpressToolStripMenuItem.Size = New System.Drawing.Size(330, 22)
         Me.R325100LapPembatalanProduksiBallpressToolStripMenuItem.Text = "R325100 - Lap. Pembatalan Produksi Ballpress"
         '
+        'LapPenyerahanHasilProduksiToolStripMenuItem
+        '
+        Me.LapPenyerahanHasilProduksiToolStripMenuItem.Name = "LapPenyerahanHasilProduksiToolStripMenuItem"
+        Me.LapPenyerahanHasilProduksiToolStripMenuItem.Size = New System.Drawing.Size(330, 22)
+        Me.LapPenyerahanHasilProduksiToolStripMenuItem.Text = "Lap. Penyerahan Hasil Produksi"
+        '
+        'LapReturHasilProduksiToolStripMenuItem
+        '
+        Me.LapReturHasilProduksiToolStripMenuItem.Name = "LapReturHasilProduksiToolStripMenuItem"
+        Me.LapReturHasilProduksiToolStripMenuItem.Size = New System.Drawing.Size(330, 22)
+        Me.LapReturHasilProduksiToolStripMenuItem.Text = "Lap. Retur Hasil Produksi"
+        '
+        'LapHasilCementBagToolStripMenuItem
+        '
+        Me.LapHasilCementBagToolStripMenuItem.Name = "LapHasilCementBagToolStripMenuItem"
+        Me.LapHasilCementBagToolStripMenuItem.Size = New System.Drawing.Size(330, 22)
+        Me.LapHasilCementBagToolStripMenuItem.Text = "Lap. Hasil Cement Bag"
+        '
+        'LapStockCementBagToolStripMenuItem
+        '
+        Me.LapStockCementBagToolStripMenuItem.Name = "LapStockCementBagToolStripMenuItem"
+        Me.LapStockCementBagToolStripMenuItem.Size = New System.Drawing.Size(330, 22)
+        Me.LapStockCementBagToolStripMenuItem.Text = "Lap. Stock Cement Bag"
+        '
         'LainLainToolStripMenuItem
         '
         Me.LainLainToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.R329120DaftarItemProduksiToolStripMenuItem, Me.R210130LapDaftarItemRollToolStripMenuItem})
@@ -575,11 +632,192 @@ Partial Class Form1
         Me.R210130LapDaftarItemRollToolStripMenuItem.Size = New System.Drawing.Size(236, 22)
         Me.R210130LapDaftarItemRollToolStripMenuItem.Text = "R210130 - Lap. Daftar Item Roll"
         '
+        'GudangAfvalDanToolStripMenuItem
+        '
+        Me.GudangAfvalDanToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LapAfvalProduksiToolStripMenuItem, Me.LapHasilRecycleToolStripMenuItem, Me.LapPenerimaanAfvalProduksiToolStripMenuItem})
+        Me.GudangAfvalDanToolStripMenuItem.Name = "GudangAfvalDanToolStripMenuItem"
+        Me.GudangAfvalDanToolStripMenuItem.Size = New System.Drawing.Size(160, 20)
+        Me.GudangAfvalDanToolStripMenuItem.Text = "Gudang Afval dan Recycle "
+        '
+        'LapAfvalProduksiToolStripMenuItem
+        '
+        Me.LapAfvalProduksiToolStripMenuItem.Name = "LapAfvalProduksiToolStripMenuItem"
+        Me.LapAfvalProduksiToolStripMenuItem.Size = New System.Drawing.Size(241, 22)
+        Me.LapAfvalProduksiToolStripMenuItem.Text = "Lap. Afval Produksi"
+        '
+        'LapHasilRecycleToolStripMenuItem
+        '
+        Me.LapHasilRecycleToolStripMenuItem.Name = "LapHasilRecycleToolStripMenuItem"
+        Me.LapHasilRecycleToolStripMenuItem.Size = New System.Drawing.Size(241, 22)
+        Me.LapHasilRecycleToolStripMenuItem.Text = "Lap. Hasil Recycle"
+        '
+        'LapPenerimaanAfvalProduksiToolStripMenuItem
+        '
+        Me.LapPenerimaanAfvalProduksiToolStripMenuItem.Name = "LapPenerimaanAfvalProduksiToolStripMenuItem"
+        Me.LapPenerimaanAfvalProduksiToolStripMenuItem.Size = New System.Drawing.Size(241, 22)
+        Me.LapPenerimaanAfvalProduksiToolStripMenuItem.Text = "Lap. Penerimaan Afval Produksi"
+        '
+        'Finishing2ToolStripMenuItem
+        '
+        Me.Finishing2ToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BALLPRESSCEMENTBAGToolStripMenuItem, Me.R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem, Me.R310100LapHasilLaminasiToolStripMenuItem, Me.R310110LapStockRollLaminasiToolStripMenuItem, Me.R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem, Me.R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem, Me.R310150LapPenyelesaianWOLaminasiToolStripMenuItem, Me.R311100LapHasilSlittingToolStripMenuItem, Me.R311110LapStockRollSlittingToolStripMenuItem, Me.R311120LapSlittingAnalisaRollKeRollToolStripMenuItem, Me.R311150LapPenyelesaianWOSlittingToolStripMenuItem, Me.R312100LapHasilCementBagToolStripMenuItem, Me.R312130LapHasilProduksiCementBagToolStripMenuItem, Me.R312110LapStockCementBagToolStripMenuItem, Me.R312120LapPemakaianBahanRollCementBagToolStripMenuItem, Me.R312150LapPenyelesaianWOCementBagToolStripMenuItem, Me.R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem, Me.R319100LapHasilBallpressCementBagToolStripMenuItem, Me.R319110LapStockBallpressCementBagToolStripMenuItem, Me.R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem, Me.R600110LapPenerimaanAfvalProduksiToolStripMenuItem})
+        Me.Finishing2ToolStripMenuItem.Name = "Finishing2ToolStripMenuItem"
+        Me.Finishing2ToolStripMenuItem.Size = New System.Drawing.Size(76, 20)
+        Me.Finishing2ToolStripMenuItem.Text = "Finishing 2"
+        '
+        'BALLPRESSCEMENTBAGToolStripMenuItem
+        '
+        Me.BALLPRESSCEMENTBAGToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LapHasilBallpressCementBagToolStripMenuItem, Me.LapStockBallpressCementBagToolStripMenuItem})
+        Me.BALLPRESSCEMENTBAGToolStripMenuItem.Name = "BALLPRESSCEMENTBAGToolStripMenuItem"
+        Me.BALLPRESSCEMENTBAGToolStripMenuItem.Size = New System.Drawing.Size(209, 22)
+        Me.BALLPRESSCEMENTBAGToolStripMenuItem.Text = "BALLPRESS CEMENT BAG"
+        '
+        'LapHasilBallpressCementBagToolStripMenuItem
+        '
+        Me.LapHasilBallpressCementBagToolStripMenuItem.Name = "LapHasilBallpressCementBagToolStripMenuItem"
+        Me.LapHasilBallpressCementBagToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
+        Me.LapHasilBallpressCementBagToolStripMenuItem.Text = "Lap. Hasil Ballpress Cement Bag"
+        '
+        'LapStockBallpressCementBagToolStripMenuItem
+        '
+        Me.LapStockBallpressCementBagToolStripMenuItem.Name = "LapStockBallpressCementBagToolStripMenuItem"
+        Me.LapStockBallpressCementBagToolStripMenuItem.Size = New System.Drawing.Size(245, 22)
+        Me.LapStockBallpressCementBagToolStripMenuItem.Text = "Lap. Stock Ballpress Cement Bag"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(356, 85)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem
+        '
+        Me.R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem.Name = "R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem"
+        Me.R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem.Text = "R320130 | Lap. Printing Analisa Rool Ke Roll"
+        '
+        'R310100LapHasilLaminasiToolStripMenuItem
+        '
+        Me.R310100LapHasilLaminasiToolStripMenuItem.Name = "R310100LapHasilLaminasiToolStripMenuItem"
+        Me.R310100LapHasilLaminasiToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R310100LapHasilLaminasiToolStripMenuItem.Text = "R310100 | Lap. Hasil Laminasi"
+        '
+        'R310110LapStockRollLaminasiToolStripMenuItem
+        '
+        Me.R310110LapStockRollLaminasiToolStripMenuItem.Name = "R310110LapStockRollLaminasiToolStripMenuItem"
+        Me.R310110LapStockRollLaminasiToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R310110LapStockRollLaminasiToolStripMenuItem.Text = "R310110 | Lap. Stock Roll Laminasi"
+        '
+        'R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem
+        '
+        Me.R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem.Name = "R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem"
+        Me.R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem.Text = "R310120 | Lap. Pemakaian Bahan Pembantu Laminasi"
+        '
+        'R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem
+        '
+        Me.R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem.Name = "R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem"
+        Me.R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem.Text = "R310130 | Lap. Laminating - Analisa Roll Ke Roll "
+        '
+        'R310150LapPenyelesaianWOLaminasiToolStripMenuItem
+        '
+        Me.R310150LapPenyelesaianWOLaminasiToolStripMenuItem.Name = "R310150LapPenyelesaianWOLaminasiToolStripMenuItem"
+        Me.R310150LapPenyelesaianWOLaminasiToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R310150LapPenyelesaianWOLaminasiToolStripMenuItem.Text = "R310150 | Lap. Penyelesaian WO Laminasi"
+        '
+        'R311100LapHasilSlittingToolStripMenuItem
+        '
+        Me.R311100LapHasilSlittingToolStripMenuItem.Name = "R311100LapHasilSlittingToolStripMenuItem"
+        Me.R311100LapHasilSlittingToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R311100LapHasilSlittingToolStripMenuItem.Text = "R311100 | Lap. Hasil Slitting"
+        '
+        'R311110LapStockRollSlittingToolStripMenuItem
+        '
+        Me.R311110LapStockRollSlittingToolStripMenuItem.Name = "R311110LapStockRollSlittingToolStripMenuItem"
+        Me.R311110LapStockRollSlittingToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R311110LapStockRollSlittingToolStripMenuItem.Text = "R311110 | Lap. Stock Roll Slitting"
+        '
+        'R311120LapSlittingAnalisaRollKeRollToolStripMenuItem
+        '
+        Me.R311120LapSlittingAnalisaRollKeRollToolStripMenuItem.Name = "R311120LapSlittingAnalisaRollKeRollToolStripMenuItem"
+        Me.R311120LapSlittingAnalisaRollKeRollToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R311120LapSlittingAnalisaRollKeRollToolStripMenuItem.Text = "R311120 | Lap. Slitting - Analisa Roll Ke Roll"
+        '
+        'R311150LapPenyelesaianWOSlittingToolStripMenuItem
+        '
+        Me.R311150LapPenyelesaianWOSlittingToolStripMenuItem.Name = "R311150LapPenyelesaianWOSlittingToolStripMenuItem"
+        Me.R311150LapPenyelesaianWOSlittingToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R311150LapPenyelesaianWOSlittingToolStripMenuItem.Text = "R311150 | Lap. Penyelesaian WO Slitting"
+        '
+        'R312100LapHasilCementBagToolStripMenuItem
+        '
+        Me.R312100LapHasilCementBagToolStripMenuItem.Name = "R312100LapHasilCementBagToolStripMenuItem"
+        Me.R312100LapHasilCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R312100LapHasilCementBagToolStripMenuItem.Text = "R312100 | Lap. Hasil Cement Bag"
+        '
+        'R312130LapHasilProduksiCementBagToolStripMenuItem
+        '
+        Me.R312130LapHasilProduksiCementBagToolStripMenuItem.Name = "R312130LapHasilProduksiCementBagToolStripMenuItem"
+        Me.R312130LapHasilProduksiCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R312130LapHasilProduksiCementBagToolStripMenuItem.Text = "R312130 | Lap. Hasil Produksi Cement Bag"
+        '
+        'R312110LapStockCementBagToolStripMenuItem
+        '
+        Me.R312110LapStockCementBagToolStripMenuItem.Name = "R312110LapStockCementBagToolStripMenuItem"
+        Me.R312110LapStockCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R312110LapStockCementBagToolStripMenuItem.Text = "R312110 | Lap. Stock Cement Bag"
+        '
+        'R312120LapPemakaianBahanRollCementBagToolStripMenuItem
+        '
+        Me.R312120LapPemakaianBahanRollCementBagToolStripMenuItem.Name = "R312120LapPemakaianBahanRollCementBagToolStripMenuItem"
+        Me.R312120LapPemakaianBahanRollCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R312120LapPemakaianBahanRollCementBagToolStripMenuItem.Text = "R312120 | Lap. Pemakaian Bahan Roll Cement Bag"
+        '
+        'R312150LapPenyelesaianWOCementBagToolStripMenuItem
+        '
+        Me.R312150LapPenyelesaianWOCementBagToolStripMenuItem.Name = "R312150LapPenyelesaianWOCementBagToolStripMenuItem"
+        Me.R312150LapPenyelesaianWOCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R312150LapPenyelesaianWOCementBagToolStripMenuItem.Text = "R312150 | Lap. Penyelesaian WO Cement Bag"
+        '
+        'R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem
+        '
+        Me.R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem.Name = "R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem"
+        Me.R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem.Text = "R312140 | Lap. Sisa Pemakaian Bahan Roll Cement Bag"
+        '
+        'R319100LapHasilBallpressCementBagToolStripMenuItem
+        '
+        Me.R319100LapHasilBallpressCementBagToolStripMenuItem.Name = "R319100LapHasilBallpressCementBagToolStripMenuItem"
+        Me.R319100LapHasilBallpressCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R319100LapHasilBallpressCementBagToolStripMenuItem.Text = "R319100 | Lap. Hasil Ballpress Cement Bag"
+        '
+        'R319110LapStockBallpressCementBagToolStripMenuItem
+        '
+        Me.R319110LapStockBallpressCementBagToolStripMenuItem.Name = "R319110LapStockBallpressCementBagToolStripMenuItem"
+        Me.R319110LapStockBallpressCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R319110LapStockBallpressCementBagToolStripMenuItem.Text = "R319110 | Lap. Stock Ballpress Cement Bag"
+        '
+        'R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem
+        '
+        Me.R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem.Name = "R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem"
+        Me.R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem.Text = "R319150 | Lap. Penyelesaian WO Packing Cement Bag"
+        '
+        'R600110LapPenerimaanAfvalProduksiToolStripMenuItem
+        '
+        Me.R600110LapPenerimaanAfvalProduksiToolStripMenuItem.Name = "R600110LapPenerimaanAfvalProduksiToolStripMenuItem"
+        Me.R600110LapPenerimaanAfvalProduksiToolStripMenuItem.Size = New System.Drawing.Size(359, 22)
+        Me.R600110LapPenerimaanAfvalProduksiToolStripMenuItem.Text = "R600110 | Lap. Penerimaan Afval Produksi"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(775, 261)
+        Me.ClientSize = New System.Drawing.Size(1061, 261)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
@@ -666,5 +904,38 @@ Partial Class Form1
     Friend WithEvents LainLainToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents R329120DaftarItemProduksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents R210130LapDaftarItemRollToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GudangAfvalDanToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapAfvalProduksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapHasilRecycleToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapPenerimaanAfvalProduksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Finishing2ToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents BALLPRESSCEMENTBAGToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapHasilBallpressCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapStockBallpressCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapPenyerahanHasilProduksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapReturHasilProduksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapHasilCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LapStockCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents R320130LapPrintingAnalisaRoolKeRollToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R310100LapHasilLaminasiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R310110LapStockRollLaminasiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R310120LapPemakaianBahanPembantuLaminasiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R310130LapLaminatingAnalisaRollKeRollToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R310150LapPenyelesaianWOLaminasiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R311100LapHasilSlittingToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R311110LapStockRollSlittingToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R311120LapSlittingAnalisaRollKeRollToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R311150LapPenyelesaianWOSlittingToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R312100LapHasilCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R312130LapHasilProduksiCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R312110LapStockCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R312120LapPemakaianBahanRollCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R312150LapPenyelesaianWOCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R312140LapSisaPemakaianBahanRollCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R319100LapHasilBallpressCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R319110LapStockBallpressCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R319150LapPenyelesaianWOPackingCementBagToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents R600110LapPenerimaanAfvalProduksiToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

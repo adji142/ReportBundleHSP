@@ -1,0 +1,20 @@
+SET SCHEMA "HARDO_LIVE";
+DROP VIEW HARDO_LIVE.HSP_RPT_PLAN_WO_SAP;
+CREATE VIEW HARDO_LIVE.HSP_RPT_PLAN_WO_SAP ("NomorWO", "TglMulai", "TglSelesai", "KodeItem", "NamaItem", "QtyPlan", "Satuan", "Unit", "StatusWO") AS 
+SELECT A.U_SOL_NO_WO AS "NomorWO",
+       A."PostDate" AS "TglMulai",
+       A."DueDate" AS "TglSelesai",
+       A."ItemCode" AS "KodeItem",
+       B."ItemName" AS "NamaItem",
+       A."PlannedQty" AS "QtyPlan",
+       A."Uom" AS Satuan,
+       A.U_SOL_ROUTING "Unit",
+       CASE
+          WHEN A."Status" = 'R' THEN 'RELEASE'
+          WHEN A."Status" = 'C' THEN 'CLOSE'
+          WHEN A."Status" = 'P' THEN 'PLANED'
+          ELSE ''
+       END
+          "StatusWO"
+  FROM OWOR A LEFT JOIN OITM B ON A."ItemCode" = B."ItemCode"
+;

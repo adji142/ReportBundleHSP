@@ -128,7 +128,7 @@ Namespace My
         
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("HSPLIVE")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("HARDO_LIVE")>  _
         Public ReadOnly Property HanaSAPDatabaseName() As String
             Get
                 Return CType(Me("HanaSAPDatabaseName"),String)

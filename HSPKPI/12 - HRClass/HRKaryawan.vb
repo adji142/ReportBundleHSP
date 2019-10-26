@@ -73,8 +73,8 @@ Namespace HSP.Data
                   "FROM KPI_KARYAWAN A " +
                   "WHERE A.KDPOSISI =@KodePosisi AND " +
                   "CASE WHEN YEAR(A.ResignDate)='1900' or A.ResignDate IS NULL then '9999/12/31' else A.ResignDate end  " +
-                  ">= DATEADD(MONTH,-1, CAST( DATEADD(day,DATEDIFF(day,@Periode,CAST(DATEPART(year,@Periode) AS varchar)+'-'+ CAST( DATEPART(MM,@Periode) AS varchar) +'-25'),@Periode) as date)) AND " +
-                  "A.JoinDate <= CAST( DATEADD(day,DATEDIFF(day,@Periode,CAST(DATEPART(year,@Periode) AS varchar)+'-'+ CAST( DATEPART(MM,@Periode) AS varchar) +'-26'),@Periode) as date) " +
+                  ">= DATEADD(MONTH,-1, CAST( DATEADD(day,DATEDIFF(day,@Periode,CAST(DATEPART(year,@Periode) AS varchar)+'-'+ CAST( DATEPART(MM,@Periode) AS varchar) +'-26'),@Periode) as date)) AND " +
+                  "A.JoinDate <= CAST( DATEADD(day,DATEDIFF(day,@Periode,CAST(DATEPART(year,@Periode) AS varchar)+'-'+ CAST( DATEPART(MM,@Periode) AS varchar) +'-25'),@Periode) as date) " +
                   "ORDER BY A.NMKARYAWAN"
 
             '            "IIF(YEAR(A.ResignDate)='1900' or A.ResignDate IS NULL,'999999',FORMAT(A.ResignDate,'yyyyMM'))> '" + Periode + "' AND FORMAT(A.JoinDate,'yyyyMM')<='" + Periode + "' AND " +

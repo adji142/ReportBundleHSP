@@ -27,7 +27,7 @@
       <Value Profile="(Default)">sys825050SYS</Value>
     </Setting>
     <Setting Name="HanaSAPDatabaseName" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">HSPLIVE</Value>
+      <Value Profile="(Default)">HARDO_LIVE</Value>
     </Setting>
     <Setting Name="HanaSTGDatabaseName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">STAGINGDB_LIVE</Value>
