@@ -158,6 +158,7 @@ Namespace HSP.Data
                 Find = DBX.Query(Of Meeting)(SQL, New With {.ID = ID}).FirstOrDefault
             End Using
         End Function
+
         Public Function GetNomorTransaksi(ByVal Periode As String) As String
             Dim SQL As String
             Dim Prefik, Nomor, Temp As String
@@ -173,7 +174,7 @@ Namespace HSP.Data
 
                 'Nomor Transaksi
                 '------------------------------------------------------------------------------------------
-                SQL = "SELECT COUNT(*) AS Total FROM headernotulen " +
+                SQL = "SELECT COUNT(DISTINCT NoTransaksi) AS Total FROM headernotulen " +
                       "WHERE LEFT(NoTransaksi, LENGTH(@Prefik)) = @Prefik "
 
                 Temp = (DBX.Query(SQL, New With {.Prefik = Prefik}).FirstOrDefault.Total + 1).ToString
@@ -242,7 +243,124 @@ Namespace HSP.Data
             GetLineNumber = Nomor
 
         End Function
+        Public Function Read_Header(ByVal NoTransaksi As String, Optional Status As String = "") As DataSet
+            Dim SQL As String
 
+            SQL = "SELECT * FROM headernotulen where NoTransaksi = @NoTransaksi "
+            If Status <> "" Then
+                SQL += "AND StausNotulen = '" + Status + "'"
+            End If
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
+                Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@NoTransaksi", NoTransaksi)
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "View")
+
+                Read_Header = DS
+            End Using
+        End Function
+        Public Function Read_HeaderByStatus(ByVal Status As String, ByVal NoTrx As String) As DataSet
+            Dim SQL As String
+
+            SQL = "SELECT NoTransaksi,GROUP_CONCAT('''',RowID,'''') RowID FROM headernotulen where StausNotulen = @Status AND NoTransaksi = '" + NoTrx + "' group by NoTransaksi"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
+                Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@Status", Status)
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "View")
+
+                Read_HeaderByStatus = DS
+            End Using
+        End Function
+
+        Public Function Read_Detail(ByVal HeaderID As String) As DataSet
+            Dim SQL As String
+
+            SQL = "SELECT * FROM detailnotulen where HeaderID = @HeaderID"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
+                Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@HeaderID", HeaderID)
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "View")
+
+                Read_Detail = DS
+            End Using
+        End Function
+        Public Function Read_SubDetail(ByVal HeaderID As String) As DataSet
+            Dim SQL As String
+
+            SQL = "SELECT * FROM subdetailnotulen where HeaderID = @HeaderID"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
+                Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@HeaderID", HeaderID)
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "View")
+
+                Read_SubDetail = DS
+            End Using
+        End Function
+        Public Function GetLastMeeting(ByVal Topik As String) As DataSet
+            Dim SQL As String
+            SQL = "SELECT DISTINCT NoTransaksi,TglTransaksi FROM headernotulen where TopikMeeting = @Topik ORDER BY CONCAT(TglTransaksi,' ',JamMulai) DESC Limit 1"
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
+                Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@Topik", Topik)
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "View")
+                GetLastMeeting = DS
+            End Using
+        End Function
+        Public Function GetPICContact(ByVal NoTransaksi As String) As DataSet
+            Dim SQL As String
+            SQL = "SELECT * FROM (" +
+                    "SELECT DISTINCT d.NIK,d.Email,d.TeleGramID,d.PhoneNumber,'A' a FROM headernotulen a  " +
+                    "LEFT JOIN detailnotulen b on a.RowID = b.headerid  " +
+                    "LEFT JOIN subdetailnotulen c on b.RowID = c.headerid  " +
+                    "LEFT JOIN usersetting d on c.NIK = d.NIK  " +
+                    "Where a.NoTransaksi = @NoTransaksi AND d.Email IS NOT NULL " +
+                    "UNION " +
+                    "SELECT DISTINCT b.NIK,b.Email,b.TeleGramID,b.PhoneNumber,'B' a FROM tpesertameeting a " +
+                    "LEFT JOIN usersetting b on a.nik = b.NIK " +
+                    "WHERE a.meetingid = @NoTransaksi " +
+                    "AND a.nik not in ( " +
+                        "SELECT DISTINCT d.NIK FROM headernotulen a  " +
+                        "LEFT JOIN detailnotulen b on a.RowID = b.headerid  " +
+                        "LEFT JOIN subdetailnotulen c on b.RowID = c.headerid  " +
+                        "LEFT JOIN usersetting d on c.NIK = d.NIK  " +
+                        "Where a.NoTransaksi = @NoTransaksi AND d.Email IS NOT NULL " +
+                    ") " +
+                ") x " +
+                "WHERE x.NIK Is Not NULL"
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
+                Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
+                Dim DS As New DataSet
+
+                CMD.Parameters.AddWithValue("@NoTransaksi", NoTransaksi)
+                DA.SelectCommand = CMD
+                DA.Fill(DS, "View")
+                GetPICContact = DS
+            End Using
+        End Function
 
         Public Function Locked(ByVal ID As String) As Boolean
             Locked = False

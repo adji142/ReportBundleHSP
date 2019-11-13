@@ -65,5 +65,14 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">localhost</Value>
     </Setting>
+    <Setting Name="EmailAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">noreply@hardosoloplast.co.id</Value>
+    </Setting>
+    <Setting Name="Password_Email" Type="System.String" Scope="User">
+      <Value Profile="(Default)">lagis3nt0s4</Value>
+    </Setting>
+    <Setting Name="SMTP_Server" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

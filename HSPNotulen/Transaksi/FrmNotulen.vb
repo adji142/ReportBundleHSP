@@ -1,5 +1,6 @@
 ﻿Imports HSPNotulen.HSP.Data
 Imports System.Transactions
+Imports System.Net.Mail
 Public Class FrmNotulen
     'text
     Dim tmptext As TextBox
@@ -51,7 +52,8 @@ Public Class FrmNotulen
     ' ----------------------- </Detail> -----------------------
 
     ' ----------------------- <SubDetail> -----------------------
-    Private _PIC As Array
+    Private _PIC As String
+    Private _PICNIK As String
     ' ----------------------- </SubDetail> -----------------------
 
     Private _Table As String
@@ -104,6 +106,7 @@ Public Class FrmNotulen
         DR_Not = DS_Not.Tables("View").Rows.Add
         DR_Not("NIK") = ""
         DR_Not("Nama Notulen") = "-"
+
         cboTopik.SelectedIndex = cboTopik.Items.Count - 1
         cboNotulen.SelectedIndex = cboNotulen.Items.Count - 1
 
@@ -114,6 +117,7 @@ Public Class FrmNotulen
         Dim Periode = GetPeriod(Date.Now)
         cboTopik.SelectedIndex = cboTopik.Items.Count - 1
         cboNotulen.SelectedIndex = cboNotulen.Items.Count - 1
+        cbostatus.SelectedIndex = cbostatus.Items.Count - 1
 
         Dim Notulen As New NotulenModels(ActiveSession)
         txtNoNotulen.Text = Notulen.GetNomorTransaksi(Periode.ToString())
@@ -130,7 +134,13 @@ Public Class FrmNotulen
         LblJamEnd.Text = ""
         lblJamStart.Text = ""
         txtperiode.Text = ""
-
+        If GridNotulen.Rows.Count > 0 Then
+            GridNotulen.DataSource = Nothing
+            If Data.Tables(0).Rows.Count > 0 Then
+                Data.Tables.Clear()
+                Generate_Dataset()
+            End If
+        End If
         SetEnableCommand()
         btSave.Enabled = False
     End Sub
@@ -145,7 +155,6 @@ Public Class FrmNotulen
         cmdDown.Enabled = False
         cmdUp.Enabled = False
         cmdDelete.Enabled = False
-        cboTopik.Enabled = False
         SetEnableCommand()
 
     End Sub
@@ -179,10 +188,87 @@ Public Class FrmNotulen
         If Not IsNothing(Meeting) Then
             txtperiode.Text = Meeting.Periode
             OpenForm()
+            GetLastNotulen(cbostatus.Text)
         Else
             ResetForm()
         End If
         'KodeDepartement = Meeting.KodeDepartement
+    End Sub
+    Private Sub GetLastNotulen(Optional ByVal Filter As String = "")
+        'Get LastMeeting
+        If Filter = "-" Then
+            Filter = ""
+        End If
+        If GridNotulen.Rows.Count > 0 Then
+            GridNotulen.DataSource = Nothing
+            If Data.Tables(0).Rows.Count > 0 Then
+                Data.Tables.Clear()
+                Generate_Dataset()
+            End If
+        End If
+
+        Dim DaftarNotulen As New NotulenModels(ActiveSession)
+        Dim DS As DataSet = DaftarNotulen.GetLastMeeting(cboTopik.Text)
+        If DS.Tables(0).Rows.Count > 0 Then
+            'Get hire
+            Dim NoTransaksi As String = DS.Tables(0).Rows(0)(0)
+            Dim TglTransaksi As Date = DS.Tables(0).Rows(0)(1)
+
+            Dim Header As DataSet = DaftarNotulen.Read_Header(NoTransaksi, Filter)
+            If Header.Tables(0).Rows.Count > 0 Then
+                'Do Hire
+                Dim xHeaderRowID As String
+                For Each xrow In Header.Tables(0).Rows
+                    xHeaderRowID = System.Guid.NewGuid.ToString
+                    Dim DRH As DataRow = Data.Tables(0).NewRow
+                    DRH("Table") = "H"
+                    DRH("RowID") = xHeaderRowID
+                    DRH("HeaderID") = xHeaderRowID
+                    DRH("Flag") = 1
+                    DRH("Order") = xrow("LineNumber")
+                    DRH("Problem") = xrow("Problem")
+                    DRH("Status") = xrow("StausNotulen")
+                    DRH("OrderDetail") = 0
+                    Data.Tables(0).Rows.Add(DRH)
+
+                    Dim Detail As DataSet = DaftarNotulen.Read_Detail(xrow("RowID"))
+
+                    If Detail.Tables(0).Rows.Count > 0 Then
+                        'Do hire
+                        Dim yDetailRowID As String
+                        For Each yrow In Detail.Tables(0).Rows
+                            yDetailRowID = System.Guid.NewGuid.ToString
+                            Dim DRD As DataRow = Data.Tables(0).NewRow
+                            DRD("Table") = "D"
+                            DRD("Order") = xrow("LineNumber")
+                            DRD("DetailRowID") = yDetailRowID
+                            DRD("HeaderID") = xHeaderRowID
+                            DRD("OrderDetail") = yrow("LineNumber")
+                            DRD("FU") = yrow("FollowUp")
+                            DRD("Startdate") = yrow("Startdate")
+                            DRD("EndDate") = yrow("FinishDate")
+                            'Handle PIC
+                            Dim SubDetail As DataSet = DaftarNotulen.Read_SubDetail(yrow("RowID"))
+                            If SubDetail.Tables(0).Rows.Count > 0 Then
+                                Dim PIC As String = ""
+                                Dim PIC_Nik As String = ""
+                                For Each zRow In SubDetail.Tables(0).Rows
+                                    PIC += zRow("NamaPIC") + ","
+                                    PIC_Nik += zRow("NIK") + ","
+                                Next
+                                DRD("PIC") = PIC
+                                DRD("PIC_Nik") = PIC_Nik
+                            End If
+                            Data.Tables(0).Rows.Add(DRD)
+                        Next
+                    End If
+                Next
+            Else
+                GoTo Jump
+            End If
+            ShowData()
+        End If
+Jump:
     End Sub
     Private Sub GetPesertaCount()
         Dim PesertaCount As New NotulenModels(ActiveSession)
@@ -193,6 +279,7 @@ Public Class FrmNotulen
         _Peserta = DS.Tables("View").Rows.Count
     End Sub
     Private Sub ShowData()
+
         If Data.Tables(0).Rows.Count > 0 Then
             Dim DV As DataView
             DV = New DataView(Data.Tables(0), "", "Order,OrderDetail,HeaderID asc", DataViewRowState.CurrentRows)
@@ -205,7 +292,9 @@ Public Class FrmNotulen
         Select Case _Table
             Case "Header"
                 ' Do This
-                HeaderRowID = System.Guid.NewGuid.ToString
+                If _SaveMode = enumSaveMode.AddMode Then
+                    HeaderRowID = System.Guid.NewGuid.ToString
+                End If
                 Dim DR As DataRow = Data.Tables(0).NewRow
                 DR("Table") = "H"
                 DR("RowID") = HeaderRowID
@@ -223,7 +312,9 @@ Public Class FrmNotulen
                 Data.Tables(0).Rows.Add(DR)
             Case "Detail"
                 DetailOrderCount = DetailOrderCount + 1
-                DetailRowID = System.Guid.NewGuid.ToString
+                If _SaveMode = enumSaveMode.AddMode Then
+                    DetailRowID = System.Guid.NewGuid.ToString
+                End If
                 'Do This
                 Dim DR As DataRow = Data.Tables(0).NewRow
                 DR("Order") = _Order
@@ -234,6 +325,8 @@ Public Class FrmNotulen
                 DR("FU") = _FU
                 DR("Startdate") = _DateStart
                 DR("EndDate") = _DateEnd
+                DR("PIC") = _PIC
+                DR("PIC_Nik") = _PICNIK
                 Data.Tables(0).Rows.Add(DR)
             Case "SubDetail"
                 'Do This
@@ -303,8 +396,16 @@ Public Class FrmNotulen
                 GridNotulen.Columns(Column.ColumnName).HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleRight
             End If
         Next
-        GridNotulen.Columns(FU_).FillWeight = 75
-        GridNotulen.Columns(PIC_).FillWeight = 25
+        'GridNotulen.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells
+        'GridNotulen.AutoResizeColumn(FU_)
+        GridNotulen.Columns.Item(Problem_).Width = 250
+        GridNotulen.Columns(Problem_).DefaultCellStyle.WrapMode = DataGridViewTriState.True
+
+        GridNotulen.Columns.Item(FU_).Width = 450
+        GridNotulen.Columns(FU_).DefaultCellStyle.WrapMode = DataGridViewTriState.True
+
+        GridNotulen.Columns.Item(PIC_).Width = 150
+        GridNotulen.Columns(PIC_).DefaultCellStyle.WrapMode = DataGridViewTriState.True
     End Sub
     Private Function getMaxOrder() As Integer
         Dim maxVal As Integer = 0
@@ -346,6 +447,43 @@ Public Class FrmNotulen
         End If
         Return maxVal
     End Function
+    Private Sub SendEmail(Optional NoTransaksi As String = "", Optional ByVal EmailReciept As String = "", Optional ByVal Counting As Integer = 0)
+        Dim Email As String = My.Settings.EmailAccount
+        Dim Password As String = My.Settings.Password_Email
+        Dim Attch As String = ""
+        'Generate Attachment
+        If EmailReciept <> "" Then
+            ' Generate File
+            Dim Export As New ExportGrid(ActiveSession)
+            Try
+                Attch = Export._Create(NoTransaksi, Counting)
+            Catch ex As Exception
+                MessageBox.Show("Gagal Generate Attachment")
+                GoTo Jump
+            End Try
+        End If
+Jump:
+
+        Dim Smtp As New SmtpClient
+        Dim mail_message As New MailMessage
+        Smtp.UseDefaultCredentials = False
+        Smtp.Credentials = New Net.NetworkCredential(Email, Password)
+        Smtp.Port = 25
+        Smtp.EnableSsl = False
+        Smtp.Host = "192.168.1.108"
+
+        mail_message = New MailMessage()
+        mail_message.From = New MailAddress(Email)
+        mail_message.To.Add(EmailReciept)
+        mail_message.Subject = "[No Reply] Reminder Notulen [No Reply] This Mail Generated from system"
+        mail_message.IsBodyHtml = False
+        mail_message.Body = "Trial Send Hasil Notulen"
+        If Attch <> "" Then
+            mail_message.Attachments.Add(New Attachment(System.AppDomain.CurrentDomain.BaseDirectory & "/" & Attch))
+        End If
+        Smtp.Send(mail_message)
+
+    End Sub
 
     Private Sub FrmNotulen_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         FillCombo()
@@ -358,8 +496,9 @@ Public Class FrmNotulen
         '_Saved = Saved.Saved
         Me.Cursor = Cursors.WaitCursor
         Dim Scope As New TransactionScope
-
+        lblstatus.Text = "Begin Saving Dadta"
         Dim DaftarNotulen As New NotulenModels(ActiveSession)
+        Dim o As Integer = 0
         Try
             Dim Header As _NotulenHeader
             Dim Detail As _NotulenDetail
@@ -367,6 +506,7 @@ Public Class FrmNotulen
             ' Header
             For Each row In Data.Tables(0).Rows
                 If row("Table") = "H" Then
+                    lblstatus.Text = "Saving Header Data"
                     Header = New _NotulenHeader
                     Header.RowID = row("RowID")
                     Header.LineNumber = row("Order")
@@ -383,6 +523,7 @@ Public Class FrmNotulen
                     Header.TXUpd = ""
                     DaftarNotulen.Add_Header(Header)
                 Else
+                    lblstatus.Text = "Saving Detail Data"
                     Detail = New _NotulenDetail
                     SubDetail = New _NotulenSubdetail
                     Detail.RowID = row("DetailRowID")
@@ -394,35 +535,58 @@ Public Class FrmNotulen
                     Detail.TX = TRX()
                     DaftarNotulen.Add_Detail(Detail)
                     If row("PIC_Nik") <> "" Then
-                        Dim splitedPIC As String() = row("PIC_Nik").Split(New Char() {","})
-                        Dim splitedPIC_Nama As String() = row("PIC").Split(New Char() {","})
+                        Dim splitedPIC As String() = row("PIC_Nik").ToString.Trim().Remove(row("PIC_Nik").ToString.Length - 1).Split(New Char() {","})
+                        Dim splitedPIC_Nama As String() = row("PIC").ToString.Trim().Remove(row("PIC").ToString.Length - 1).Split(New Char() {","})
                         Dim x As Integer = 0
                         For Each nik In splitedPIC
+                            lblstatus.Text = "Saving Sub Detail Data"
                             SubDetail.id = 0
                             SubDetail.headerid = row("DetailRowID")
                             SubDetail.NIK = nik
                             SubDetail.NamaPIC = splitedPIC_Nama(x)
                             SubDetail.TX = TRX()
-                            If row("PIC_Nik") <> "" Then
-                                DaftarNotulen.Add_SubDetail(SubDetail)
-                            End If
+                            DaftarNotulen.Add_SubDetail(SubDetail)
                             x += 1
                         Next
                     End If
                 End If
+                o += 1
             Next
             Scope.Complete()
+            lblstatus.Text = "All Commiting Done"
             Scope.Dispose()
-
             Me.Cursor = Cursors.Default
+
+            Dim DS As DataSet = DaftarNotulen.GetLastMeeting(cboTopik.Text)
+            Dim NoTransaksi As String = ""
+            If DS.Tables(0).Rows.Count > 0 Then
+                'Get hire
+                NoTransaksi = DS.Tables(0).Rows(0)(0)
+                lblstatus.Text = "Begin Sending Email Reminding"
+            End If
+
+            Dim NotulenData As DataSet = DaftarNotulen.GetPICContact(NoTransaksi)
+            If NotulenData.Tables(0).Rows.Count > 0 Then
+                Dim x As Integer = 0
+                lblstatus.Text = "Sending Email"
+                For Each xrow In NotulenData.Tables(0).Rows
+                    Try
+                        SendEmail(NoTransaksi, xrow("Email"), x)
+                    Catch ex As Exception
+                        lblstatus.Text = "Error Sending : " & ex.Message.ToString
+                    End Try
+                    x += 1
+                Next
+            End If
             MessageBox.Show("Data Berhasil Diproses !", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            lblstatus.Text = "All Done!"
             _Saved = Saved.Saved
             ResetForm()
         Catch ex As Exception
             Me.Cursor = Cursors.Default
             Scope.Dispose()
             MessageBox.Show("Sistem Gagal Melakukan Pemrosesan Data ! " + vbCrLf +
-                                   ex.Message, "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+                                   ex.Message, "Peringatan Row " + o.ToString, MessageBoxButtons.OK, MessageBoxIcon.Stop)
             _Saved = Saved.NSaved
             GoTo Jump
         End Try
@@ -430,7 +594,8 @@ Jump:
 
     End Sub
     Private Sub CalcelInput()
-
+        Dim Notulen As New NotulenModels(ActiveSession)
+        Dim Exec = Notulen.DeletePeserta(txtNoNotulen.Text)
     End Sub
     Private Sub EpsDataGridView1_CellPainting(sender As Object, e As DataGridViewCellPaintingEventArgs) Handles GridNotulen.CellPainting
         If GridNotulen.Rows.Count > 1 Then
@@ -493,17 +658,28 @@ Jump:
         End If
     End Sub
 
-    Private Sub Data_Change(sender As Object, e As EventArgs) Handles cboTopik.SelectedIndexChanged, JmlPeserta.TextChanged, GridNotulen.RowsAdded, cboNotulen.SelectedIndexChanged
+    Private Sub Data_Change(sender As Object, e As EventArgs) Handles cboTopik.SelectedIndexChanged, JmlPeserta.TextChanged, GridNotulen.RowsAdded, cboNotulen.SelectedIndexChanged, cbostatus.SelectedIndexChanged
         Dim ObjectName As String = sender.Name.ToString().Trim()
 
         If ObjectName = "cboTopik" And cboTopik.SelectedIndex <> -1 Then
             GetInformation()
+            lblstatus.Text = "Ready"
         End If
+        Dim Periode As String = ""
+        Dim DS As DataSet = New DaftarMetting(ActiveSession).Read(cboTopik.Text)
+        If DS.Tables(0).Rows.Count > 0 Then
+            Periode = DS.Tables(0).Rows(0)(0)
+        End If
+        If ObjectName = "cbostatus" And GridNotulen.Rows.Count > 0 And Periode <> "InCase" Then
+            GetLastNotulen(cbostatus.Text)
+        End If
+Jump:
         SetEnableCommand()
     End Sub
 
     Private Sub cmdAddProblem_Click(sender As Object, e As EventArgs) Handles cmdAddProblem.Click
         _Order = 0
+        _SaveMode = enumSaveMode.AddMode
         Dim Form As New frmProblem()
         Form.ShowDialog()
         If Form._Success = True Then
@@ -516,6 +692,7 @@ Jump:
     End Sub
 
     Private Sub cmdAddFU_Click(sender As Object, e As EventArgs) Handles cmdAddFU.Click
+        _SaveMode = enumSaveMode.AddMode
         If GridNotulen.Rows.Count > 0 Then
             HeaderRowID = GridNotulen(RowID_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
             Dim Order = GridNotulen(Order_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
@@ -553,46 +730,59 @@ GoEnd:
     End Sub
 
     Private Sub GridNotulen_CellMouseDoubleClick(sender As Object, e As DataGridViewCellMouseEventArgs) Handles GridNotulen.CellMouseDoubleClick
-        SendKeys.Send("{ESC}")
-        Dim x = GridNotulen.CurrentRow.Index
-        If GridNotulen(RowID_, GridNotulen.CurrentCell.RowIndex).Value.ToString() <> "" Then
+        _SaveMode = enumSaveMode.EditMode
+        If _StartEnd = StartEnd.Start Then
+            SendKeys.Send("{ESC}")
+            Dim x = GridNotulen.CurrentRow.Index
+            If GridNotulen(RowID_, GridNotulen.CurrentCell.RowIndex).Value.ToString() <> "" Then
 
-            Dim EProblem = GridNotulen(Problem_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
-            Dim EStatus = GridNotulen(Status_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
-            Dim EOrder = GridNotulen(Order_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                Dim EProblem = GridNotulen(Problem_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                Dim EStatus = GridNotulen(Status_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                Dim EOrder = GridNotulen(Order_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                HeaderRowID = GridNotulen(HeaderID_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
 
-            Dim Form As New frmProblem(EProblem, EStatus, EOrder)
-            Form.ShowDialog()
-            GridNotulen.Rows.Remove(GridNotulen.Rows(x))
+                Dim Form As New frmProblem(EProblem, EStatus, EOrder)
+                Form.ShowDialog()
+                If Form._Success = True Then
+                    GridNotulen.Rows.Remove(GridNotulen.Rows(x))
 
-            _Problem = Form._Problem
-            _Status = Form._Status
-            _Order = Form._Order
-            _Table = "Header"
-            InsertData()
-            ShowData()
+                    _Problem = Form._Problem
+                    _Status = Form._Status
+                    _Order = Form._Order
+                    _Table = "Header"
+                    InsertData()
+                    ShowData()
+
+                End If
+            Else
+                Dim EFU = GridNotulen(FU_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                Dim EStartDate = GridNotulen(Startdate_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                Dim EEndDate = GridNotulen(EndDate_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                Dim EOrder = GridNotulen(Order_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
+                Dim EOrderDetail = GridNotulen(OrderDetail_, GridNotulen.CurrentCell.RowIndex).Value.ToString
+                Dim EPIC = GridNotulen(PICNik_, GridNotulen.CurrentCell.RowIndex).Value.ToString
+                DetailRowID = GridNotulen(DetailRowID_, GridNotulen.CurrentCell.RowIndex).Value.ToString
+
+                Dim Form As New frmFollowUp(EFU, EStartDate, EEndDate, EPIC, EOrder, EOrderDetail)
+                Form.ShowDialog()
+                If Form._Success = True Then
+                    GridNotulen.Rows.Remove(GridNotulen.Rows(x))
+                    _FU = Form._FollowUp
+                    _DateStart = Form._Startdate
+                    _DateEnd = Form._EndDate
+                    _Order = Form._Order
+                    _OrderDetail = Form._OrderDetail
+                    _PIC = Form._PICNama
+                    _PICNIK = Form._PICNik
+                    _Table = "Detail"
+                    InsertData()
+                    ShowData()
+
+                End If
+            End If
         Else
-            Dim EFU = GridNotulen(FU_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
-            Dim EStartDate = GridNotulen(Startdate_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
-            Dim EEndDate = GridNotulen(EndDate_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
-            Dim EOrder = GridNotulen(Order_, GridNotulen.CurrentCell.RowIndex).Value.ToString()
-            Dim EOrderDetail = GridNotulen(OrderDetail_, GridNotulen.CurrentCell.RowIndex).Value.ToString
-            Dim EPIC = GridNotulen(PICNik_, GridNotulen.CurrentCell.RowIndex).Value.ToString
-            Dim PIC As Array
-
-            Dim Form As New frmFollowUp(EFU, EStartDate, EEndDate, EPIC, EOrder, EOrderDetail)
-            Form.ShowDialog()
-            GridNotulen.Rows.Remove(GridNotulen.Rows(x))
-            _FU = Form._FollowUp
-            _DateStart = Form._Startdate
-            _DateEnd = Form._EndDate
-            _Order = Form._Order
-            _OrderDetail = Form._OrderDetail
-            _Table = "Detail"
-            InsertData()
-            ShowData()
+            MessageBox.Show("Meeting Belum diMulai")
         End If
-
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles cmdDelete.Click
@@ -604,20 +794,31 @@ GoEnd:
         End If
     End Sub
     Private Sub Button_Click(sender As Object, e As EventArgs) Handles btClose.Click, btSave.Click
-        Select Case DirectCast(sender, Button).Name
-            Case "btSave"
-                SaveData()
-            Case "btClose"
-                If _Saved = Saved.Saved Then
-                    Me.Close()
-                Else
-                    Dim Result As DialogResult = MessageBox.Show("Apakah data akan di simpan ?", "Question", MessageBoxButtons.YesNo)
-                    If Result = DialogResult.OK Then
-                        SaveData()
-                    Else
+        If _StartEnd = StartEnd.Selesai Then
+            Select Case DirectCast(sender, Button).Name
+                Case "btSave"
+                    SaveData()
+                Case "btClose"
+                    If _Saved = Saved.Saved Then
                         Me.Close()
+                    Else
+                        Dim Result As DialogResult = MessageBox.Show("Apakah data akan di simpan ?", "Question", MessageBoxButtons.YesNo)
+                        If Result = DialogResult.OK Then
+                            SaveData()
+                        Else
+                            CalcelInput()
+                            Me.Close()
+                        End If
                     End If
-                End If
-        End Select
+            End Select
+        End If
+    End Sub
+
+    Private Sub cbostatus_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbostatus.SelectedIndexChanged
+        GetLastNotulen(cbostatus.Text)
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        SendEmail("aji.wibowo@hardosoloplast.co.id", 0)
     End Sub
 End Class

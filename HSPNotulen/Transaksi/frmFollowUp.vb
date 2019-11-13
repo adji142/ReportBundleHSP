@@ -57,13 +57,13 @@ Public Class frmFollowUp
         txtFollowup.Text = ""
 
         Dim Row = GridUser.GridLastRow
-        If Row <> 0 Then
-            Row = GridUser.GridLastRow - 1
-            For x = 0 To Row
-                GridUser.GridValue(0, x) = ""
-                GridUser.GridValue(1, x) = ""
-            Next
-        End If
+        'If Row <> 0 Then
+        '    Row = GridUser.GridLastRow - 1
+        '    For x = 0 To Row
+        '        GridUser.GridValue(0, x) = ""
+        '        GridUser.GridValue(1, x) = ""
+        '    Next
+        'End If
         If _FollowUp <> "" Then
             _SaveMode = enumSaveMode.EditMode
         End If

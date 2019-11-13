@@ -143,6 +143,42 @@ Namespace My
                 Return CType(Me("Server"),String)
             End Get
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("noreply@hardosoloplast.co.id")>  _
+        Public Property EmailAccount() As String
+            Get
+                Return CType(Me("EmailAccount"),String)
+            End Get
+            Set
+                Me("EmailAccount") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("lagis3nt0s4")>  _
+        Public Property Password_Email() As String
+            Get
+                Return CType(Me("Password_Email"),String)
+            End Get
+            Set
+                Me("Password_Email") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property SMTP_Server() As String
+            Get
+                Return CType(Me("SMTP_Server"),String)
+            End Get
+            Set
+                Me("SMTP_Server") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

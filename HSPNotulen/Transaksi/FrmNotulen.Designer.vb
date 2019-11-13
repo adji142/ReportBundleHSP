@@ -31,6 +31,7 @@ Partial Class FrmNotulen
         Me.cboTopik = New Enerzie.EPSBasicControls.EPSComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.panel2 = New System.Windows.Forms.Panel()
+        Me.lblstatus = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.btClose = New System.Windows.Forms.Button()
         Me.btSave = New System.Windows.Forms.Button()
@@ -61,6 +62,7 @@ Partial Class FrmNotulen
         Me.JmlPeserta = New System.Windows.Forms.Label()
         Me.GridNotulen = New Enerzie.EPSGridControls.EPSDataGridView()
         Me.cmdDelete = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.Locked, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,14 +138,24 @@ Partial Class FrmNotulen
         'panel2
         '
         Me.panel2.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.panel2.Controls.Add(Me.lblstatus)
         Me.panel2.Controls.Add(Me.PictureBox2)
         Me.panel2.Controls.Add(Me.btClose)
         Me.panel2.Controls.Add(Me.btSave)
         Me.panel2.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.panel2.Location = New System.Drawing.Point(0, 365)
         Me.panel2.Name = "panel2"
-        Me.panel2.Size = New System.Drawing.Size(888, 54)
+        Me.panel2.Size = New System.Drawing.Size(1281, 54)
         Me.panel2.TabIndex = 31
+        '
+        'lblstatus
+        '
+        Me.lblstatus.Location = New System.Drawing.Point(841, 15)
+        Me.lblstatus.Name = "lblstatus"
+        Me.lblstatus.Size = New System.Drawing.Size(237, 13)
+        Me.lblstatus.TabIndex = 8
+        Me.lblstatus.Text = "Ready"
+        Me.lblstatus.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'PictureBox2
         '
@@ -151,14 +163,14 @@ Partial Class FrmNotulen
         Me.PictureBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(888, 4)
+        Me.PictureBox2.Size = New System.Drawing.Size(1281, 4)
         Me.PictureBox2.TabIndex = 7
         Me.PictureBox2.TabStop = False
         '
         'btClose
         '
         Me.btClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btClose.Location = New System.Drawing.Point(780, 10)
+        Me.btClose.Location = New System.Drawing.Point(1173, 10)
         Me.btClose.Name = "btClose"
         Me.btClose.Size = New System.Drawing.Size(83, 23)
         Me.btClose.TabIndex = 1
@@ -168,7 +180,7 @@ Partial Class FrmNotulen
         'btSave
         '
         Me.btSave.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btSave.Location = New System.Drawing.Point(691, 10)
+        Me.btSave.Location = New System.Drawing.Point(1084, 10)
         Me.btSave.Name = "btSave"
         Me.btSave.Size = New System.Drawing.Size(83, 23)
         Me.btSave.TabIndex = 0
@@ -214,7 +226,6 @@ Partial Class FrmNotulen
         '
         'cmdPeserta
         '
-        Me.cmdPeserta.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdPeserta.Location = New System.Drawing.Point(326, 75)
         Me.cmdPeserta.Name = "cmdPeserta"
         Me.cmdPeserta.Size = New System.Drawing.Size(48, 23)
@@ -224,9 +235,6 @@ Partial Class FrmNotulen
         '
         'Panel1
         '
-        Me.Panel1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.Label9)
@@ -307,7 +315,6 @@ Partial Class FrmNotulen
         '
         'cmdStart
         '
-        Me.cmdStart.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdStart.Location = New System.Drawing.Point(492, 11)
         Me.cmdStart.Name = "cmdStart"
         Me.cmdStart.Size = New System.Drawing.Size(54, 23)
@@ -317,7 +324,6 @@ Partial Class FrmNotulen
         '
         'cboEnd
         '
-        Me.cboEnd.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cboEnd.Location = New System.Drawing.Point(492, 43)
         Me.cboEnd.Name = "cboEnd"
         Me.cboEnd.Size = New System.Drawing.Size(54, 23)
@@ -327,7 +333,6 @@ Partial Class FrmNotulen
         '
         'cmdAddProblem
         '
-        Me.cmdAddProblem.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdAddProblem.Location = New System.Drawing.Point(11, 125)
         Me.cmdAddProblem.Name = "cmdAddProblem"
         Me.cmdAddProblem.Size = New System.Drawing.Size(96, 23)
@@ -337,7 +342,6 @@ Partial Class FrmNotulen
         '
         'cmdAddFU
         '
-        Me.cmdAddFU.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdAddFU.Location = New System.Drawing.Point(113, 125)
         Me.cmdAddFU.Name = "cmdAddFU"
         Me.cmdAddFU.Size = New System.Drawing.Size(104, 23)
@@ -347,7 +351,6 @@ Partial Class FrmNotulen
         '
         'cmdUp
         '
-        Me.cmdUp.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdUp.Location = New System.Drawing.Point(283, 125)
         Me.cmdUp.Name = "cmdUp"
         Me.cmdUp.Size = New System.Drawing.Size(33, 23)
@@ -357,7 +360,6 @@ Partial Class FrmNotulen
         '
         'cmdDown
         '
-        Me.cmdDown.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cmdDown.Location = New System.Drawing.Point(322, 125)
         Me.cmdDown.Name = "cmdDown"
         Me.cmdDown.Size = New System.Drawing.Size(45, 23)
@@ -410,7 +412,7 @@ Partial Class FrmNotulen
         Me.cbostatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbostatus.FormattingEnabled = True
         Me.cbostatus.IndexLocked = False
-        Me.cbostatus.Items.AddRange(New Object() {"Done", "Open", "Pending", "Cancel"})
+        Me.cbostatus.Items.AddRange(New Object() {"Done", "Open", "Pending", "Cancel", "-"})
         Me.cbostatus.Location = New System.Drawing.Point(53, 17)
         Me.cbostatus.Name = "cbostatus"
         Me.cbostatus.Size = New System.Drawing.Size(107, 21)
@@ -438,10 +440,14 @@ Partial Class FrmNotulen
         '
         Me.GridNotulen.AllowUserToAddRows = False
         Me.GridNotulen.AllowUserToDeleteRows = False
+        Me.GridNotulen.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.GridNotulen.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.GridNotulen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridNotulen.Location = New System.Drawing.Point(12, 154)
         Me.GridNotulen.Name = "GridNotulen"
-        Me.GridNotulen.Size = New System.Drawing.Size(864, 205)
+        Me.GridNotulen.Size = New System.Drawing.Size(1257, 205)
         Me.GridNotulen.TabIndex = 4
         '
         'cmdDelete
@@ -453,11 +459,21 @@ Partial Class FrmNotulen
         Me.cmdDelete.Text = "Delete"
         Me.cmdDelete.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(552, 125)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 50
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FrmNotulen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(888, 419)
+        Me.ClientSize = New System.Drawing.Size(1281, 419)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cmdDelete)
         Me.Controls.Add(Me.JmlPeserta)
         Me.Controls.Add(Me.GroupBox1)
@@ -539,4 +555,6 @@ Partial Class FrmNotulen
     Friend WithEvents JmlPeserta As System.Windows.Forms.Label
     Friend WithEvents GridNotulen As Enerzie.EPSGridControls.EPSDataGridView
     Friend WithEvents cmdDelete As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents lblstatus As System.Windows.Forms.Label
 End Class
