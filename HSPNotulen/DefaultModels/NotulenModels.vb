@@ -94,7 +94,37 @@ Namespace HSP.Data
 
         End Function
 
+        ' Remove Row
+        Public Function Delete_Header(ByVal ID As String) As Integer
+            Dim SQL As String
 
+            SQL = "DELETE FROM headernotulen " +
+                  "WHERE RowID = @RowID"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Delete_Header = DBX.Execute(SQL, New With {.RowID = ID})
+            End Using
+        End Function
+        Public Function Delete_Detail(ByVal ID As String) As Integer
+            Dim SQL As String
+
+            SQL = "DELETE FROM detailnotulen " +
+                  "WHERE RowID = @RowID"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Delete_Detail = DBX.Execute(SQL, New With {.RowID = ID})
+            End Using
+        End Function
+        Public Function Delete_SubDetail(ByVal ID As String) As Integer
+            Dim SQL As String
+
+            SQL = "DELETE FROM subdetailnotulen " +
+                  "WHERE headerid = @headerid"
+
+            Using DBX As IDbConnection = _DBConnection.Connection
+                Delete_SubDetail = DBX.Execute(SQL, New With {.headerid = ID})
+            End Using
+        End Function
         Public Function Edit(ByVal Data As Meeting) As Integer
             Dim SQL As String
 
@@ -248,9 +278,9 @@ Namespace HSP.Data
 
             SQL = "SELECT * FROM headernotulen where NoTransaksi = @NoTransaksi "
             If Status <> "" Then
-                SQL += "AND StausNotulen = '" + Status + "'"
+                SQL += "AND StausNotulen = '" + Status + "' "
             End If
-
+            SQL += " Order by LineNumber"
             Using DBX As IDbConnection = _DBConnection.Connection
                 Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
                 Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter
@@ -317,7 +347,7 @@ Namespace HSP.Data
         End Function
         Public Function GetLastMeeting(ByVal Topik As String) As DataSet
             Dim SQL As String
-            SQL = "SELECT DISTINCT NoTransaksi,TglTransaksi FROM headernotulen where TopikMeeting = @Topik ORDER BY CONCAT(TglTransaksi,' ',JamMulai) DESC Limit 1"
+            SQL = "SELECT DISTINCT NoTransaksi,TglTransaksi,JamMulai,JamSelesai FROM headernotulen where TopikMeeting = @Topik ORDER BY CONCAT(TglTransaksi,' ',JamMulai) DESC Limit 1"
             Using DBX As IDbConnection = _DBConnection.Connection
                 Dim CMD As New MySql.Data.MySqlClient.MySqlCommand(SQL, DBX)
                 Dim DA As New MySql.Data.MySqlClient.MySqlDataAdapter

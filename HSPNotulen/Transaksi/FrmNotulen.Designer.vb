@@ -63,6 +63,11 @@ Partial Class FrmNotulen
         Me.GridNotulen = New Enerzie.EPSGridControls.EPSDataGridView()
         Me.cmdDelete = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         CType(Me.Locked, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.panel2.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,6 +76,7 @@ Partial Class FrmNotulen
         Me.Panel5.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         CType(Me.GridNotulen, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Locked
@@ -143,7 +149,7 @@ Partial Class FrmNotulen
         Me.panel2.Controls.Add(Me.btClose)
         Me.panel2.Controls.Add(Me.btSave)
         Me.panel2.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.panel2.Location = New System.Drawing.Point(0, 365)
+        Me.panel2.Location = New System.Drawing.Point(0, 623)
         Me.panel2.Name = "panel2"
         Me.panel2.Size = New System.Drawing.Size(1281, 54)
         Me.panel2.TabIndex = 31
@@ -440,6 +446,8 @@ Partial Class FrmNotulen
         '
         Me.GridNotulen.AllowUserToAddRows = False
         Me.GridNotulen.AllowUserToDeleteRows = False
+        Me.GridNotulen.AllowUserToResizeColumns = False
+        Me.GridNotulen.AllowUserToResizeRows = False
         Me.GridNotulen.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -447,7 +455,8 @@ Partial Class FrmNotulen
         Me.GridNotulen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.GridNotulen.Location = New System.Drawing.Point(12, 154)
         Me.GridNotulen.Name = "GridNotulen"
-        Me.GridNotulen.Size = New System.Drawing.Size(1257, 205)
+        Me.GridNotulen.ReadOnly = True
+        Me.GridNotulen.Size = New System.Drawing.Size(1257, 463)
         Me.GridNotulen.TabIndex = 4
         '
         'cmdDelete
@@ -468,11 +477,65 @@ Partial Class FrmNotulen
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Label13)
+        Me.GroupBox2.Controls.Add(Me.Label12)
+        Me.GroupBox2.Controls.Add(Me.Label11)
+        Me.GroupBox2.Controls.Add(Me.Label10)
+        Me.GroupBox2.Location = New System.Drawing.Point(885, 13)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(200, 110)
+        Me.GroupBox2.TabIndex = 51
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Hint"
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.ForeColor = System.Drawing.Color.Red
+        Me.Label13.Location = New System.Drawing.Point(6, 86)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(123, 13)
+        Me.Label13.TabIndex = 3
+        Me.Label13.Text = "Double Click = Edit Data"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.ForeColor = System.Drawing.Color.Red
+        Me.Label12.Location = New System.Drawing.Point(6, 65)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(157, 13)
+        Me.Label12.TabIndex = 2
+        Me.Label12.Text = "CTRL + D = Delete Data terpilih"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(6, 43)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(140, 13)
+        Me.Label11.TabIndex = 1
+        Me.Label11.Text = "CTRL + W = Add Follow UP"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.Green
+        Me.Label10.Location = New System.Drawing.Point(6, 20)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(127, 13)
+        Me.Label10.TabIndex = 0
+        Me.Label10.Text = "CTRL + Q = Add Problem"
+        '
         'FrmNotulen
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1281, 419)
+        Me.ClientSize = New System.Drawing.Size(1281, 677)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.cmdDelete)
         Me.Controls.Add(Me.JmlPeserta)
@@ -514,6 +577,8 @@ Partial Class FrmNotulen
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.GridNotulen, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -557,4 +622,9 @@ Partial Class FrmNotulen
     Friend WithEvents cmdDelete As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents lblstatus As System.Windows.Forms.Label
+    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
 End Class

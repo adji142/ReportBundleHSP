@@ -25,4 +25,12 @@
         ifrmChild.Show()
 
     End Sub
+
+    Private Sub UserSettingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UserSettingToolStripMenuItem.Click
+        Dim ifrmChild As New frmDaftarUserSetting
+        IsMdiContainer = True
+        ifrmChild.MdiParent = Me
+        'frmformDO.Dock = DockStyle.Fill
+        ifrmChild.Show()
+    End Sub
 End Class

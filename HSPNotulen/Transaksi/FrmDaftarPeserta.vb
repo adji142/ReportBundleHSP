@@ -7,6 +7,8 @@ Imports System.Text.RegularExpressions
 Public Class FrmDaftarPeserta
     Public _ID As String
     Public _Success As Boolean
+
+    Public _DataPeserta As DataSet
     Public Sub New()
         InitializeComponent()
     End Sub
@@ -15,6 +17,13 @@ Public Class FrmDaftarPeserta
         Me.New()
         Me.Tag = Me.Text
         _ID = ID
+    End Sub
+    Public Sub New(ByVal ID As String, Data As DataSet)
+        Me.New()
+        Me.Tag = Me.Text
+        _DataPeserta = New DataSet
+        _ID = ID
+        _DataPeserta = Data
     End Sub
 
     Dim XStatus As String = ""
@@ -62,7 +71,8 @@ Public Class FrmDaftarPeserta
         Dim Row As Integer = 0
         Dim DaftarPeserta As New NotulenModels(ActiveSession)
         Dim BS As New BindingSource
-        Dim DataSet As DataSet = DaftarPeserta.Read_peserta(txtCariData.Text, _ID.ToString)
+        'Dim DataSet As DataSet = DaftarPeserta.Read_peserta(txtCariData.Text, _ID.ToString)
+        Dim DataSet As DataSet = _DataPeserta
         GridUser.Clear()
         For Each DR As DataRow In DataSet.Tables(0).Rows
             If Row = GridUser.Rows Then
@@ -184,21 +194,29 @@ Public Class FrmDaftarPeserta
                 Dim Notulen As New NotulenModels(ActiveSession)
                 Dim Exec = Notulen.DeletePeserta(_ID)
                 Dim _Peserta As PesertaMeeting
-
+                _DataPeserta.Clear()
                 For Row = 0 To GridUser.GridLastRow - 1
-                    _Peserta = New PesertaMeeting()
-                    _Peserta.meetingid = _ID
-                    _Peserta.nik = GridUser.GridValue(0, Row)
-                    _Peserta.NamaPeserta = GridUser.GridValue(1, Row)
-                    _Peserta.StatusHadir = "Hadir"
-                    Try
-                        Notulen.Add_Peserta(_Peserta)
-                        _Success = True
-                    Catch ex As Exception
-                        MessageBox.Show(ex.Message)
-                        _Success = False
-                    End Try
+                    Dim DR As DataRow = _DataPeserta.Tables(0).NewRow
+
+                    DR("meetingid") = _ID
+                    DR("nik") = GridUser.GridValue(0, Row)
+                    DR("NamaPeserta") = GridUser.GridValue(1, Row)
+                    DR("StatusHadir") = "Hadir"
+                    _DataPeserta.Tables(0).Rows.Add(DR)
+                    '_Peserta = New PesertaMeeting()
+                    '_Peserta.meetingid = _ID
+                    '_Peserta.nik = GridUser.GridValue(0, Row)
+                    '_Peserta.NamaPeserta = GridUser.GridValue(1, Row)
+                    '_Peserta.StatusHadir = "Hadir"
+                    'Try
+                    '    Notulen.Add_Peserta(_Peserta)
+                    '    _Success = True
+                    'Catch ex As Exception
+                    '    MessageBox.Show(ex.Message)
+                    '    _Success = False
+                    'End Try
                 Next
+                _Success = True
                 Me.Close()
             Case "btClose"
                 Me.Close()

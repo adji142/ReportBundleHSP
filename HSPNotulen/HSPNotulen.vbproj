@@ -132,6 +132,7 @@
     <Compile Include="DefaultModels\DaftarMeeting.vb" />
     <Compile Include="DefaultModels\DaftarNotuler.vb" />
     <Compile Include="DefaultModels\NotulenModels.vb" />
+    <Compile Include="DefaultModels\UserSetting.vb" />
     <Compile Include="ExportGrid.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -150,6 +151,12 @@
       <DependentUpon>frmDaftarNotulen.vb</DependentUpon>
     </Compile>
     <Compile Include="Master\frmDaftarNotulen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\frmDaftarUserSetting.designer.vb">
+      <DependentUpon>frmDaftarUserSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\frmDaftarUserSetting.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master\FrmMetting.Designer.vb">
@@ -220,6 +227,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Master\frmDaftarNotulen.resx">
       <DependentUpon>frmDaftarNotulen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\frmDaftarUserSetting.resx">
+      <DependentUpon>frmDaftarUserSetting.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmMetting.resx">
       <DependentUpon>FrmMetting.vb</DependentUpon>

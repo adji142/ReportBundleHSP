@@ -25,9 +25,10 @@ Partial Class Form1
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.MasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MeetingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NotulenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.TransactionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotulenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NotulenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.UserSettingToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,7 +43,7 @@ Partial Class Form1
         '
         'MasterToolStripMenuItem
         '
-        Me.MasterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MeetingToolStripMenuItem, Me.NotulenToolStripMenuItem1})
+        Me.MasterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MeetingToolStripMenuItem, Me.NotulenToolStripMenuItem1, Me.UserSettingToolStripMenuItem})
         Me.MasterToolStripMenuItem.Name = "MasterToolStripMenuItem"
         Me.MasterToolStripMenuItem.Size = New System.Drawing.Size(55, 20)
         Me.MasterToolStripMenuItem.Text = "Master"
@@ -52,6 +53,12 @@ Partial Class Form1
         Me.MeetingToolStripMenuItem.Name = "MeetingToolStripMenuItem"
         Me.MeetingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.MeetingToolStripMenuItem.Text = "Meeting"
+        '
+        'NotulenToolStripMenuItem1
+        '
+        Me.NotulenToolStripMenuItem1.Name = "NotulenToolStripMenuItem1"
+        Me.NotulenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.NotulenToolStripMenuItem1.Text = "Notulen"
         '
         'TransactionToolStripMenuItem
         '
@@ -63,14 +70,14 @@ Partial Class Form1
         'NotulenToolStripMenuItem
         '
         Me.NotulenToolStripMenuItem.Name = "NotulenToolStripMenuItem"
-        Me.NotulenToolStripMenuItem.Size = New System.Drawing.Size(117, 22)
+        Me.NotulenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NotulenToolStripMenuItem.Text = "Notulen"
         '
-        'NotulenToolStripMenuItem1
+        'UserSettingToolStripMenuItem
         '
-        Me.NotulenToolStripMenuItem1.Name = "NotulenToolStripMenuItem1"
-        Me.NotulenToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.NotulenToolStripMenuItem1.Text = "Notulen"
+        Me.UserSettingToolStripMenuItem.Name = "UserSettingToolStripMenuItem"
+        Me.UserSettingToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.UserSettingToolStripMenuItem.Text = "User Setting"
         '
         'Form1
         '
@@ -95,5 +102,6 @@ Partial Class Form1
     Friend WithEvents TransactionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NotulenToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents NotulenToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents UserSettingToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
